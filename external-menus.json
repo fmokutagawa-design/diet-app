@@ -1,13 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:14:49.063Z",
+  "generatedAt": "2026-08-25T05:20:34.237Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:14:49.063Z",
+      "updatedAt": "2026-08-25T05:20:34.144Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
+    },
+    "mos": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:20:34.237Z",
+      "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
+      "count": 60,
+      "label": "モス公式メニュー・栄養成分情報"
     }
   },
   "items": [
@@ -935,6 +942,1184 @@
       "official": true,
       "category": "バーガー",
       "sourceUrl": "https://www.mcdonalds.co.jp/products/8640/"
+    },
+    {
+      "id": "mos-010728",
+      "n": "モス モスの菜摘（なつみ）テリヤキチキン",
+      "s": [
+        "mos"
+      ],
+      "p": 15.1,
+      "kcal": 186,
+      "f": 10.7,
+      "yen": 560,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 30",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010728&c_id=30"
+    },
+    {
+      "id": "mos-210007",
+      "n": "モス チキンナゲット（5コ入り）※ソース別売",
+      "s": [
+        "mos"
+      ],
+      "p": 14.8,
+      "kcal": 195,
+      "f": 10.2,
+      "yen": 370,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 7",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=210007&c_id=7"
+    },
+    {
+      "id": "mos-010007",
+      "n": "モス テリヤキチキンバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 20.1,
+      "kcal": 303,
+      "f": 10.3,
+      "yen": 510,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010007&c_id=1"
+    },
+    {
+      "id": "mos-220001",
+      "n": "モス モスチキン",
+      "s": [
+        "mos"
+      ],
+      "p": 15.3,
+      "kcal": 269,
+      "f": 16.6,
+      "yen": 340,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 7",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=220001&c_id=7"
+    },
+    {
+      "id": "mos-011570",
+      "n": "モス ダブルとびきりチーズ 〜北海道チーズ〜",
+      "s": [
+        "mos"
+      ],
+      "p": 35.6,
+      "kcal": 706,
+      "f": 40.2,
+      "yen": 1020,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 27",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011570&c_id=27"
+    },
+    {
+      "id": "mos-010083",
+      "n": "モス ダブルチーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 24.8,
+      "kcal": 515,
+      "f": 28.5,
+      "yen": 450,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010083&c_id=1"
+    },
+    {
+      "id": "mos-011294",
+      "n": "モス 【時間限定】トリプルモスチーズバーガー ＜15時から販売＞",
+      "s": [
+        "mos"
+      ],
+      "p": 34.8,
+      "kcal": 733,
+      "f": 43.7,
+      "yen": 850,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011294&c_id=26"
+    },
+    {
+      "id": "mos-010082",
+      "n": "モス ダブルハンバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 21.8,
+      "kcal": 462,
+      "f": 24.1,
+      "yen": 400,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010082&c_id=1"
+    },
+    {
+      "id": "mos-011293",
+      "n": "モス 【時間限定】トリプルモスバーガー ＜15時から販売＞",
+      "s": [
+        "mos"
+      ],
+      "p": 31.8,
+      "kcal": 680,
+      "f": 39.3,
+      "yen": 800,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011293&c_id=26"
+    },
+    {
+      "id": "mos-010720",
+      "n": "モス モスの菜摘（なつみ）フィッシュ",
+      "s": [
+        "mos"
+      ],
+      "p": 11.1,
+      "kcal": 238,
+      "f": 16.5,
+      "yen": 480,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 30",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010720&c_id=30"
+    },
+    {
+      "id": "mos-221020",
+      "n": "モス 冷凍モスチキン 5本入り",
+      "s": [
+        "mos"
+      ],
+      "p": 14.5,
+      "kcal": 315,
+      "f": 21.7,
+      "yen": 1600,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 7",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=221020&c_id=7"
+    },
+    {
+      "id": "mos-011560",
+      "n": "モス とびきりチーズ 〜北海道チーズ〜",
+      "s": [
+        "mos"
+      ],
+      "p": 21.9,
+      "kcal": 478,
+      "f": 24.7,
+      "yen": 730,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 27",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011560&c_id=27"
+    },
+    {
+      "id": "mos-010341",
+      "n": "モス ダブルモスチーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 26.7,
+      "kcal": 585,
+      "f": 32.8,
+      "yen": 700,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010341&c_id=1"
+    },
+    {
+      "id": "mos-010361",
+      "n": "モス スパイシーダブルモスチーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 26.8,
+      "kcal": 588,
+      "f": 32.9,
+      "yen": 750,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010361&c_id=1"
+    },
+    {
+      "id": "mos-010904",
+      "n": "モス ダブルモスタコスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 25.6,
+      "kcal": 562,
+      "f": 31,
+      "yen": 720,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010904&c_id=26"
+    },
+    {
+      "id": "mos-010037",
+      "n": "モス チーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 16.7,
+      "kcal": 367,
+      "f": 17.6,
+      "yen": 300,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010037&c_id=1"
+    },
+    {
+      "id": "mos-010905",
+      "n": "モス ダブル スパイシーモスタコスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 25.7,
+      "kcal": 565,
+      "f": 31.1,
+      "yen": 770,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010905&c_id=26"
+    },
+    {
+      "id": "mos-011576",
+      "n": "モス ブラックアンガスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 22.4,
+      "kcal": 494,
+      "f": 26.8,
+      "yen": 730,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011576&c_id=26"
+    },
+    {
+      "id": "mos-010322",
+      "n": "モス ダブルモスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 23.7,
+      "kcal": 532,
+      "f": 28.4,
+      "yen": 650,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010322&c_id=1"
+    },
+    {
+      "id": "mos-010351",
+      "n": "モス スパイシーダブルモスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 23.8,
+      "kcal": 535,
+      "f": 28.5,
+      "yen": 700,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010351&c_id=1"
+    },
+    {
+      "id": "mos-010036",
+      "n": "モス ハンバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 13.7,
+      "kcal": 314,
+      "f": 13.2,
+      "yen": 250,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010036&c_id=1"
+    },
+    {
+      "id": "mos-010596",
+      "n": "モス ダブル アボカド タコスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 26,
+      "kcal": 598,
+      "f": 34.5,
+      "yen": 780,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010596&c_id=26"
+    },
+    {
+      "id": "mos-011466",
+      "n": "モス ダブルモス野菜バーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 22.2,
+      "kcal": 511,
+      "f": 29.5,
+      "yen": 650,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011466&c_id=1"
+    },
+    {
+      "id": "mos-121054",
+      "n": "モス 朝のとろったまチーズバーガー ～テリヤキソース～",
+      "s": [
+        "mos"
+      ],
+      "p": 17.9,
+      "kcal": 416,
+      "f": 21.9,
+      "yen": 440,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 12",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=121054&c_id=12"
+    },
+    {
+      "id": "mos-010340",
+      "n": "モス モスチーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 18.2,
+      "kcal": 425,
+      "f": 21.4,
+      "yen": 550,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010340&c_id=1"
+    },
+    {
+      "id": "mos-010360",
+      "n": "モス スパイシーモスチーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 18.3,
+      "kcal": 428,
+      "f": 21.5,
+      "yen": 600,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010360&c_id=1"
+    },
+    {
+      "id": "mos-010721",
+      "n": "モス モスの菜摘（なつみ）ロースカツ",
+      "s": [
+        "mos"
+      ],
+      "p": 11.3,
+      "kcal": 265,
+      "f": 14,
+      "yen": 570,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 30",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010721&c_id=30"
+    },
+    {
+      "id": "mos-010005",
+      "n": "モス フィッシュバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 16.2,
+      "kcal": 381,
+      "f": 18.8,
+      "yen": 430,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010005&c_id=1"
+    },
+    {
+      "id": "mos-010902",
+      "n": "モス モスタコスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 17.5,
+      "kcal": 414,
+      "f": 20.1,
+      "yen": 570,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010902&c_id=26"
+    },
+    {
+      "id": "mos-010903",
+      "n": "モス スパイシーモスタコスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 17.6,
+      "kcal": 417,
+      "f": 20.2,
+      "yen": 620,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010903&c_id=26"
+    },
+    {
+      "id": "mos-010320",
+      "n": "モス モスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 15.2,
+      "kcal": 372,
+      "f": 17,
+      "yen": 500,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010320&c_id=1"
+    },
+    {
+      "id": "mos-010718",
+      "n": "モス モスの菜摘（なつみ）モス野菜",
+      "s": [
+        "mos"
+      ],
+      "p": 9.1,
+      "kcal": 223,
+      "f": 16.5,
+      "yen": 550,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 30",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010718&c_id=30"
+    },
+    {
+      "id": "mos-010350",
+      "n": "モス スパイシーモスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 15.3,
+      "kcal": 375,
+      "f": 17.1,
+      "yen": 550,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010350&c_id=1"
+    },
+    {
+      "id": "mos-010719",
+      "n": "モス モスの菜摘（なつみ）チキン",
+      "s": [
+        "mos"
+      ],
+      "p": 9.9,
+      "kcal": 243,
+      "f": 16.3,
+      "yen": 500,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 30",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010719&c_id=30"
+    },
+    {
+      "id": "mos-010334",
+      "n": "モス ダブルテリヤキバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 22.8,
+      "kcal": 560,
+      "f": 29.3,
+      "yen": 640,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010334&c_id=1"
+    },
+    {
+      "id": "mos-010011",
+      "n": "モス ロースカツバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 16.6,
+      "kcal": 410,
+      "f": 16.3,
+      "yen": 520,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010011&c_id=1"
+    },
+    {
+      "id": "mos-011117",
+      "n": "モス ソイチーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 14.6,
+      "kcal": 361,
+      "f": 14.4,
+      "yen": 350,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 33",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011117&c_id=33"
+    },
+    {
+      "id": "mos-010595",
+      "n": "モス アボカド タコスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 17.9,
+      "kcal": 450,
+      "f": 23.6,
+      "yen": 630,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 26",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010595&c_id=26"
+    },
+    {
+      "id": "mos-010004",
+      "n": "モス チキンバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 15,
+      "kcal": 386,
+      "f": 18.5,
+      "yen": 450,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010004&c_id=1"
+    },
+    {
+      "id": "mos-011465",
+      "n": "モス モス野菜バーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 14.1,
+      "kcal": 363,
+      "f": 18.6,
+      "yen": 500,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011465&c_id=1"
+    },
+    {
+      "id": "mos-121056",
+      "n": "モス ソイ朝のとろったまチーズバーガー ～テリヤキソース～",
+      "s": [
+        "mos"
+      ],
+      "p": 15.8,
+      "kcal": 410,
+      "f": 18.7,
+      "yen": 490,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 12",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=121056&c_id=12"
+    },
+    {
+      "id": "mos-011113",
+      "n": "モス ソイモスチーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 16.1,
+      "kcal": 419,
+      "f": 18.2,
+      "yen": 600,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 33",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011113&c_id=33"
+    },
+    {
+      "id": "mos-011114",
+      "n": "モス ソイスパイシーモスチーズバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 16.2,
+      "kcal": 422,
+      "f": 18.3,
+      "yen": 650,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 33",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011114&c_id=33"
+    },
+    {
+      "id": "mos-121053",
+      "n": "モス 朝の野菜バーガー ～オーロラソース～",
+      "s": [
+        "mos"
+      ],
+      "p": 14,
+      "kcal": 368,
+      "f": 19.2,
+      "yen": 390,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 12",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=121053&c_id=12"
+    },
+    {
+      "id": "mos-011116",
+      "n": "モス ソイハンバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 11.6,
+      "kcal": 308,
+      "f": 10,
+      "yen": 300,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 33",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011116&c_id=33"
+    },
+    {
+      "id": "mos-010330",
+      "n": "モス テリヤキバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 14.3,
+      "kcal": 385,
+      "f": 18.2,
+      "yen": 490,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010330&c_id=1"
+    },
+    {
+      "id": "mos-010722",
+      "n": "モス モスの菜摘（なつみ）海老カツ",
+      "s": [
+        "mos"
+      ],
+      "p": 9.4,
+      "kcal": 254,
+      "f": 17,
+      "yen": 560,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 30",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010722&c_id=30"
+    },
+    {
+      "id": "mos-010840",
+      "n": "モス 海老カツバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 14.5,
+      "kcal": 397,
+      "f": 19.3,
+      "yen": 510,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010840&c_id=1"
+    },
+    {
+      "id": "mos-123003",
+      "n": "モス 朝モスプレート",
+      "s": [
+        "mos"
+      ],
+      "p": 15.1,
+      "kcal": 420,
+      "f": 24.6,
+      "yen": 460,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 12",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=123003&c_id=12"
+    },
+    {
+      "id": "mos-011111",
+      "n": "モス ソイモスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 13.1,
+      "kcal": 366,
+      "f": 13.8,
+      "yen": 550,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 33",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011111&c_id=33"
+    },
+    {
+      "id": "mos-011112",
+      "n": "モス ソイスパイシーモスバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 13.2,
+      "kcal": 369,
+      "f": 13.9,
+      "yen": 600,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 33",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011112&c_id=33"
+    },
+    {
+      "id": "mos-121013",
+      "n": "モス 朝のホットドッグ",
+      "s": [
+        "mos"
+      ],
+      "p": 9.5,
+      "kcal": 267,
+      "f": 15.4,
+      "yen": 320,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 12",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=121013&c_id=12"
+    },
+    {
+      "id": "mos-110021",
+      "n": "モス スパイシーチリドッグ",
+      "s": [
+        "mos"
+      ],
+      "p": 13.1,
+      "kcal": 374,
+      "f": 24,
+      "yen": 530,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 35",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=110021&c_id=35"
+    },
+    {
+      "id": "mos-110002",
+      "n": "モス チリドッグ",
+      "s": [
+        "mos"
+      ],
+      "p": 13,
+      "kcal": 373,
+      "f": 24,
+      "yen": 480,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 35",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=110002&c_id=35"
+    },
+    {
+      "id": "mos-010390",
+      "n": "モス ソイモス野菜バーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 12,
+      "kcal": 357,
+      "f": 15.4,
+      "yen": 550,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 33",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010390&c_id=33"
+    },
+    {
+      "id": "mos-121055",
+      "n": "モス ソイ朝の野菜バーガー ～オーロラソース～",
+      "s": [
+        "mos"
+      ],
+      "p": 11.9,
+      "kcal": 362,
+      "f": 16,
+      "yen": 440,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 12",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=121055&c_id=12"
+    },
+    {
+      "id": "mos-110001",
+      "n": "モス ホットドッグ",
+      "s": [
+        "mos"
+      ],
+      "p": 11.6,
+      "kcal": 358,
+      "f": 23.4,
+      "yen": 460,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 35",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=110001&c_id=35"
+    },
+    {
+      "id": "mos-011115",
+      "n": "モス ソイテリヤキバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 12.2,
+      "kcal": 379,
+      "f": 15,
+      "yen": 540,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 33",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=011115&c_id=33"
+    },
+    {
+      "id": "mos-010574",
+      "n": "モス 米粉入りバンズのアボカドバジルバーガー",
+      "s": [
+        "mos"
+      ],
+      "p": 11,
+      "kcal": 401,
+      "f": 21.2,
+      "yen": 650,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 1",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=010574&c_id=1"
+    },
+    {
+      "id": "mos-020310",
+      "n": "モス モスライスバーガー焼肉",
+      "s": [
+        "mos"
+      ],
+      "p": 9.5,
+      "kcal": 353,
+      "f": 11.6,
+      "yen": 520,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "モス category 35",
+      "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=020310&c_id=35"
     }
   ]
 }
