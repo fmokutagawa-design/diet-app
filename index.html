@@ -630,6 +630,11 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
       <div class="rescue-list" id="rescueList"></div>
     </div>
 
+    <div class="card" id="officialMenuCard">
+      <h2>公式メニュー候補 <span class="tag" id="officialMenuTag">読込中</span></h2>
+      <div class="summary" id="officialMenuNote">各社の公式栄養情報を確認しています。</div>
+    </div>
+
     <!-- today's intake -->
     <div class="card">
       <h2>今日の食事 <span class="tag" id="mealDateTag"></span></h2>
@@ -2768,10 +2773,11 @@ $('#addMachineBtn').addEventListener('click',()=>{
 });
 
 /* MEALS */
-const B={seven:'s-seven',lawson:'s-lawson',aeon:'s-aeon',other:'s-other',famima:'s-famima',sukiya:'s-sukiya',yoshinoya:'s-yoshinoya',gai:'s-gai'};
-const N={seven:'セブン',lawson:'ローソン',aeon:'イオン',other:'その他',famima:'ファミマ',sukiya:'すき家',yoshinoya:'吉野家',gai:'外食'};
+const B={seven:'s-seven',lawson:'s-lawson',aeon:'s-aeon',other:'s-other',famima:'s-famima',sukiya:'s-sukiya',yoshinoya:'s-yoshinoya',mcdonalds:'s-other',mos:'s-other',matsuya:'s-other',shinpachi:'s-other',gai:'s-gai'};
+const N={seven:'セブン',lawson:'ローソン',aeon:'イオン',other:'その他',famima:'ファミマ',sukiya:'すき家',yoshinoya:'吉野家',mcdonalds:'マクドナルド',mos:'モス',matsuya:'松屋',shinpachi:'しんぱち食堂',gai:'外食'};
+let EXTERNAL_MENU_META=null;
 // 商品マスタ（実在の高たんぱく商品中心）。days＝向いている日タイプ
-const STORE_ITEMS=[
+let STORE_ITEMS=[
   // --- ローソン ---
   {n:'たんぱく質が摂れる 国産鶏むね肉のサラダ',s:['lawson'],p:20,kcal:150,yen:330,days:['train','rest']},
   {n:'たんぱく質が摂れる 冷しバンバンジー',s:['lawson'],p:18,kcal:230,yen:350,days:['train','rest']},
@@ -2889,6 +2895,26 @@ const STORE_ITEMS=[
   {n:"だし香る鶏つくね串",s:["famima"],p:11,kcal:130,f:6,yen:150,days:["train","rest","night"]},
   {n:"ねぎ塩豚カルビ丼",s:["famima"],p:22,kcal:620,f:22,yen:498,days:["train"]}
 ];
+function officialPrice(it){return Number.isFinite(it.yen)?`約${it.yen}円`:'価格は店舗で確認';}
+function renderOfficialMenuStatus(){
+  const tag=$('#officialMenuTag'),note=$('#officialMenuNote');if(!tag||!note)return;
+  if(!EXTERNAL_MENU_META){tag.textContent='固定候補のみ';note.textContent='公式メニューの更新データを読み込めませんでした。固定候補は引き続き利用できます。';return;}
+  const src=Object.values(EXTERNAL_MENU_META.sources||{}),ok=src.filter(x=>x.status==='ok'),count=EXTERNAL_MENU_META.items?.length||0;
+  tag.textContent=`公式 ${count}品`;
+  const newest=ok.map(x=>x.updatedAt).filter(Boolean).sort().pop();
+  note.innerHTML=`${ok.map(x=>`<a href="${x.url}" target="_blank" rel="noopener" style="color:var(--primary)">${x.label||'公式情報'}</a>`).join('・')||'公式情報'}から取得。${newest?`更新 ${new Date(newest).toLocaleString('ja-JP')}`:''}<br><span class="small muted">価格未取得の商品は店頭で確認。栄養値は標準値で、販売状況やカスタマイズにより変わります。</span>`;
+}
+async function loadExternalMenus(){
+  try{
+    const r=await fetch(`external-menus.json?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw Error(`HTTP ${r.status}`);
+    const d=await r.json(),items=(d.items||[]).filter(x=>x.n&&Number.isFinite(x.kcal)&&Number.isFinite(x.p));
+    STORE_ITEMS=STORE_ITEMS.filter(x=>!x.official).concat(items);
+    EXTERNAL_MENU_META={...d,items};
+    planSig='';
+    if($('#v-home').classList.contains('show'))renderHome();
+    if($('#v-meal').classList.contains('show'))renderMeal();
+  }catch(e){EXTERNAL_MENU_META=null;renderOfficialMenuStatus();}
+}
 const MEALS={
   train:{head:'トレ日：たんぱく質しっかり＋少し糖質。トレ後30分以内にたんぱく質を。',
     recipe:[
@@ -3115,7 +3141,7 @@ function pickHTML(kind,obj,opts){opts=opts||{};
     const ing=(obj.ingredients||[]).map(i=>`<li>${i.name}　<span class="muted">${i.amount}</span></li>`).join('');
     const stp=(obj.steps||[]).map(s=>`<li>${s}</li>`).join('');
     how=`<div class="pick-how"><h4>材料</h4><ul>${ing}</ul><h4>作り方</h4><ol>${stp}</ol>${obj.tip?`<div class="rc-tip">💡 ${obj.tip}</div>`:''}</div>`;
-  }else{name=obj.n;kcal=obj.kcal;p=obj.p;const isGai=obj.kind==='gai';sub=`${isGai?'外食':'買う'} ・ ${obj.s.map(s=>N[s]).join('/')} ・ 約${obj.yen}円`;id='s'+STORE_ITEMS.indexOf(obj);}
+  }else{name=obj.n;kcal=obj.kcal;p=obj.p;const isGai=obj.kind==='gai';sub=`${isGai?'外食':'買う'} ・ ${obj.s.map(s=>N[s]||s).join('/')} ・ ${officialPrice(obj)}${obj.official?' ・ 公式値':''}`;id='s'+STORE_ITEMS.indexOf(obj);}
   const isGaiObj=(kind!=='r'&&obj.kind==='gai');
   const imp=impact(kcal);
   const slot=opts.slot?`<span style="color:var(--faint);font-size:.74rem">${opts.slot}</span><br>`:'';
@@ -3425,7 +3451,7 @@ function renderMeal(){
   if(!S.meal.dayType)S.meal.dayType=todayType();
   const ttName={train:'トレ日',rest:'休養日',night:'夜勤日'}[S.meal.dayType];
   $('#mealDateTag').textContent=`${today.getMonth()+1}/${today.getDate()}（${WD[today.getDay()]}）`;
-  renderOrder();renderRescue();
+  renderOrder();renderRescue();renderOfficialMenuStatus();
   $('#dayTypeTag').textContent=ttName+'向け';
   document.querySelectorAll('#dayTypeSeg button').forEach(b=>b.classList.toggle('active',b.dataset.v===S.meal.dayType));
   document.querySelectorAll('#modeSeg button').forEach(b=>b.classList.toggle('active',b.dataset.v===S.meal.mode));
@@ -3439,10 +3465,10 @@ function renderMeal(){
   const cheap=S.meal.budget==='cheap';
   const kind=S.meal.storeKind||'buy';
   document.querySelectorAll('#storeKindSeg button').forEach(b=>b.classList.toggle('active',b.dataset.v===kind));
-  const items=STORE_ITEMS.filter(it=>it.days.includes(S.meal.dayType)&&((it.kind==='gai')===(kind==='gai'))).slice().sort((a,b)=>cheap?a.yen-b.yen:b.p-a.p);
+  const items=STORE_ITEMS.filter(it=>it.days.includes(S.meal.dayType)&&((it.kind==='gai')===(kind==='gai'))).slice().sort((a,b)=>cheap?(Number.isFinite(a.yen)?a.yen:Infinity)-(Number.isFinite(b.yen)?b.yen:Infinity):b.p-a.p);
   const sc=$('#storeCount');if(sc)sc.textContent=`${items.length}品`;
   const kn=$('#storeKindNote');if(kn)kn.textContent=kind==='gai'?'・店で食べる/テイクアウト':'・セブン/ローソン/イオン 他';
-  $('#storeList').innerHTML=items.map(it=>{const idx=STORE_ITEMS.indexOf(it);const eatLabel=kind==='gai'?'✓ これを食べた（記録）':'✓ 買って食べた（記録）';return `<div class="meal"><h3>${it.n}</h3><div>${it.s.map(s=>`<span class="store ${B[s]}">${N[s]}</span>`).join('')}</div><div class="macro"><span>たんぱく <b>${it.p}g</b></span><span><b>${it.kcal}</b>kcal</span><span>約<b>${it.yen}</b>円</span></div><button class="btn-eat" style="width:100%;min-height:38px;border:none;border-radius:9px;margin-top:8px;font-weight:700;cursor:pointer" data-eat="s${idx}">${eatLabel}</button></div>`;}).join('')||'<div class="small muted" style="padding:8px">この日タイプ向けの候補がありません。日タイプを切り替えてみてください。</div>';
+  $('#storeList').innerHTML=items.map(it=>{const idx=STORE_ITEMS.indexOf(it);const eatLabel=kind==='gai'?'✓ これを食べた（記録）':'✓ 買って食べた（記録）';return `<div class="meal"><h3>${it.n}${it.official?' <span class="tag">公式値</span>':''}</h3><div>${it.s.map(s=>`<span class="store ${B[s]||B.other}">${N[s]||s}</span>`).join('')}</div><div class="macro"><span>たんぱく <b>${it.p}g</b></span><span><b>${it.kcal}</b>kcal</span><span>${Number.isFinite(it.yen)?`約<b>${it.yen}</b>円`:'価格未取得'}</span></div>${it.sourceUrl?`<a href="${it.sourceUrl}" target="_blank" rel="noopener" class="small" style="display:inline-block;margin-top:6px;color:var(--primary)">公式商品情報 ↗</a>`:''}<button class="btn-eat" style="width:100%;min-height:38px;border:none;border-radius:9px;margin-top:8px;font-weight:700;cursor:pointer" data-eat="s${idx}">${eatLabel}</button></div>`;}).join('')||'<div class="small muted" style="padding:8px">この日タイプ向けの候補がありません。日タイプを切り替えてみてください。</div>';
   buildFridgeChips();renderFridge();buildMoodChips();renderMood();
   renderRecipes();
 }
@@ -4245,6 +4271,7 @@ function renderReview(){
 
 applyTheme();
 renderHome();
+loadExternalMenus();
 
 </script>
 </body>

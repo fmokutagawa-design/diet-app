@@ -1,0 +1,940 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-25T05:14:49.063Z",
+  "sources": {
+    "mcdonalds": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:14:49.063Z",
+      "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
+      "count": 48,
+      "label": "マクドナルド公式栄養成分表"
+    }
+  },
+  "items": [
+    {
+      "id": "mcd-4740",
+      "n": "マクドナルド 炙り醤油風 たまごベーコンダブル肉厚ビーフ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 43.6,
+      "kcal": 685,
+      "f": 39.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4740/"
+    },
+    {
+      "id": "mcd-4560",
+      "n": "マクドナルド 倍ダブルチーズバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 41.6,
+      "kcal": 657,
+      "f": 40.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4560/"
+    },
+    {
+      "id": "mcd-4600",
+      "n": "マクドナルド 倍エグチ(倍エッグチーズバーガー)",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 29.9,
+      "kcal": 489,
+      "f": 26.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4600/"
+    },
+    {
+      "id": "mcd-1220",
+      "n": "マクドナルド 炙り醤油風 ダブル肉厚ビーフ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 38,
+      "kcal": 633,
+      "f": 37.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1220/"
+    },
+    {
+      "id": "mcd-1410",
+      "n": "マクドナルド エッグマックマフィン®",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 18.6,
+      "kcal": 310,
+      "f": 13.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1410/"
+    },
+    {
+      "id": "mcd-1260",
+      "n": "マクドナルド 炙り醤油風 たまごベーコン肉厚ビーフ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 30.8,
+      "kcal": 517,
+      "f": 27,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1260/"
+    },
+    {
+      "id": "mcd-1900",
+      "n": "マクドナルド チーズチーズダブルチーズバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 32.4,
+      "kcal": 561,
+      "f": 33.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1900/"
+    },
+    {
+      "id": "mcd-4500",
+      "n": "マクドナルド 倍ハンバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 20.6,
+      "kcal": 358,
+      "f": 17.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4500/"
+    },
+    {
+      "id": "mcd-1360",
+      "n": "マクドナルド ダブルチーズバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 26.4,
+      "kcal": 459,
+      "f": 25.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1360/"
+    },
+    {
+      "id": "mcd-4510",
+      "n": "マクドナルド 倍チーズバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 23.5,
+      "kcal": 409,
+      "f": 21.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4510/"
+    },
+    {
+      "id": "mcd-7070",
+      "n": "マクドナルド エグチ(エッグチーズバーガー)",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 22.4,
+      "kcal": 390,
+      "f": 19,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/7070/"
+    },
+    {
+      "id": "mcd-4550",
+      "n": "マクドナルド 倍ビッグマック",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 41.3,
+      "kcal": 722,
+      "f": 43.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4550/"
+    },
+    {
+      "id": "mcd-1420",
+      "n": "マクドナルド ベーコンエッグマックサンド",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 16.3,
+      "kcal": 294,
+      "f": 12.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1420/"
+    },
+    {
+      "id": "mcd-6430",
+      "n": "マクドナルド タルタルデミ倍肉厚ビーフ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 35.2,
+      "kcal": 640,
+      "f": 38.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/6430/"
+    },
+    {
+      "id": "mcd-4580",
+      "n": "マクドナルド 倍ベーコンレタスバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 25,
+      "kcal": 461,
+      "f": 27,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4580/"
+    },
+    {
+      "id": "mcd-4540",
+      "n": "マクドナルド 倍フィレオフィッシュ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 23.4,
+      "kcal": 453,
+      "f": 19.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4540/"
+    },
+    {
+      "id": "mcd-1020",
+      "n": "マクドナルド チーズバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 15.9,
+      "kcal": 310,
+      "f": 13.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1020/"
+    },
+    {
+      "id": "mcd-1010",
+      "n": "マクドナルド ハンバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 13,
+      "kcal": 259,
+      "f": 9.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1010/"
+    },
+    {
+      "id": "mcd-1210",
+      "n": "マクドナルド ビッグマック®",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 26.1,
+      "kcal": 524,
+      "f": 28,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1210/"
+    },
+    {
+      "id": "mcd-1040",
+      "n": "マクドナルド ベーコンレタスバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 17.5,
+      "kcal": 362,
+      "f": 19.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1040/"
+    },
+    {
+      "id": "mcd-4570",
+      "n": "マクドナルド 倍チキンフィレオ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 34.6,
+      "kcal": 725,
+      "f": 37.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4570/"
+    },
+    {
+      "id": "mcd-6400",
+      "n": "マクドナルド タルタルデミ肉厚ビーフ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 22.3,
+      "kcal": 473,
+      "f": 25.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/6400/"
+    },
+    {
+      "id": "mcd-4040",
+      "n": "マクドナルド ソーセージエッグマフィン",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 22,
+      "kcal": 477,
+      "f": 30.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4040/"
+    },
+    {
+      "id": "mcd-4680",
+      "n": "マクドナルド 倍てりやきチキンフィレオ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 35,
+      "kcal": 769,
+      "f": 36.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4680/"
+    },
+    {
+      "id": "mcd-1110",
+      "n": "マクドナルド フィレオフィッシュ®",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 15.1,
+      "kcal": 338,
+      "f": 14.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1110/"
+    },
+    {
+      "id": "mcd-8637",
+      "n": "マクドナルド メガマフィン",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 30,
+      "kcal": 693,
+      "f": 49.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/8637/"
+    },
+    {
+      "id": "mcd-1050",
+      "n": "マクドナルド チキンフィレオ®",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 19.9,
+      "kcal": 479,
+      "f": 23.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1050/"
+    },
+    {
+      "id": "mcd-4610",
+      "n": "マクドナルド 倍チキチー(倍マックチキン チーズ)",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 24.8,
+      "kcal": 599,
+      "f": 33.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4610/"
+    },
+    {
+      "id": "mcd-8641",
+      "n": "マクドナルド マックグリドル® ベーコンエッグ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 15.6,
+      "kcal": 382,
+      "f": 16.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/8641/"
+    },
+    {
+      "id": "mcd-1170",
+      "n": "マクドナルド てりやきチキンフィレオ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 20.1,
+      "kcal": 496,
+      "f": 23,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1170/"
+    },
+    {
+      "id": "mcd-4720",
+      "n": "マクドナルド 倍マックチキン",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 21.9,
+      "kcal": 549,
+      "f": 29.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4720/"
+    },
+    {
+      "id": "mcd-4030",
+      "n": "マクドナルド ソーセージマフィン",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 15.5,
+      "kcal": 397,
+      "f": 25.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4030/"
+    },
+    {
+      "id": "mcd-1430",
+      "n": "マクドナルド チキンマックマフィン",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 15.1,
+      "kcal": 401,
+      "f": 20.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1430/"
+    },
+    {
+      "id": "mcd-8000",
+      "n": "マクドナルド チキチー® (マックチキン® チーズ)",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 16.4,
+      "kcal": 436,
+      "f": 23.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/8000/"
+    },
+    {
+      "id": "mcd-4730",
+      "n": "マクドナルド 倍マックポーク",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 23.7,
+      "kcal": 644,
+      "f": 45.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4730/"
+    },
+    {
+      "id": "mcd-6410",
+      "n": "マクドナルド ジューシーチキン 旨辛ガーリック",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 17.4,
+      "kcal": 477,
+      "f": 24.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/6410/"
+    },
+    {
+      "id": "mcd-8642",
+      "n": "マクドナルド マックグリドル® ソーセージエッグ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 19.8,
+      "kcal": 545,
+      "f": 32.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/8642/"
+    },
+    {
+      "id": "mcd-1270",
+      "n": "マクドナルド マックポーク®",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 14.8,
+      "kcal": 409,
+      "f": 23.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1270/"
+    },
+    {
+      "id": "mcd-1250",
+      "n": "マクドナルド マックチキン®",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 13.5,
+      "kcal": 386,
+      "f": 19.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1250/"
+    },
+    {
+      "id": "mcd-1910",
+      "n": "マクドナルド チーズチーズてりやきマックバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 20.1,
+      "kcal": 586,
+      "f": 39.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1910/"
+    },
+    {
+      "id": "mcd-6440",
+      "n": "マクドナルド タルタルデミソーセージマフィン",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 16.7,
+      "kcal": 491,
+      "f": 31.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/6440/"
+    },
+    {
+      "id": "mcd-6420",
+      "n": "マクドナルド 焙煎ごまタルタルシュリンプ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 14.9,
+      "kcal": 460,
+      "f": 21.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/6420/"
+    },
+    {
+      "id": "mcd-4530",
+      "n": "マクドナルド 倍てりやきマックバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 23.3,
+      "kcal": 747,
+      "f": 52.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4530/"
+    },
+    {
+      "id": "mcd-4590",
+      "n": "マクドナルド 倍えびフィレオ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 17.5,
+      "kcal": 582,
+      "f": 26.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4590/"
+    },
+    {
+      "id": "mcd-1070",
+      "n": "マクドナルド てりやきマックバーガー",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 14.2,
+      "kcal": 485,
+      "f": 31.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1070/"
+    },
+    {
+      "id": "mcd-1030",
+      "n": "マクドナルド えびフィレオ®",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 11.4,
+      "kcal": 408,
+      "f": 18.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/1030/"
+    },
+    {
+      "id": "mcd-4010",
+      "n": "マクドナルド ホットケーキ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 8.3,
+      "kcal": 323,
+      "f": 9.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/4010/"
+    },
+    {
+      "id": "mcd-8640",
+      "n": "マクドナルド マックグリドル® ソーセージ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 10.5,
+      "kcal": 414,
+      "f": 23.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/8640/"
+    }
+  ]
+}
