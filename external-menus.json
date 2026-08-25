@@ -1,76 +1,90 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-25T07:20:41.825Z",
+  "generatedAt": "2026-08-25T09:03:01.838Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:19:10.686Z",
+      "updatedAt": "2026-08-25T09:01:41.049Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:19:10.776Z",
+      "updatedAt": "2026-08-25T09:01:41.131Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 60,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:19:15.387Z",
+      "updatedAt": "2026-08-25T09:01:42.183Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:19:15.689Z",
+      "updatedAt": "2026-08-25T09:01:42.444Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
     },
     "yoshinoya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:19:16.086Z",
+      "updatedAt": "2026-08-25T09:01:42.844Z",
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 70,
       "label": "吉野家公式栄養成分表"
     },
     "famima": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:19:17.492Z",
+      "updatedAt": "2026-08-25T09:01:45.593Z",
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 80,
       "label": "ファミマ公式栄養成分情報（関東）"
     },
     "seven": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:19:34.358Z",
+      "updatedAt": "2026-08-25T09:02:01.118Z",
       "url": "https://www.sej.co.jp/products/a/",
       "count": 42,
       "label": "セブン公式商品情報（関東）"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:19:38.284Z",
+      "updatedAt": "2026-08-25T09:02:05.246Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
     },
     "aeon": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:20:38.659Z",
+      "updatedAt": "2026-08-25T09:02:59.144Z",
       "url": "https://www.topvalu.net/items/",
       "count": 80,
       "label": "イオン トップバリュ公式商品情報"
     },
     "aeonShinyoshida": {
       "status": "ok",
-      "updatedAt": "2026-08-25T07:20:41.825Z",
+      "updatedAt": "2026-08-25T09:03:01.838Z",
       "url": "https://shop.aeon.com/netsuper/01050000030830/15.html",
-      "count": 531,
+      "count": 460,
       "label": "イオン横浜新吉田店 弁当・惣菜取扱情報"
+    },
+    "dennys": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T09:01:43.287Z",
+      "url": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806",
+      "count": 90,
+      "label": "デニーズ公式栄養成分一覧"
+    },
+    "cocoichi": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T09:01:43.436Z",
+      "url": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf",
+      "count": 62,
+      "label": "CoCo壱番屋公式栄養成分情報"
     }
   },
   "items": [
@@ -6164,6 +6178,2871 @@
       "official": true,
       "category": "吉野家",
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "dennys-6-1255",
+      "n": "デニーズ 特製ケチャップのオムライス",
+      "s": [
+        "dennys"
+      ],
+      "p": 26.6,
+      "kcal": 698,
+      "f": 34.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1104",
+      "n": "デニーズ デリーチキンカレー",
+      "s": [
+        "dennys"
+      ],
+      "p": 23.5,
+      "kcal": 697,
+      "f": 26.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1301",
+      "n": "デニーズ グリルチキンのジャンバラヤ",
+      "s": [
+        "dennys"
+      ],
+      "p": 30,
+      "kcal": 691,
+      "f": 32.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1010",
+      "n": "デニーズ 南インド風キーマカレー～Ｄ’ｓミールススタイル",
+      "s": [
+        "dennys"
+      ],
+      "p": 21.9,
+      "kcal": 686,
+      "f": 30.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-334",
+      "n": "デニーズ なすと香味野菜のハンバーグ（ライス・みそ汁付き）",
+      "s": [
+        "dennys"
+      ],
+      "p": 26.2,
+      "kcal": 715,
+      "f": 29.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-965",
+      "n": "デニーズ トマトチキン＆ベーコンコーン",
+      "s": [
+        "dennys"
+      ],
+      "p": 32.8,
+      "kcal": 685,
+      "f": 34.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1207",
+      "n": "デニーズ とろ～り卵とチーズのオムライス",
+      "s": [
+        "dennys"
+      ],
+      "p": 27.6,
+      "kcal": 683,
+      "f": 33.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-865",
+      "n": "デニーズ おろしチキン＆ミートペンネグラタン",
+      "s": [
+        "dennys"
+      ],
+      "p": 36.9,
+      "kcal": 682,
+      "f": 27.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-384",
+      "n": "デニーズ おろしハンバーグ（ライス・みそ汁付き）",
+      "s": [
+        "dennys"
+      ],
+      "p": 26.8,
+      "kcal": 680,
+      "f": 22.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1333",
+      "n": "デニーズ 3種のグリルコンボ",
+      "s": [
+        "dennys"
+      ],
+      "p": 47.6,
+      "kcal": 724,
+      "f": 49.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1310",
+      "n": "デニーズ 4種のグリルコンボ",
+      "s": [
+        "dennys"
+      ],
+      "p": 50.9,
+      "kcal": 727,
+      "f": 46.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-172",
+      "n": "デニーズ 生ハムとアボカドの冷製ジェノベーゼ～カペリーニ",
+      "s": [
+        "dennys"
+      ],
+      "p": 19.2,
+      "kcal": 655,
+      "f": 37.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-890",
+      "n": "デニーズ カレーハンバーグ＆ベーコンコーン",
+      "s": [
+        "dennys"
+      ],
+      "p": 24.7,
+      "kcal": 653,
+      "f": 30.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1060",
+      "n": "デニーズ 胡麻香る四川風担々麺～選べる麺",
+      "s": [
+        "dennys"
+      ],
+      "p": 23.4,
+      "kcal": 747,
+      "f": 66,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-940",
+      "n": "デニーズ 照りマヨチキン＆ベーコンブロッコリー",
+      "s": [
+        "dennys"
+      ],
+      "p": 33.7,
+      "kcal": 651,
+      "f": 30.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1057",
+      "n": "デニーズ チキンビリヤニ",
+      "s": [
+        "dennys"
+      ],
+      "p": 30.7,
+      "kcal": 647,
+      "f": 20.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-557",
+      "n": "デニーズ ふんわり卵ときのこの朝食～わかめうどん（小鉢除く）",
+      "s": [
+        "dennys"
+      ],
+      "p": 26.8,
+      "kcal": 754,
+      "f": 16.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-407",
+      "n": "デニーズ 和風ハンバーグ（ライス・みそ汁付き）",
+      "s": [
+        "dennys"
+      ],
+      "p": 28.3,
+      "kcal": 758,
+      "f": 29.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-424",
+      "n": "デニーズ 駿河湾産釜揚げしらす丼＆なすとほうれん草のおろし和え・うどんセット",
+      "s": [
+        "dennys"
+      ],
+      "p": 29.4,
+      "kcal": 762,
+      "f": 12.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1147",
+      "n": "デニーズ サラダごはん～ガパオ・ガイ",
+      "s": [
+        "dennys"
+      ],
+      "p": 28,
+      "kcal": 637,
+      "f": 28.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-189",
+      "n": "デニーズ 麻辣土鍋ハンバーグ",
+      "s": [
+        "dennys"
+      ],
+      "p": 26.4,
+      "kcal": 634,
+      "f": 48.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-103",
+      "n": "デニーズ ハンバーグカレードリア",
+      "s": [
+        "dennys"
+      ],
+      "p": 30.8,
+      "kcal": 769,
+      "f": 35.5,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-614",
+      "n": "デニーズ ふわふわ大豆ミートハンバーグのタコライス仕立て",
+      "s": [
+        "dennys"
+      ],
+      "p": 18.6,
+      "kcal": 627,
+      "f": 26,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-8-943",
+      "n": "デニーズ ガーデンパンケーキ～国産小麦粉きたほなみ使用",
+      "s": [
+        "dennys"
+      ],
+      "p": 15.9,
+      "kcal": 774,
+      "f": 33.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-915",
+      "n": "デニーズ おろしハンバーグ＆ベーコンほうれん草",
+      "s": [
+        "dennys"
+      ],
+      "p": 24.8,
+      "kcal": 620,
+      "f": 28.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-8-705",
+      "n": "デニーズ 抹茶白玉のブラウニーサンデー",
+      "s": [
+        "dennys"
+      ],
+      "p": 9.1,
+      "kcal": 620,
+      "f": 26.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-776",
+      "n": "デニーズ 麻辣涼麺（マーラーリャンメン）",
+      "s": [
+        "dennys"
+      ],
+      "p": 22.3,
+      "kcal": 615,
+      "f": 26.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-798",
+      "n": "デニーズ デニーズ風",
+      "s": [
+        "dennys"
+      ],
+      "p": 29.1,
+      "kcal": 612,
+      "f": 15.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-987",
+      "n": "デニーズ チキンビリヤニ～Ｄ’ｓミールススタイル",
+      "s": [
+        "dennys"
+      ],
+      "p": 32.9,
+      "kcal": 798,
+      "f": 32.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-7-1210",
+      "n": "デニーズ ビーフシチュー",
+      "s": [
+        "dennys"
+      ],
+      "p": 23,
+      "kcal": 602,
+      "f": 41.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-8-610",
+      "n": "デニーズ ブラウニーサンデー",
+      "s": [
+        "dennys"
+      ],
+      "p": 9.6,
+      "kcal": 599,
+      "f": 34.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1033",
+      "n": "デニーズ デリーチキンカレー～Ｄ’ｓミールススタイル",
+      "s": [
+        "dennys"
+      ],
+      "p": 25.5,
+      "kcal": 804,
+      "f": 39.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-374",
+      "n": "デニーズ おろしハンバーグ朝食（小鉢除く）",
+      "s": [
+        "dennys"
+      ],
+      "p": 25.1,
+      "kcal": 586,
+      "f": 20,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-234",
+      "n": "デニーズ 油淋鶏＆おろしハンバーグ",
+      "s": [
+        "dennys"
+      ],
+      "p": 30.5,
+      "kcal": 585,
+      "f": 33,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-429",
+      "n": "デニーズ 和風ぺぺたまベーコンスパゲッティ",
+      "s": [
+        "dennys"
+      ],
+      "p": 21.2,
+      "kcal": 580,
+      "f": 28.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1126",
+      "n": "デニーズ 南インド風キーマカレー",
+      "s": [
+        "dennys"
+      ],
+      "p": 19.8,
+      "kcal": 580,
+      "f": 18.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-1098",
+      "n": "デニーズ ブランチプレート",
+      "s": [
+        "dennys"
+      ],
+      "p": 29.5,
+      "kcal": 822,
+      "f": 48.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1187",
+      "n": "デニーズ とろ～り卵とチーズのオムライス＆唐揚げ",
+      "s": [
+        "dennys"
+      ],
+      "p": 36.7,
+      "kcal": 830,
+      "f": 42.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-256",
+      "n": "デニーズ しそおろしハンバーグ＆BEEFハンバーグステーキ",
+      "s": [
+        "dennys"
+      ],
+      "p": 35.4,
+      "kcal": 559,
+      "f": 30.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-521",
+      "n": "デニーズ おこさまランチ（ゼリーつき）",
+      "s": [
+        "dennys"
+      ],
+      "p": 14.7,
+      "kcal": 555,
+      "f": 23.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1230",
+      "n": "デニーズ 特製ケチャップのオムライス＆唐揚げ",
+      "s": [
+        "dennys"
+      ],
+      "p": 35.7,
+      "kcal": 845,
+      "f": 43.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-841",
+      "n": "デニーズ 香油（シャンヨウ）和えそば～太白胡麻油使用",
+      "s": [
+        "dennys"
+      ],
+      "p": 18.7,
+      "kcal": 550,
+      "f": 24.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-8-1038",
+      "n": "デニーズ キャラメルハニーパンケーキ（3枚）",
+      "s": [
+        "dennys"
+      ],
+      "p": 14.2,
+      "kcal": 550,
+      "f": 18.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-149",
+      "n": "デニーズ 生ハムとベーコンのカルボナーラ",
+      "s": [
+        "dennys"
+      ],
+      "p": 21.8,
+      "kcal": 548,
+      "f": 23.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-279",
+      "n": "デニーズ しそおろしハンバーグ＆ハーフチキングリル",
+      "s": [
+        "dennys"
+      ],
+      "p": 34.5,
+      "kcal": 541,
+      "f": 30.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-1222",
+      "n": "デニーズ ミニ牛カルビ丼・みそ汁セット",
+      "s": [
+        "dennys"
+      ],
+      "p": 16.4,
+      "kcal": 533,
+      "f": 21.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-8-824",
+      "n": "デニーズ 自家製フレンチトースト（４コ）",
+      "s": [
+        "dennys"
+      ],
+      "p": 11.8,
+      "kcal": 530,
+      "f": 26.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-148",
+      "n": "デニーズ 油淋鶏＆おろしハンバーグ（ライス・みそ汁付き）",
+      "s": [
+        "dennys"
+      ],
+      "p": 36.5,
+      "kcal": 874,
+      "f": 34.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-426",
+      "n": "デニーズ おこさまハンバーガー（ゼリーつき）",
+      "s": [
+        "dennys"
+      ],
+      "p": 15.4,
+      "kcal": 526,
+      "f": 25.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-99",
+      "n": "デニーズ BEEFハンバーグステーキ＆チキングリル",
+      "s": [
+        "dennys"
+      ],
+      "p": 42.4,
+      "kcal": 525,
+      "f": 29.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-798",
+      "n": "デニーズ スクランブルエッグモーニング",
+      "s": [
+        "dennys"
+      ],
+      "p": 21.6,
+      "kcal": 521,
+      "f": 35.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-352",
+      "n": "デニーズ アメリカンクラブハウスサンド",
+      "s": [
+        "dennys"
+      ],
+      "p": 35.9,
+      "kcal": 884,
+      "f": 43.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1279",
+      "n": "デニーズ グリルチキンの大盛りジャンバラヤ",
+      "s": [
+        "dennys"
+      ],
+      "p": 33.9,
+      "kcal": 885,
+      "f": 37.5,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-819",
+      "n": "デニーズ アジアン冷やし豆乳担々麺",
+      "s": [
+        "dennys"
+      ],
+      "p": 37.5,
+      "kcal": 886,
+      "f": 46.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-1295",
+      "n": "デニーズ ごはん大盛り・みそ汁セット",
+      "s": [
+        "dennys"
+      ],
+      "p": 15.2,
+      "kcal": 508,
+      "f": 6.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-825",
+      "n": "デニーズ フレッシュ桃のパンケーキ",
+      "s": [
+        "dennys"
+      ],
+      "p": 22.6,
+      "kcal": 892,
+      "f": 33,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1195",
+      "n": "デニーズ キーマカレー＆ガパオのあいがけそば",
+      "s": [
+        "dennys"
+      ],
+      "p": 38,
+      "kcal": 893,
+      "f": 49.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-584",
+      "n": "デニーズ ふんわり卵ときのこの朝食（小鉢除く）",
+      "s": [
+        "dennys"
+      ],
+      "p": 20.3,
+      "kcal": 506,
+      "f": 16.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-772",
+      "n": "デニーズ サニーサイドアップモーニング",
+      "s": [
+        "dennys"
+      ],
+      "p": 20.9,
+      "kcal": 502,
+      "f": 35.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-745",
+      "n": "デニーズ ベースドエッグモーニング",
+      "s": [
+        "dennys"
+      ],
+      "p": 20.9,
+      "kcal": 502,
+      "f": 35.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-719",
+      "n": "デニーズ ターンオーバーモーニング",
+      "s": [
+        "dennys"
+      ],
+      "p": 20.9,
+      "kcal": 502,
+      "f": 35.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-126",
+      "n": "デニーズ 海老ドリア",
+      "s": [
+        "dennys"
+      ],
+      "p": 16.3,
+      "kcal": 496,
+      "f": 22.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-102",
+      "n": "デニーズ 鰆の柚庵焼き（ライス・みそ汁付き）",
+      "s": [
+        "dennys"
+      ],
+      "p": 22.7,
+      "kcal": 478,
+      "f": 12.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-452",
+      "n": "デニーズ 海老と小柱のトマトスパゲッティ",
+      "s": [
+        "dennys"
+      ],
+      "p": 19.6,
+      "kcal": 477,
+      "f": 15.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-331",
+      "n": "デニーズ キッズバースデーパンケーキ",
+      "s": [
+        "dennys"
+      ],
+      "p": 10.2,
+      "kcal": 472,
+      "f": 21.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-1081",
+      "n": "デニーズ 野菜のカラフルハンバーグカレードリア",
+      "s": [
+        "dennys"
+      ],
+      "p": 37.3,
+      "kcal": 929,
+      "f": 47.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-928",
+      "n": "デニーズ 中華麺",
+      "s": [
+        "dennys"
+      ],
+      "p": 20.1,
+      "kcal": 470,
+      "f": 14.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-346",
+      "n": "デニーズ 和風ハンバーグ",
+      "s": [
+        "dennys"
+      ],
+      "p": 22.3,
+      "kcal": 469,
+      "f": 28.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1391",
+      "n": "デニーズ 鉄板ナポリタン～カットステーキ",
+      "s": [
+        "dennys"
+      ],
+      "p": 42.9,
+      "kcal": 933,
+      "f": 43.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-521",
+      "n": "デニーズ 完全メシ",
+      "s": [
+        "dennys"
+      ],
+      "p": 23.1,
+      "kcal": 466,
+      "f": 11.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-8-777",
+      "n": "デニーズ 国産小麦のパンケーキ",
+      "s": [
+        "dennys"
+      ],
+      "p": 12,
+      "kcal": 466,
+      "f": 12.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-391",
+      "n": "デニーズ きのこデミ煮込みハンバーグ",
+      "s": [
+        "dennys"
+      ],
+      "p": 24.7,
+      "kcal": 451,
+      "f": 25.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-7-1164",
+      "n": "デニーズ 香味野菜と生姜の油淋鶏",
+      "s": [
+        "dennys"
+      ],
+      "p": 24.6,
+      "kcal": 451,
+      "f": 24.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-637",
+      "n": "デニーズ ベーコンエッグ朝食（小鉢除く）",
+      "s": [
+        "dennys"
+      ],
+      "p": 15.5,
+      "kcal": 448,
+      "f": 13.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-448",
+      "n": "デニーズ 駿河湾産釜揚げしらす丼＆なすとほうれん草のおろし和え・みそ汁セット",
+      "s": [
+        "dennys"
+      ],
+      "p": 16.8,
+      "kcal": 443,
+      "f": 6.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-862",
+      "n": "デニーズ ベジ和えそば～１日に必要な野菜量が1/3摂れる",
+      "s": [
+        "dennys"
+      ],
+      "p": 14.2,
+      "kcal": 435,
+      "f": 26.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-232",
+      "n": "デニーズ 低アレルゲンバーガープレート",
+      "s": [
+        "dennys"
+      ],
+      "p": 12.9,
+      "kcal": 428,
+      "f": 18.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-301",
+      "n": "デニーズ なすと香味野菜のハンバーグ",
+      "s": [
+        "dennys"
+      ],
+      "p": 20.2,
+      "kcal": 426,
+      "f": 27.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-8-1015",
+      "n": "デニーズ キャラメルハニーパンケーキ（2枚）",
+      "s": [
+        "dennys"
+      ],
+      "p": 10.2,
+      "kcal": 426,
+      "f": 16,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-4-256",
+      "n": "デニーズ 低アレルゲンプレート",
+      "s": [
+        "dennys"
+      ],
+      "p": 13.3,
+      "kcal": 425,
+      "f": 16.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-5-195",
+      "n": "デニーズ 海老とアボカド",
+      "s": [
+        "dennys"
+      ],
+      "p": 22,
+      "kcal": 420,
+      "f": 11.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-663",
+      "n": "デニーズ 焼き鮭朝食（小鉢除く）",
+      "s": [
+        "dennys"
+      ],
+      "p": 17.8,
+      "kcal": 415,
+      "f": 9.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-7-1098",
+      "n": "デニーズ 低温調理",
+      "s": [
+        "dennys"
+      ],
+      "p": 29.5,
+      "kcal": 414,
+      "f": 29.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-8-1250",
+      "n": "デニーズ ライス大盛り＆みそ汁",
+      "s": [
+        "dennys"
+      ],
+      "p": 8,
+      "kcal": 414,
+      "f": 1.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-228",
+      "n": "デニーズ グリルドチーズサンドモーニング（ゆで卵）",
+      "s": [
+        "dennys"
+      ],
+      "p": 15.2,
+      "kcal": 395,
+      "f": 20.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-1106",
+      "n": "デニーズ ヨーグルト付き",
+      "s": [
+        "dennys"
+      ],
+      "p": 12,
+      "kcal": 393,
+      "f": 17.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-369",
+      "n": "デニーズ しそおろしハンバーグ",
+      "s": [
+        "dennys"
+      ],
+      "p": 20.9,
+      "kcal": 393,
+      "f": 21.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-2-277",
+      "n": "デニーズ トーストモーニング（ゆで卵）",
+      "s": [
+        "dennys"
+      ],
+      "p": 14,
+      "kcal": 392,
+      "f": 13.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-3-1319",
+      "n": "デニーズ ごはん・みそ汁セット",
+      "s": [
+        "dennys"
+      ],
+      "p": 13.2,
+      "kcal": 383,
+      "f": 6.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "dennys-6-1103",
+      "n": "デニーズ 海老と蒸し鶏のスープごはん",
+      "s": [
+        "dennys"
+      ],
+      "p": 21,
+      "kcal": 371,
+      "f": 9.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "デニーズ",
+      "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260806"
+    },
+    {
+      "id": "cocoichi-1-1050",
+      "n": "CoCo壱 ポークカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 11,
+      "kcal": 701,
+      "f": 18.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1053",
+      "n": "CoCo壱 カレーうどん",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 18.3,
+      "kcal": 702,
+      "f": 30.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1339",
+      "n": "CoCo壱 きのこカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 12.5,
+      "kcal": 711,
+      "f": 18.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-995",
+      "n": "CoCo壱 ココイチベジカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 10.1,
+      "kcal": 688,
+      "f": 15.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1412",
+      "n": "CoCo壱 ほうれん草カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 12.5,
+      "kcal": 712,
+      "f": 18.5,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1024",
+      "n": "CoCo壱 カレーうどん（マイルド）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 18.1,
+      "kcal": 688,
+      "f": 29.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1031",
+      "n": "CoCo壱 甘口ポークカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 10.8,
+      "kcal": 681,
+      "f": 17,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1443",
+      "n": "CoCo壱 チキンと夏べジのスパイスカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 18.1,
+      "kcal": 662,
+      "f": 15.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1002",
+      "n": "CoCo壱 カレーらーめん",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 20.4,
+      "kcal": 656,
+      "f": 23.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1231",
+      "n": "CoCo壱 エビにこみカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 21.4,
+      "kcal": 745,
+      "f": 18.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-4-831",
+      "n": "CoCo壱 ココイチバラエティボックスC",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 33.2,
+      "kcal": 748,
+      "f": 50.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1491",
+      "n": "CoCo壱 ココイチ×映画ちいかわ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 20.2,
+      "kcal": 651,
+      "f": 21.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1212",
+      "n": "CoCo壱 エビあさりカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 22.3,
+      "kcal": 757,
+      "f": 19.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1650",
+      "n": "CoCo壱 チキンにこみカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 24.4,
+      "kcal": 769,
+      "f": 19.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1267",
+      "n": "CoCo壱 たっぷりあさりカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 23.2,
+      "kcal": 769,
+      "f": 19.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1415",
+      "n": "CoCo壱 チキンと夏野菜カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 19,
+      "kcal": 781,
+      "f": 21.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1394",
+      "n": "CoCo壱 やさいカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 12.8,
+      "kcal": 783,
+      "f": 20.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1357",
+      "n": "CoCo壱 納豆カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 18,
+      "kcal": 787,
+      "f": 22.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1176",
+      "n": "CoCo壱 プチエビフライカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 15.5,
+      "kcal": 789,
+      "f": 23.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1357",
+      "n": "CoCo壱 焙煎スパイスのチキンカレー（やさい抜き）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 21.6,
+      "kcal": 805,
+      "f": 22.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-985",
+      "n": "CoCo壱 チャーシューカレーらーめん",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 26.2,
+      "kcal": 811,
+      "f": 37.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1013",
+      "n": "CoCo壱 ビーフカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 17.3,
+      "kcal": 823,
+      "f": 29.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1194",
+      "n": "CoCo壱 海の幸カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 28.8,
+      "kcal": 826,
+      "f": 22.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1185",
+      "n": "CoCo壱 手仕込とんかつ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 23.2,
+      "kcal": 571,
+      "f": 45.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1249",
+      "n": "CoCo壱 イカカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 24.1,
+      "kcal": 839,
+      "f": 25.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-977",
+      "n": "CoCo壱 ハヤシライス",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 16.4,
+      "kcal": 845,
+      "f": 30.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-873",
+      "n": "CoCo壱 オムカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 11,
+      "kcal": 555,
+      "f": 26,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1386",
+      "n": "CoCo壱 焙煎スパイスのチキンカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 22.5,
+      "kcal": 846,
+      "f": 23,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1453",
+      "n": "CoCo壱 牛すじ煮込みカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 25,
+      "kcal": 846,
+      "f": 25.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1376",
+      "n": "CoCo壱 スクランブルエッグカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 15.4,
+      "kcal": 846,
+      "f": 30.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-908",
+      "n": "CoCo壱 ハンバーグカレードリア",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 15.7,
+      "kcal": 543,
+      "f": 20.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1430",
+      "n": "CoCo壱 なす(6個)カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 11.9,
+      "kcal": 872,
+      "f": 34.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1303",
+      "n": "CoCo壱 チーズカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 23.9,
+      "kcal": 896,
+      "f": 34.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-4-995",
+      "n": "CoCo壱 マル得",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 48.6,
+      "kcal": 897,
+      "f": 59.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1163",
+      "n": "CoCo壱 手仕込ささみカツ（2本）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 32.5,
+      "kcal": 482,
+      "f": 29.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-943",
+      "n": "CoCo壱 なすとほうれん草のカレードリア",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 10.1,
+      "kcal": 480,
+      "f": 17.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1614",
+      "n": "CoCo壱 ハンバーグ(2個)カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 24.2,
+      "kcal": 925,
+      "f": 32.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1285",
+      "n": "CoCo壱 フィッシュフライ(2本)カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 22.1,
+      "kcal": 942,
+      "f": 32.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1560",
+      "n": "CoCo壱 ソーセージ(4本)カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 21.2,
+      "kcal": 980,
+      "f": 41.5,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1209",
+      "n": "CoCo壱 ロースカツ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 16.1,
+      "kcal": 415,
+      "f": 30.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1245",
+      "n": "CoCo壱 チキンカツ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 21.3,
+      "kcal": 414,
+      "f": 25.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1523",
+      "n": "CoCo壱 パリパリチキンカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 29.2,
+      "kcal": 995,
+      "f": 36.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1632",
+      "n": "CoCo壱 フライドチキン(5個)カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 28.6,
+      "kcal": 1026,
+      "f": 41.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-4-813",
+      "n": "CoCo壱 CoCo de チキン",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 15.4,
+      "kcal": 357,
+      "f": 22.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1578",
+      "n": "CoCo壱 メンチカツカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 20.5,
+      "kcal": 1047,
+      "f": 40.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1336",
+      "n": "CoCo壱 豚しゃぶ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 12.6,
+      "kcal": 351,
+      "f": 33.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1300",
+      "n": "CoCo壱 メンチカツ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 9.5,
+      "kcal": 346,
+      "f": 22.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1408",
+      "n": "CoCo壱 フライドチキン(5個)",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 17.6,
+      "kcal": 325,
+      "f": 23.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-4-886",
+      "n": "CoCo壱 ポークカレーパン",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 8.8,
+      "kcal": 319,
+      "f": 19.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1227",
+      "n": "CoCo壱 パリパリチキン",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 18.2,
+      "kcal": 294,
+      "f": 18.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1281",
+      "n": "CoCo壱 ソーセージ(4本)",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 10.2,
+      "kcal": 279,
+      "f": 23.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1084",
+      "n": "CoCo壱 低糖質カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 8,
+      "kcal": 255,
+      "f": 15.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-1134",
+      "n": "CoCo壱 手仕込ささみカツ（1本）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 16.3,
+      "kcal": 241,
+      "f": 14.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-862",
+      "n": "CoCo壱 フィッシュフライ(2本)",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 11.1,
+      "kcal": 241,
+      "f": 14,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-4-777",
+      "n": "CoCo壱 ナン",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 8.1,
+      "kcal": 241,
+      "f": 2.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1372",
+      "n": "CoCo壱 ハンバーグ(2個)",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 13.2,
+      "kcal": 224,
+      "f": 14.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1534",
+      "n": "CoCo壱 フライドチキン(3個)サラダ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 11.2,
+      "kcal": 220,
+      "f": 14.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1390",
+      "n": "CoCo壱 フライドチキン(3個)",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 10.6,
+      "kcal": 195,
+      "f": 13.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-898",
+      "n": "CoCo壱 チーズ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 12.9,
+      "kcal": 195,
+      "f": 15.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1157",
+      "n": "CoCo壱 牛すじ煮込み",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 14,
+      "kcal": 145,
+      "f": 7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-771",
+      "n": "CoCo壱 イカ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 13.1,
+      "kcal": 138,
+      "f": 6.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-680",
+      "n": "CoCo壱 海の幸",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 17.8,
+      "kcal": 125,
+      "f": 4.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
       "id": "famima-080-25",
@@ -13115,12 +15994,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573542163107.html"
     },
     {
-      "id": "shinyoshida-010500000308304905420142070",
-      "n": "半熟玉子とほうれん草 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420142070.html"
-    },
-    {
       "id": "shinyoshida-010500000308304992143106878",
       "n": "ポテトとベーコンのチーズ焼き 1パック",
       "yen": 398,
@@ -13151,12 +16024,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902678302676.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277568091",
-      "n": "煮物盛合せ 小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277568091.html"
-    },
-    {
       "id": "shinyoshida-010500000308300000049413724",
       "n": "味つけゆでたまご 1パック",
       "yen": 168,
@@ -13175,12 +16042,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973967112504.html"
     },
     {
-      "id": "shinyoshida-010500000308304560325070806",
-      "n": "築地丸武 だし巻き玉子 4切れ 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304560325070806.html"
-    },
-    {
       "id": "shinyoshida-010500000308304904577079697",
       "n": "牛肉と出汁の旨味が利いた肉じゃが 小 1パック",
       "yen": 228,
@@ -13193,12 +16054,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420151430.html"
     },
     {
-      "id": "shinyoshida-010500000308304905420151584",
-      "n": "国産もつ煮込み 味噌味 小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420151584.html"
-    },
-    {
       "id": "shinyoshida-010500000308304905420153380",
       "n": "鶏皮甘辛和え 1パック",
       "yen": 398,
@@ -13209,18 +16064,6 @@
       "n": "砂肝ねぎ塩たれ 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420153397.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277305467",
-      "n": "9品目具材の筑前煮（大）1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277305467.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277305474",
-      "n": "9品目具材の筑前煮（中）1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277305474.html"
     },
     {
       "id": "shinyoshida-010500000308304973277365850",
@@ -13277,34 +16120,16 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143095424.html"
     },
     {
-      "id": "shinyoshida-010500000308304992143095431",
-      "n": "だし汁が染みる揚げ出し豆腐 小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143095431.html"
-    },
-    {
       "id": "shinyoshida-010500000308304992143096896",
       "n": "じっくり煮込んだ国産牛肉の煮込み豆腐 1パック",
       "yen": 298,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143096896.html"
     },
     {
-      "id": "shinyoshida-010500000308304992143096902",
-      "n": "じっくり煮込んだ国産牛肉の煮込み豆腐 小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143096902.html"
-    },
-    {
       "id": "shinyoshida-010500000308304992143101088",
       "n": "自社製玉子焼き ハーフ 1パック",
       "yen": 450,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143101088.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143101095",
-      "n": "自社製玉子焼き 6切れ 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143101095.html"
     },
     {
       "id": "shinyoshida-010500000308304992143107028",
@@ -13325,34 +16150,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143108643.html"
     },
     {
-      "id": "shinyoshida-010500000308304992143109695",
-      "n": "豆腐ハンバーグ デミグラスソース仕立て 1パック",
-      "yen": 358,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143109695.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304515187133176",
-      "n": "中華4種セット 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304515187133176.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143096872",
-      "n": "豚肉ときくらげの中華風玉子炒め 1パック",
-      "yen": 328,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143096872.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143110127",
-      "n": "豆腐を味わう四川風麻婆豆腐 1パック",
+      "id": "shinyoshida-010500000308304973277466809",
+      "n": "シビ辛麻辣春雨 1パック",
       "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143110127.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143110134",
-      "n": "豆腐を味わう四川風麻婆豆腐 小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143110134.html"
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277466809.html"
     },
     {
       "id": "shinyoshida-010500000308304977024000735",
@@ -13371,12 +16172,6 @@
       "n": "キャベツが美味しい広島風お好み焼き 小 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304977024045002.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143108827",
-      "n": "三段仕込みのつゆだく牛丼 1パック",
-      "yen": 458,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143108827.html"
     },
     {
       "id": "shinyoshida-010500000308304992143110318",
@@ -13409,12 +16204,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304974111254576.html"
     },
     {
-      "id": "shinyoshida-010500000308304992143105239",
-      "n": "ハンバーグ＆ナポリタン 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143105239.html"
-    },
-    {
       "id": "shinyoshida-010500000308304992143110851",
       "n": "ロコモコ丼 1パック",
       "yen": 548,
@@ -13439,12 +16228,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143109930.html"
     },
     {
-      "id": "shinyoshida-010500000308304992143110325",
-      "n": "自社製焼豚と11種具材の焼きビーフン 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143110325.html"
-    },
-    {
       "id": "shinyoshida-010500000308304992143110332",
       "n": "自社製焼豚ピリ辛焼きビーフン 1パック",
       "yen": 398,
@@ -13463,22 +16246,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143095653.html"
     },
     {
-      "id": "shinyoshida-010500000308304992143103501",
-      "n": "トマトを味わうミネストローネ 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143103501.html"
-    },
-    {
       "id": "shinyoshida-010500000308304992143104683",
       "n": "麻辣湯 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143104683.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143110929",
-      "n": "焼きおにぎりだし茶漬け かき揚げ 1パック",
-      "yen": 348,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143110929.html"
     },
     {
       "id": "shinyoshida-010500000308302736511000000",
@@ -13493,22 +16264,16 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302736521000000.html"
     },
     {
+      "id": "shinyoshida-010500000308304902150753323",
+      "n": "博多明太もちグラタン 1パック",
+      "yen": 458,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902150753323.html"
+    },
+    {
       "id": "shinyoshida-010500000308304902150753361",
       "n": "紅ずわいがにドリア 1パック",
       "yen": 358,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902150753361.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304902150755259",
-      "n": "オーベルジーヌ監修カレードリア 1パック",
-      "yen": 548,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902150755259.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304904577099176",
-      "n": "ミラノ風ドリア 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577099176.html"
     },
     {
       "id": "shinyoshida-010500000308304904577099183",
@@ -13517,40 +16282,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577099183.html"
     },
     {
-      "id": "shinyoshida-010500000308304905420152987",
-      "n": "きのこの和風醤油スパゲッティ 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420152987.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304905420153007",
-      "n": "あさりの旨み ボンゴレスパゲッティ 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420153007.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304905420153489",
-      "n": "濃厚トマトソースの冷製パスタ 1パック",
-      "yen": 458,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420153489.html"
-    },
-    {
       "id": "shinyoshida-010500000308304905420353421",
       "n": "ミートソーススパゲッティ 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420353421.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414697308",
-      "n": "トップバリュ お揚げのおいしいきつねうどん 1パック",
-      "yen": 358,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414697308.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414723854",
-      "n": "トップバリュ レモンで食べる冷しうどん 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414723854.html"
     },
     {
       "id": "shinyoshida-010500000308304549414723878",
@@ -13589,12 +16324,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277529283.html"
     },
     {
-      "id": "shinyoshida-010500000308304992143108698",
-      "n": "鬼おろし風豚しゃぶうどん 1パック",
-      "yen": 458,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143108698.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414697285",
       "n": "3種野菜のかき揚げそば 1パック",
       "yen": 398,
@@ -13625,12 +16354,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414723953.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414724004",
-      "n": "北海道幌内産玄蕎麦 ざるそば 1パック",
-      "yen": 378,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414724004.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414723885",
       "n": "トップバリュ 6種具材のこだわり冷し中華 1パック",
       "yen": 398,
@@ -13643,52 +16366,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414723892.html"
     },
     {
-      "id": "shinyoshida-010500000308304904577163686",
-      "n": "野菜たっぷり！冷しサラダラーメン 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577163686.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304904712157587",
-      "n": "トップバリュ リンガーハット監修国産野菜のちゃんぽん 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904712157587.html"
-    },
-    {
       "id": "shinyoshida-010500000308304904712161386",
       "n": "冷し中華ごま 1パック",
       "yen": 498,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904712161386.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304906245313522",
-      "n": "ピリ辛冷しごまだれ担々麺 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304906245313522.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304971367077089",
-      "n": "香味油と焦がし葱薫る ざる中華 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304971367077089.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143108704",
-      "n": "自社製チャーシューの冷しラーメン 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143108704.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143110936",
-      "n": "ワシワシ麺の冷やしラーメン 1パック",
-      "yen": 598,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143110936.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414726480",
-      "n": "トップバリュ たっぷりレタス 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414726480.html"
     },
     {
       "id": "shinyoshida-010500000308304549414726497",
@@ -13701,18 +16382,6 @@
       "n": "トップバリュ レモンタルタルソースのチキンカツサンド 1パック",
       "yen": 378,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414739350.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414726503",
-      "n": "トップバリュ ミックスサンド 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414726503.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414726510",
-      "n": "トップバリュ ハムとたまごのサンド 1パック",
-      "yen": 278,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414726510.html"
     },
     {
       "id": "shinyoshida-010500000308304549414726527",
@@ -13737,18 +16406,6 @@
       "n": "トップバリュ たまごサンド 1パック",
       "yen": 268,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414728163.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414736908",
-      "n": "トップバリュ 甘夏入りフルーツサンド 1パック",
-      "yen": 358,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414736908.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414663686",
-      "n": "トップバリュ ハムたまごレタスランチ 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414663686.html"
     },
     {
       "id": "shinyoshida-010500000308304549414720518",
@@ -13857,12 +16514,6 @@
       "n": "【魚屋の鮨】魚屋のにぎり鮨（えび・まぐろたたき入）【わさび抜き】9貫 1パック",
       "yen": 1080,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302748770000000.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549741028295",
-      "n": "イタリアンサラダ 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549741028295.html"
     },
     {
       "id": "shinyoshida-010500000308304549414543391",
@@ -14099,22 +16750,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304901250953176.html"
     },
     {
-      "id": "shinyoshida-010500000308304974103614098",
-      "n": "野菜スティックサラダ 1パック",
-      "yen": 258,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304974103614098.html"
-    },
-    {
       "id": "shinyoshida-010500000308304986858250438",
       "n": "ツナとわかめのコーンサラダ 1パック",
       "yen": 228,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858250438.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304986858256683",
-      "n": "カリカリごぼうのひじき雑穀サラダ 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858256683.html"
     },
     {
       "id": "shinyoshida-010500000308304986858321268",
@@ -14135,12 +16774,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322104.html"
     },
     {
-      "id": "shinyoshida-010500000308304986858322111",
-      "n": "海老ブロッコリーのサラダ 小 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322111.html"
-    },
-    {
       "id": "shinyoshida-010500000308304986858322128",
       "n": "ローストチキンのシーザーサラダ 1パック",
       "yen": 298,
@@ -14159,12 +16792,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322579.html"
     },
     {
-      "id": "shinyoshida-010500000308304986858322586",
-      "n": "ごろっとトマトの棒棒鶏サラダ小 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322586.html"
-    },
-    {
       "id": "shinyoshida-010500000308304986858322593",
       "n": "13品目のバランスサラダ大 1パック",
       "yen": 498,
@@ -14177,40 +16804,16 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322609.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414725278",
-      "n": "お芋が美味しいポテトサラダ大 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414725278.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414725285",
       "n": "お芋が美味しいポテトサラダ中 1パック",
       "yen": 198,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414725285.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414725292",
-      "n": "お芋が美味しいポテトサラダ小 1パック",
-      "yen": 158,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414725292.html"
-    },
-    {
       "id": "shinyoshida-010500000308304904577150426",
       "n": "8品目の野菜たっぷりポテトサラダ 1パック",
       "yen": 348,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577150426.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304904577150433",
-      "n": "8品目の野菜たっぷりポテトサラダ 小 1パック",
-      "yen": 248,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577150433.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304904577163853",
-      "n": "枝豆好きのためのおつまみポテトサラダ 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577163853.html"
     },
     {
       "id": "shinyoshida-010500000308304549414725391",
@@ -14243,16 +16846,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577163556.html"
     },
     {
-      "id": "shinyoshida-010500000308304562173241001",
-      "n": "シャキっと食感！ごぼうサラダ小 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304562173241001.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304562173244200",
-      "n": "キャラメルくりーむパンプキン 1パック",
-      "yen": 328,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304562173244200.html"
+      "id": "shinyoshida-010500000308304904577163570",
+      "n": "王道の味付け！もちもち食感マカロニサラダ 20％増量 1パック",
+      "yen": 298,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577163570.html"
     },
     {
       "id": "shinyoshida-010500000308304562173244217",
@@ -14279,10 +16876,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577122447.html"
     },
     {
-      "id": "shinyoshida-010500000308304573417923843",
-      "n": "たこのレモンマリネ 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573417923843.html"
+      "id": "shinyoshida-010500000308304904577163877",
+      "n": "3種サラダ盛り合わせ 1パック",
+      "yen": 398,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577163877.html"
     },
     {
       "id": "shinyoshida-010500000308304904577132378",
@@ -14297,12 +16894,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277140488.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277140495",
-      "n": "中華春雨サラダ小 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277140495.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277203862",
       "n": "春雨と木耳の酢の物 大 1パック",
       "yen": 298,
@@ -14315,22 +16906,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277203879.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277208959",
-      "n": "たことわかめの酢の物 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277208959.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277208966",
       "n": "たことわかめの酢の物 小 1パック",
       "yen": 198,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277208966.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277373381",
-      "n": "野菜と食べるあじの南蛮漬け 1パック",
-      "yen": 328,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277373381.html"
     },
     {
       "id": "shinyoshida-010500000308304973277373398",
@@ -14375,24 +16954,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277301490.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277301759",
-      "n": "大根とちぎり揚げの煮物 小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277301759.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277310317",
-      "n": "トップバリュ 8品目の卯の花 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277310317.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277310324",
-      "n": "トップバリュ 8品目の卯の花 小 1パック",
-      "yen": 148,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277310324.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277319136",
       "n": "トップバリュ 7品目のひじき煮 大 1パック",
       "yen": 298,
@@ -14405,28 +16966,16 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277319143.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277319150",
-      "n": "トップバリュ 7品目のひじき煮 小 1パック",
-      "yen": 148,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277319150.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277339042",
       "n": "れんこん金平 小 1パック",
       "yen": 148,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277339042.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277348358",
-      "n": "トップバリュ たけのこ土佐煮 大 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277348358.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277348365",
-      "n": "トップバリュ たけのこ土佐煮 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277348365.html"
+      "id": "shinyoshida-010500000308304973277340048",
+      "n": "れんこん金平 1パック",
+      "yen": 198,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277340048.html"
     },
     {
       "id": "shinyoshida-010500000308304973277349904",
@@ -14465,34 +17014,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277367083.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277378317",
-      "n": "トップバリュ 6品目の切干大根煮 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277378317.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277378324",
-      "n": "トップバリュ 6品目の切干大根煮 小 1パック",
-      "yen": 148,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277378324.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277539442",
       "n": "和惣菜9点盛 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277539442.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277540318",
-      "n": "和惣菜6点盛 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277540318.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143102108",
-      "n": "かぼちゃの煮物 小 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143102108.html"
     },
     {
       "id": "shinyoshida-010500000308304992143102115",
@@ -14507,12 +17032,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304901250195378.html"
     },
     {
-      "id": "shinyoshida-010500000308304573417923409",
-      "n": "蒸し鶏とキャベツのうま塩和え 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573417923409.html"
-    },
-    {
       "id": "shinyoshida-010500000308304573417923416",
       "n": "蒸し鶏とキャベツのうま塩和え大 1パック",
       "yen": 298,
@@ -14523,12 +17042,6 @@
       "n": "蒸し鶏中華くらげ 1パック",
       "yen": 298,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573417923928.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304901250950182",
-      "n": "ナムル盛り合わせ小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304901250950182.html"
     },
     {
       "id": "shinyoshida-010500000308304904577138813",
@@ -14549,52 +17062,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577161811.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277250132",
-      "n": "おくらの胡麻和え 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277250132.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277348846",
       "n": "ピリ辛穂先たけのこ中華風 1パック",
       "yen": 298,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277348846.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143102863",
-      "n": "茄子の揚げびたし 小 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143102863.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143102870",
-      "n": "茄子の揚げびたし 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143102870.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304901250192902",
-      "n": "結び昆布 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304901250192902.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304573417908222",
-      "n": "おつまみ胡瓜 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573417908222.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304573417908239",
-      "n": "おつまみ胡瓜 大 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573417908239.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304573417916883",
-      "n": "ひたしそら豆 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573417916883.html"
     },
     {
       "id": "shinyoshida-010500000308304573417923195",
@@ -15179,18 +17650,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302727746000000.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414738636",
-      "n": "手巻おにぎり おかか 1個",
-      "yen": 148,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414738636.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414738643",
-      "n": "手巻おにぎり 焼鮭（北海道産秋鮭使用）1個",
-      "yen": 178,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414738643.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414738650",
       "n": "手巻おにぎり 辛子明太子 1個",
       "yen": 178,
@@ -15233,18 +17692,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414739084.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414738698",
-      "n": "トップバリュ ベストプライス 香ばし焼おにぎり 1個",
-      "yen": 98,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414738698.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414738704",
-      "n": "梅づくしのもち麦入りおにぎり 1個",
-      "yen": 128,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414738704.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414745061",
       "n": "赤飯おにぎり 1個",
       "yen": 158,
@@ -15255,18 +17702,6 @@
       "n": "藻塩仕立ての塩おにぎり 1個",
       "yen": 98,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304949428582100.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304949428582902",
-      "n": "生姜香るあさりおにぎり 1個",
-      "yen": 128,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304949428582902.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304974111253128",
-      "n": "直巻おにぎり 和風ツナマヨネーズ 1個",
-      "yen": 98,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304974111253128.html"
     },
     {
       "id": "shinyoshida-010500000308304974111253135",
@@ -15371,12 +17806,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414694444.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414738742",
-      "n": "しらすとあさりごはん 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414738742.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414680942",
       "n": "トップバリュ プロのひと品 橋本幹造監修 さばの白みそ煮 2切入",
       "yen": 358,
@@ -15393,12 +17822,6 @@
       "n": "トップバリュ プロのひと品 日高良実監修 デミグラスハンバーグ 200g",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414372113.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414620092",
-      "n": "トップバリュ 牛カルビ焼き 110g",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414620092.html"
     },
     {
       "id": "shinyoshida-010500000308304549414673616",
@@ -15449,6 +17872,18 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414538823.html"
     },
     {
+      "id": "shinyoshida-010500000308304549414686876",
+      "n": "トップバリュ プロのひと品 橋本幹造監修 野菜の焚き合わせ 170g",
+      "yen": 298,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414686876.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304549414704136",
+      "n": "トップバリュ 筑前煮 170g",
+      "yen": 298,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414704136.html"
+    },
+    {
       "id": "shinyoshida-010500000308304549414713831",
       "n": "トップバリュ プロのひと品 橋本幹造監修 お麩とれんこん入り鶏のみぞれ煮 160g",
       "yen": 398,
@@ -15461,6 +17896,12 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414517125.html"
     },
     {
+      "id": "shinyoshida-010500000308304549414529302",
+      "n": "トップバリュ ジャスミンライス 180g",
+      "yen": 258,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414529302.html"
+    },
+    {
       "id": "shinyoshida-010500000308304549414653663",
       "n": "トップバリュ おうちで楽しむcafeごはん 十勝豚丼 110g",
       "yen": 398,
@@ -15471,12 +17912,6 @@
       "n": "トップバリュ もぐもぐ味わうスープ 具だくさん豚汁 240g",
       "yen": 228,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414699609.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414699616",
-      "n": "トップバリュ もぐもぐ味わうスープ いわしつみれ汁 220g",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414699616.html"
     },
     {
       "id": "shinyoshida-010500000308304549414699630",
@@ -15507,6 +17942,12 @@
       "n": "トップバリュ 栗かぼちゃ煮 95g",
       "yen": 138,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414655193.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304549414655216",
+      "n": "トップバリュ きんぴらごぼう 75g",
+      "yen": 138,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414655216.html"
     },
     {
       "id": "shinyoshida-010500000308304549414685299",
@@ -15557,6 +17998,12 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414651461.html"
     },
     {
+      "id": "shinyoshida-010500000308304549414651478",
+      "n": "トップバリュ 国産じゃがいものポテトサラダ 120g",
+      "yen": 138,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414651478.html"
+    },
+    {
       "id": "shinyoshida-010500000308304549414651485",
       "n": "トップバリュ カロリー30％カット 国産じゃがいものポテトサラダ 120g",
       "yen": 138,
@@ -15579,6 +18026,12 @@
       "n": "トップバリュベストプライス マカロニサラダ 410g",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414689426.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304549414689433",
+      "n": "トップバリュベストプライス 国産じゃがいものポテトサラダ 410g",
+      "yen": 398,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414689433.html"
     },
     {
       "id": "shinyoshida-010500000308304549414698534",

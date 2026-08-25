@@ -12,6 +12,8 @@ const SOURCES={
   lawson:'https://www.lawson.co.jp/recommend/original/',
   aeon:'https://www.topvalu.net/items/',
   aeonShinyoshida:'https://shop.aeon.com/netsuper/01050000030830/15.html',
+  dennys:'https://www.dennys.jp/safety/nutritional/',
+  cocoichi:'https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf',
 };
 
 function clean(s){return s.replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
@@ -168,6 +170,44 @@ async function crawlYoshinoya(){
   const ranked=unique.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal));
   const selected=ranked.slice(0,70).concat(ranked.filter(x=>/牛丼|豚丼|牛皿|豚皿|サラダ/.test(x.n)));
   return [...new Map(selected.map(x=>[x.n,x])).values()];
+}
+
+async function pdfDocument(url){
+  const response=await fetch(url,{headers:{'user-agent':'diet-app-menu-updater/1.0 (+https://github.com/fmokutagawa-design/diet-app)'}});
+  if(!response.ok)throw new Error(`${url}: HTTP ${response.status}`);
+  const pdfjs=await import('pdfjs-dist/legacy/build/pdf.mjs');
+  return pdfjs.getDocument({data:new Uint8Array(await response.arrayBuffer())}).promise;
+}
+
+async function crawlNutritionPdf({url,prefix,store,label,cols,minCount}){
+  const pdf=await pdfDocument(url),rows=[];
+  for(let pageNo=1;pageNo<=pdf.numPages;pageNo++){
+    const content=await (await pdf.getPage(pageNo)).getTextContent();
+    const tokens=content.items.filter(x=>x.str.trim()).map(x=>({s:x.str.trim(),x:x.transform[4],y:x.transform[5]}));
+    for(const kt of tokens.filter(x=>x.x>=cols.kcal[0]&&x.x<cols.kcal[1]&&/^\d[\d,.]*$/.test(x.s))){
+      const at=range=>tokens.find(x=>Math.abs(x.y-kt.y)<4&&x.x>=range[0]&&x.x<range[1])?.s;
+      const kcal=Number(kt.s.replaceAll(',','')),protein=Number(at(cols.protein)),fat=Number(at(cols.fat));
+      if(![kcal,protein,fat].every(Number.isFinite)||kcal<120||kcal>1050||protein<8)continue;
+      const name=tokens.filter(x=>x.x<cols.kcal[0]&&Math.abs(x.y-kt.y)<9&&/[ぁ-んァ-ヶ一-龠]/.test(x.s)&&!/^(?:\[|【|（|\(|※|＊)/.test(x.s)&&!/エネルギー|たんぱく質|メニュー|栄養成分|セット除く$/.test(x.s)).sort((a,b)=>Math.abs(a.y-kt.y)-Math.abs(b.y-kt.y)||a.x-b.x)[0]?.s;
+      if(!name||/ドリンク|コーヒー|紅茶|ビール|ワイン|ソース|トッピング|単品ミニ|ライス小|お子さま/.test(name))continue;
+      rows.push({id:`${prefix}-${pageNo}-${Math.round(kt.y)}`,n:`${label} ${name}`,s:[store],p:protein,kcal,f:fat,yen:null,days:dayTypes(kcal),kind:'gai',official:true,category:label,sourceUrl:url});
+    }
+  }
+  const unique=[...new Map(rows.map(x=>[x.n,x])).values()];
+  if(unique.length<minCount)throw new Error(`${label} parse yielded only ${unique.length} items`);
+  return unique.sort((a,b)=>Math.abs(a.kcal-700)-Math.abs(b.kcal-700)).slice(0,90);
+}
+
+async function crawlDennys(){
+  const landing=await fetchText(SOURCES.dennys);
+  const path=landing.match(/href=["']([^"']*nutritive_value_A\.pdf[^"']*)["']/)?.[1];
+  if(!path)throw new Error('Current Denny\'s nutrition PDF was not found');
+  const url=new URL(path,SOURCES.dennys).href;
+  return {items:await crawlNutritionPdf({url,prefix:'dennys',store:'dennys',label:'デニーズ',cols:{kcal:[520,590],protein:[590,670],fat:[670,725]},minCount:30}),url};
+}
+
+async function crawlCocoichi(){
+  return crawlNutritionPdf({url:SOURCES.cocoichi,prefix:'cocoichi',store:'cocoichi',label:'CoCo壱',cols:{kcal:[630,730],protein:[730,835],fat:[835,910]},minCount:20});
 }
 
 async function crawlFamima(){
@@ -378,6 +418,26 @@ try{
 }catch(error){
   items=items.concat(previous.items.filter(x=>x.id?.startsWith('yoshinoya-')));
   sources.yoshinoya={...(sources.yoshinoya||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.yoshinoya,error:String(error.message||error)};
+  if(!items.length)throw error;
+}
+items=items.filter(x=>!x.id?.startsWith('dennys-'));
+try{
+  const found=await crawlDennys();
+  items=items.concat(found.items);
+  sources.dennys={status:'ok',updatedAt:new Date().toISOString(),url:found.url,count:found.items.length,label:'デニーズ公式栄養成分一覧'};
+}catch(error){
+  items=items.concat(previous.items.filter(x=>x.id?.startsWith('dennys-')));
+  sources.dennys={...(sources.dennys||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.dennys,error:String(error.message||error)};
+  if(!items.length)throw error;
+}
+items=items.filter(x=>!x.id?.startsWith('cocoichi-'));
+try{
+  const found=await crawlCocoichi();
+  items=items.concat(found);
+  sources.cocoichi={status:'ok',updatedAt:new Date().toISOString(),url:SOURCES.cocoichi,count:found.length,label:'CoCo壱番屋公式栄養成分情報'};
+}catch(error){
+  items=items.concat(previous.items.filter(x=>x.id?.startsWith('cocoichi-')));
+  sources.cocoichi={...(sources.cocoichi||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.cocoichi,error:String(error.message||error)};
   if(!items.length)throw error;
 }
 items=items.filter(x=>!x.id?.startsWith('famima-'));

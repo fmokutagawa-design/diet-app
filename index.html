@@ -129,6 +129,8 @@ label.lbl{display:block;color:var(--muted);font-size:.82rem;margin-bottom:6px}
 .rescue-buy-head h3{font-size:.92rem;margin:0}.rescue-buy-list{margin-top:10px}
 .rescue-buy-item{background:var(--surface2);border:1px solid color-mix(in srgb,var(--primary) 30%,var(--line));border-radius:12px;padding:11px;margin-bottom:8px}
 .rescue-buy-stores{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.rescue-buy-more{width:100%;min-height:42px;border:1px solid var(--line);border-radius:10px;background:var(--surface2);color:var(--text);font-weight:800;cursor:pointer}
+.stop-box{margin-bottom:12px;padding:12px;border:2px solid color-mix(in srgb,var(--orange) 65%,var(--line));border-radius:13px;background:color-mix(in srgb,var(--orange) 9%,var(--surface2))}
+.stop-title{font-size:1rem;font-weight:900}.stop-copy{font-size:.78rem;color:var(--muted);line-height:1.55;margin:4px 0 9px}.stop-list{margin-top:9px}.stop-item{padding:10px;border-radius:11px;background:var(--surface);border:1px solid var(--line);margin-top:7px}.stop-item button{width:100%;min-height:40px;border:0;border-radius:9px;background:var(--orange);color:#241600;font-weight:900;margin-top:7px}.stop-success{text-align:center;padding:8px 2px}.stop-success strong{display:block;font-size:1.08rem;color:var(--good);margin-bottom:5px}
 .home-more{margin:12px 0 22px;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
 .home-more>summary{list-style:none;cursor:pointer;padding:17px 16px;font-weight:900;color:var(--text);display:flex;justify-content:space-between;align-items:center;gap:10px}
 .home-more>summary::-webkit-details-marker{display:none}.home-more>summary::after{content:'▼';font-size:.75rem;color:var(--muted);transition:transform .15s}.home-more[open]>summary::after{transform:rotate(180deg)}
@@ -344,6 +346,7 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
     <!-- 最優先: 空腹時に迷わず救済食へ -->
     <div class="card" id="homeRescueCard">
       <h2>🛟 今すぐ救済食 <span class="tag" id="homeRescueTag">—</span></h2>
+      <div class="stop-box" id="homeStopLoss"></div>
       <div id="homeRescue"></div>
       <button class="btn good" data-go="meal" style="margin-top:10px;width:100%">買ってすぐ食べる候補・在庫を見る →</button>
     </div>
@@ -963,7 +966,7 @@ function freshState(){
     tdee:{correction:0,lastCalcKey:null},
     homeTrainLog:{},
     muscleLog:{},ffmiTarget:null,
-    foodLog:{}, skippedMeals:{}, train:{time:null}, session:{date:null, time:null, pinned:[], excluded:[], done:{}, off:false, shrink:0}, weightLog:{}, bfLog:{}, badges:[], bestStreak:0,
+    foodLog:{}, skippedMeals:{}, stopLoss:{}, train:{time:null}, session:{date:null, time:null, pinned:[], excluded:[], done:{}, off:false, shrink:0}, weightLog:{}, bfLog:{}, badges:[], bestStreak:0,
     calMonth:today.getMonth()+1, calYear:today.getFullYear(),
   };
 }
@@ -1400,6 +1403,37 @@ function renderHomeRescue(){
     $('#homeRescue').innerHTML=`<div class="summary"><b>今すぐ作れる救済食がありません。</b><br>${useful?`現在の在庫：${useful}`:'ブロッコリー・鶏むね、または豆腐・納豆・卵・めかぶを補充すると救済食が有効になります。'}</div>`;
   }
 }
+let stopStrength='firm',stopOffset=0;
+function stopCandidatePool(){
+  const official=(STORE_ITEMS||[]).filter(x=>x.official&&x.s?.some(s=>['mcdonalds','mos','sukiya','yoshinoya','matsuya','dennys','cocoichi'].includes(s))&&x.kcal>=280&&x.kcal<=1050&&!/ドリンク|コーヒー|紅茶|シェイク|ポテト|サラダ単品|ソース|たれ/.test(x.n));
+  return official.concat(STOP_FALLBACKS||[]);
+}
+function stopCandidates(level){
+  const cfg={light:{target:500,min:300,max:650},firm:{target:700,min:450,max:850},panic:{target:850,min:580,max:1050}}[level]||{target:700,min:450,max:850};
+  const pool=stopCandidatePool().filter(x=>x.kcal>=cfg.min&&x.kcal<=cfg.max);
+  const best=new Map();
+  pool.forEach(x=>{
+    const store=x.s?.[0]||'gai',score=Math.abs(x.kcal-cfg.target)-(x.official?35:0)-(Number(x.p)||0)*.5;
+    if(!best.has(store)||score<best.get(store).score)best.set(store,{x,score});
+  });
+  let out=[...best.values()].sort((a,b)=>a.score-b.score).map(v=>v.x);
+  if(level==='panic'){
+    const human=STOP_FALLBACKS.filter(x=>/カツ丼|ラーメン|油そば|ビリヤニ/.test(x.n));
+    out=[...human,...out.filter(x=>!human.includes(x))];
+  }
+  return out;
+}
+function renderHomeStopLoss(){
+  const el=$('#homeStopLoss');if(!el)return;
+  if(!S.stopLoss)S.stopLoss={};
+  const stopped=S.stopLoss[todayKey],active=stopped&&Date.now()-(stopped.at||0)<3*60*60*1000;
+  if(active){
+    el.innerHTML=`<div class="stop-success"><strong>✓ 一店舗・一食で停止中</strong><div>${stopped.name}（約${Math.round(stopped.kcal)}kcal）で終了。<b>二軒目に行かなければ救済成功です。</b></div>${stopped.urge?'<div class="why" style="margin-top:8px"><b>新しい店には入りません。</b>水か無糖飲料を買って帰宅し、まだ空腹なら直下の「家の満腹救済食」を先に食べます。</div>':'<button class="btn ghost" data-stop-urge="1" style="margin-top:9px;width:100%">まだ二軒目へ行きそう</button>'}</div>`;return;
+  }
+  const labels={light:'軽く止める',firm:'しっかり食べる',panic:'暴走寸前'},all=stopCandidates(stopStrength),items=all.length?Array.from({length:Math.min(3,all.length)},(_,i)=>all[(stopOffset+i)%all.length]):[];
+  el.innerHTML=`<div class="stop-title">🚧 外食で一食だけ食べて止める</div><div class="stop-copy">健康食で我慢できない時用。<b>一店舗・一会計・一食</b>なら成功。並盛や一皿を選び、セット・大盛り・二軒目を切ります。</div><div class="seg">${Object.keys(labels).map(k=>`<button data-stop-strength="${k}" class="${stopStrength===k?'active':''}">${labels[k]}</button>`).join('')}</div><div class="stop-list">${items.map((x,i)=>`<div class="stop-item"><b>${x.n}</b><div class="small muted">約${Math.round(x.kcal)}kcal${Number.isFinite(x.p)?`・P${Math.round(x.p)}g`:''} ／ ${x.official?'公式栄養値':'概算・現物優先'}</div><div class="small" style="margin-top:4px">止め方：${x.rule||'単品・普通量で注文し、この店で終了'}</div><button data-stop-eat="${i}">この一食で止める・記録</button></div>`).join('')}</div>${all.length>3?'<button class="btn ghost" data-stop-more="1" style="margin-top:8px">ほかの店・一食候補に入れ替える</button>':''}`;
+  el._items=items;
+}
 function renderHomeMeal(){
   ensureChosen();
   const dayType=S.meal.dayType||todayType();
@@ -1455,6 +1489,7 @@ function afterDataChange(){
   if($('#histList'))renderFoodHistory();
   if($('#balanceBars'))renderBalance();
   if($('#homeRescue'))renderHomeRescue();
+  if($('#homeStopLoss'))renderHomeStopLoss();
   if($('#homeMeal'))renderHomeMeal();
   if($('#homeTrain'))renderHomeTrain();
   if($('#sessionList'))renderWorkoutPlan();
@@ -2375,7 +2410,7 @@ function renderHome(){
   const c=calc();
   $('#kCal').innerHTML=`${c.daily} <small>kcal</small>`;
   $('#kPfc').innerHTML=`P${c.protein} / F${c.fat} / C${c.carb}<small> g</small>`;
-  renderBalance();renderBodyQuick();renderFirstGoal();renderHomeRescue();renderHomeMeal();renderHomeTrain();renderAchieve();renderReview();
+  renderBalance();renderBodyQuick();renderFirstGoal();renderHomeRescue();renderHomeStopLoss();renderHomeMeal();renderHomeTrain();renderAchieve();renderReview();
   renderTdeeCard(c);renderPlateauCard();renderNightShiftCard();
   renderMealSuggestCard();renderWorkoutSuggestCard();renderFfmiCard();renderTrainScoreCard();
   // 深掘り（折りたたみ内）
@@ -2802,10 +2837,26 @@ $('#addMachineBtn').addEventListener('click',()=>{
 });
 
 /* MEALS */
-const B={seven:'s-seven',lawson:'s-lawson',aeon:'s-aeon',mybasket:'s-aeon',create:'s-other',tanto:'s-gai',other:'s-other',famima:'s-famima',sukiya:'s-sukiya',yoshinoya:'s-yoshinoya',mcdonalds:'s-other',mos:'s-other',matsuya:'s-other',shinpachi:'s-other',gai:'s-gai'};
-const N={seven:'セブン',lawson:'ローソン',aeon:'イオン',mybasket:'まいばすけっと',create:'クリエイト',tanto:'食堂たんと',other:'その他',famima:'ファミマ',sukiya:'すき家',yoshinoya:'吉野家',mcdonalds:'マクドナルド',mos:'モス',matsuya:'松屋',shinpachi:'しんぱち食堂',gai:'外食'};
+const B={seven:'s-seven',lawson:'s-lawson',aeon:'s-aeon',mybasket:'s-aeon',create:'s-other',tanto:'s-gai',other:'s-other',famima:'s-famima',sukiya:'s-sukiya',yoshinoya:'s-yoshinoya',mcdonalds:'s-other',mos:'s-other',matsuya:'s-other',shinpachi:'s-other',gusto:'s-gai',yumean:'s-gai',bamiyan:'s-gai',saizeriya:'s-gai',cocos:'s-gai',dennys:'s-gai',cocoichi:'s-gai',hidakaya:'s-gai',ohsho:'s-gai',ramen:'s-other',gai:'s-gai'};
+const N={seven:'セブン',lawson:'ローソン',aeon:'イオン',mybasket:'まいばすけっと',create:'クリエイト',tanto:'食堂たんと',other:'その他',famima:'ファミマ',sukiya:'すき家',yoshinoya:'吉野家',mcdonalds:'マクドナルド',mos:'モス',matsuya:'松屋',shinpachi:'しんぱち食堂',gusto:'ガスト',yumean:'夢庵',bamiyan:'バーミヤン',saizeriya:'サイゼリヤ',cocos:'ココス',dennys:'デニーズ',cocoichi:'CoCo壱',hidakaya:'日高屋',ohsho:'餃子の王将',ramen:'ラーメン店',gai:'外食'};
 let EXTERNAL_MENU_META=null;
 let AEON_SHINYOSHIDA_INVENTORY=[];
+const STOP_FALLBACKS=[
+  {n:'夢庵 焼き魚定食（ご飯半分）',s:['yumean'],kcal:560,p:30,f:null,official:false,estimate:true,rule:'この定食だけ。追加のそば・天ぷらなし'},
+  {n:'ガスト 若鶏グリル＋小ライス',s:['gusto'],kcal:620,p:38,f:null,official:false,estimate:true,rule:'ポテト・デザートを付けず、ここで終了'},
+  {n:'バーミヤン 主菜一皿＋小ライス',s:['bamiyan'],kcal:700,p:25,f:null,official:false,estimate:true,rule:'炒飯・餃子・麺の追加なし'},
+  {n:'サイゼリヤ ハンバーグ一皿',s:['saizeriya'],kcal:500,p:24,f:null,official:false,estimate:true,rule:'ドリア・ピザを重ねず一皿で終了'},
+  {n:'ココス まぐろ系の丼（普通盛り）',s:['cocos'],kcal:560,p:22,f:null,official:false,estimate:true,rule:'大盛り・デザートなし'},
+  {n:'デニーズ 肉料理一皿＋小ライス',s:['dennys'],kcal:650,p:30,f:null,official:false,estimate:true,rule:'セット追加なし'},
+  {n:'CoCo壱 ポークカレー（ライス普通）',s:['cocoichi'],kcal:750,p:16,f:null,official:false,estimate:true,rule:'カツ・チーズ・追加ライスなし'},
+  {n:'日高屋 肉野菜炒め定食（ご飯少なめ）',s:['hidakaya'],kcal:700,p:25,f:null,official:false,estimate:true,rule:'半チャーハン・餃子・麺を足さない'},
+  {n:'餃子の王将 一品料理＋小ライス',s:['ohsho'],kcal:700,p:24,f:null,official:false,estimate:true,rule:'麺・炒飯・餃子セットにしない'},
+  {n:'ビリヤニ 普通盛り一皿',s:['gai'],kcal:800,p:28,f:null,official:false,estimate:true,rule:'ナン・追加カレーなし。一皿で終了'},
+  {n:'カツ丼 普通盛り一杯',s:['gai'],kcal:900,p:30,f:null,official:false,estimate:true,rule:'そばセット・大盛りなし'},
+  {n:'家系ラーメン 並一杯',s:['ramen'],kcal:850,p:30,f:null,official:false,estimate:true,rule:'ライス・餃子・大盛りなし。この一杯で終了'},
+  {n:'油そば 並一杯',s:['ramen'],kcal:780,p:24,f:null,official:false,estimate:true,rule:'追い飯・大盛り・マヨ追加なし'},
+  {n:'つけ麺 並一杯',s:['ramen'],kcal:800,p:28,f:null,official:false,estimate:true,rule:'大盛り・追い飯なし。この一杯で終了'},
+];
 // 商品マスタ（実在の高たんぱく商品中心）。days＝向いている日タイプ
 let STORE_ITEMS=[
   // --- ローソン ---
@@ -4227,6 +4278,23 @@ $('#logBodyBtn').addEventListener('click',()=>{
 });
 $('#homeAddFood').addEventListener('click',()=>openFoodSheet());
 $('#homeRescue').addEventListener('click',e=>{const b=e.target.closest('[data-home-rescue]');if(b)eatRescue(b.dataset.homeRescue);});
+$('#homeStopLoss').addEventListener('click',e=>{
+  const strength=e.target.closest('[data-stop-strength]');
+  if(strength){stopStrength=strength.dataset.stopStrength;stopOffset=0;renderHomeStopLoss();return;}
+  if(e.target.closest('[data-stop-more]')){stopOffset+=3;renderHomeStopLoss();return;}
+  const eat=e.target.closest('[data-stop-eat]');
+  if(eat){
+    const x=$('#homeStopLoss')._items?.[Number(eat.dataset.stopEat)];if(!x)return;
+    if(!S.foodLog[todayKey])S.foodLog[todayKey]=[];
+    S.foodLog[todayKey].push({name:`暴走停止：${x.n}`,kcal:x.kcal,p:Number(x.p)||0,slot:defaultSlot()});
+    if(!S.stopLoss)S.stopLoss={};S.stopLoss[todayKey]={name:x.n,kcal:x.kcal,p:Number(x.p)||0,at:Date.now()};
+    save();afterDataChange();toast('一店舗・一食で停止を記録しました');return;
+  }
+  if(e.target.closest('[data-stop-urge]')){
+    S.stopLoss[todayKey].urge=true;save();renderHomeStopLoss();
+    toast('新しい店には入らず、帰宅して家の救済食へ');
+  }
+});
 $('#startRefeedBtn').addEventListener('click',()=>{
   if(!confirm('今日をリフィード日にして、目安摂取を+400kcalにしますか？'))return;
   startRefeed(400);renderHome();toast('🍚 リフィード日にしました');
@@ -4523,9 +4591,9 @@ function setupHomeFocus(){
   const home=$('#v-home');if(!home||home.querySelector('.home-more'))return;
   const cards=[...home.children].filter(x=>x.classList.contains('card'));
   const primary=[
+    $('#homeRescue')?.closest('.card'),
     $('#homeMeal')?.closest('.card'),
     $('#bHeroNum')?.closest('.card'),
-    $('#homeRescue')?.closest('.card'),
     $('#homeTrain')?.closest('.card')
   ].filter(Boolean);
   const details=document.createElement('details');details.className='home-more';
