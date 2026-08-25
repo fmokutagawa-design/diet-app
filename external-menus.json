@@ -1,48 +1,55 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:35:07.549Z",
+  "generatedAt": "2026-08-25T05:38:18.729Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:35:03.801Z",
+      "updatedAt": "2026-08-25T05:38:00.009Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:35:03.897Z",
+      "updatedAt": "2026-08-25T05:38:00.104Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 60,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:35:04.862Z",
+      "updatedAt": "2026-08-25T05:38:01.951Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:35:05.258Z",
+      "updatedAt": "2026-08-25T05:38:02.255Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
     },
     "yoshinoya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:35:05.657Z",
+      "updatedAt": "2026-08-25T05:38:02.733Z",
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 70,
       "label": "吉野家公式栄養成分表"
     },
     "famima": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:35:07.549Z",
+      "updatedAt": "2026-08-25T05:38:04.783Z",
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 80,
       "label": "ファミマ公式栄養成分情報（関東）"
+    },
+    "seven": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:38:18.729Z",
+      "url": "https://www.sej.co.jp/products/a/",
+      "count": 42,
+      "label": "セブン公式商品情報（関東）"
     }
   },
   "items": [
@@ -7953,6 +7960,954 @@
         "関東"
       ],
       "sourceUrl": "https://www.family.co.jp/goods/noodle/0810821.html"
+    },
+    {
+      "id": "seven-104758",
+      "n": "セブン たんぱく質が摂れる鶏むね肉サラダ",
+      "s": [
+        "seven"
+      ],
+      "p": 21.8,
+      "kcal": 199,
+      "f": 10.9,
+      "yen": 483.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン salad",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/104758/"
+    },
+    {
+      "id": "seven-053953",
+      "n": "セブン たんぱく質が摂れるチキン＆チリ",
+      "s": [
+        "seven"
+      ],
+      "p": 23.3,
+      "kcal": 249,
+      "f": 7.1,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/053953/"
+    },
+    {
+      "id": "seven-150071",
+      "n": "セブン スパイスチキン",
+      "s": [
+        "seven"
+      ],
+      "p": 14.2,
+      "kcal": 200,
+      "f": 11,
+      "yen": 250.56,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン hotsnack",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/150071/"
+    },
+    {
+      "id": "seven-044215",
+      "n": "セブン 炭火焼き鳥丼",
+      "s": [
+        "seven"
+      ],
+      "p": 43.3,
+      "kcal": 628,
+      "f": 14.2,
+      "yen": 699.84,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bento",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/044215/"
+    },
+    {
+      "id": "seven-150407",
+      "n": "セブン ソースｉｎチキンバー（タルタル）",
+      "s": [
+        "seven"
+      ],
+      "p": 8.4,
+      "kcal": 125,
+      "f": 7.7,
+      "yen": 170.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン hotsnack",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/150407/"
+    },
+    {
+      "id": "seven-091629",
+      "n": "セブン 海老天そば",
+      "s": [
+        "seven"
+      ],
+      "p": 19,
+      "kcal": 328,
+      "f": 6.8,
+      "yen": 626.4,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091629/"
+    },
+    {
+      "id": "seven-053955",
+      "n": "セブン パンＤＥサラダ チキンと野菜のコブソース",
+      "s": [
+        "seven"
+      ],
+      "p": 17.1,
+      "kcal": 317,
+      "f": 12.8,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/053955/"
+    },
+    {
+      "id": "seven-304053",
+      "n": "セブン さっぱり梅しそチキンフランス",
+      "s": [
+        "seven"
+      ],
+      "p": 12.7,
+      "kcal": 247,
+      "f": 8,
+      "yen": 224.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bread",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/304053/"
+    },
+    {
+      "id": "seven-103088",
+      "n": "セブン 豚肉ときくらげのふんわり中華玉子炒め",
+      "s": [
+        "seven"
+      ],
+      "p": 15.2,
+      "kcal": 306,
+      "f": 21.3,
+      "yen": 386.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン dailydish",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/103088/"
+    },
+    {
+      "id": "seven-090203",
+      "n": "セブン こだわりソースの海老グラタン",
+      "s": [
+        "seven"
+      ],
+      "p": 19,
+      "kcal": 384,
+      "f": 16.2,
+      "yen": 518.4,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン gratin",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/090203/"
+    },
+    {
+      "id": "seven-090634",
+      "n": "セブン ４種のチーズとろけるマカロニグラタン",
+      "s": [
+        "seven"
+      ],
+      "p": 18.3,
+      "kcal": 376,
+      "f": 13.8,
+      "yen": 356.4,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン gratin",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/090634/"
+    },
+    {
+      "id": "seven-053829",
+      "n": "セブン 照焼チキンとたまごサンド",
+      "s": [
+        "seven"
+      ],
+      "p": 15.8,
+      "kcal": 338,
+      "f": 19.1,
+      "yen": 367.2,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/053829/"
+    },
+    {
+      "id": "seven-091462",
+      "n": "セブン 石臼挽きそば粉の濃厚だし割り冷しとろろそば",
+      "s": [
+        "seven"
+      ],
+      "p": 14.7,
+      "kcal": 340,
+      "f": 3.8,
+      "yen": 529.2,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091462/"
+    },
+    {
+      "id": "seven-090708",
+      "n": "セブン 冷し辛ねぎ肉そば栃木県産そば粉使用",
+      "s": [
+        "seven"
+      ],
+      "p": 25.6,
+      "kcal": 603,
+      "f": 27.4,
+      "yen": 626.4,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/090708/"
+    },
+    {
+      "id": "seven-091618",
+      "n": "セブン アスパラとベーコンのバター醤油パスタ",
+      "s": [
+        "seven"
+      ],
+      "p": 21.5,
+      "kcal": 508,
+      "f": 16,
+      "yen": 594,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091618/"
+    },
+    {
+      "id": "seven-101943",
+      "n": "セブン 醤のコク 旨辛麻婆茄子",
+      "s": [
+        "seven"
+      ],
+      "p": 8,
+      "kcal": 191,
+      "f": 12.2,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン dailydish",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/101943/"
+    },
+    {
+      "id": "seven-091579",
+      "n": "セブン 冷製パスタ 海老と野菜の旨塩ソース",
+      "s": [
+        "seven"
+      ],
+      "p": 13.6,
+      "kcal": 332,
+      "f": 9.4,
+      "yen": 594,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091579/"
+    },
+    {
+      "id": "seven-091628",
+      "n": "セブン すだちとおろしポン酢の豚しゃぶうどん",
+      "s": [
+        "seven"
+      ],
+      "p": 24.6,
+      "kcal": 608,
+      "f": 15,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091628/"
+    },
+    {
+      "id": "seven-044098",
+      "n": "セブン あじほぐし御飯（もち麦）",
+      "s": [
+        "seven"
+      ],
+      "p": 11,
+      "kcal": 272,
+      "f": 3.9,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bento",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/044098/"
+    },
+    {
+      "id": "seven-091196",
+      "n": "セブン ケチャップソースの大盛ナポリタン",
+      "s": [
+        "seven"
+      ],
+      "p": 24.8,
+      "kcal": 621,
+      "f": 15.2,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091196/"
+    },
+    {
+      "id": "seven-091596",
+      "n": "セブン ５種きのことベーコンのグラタン",
+      "s": [
+        "seven"
+      ],
+      "p": 13.6,
+      "kcal": 341,
+      "f": 15.6,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン gratin",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091596/"
+    },
+    {
+      "id": "seven-090230",
+      "n": "セブン 肉の旨味とデミグラスのコク ミートソース",
+      "s": [
+        "seven"
+      ],
+      "p": 20.3,
+      "kcal": 533,
+      "f": 14.9,
+      "yen": 496.8,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/090230/"
+    },
+    {
+      "id": "seven-044222",
+      "n": "セブン 炙り焼き銀鮭とだしごはん（もち麦）",
+      "s": [
+        "seven"
+      ],
+      "p": 12.9,
+      "kcal": 349,
+      "f": 8.1,
+      "yen": 464.4,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bento",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/044222/"
+    },
+    {
+      "id": "seven-150471",
+      "n": "セブン ＢＩＧポークフランク",
+      "s": [
+        "seven"
+      ],
+      "p": 10.5,
+      "kcal": 288,
+      "f": 23.7,
+      "yen": 213.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン hotsnack",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/150471/"
+    },
+    {
+      "id": "seven-290590",
+      "n": "セブン ７ＰＧ 金の食パン ４枚入",
+      "s": [
+        "seven"
+      ],
+      "p": 8.8,
+      "kcal": 261,
+      "f": 5.3,
+      "yen": 343.44,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bread",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/290590/"
+    },
+    {
+      "id": "seven-290514",
+      "n": "セブン ７ＰＧ 金の食パン ２枚入",
+      "s": [
+        "seven"
+      ],
+      "p": 8.8,
+      "kcal": 261,
+      "f": 5.3,
+      "yen": 181.44,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bread",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/290514/"
+    },
+    {
+      "id": "seven-092715",
+      "n": "セブン 太麺仕立ての 昔なつかしナポリタン",
+      "s": [
+        "seven"
+      ],
+      "p": 16.9,
+      "kcal": 508,
+      "f": 14.4,
+      "yen": 453.6,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/092715/"
+    },
+    {
+      "id": "seven-105312",
+      "n": "セブン 焼き餃子 ６個入り",
+      "s": [
+        "seven"
+      ],
+      "p": 12.6,
+      "kcal": 380,
+      "f": 19.3,
+      "yen": 332.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン dailydish",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/105312/"
+    },
+    {
+      "id": "seven-105311",
+      "n": "セブン 焼き餃子 ５個入り",
+      "s": [
+        "seven"
+      ],
+      "p": 12.6,
+      "kcal": 380,
+      "f": 19.3,
+      "yen": 332.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン dailydish",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/105311/"
+    },
+    {
+      "id": "seven-150473",
+      "n": "セブン ＢＩＧポークフランク",
+      "s": [
+        "seven"
+      ],
+      "p": 11.1,
+      "kcal": 358,
+      "f": 32.8,
+      "yen": 213.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン hotsnack",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/150473/"
+    },
+    {
+      "id": "seven-091095",
+      "n": "セブン ３種のチーズとたっぷりソースのミートドリア",
+      "s": [
+        "seven"
+      ],
+      "p": 14.1,
+      "kcal": 463,
+      "f": 13.1,
+      "yen": 399.6,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン gratin",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091095/"
+    },
+    {
+      "id": "seven-091619",
+      "n": "セブン 明太子クリームドリア",
+      "s": [
+        "seven"
+      ],
+      "p": 12.3,
+      "kcal": 412,
+      "f": 9.4,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン gratin",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091619/"
+    },
+    {
+      "id": "seven-150351",
+      "n": "セブン ほかほかジューシー大入り豚まん",
+      "s": [
+        "seven"
+      ],
+      "p": 9.8,
+      "kcal": 330,
+      "f": 12.7,
+      "yen": 250.56,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン chukaman",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/150351/"
+    },
+    {
+      "id": "seven-041714",
+      "n": "セブン いなり ３個入り",
+      "s": [
+        "seven"
+      ],
+      "p": 8.8,
+      "kcal": 297,
+      "f": 6.7,
+      "yen": 354.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン sushi",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/041714/"
+    },
+    {
+      "id": "seven-304056",
+      "n": "セブン ７Ｐ三角カレーパン",
+      "s": [
+        "seven"
+      ],
+      "p": 9.3,
+      "kcal": 329,
+      "f": 6.7,
+      "yen": 203.04,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bread",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/304056/"
+    },
+    {
+      "id": "seven-091631",
+      "n": "セブン 屋台風ソース焼そば",
+      "s": [
+        "seven"
+      ],
+      "p": 19.5,
+      "kcal": 720,
+      "f": 25.3,
+      "yen": 429.84,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091631/"
+    },
+    {
+      "id": "seven-091630",
+      "n": "セブン 屋台風ソース焼そば",
+      "s": [
+        "seven"
+      ],
+      "p": 19.5,
+      "kcal": 720,
+      "f": 25.3,
+      "yen": 429.84,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091630/"
+    },
+    {
+      "id": "seven-091374",
+      "n": "セブン 屋台風ソース焼そば",
+      "s": [
+        "seven"
+      ],
+      "p": 19.5,
+      "kcal": 720,
+      "f": 25.3,
+      "yen": 429.84,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091374/"
+    },
+    {
+      "id": "seven-091614",
+      "n": "セブン ラーメンＷａｌｋｅｒ監修 冷やしコショウそば",
+      "s": [
+        "seven"
+      ],
+      "p": 14.8,
+      "kcal": 570,
+      "f": 15,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091614/"
+    },
+    {
+      "id": "seven-044099",
+      "n": "セブン シーフードピラフ",
+      "s": [
+        "seven"
+      ],
+      "p": 12.3,
+      "kcal": 494,
+      "f": 6.3,
+      "yen": 496.8,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bento",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/044099/"
+    },
+    {
+      "id": "seven-053952",
+      "n": "セブン よくばりサンド メンチカツ＆たまご",
+      "s": [
+        "seven"
+      ],
+      "p": 8.6,
+      "kcal": 387,
+      "f": 27.6,
+      "yen": 213.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/053952/"
+    },
+    {
+      "id": "seven-091497",
+      "n": "セブン サクッと自家製揚げ玉の冷したぬきうどん",
+      "s": [
+        "seven"
+      ],
+      "p": 12.4,
+      "kcal": 733,
+      "f": 28.8,
+      "yen": 496.8,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091497/"
     }
   ]
 }

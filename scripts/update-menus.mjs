@@ -8,6 +8,7 @@ const SOURCES={
   sukiya:'https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf',
   yoshinoya:'https://www.yoshinoya.com/pdf/allergy/',
   famima:'https://www.family.co.jp/goods/safety.html',
+  seven:'https://www.sej.co.jp/products/a/',
 };
 
 function clean(s){return s.replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
@@ -189,6 +190,43 @@ async function crawlFamima(){
   return unique.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,80);
 }
 
+async function crawlSeven(){
+  const categories=['onigiri','sushi','bento','sandwich','bread','men','pasta','gratin','dailydish','salad','hotsnack','oden','chukaman','frozen_foods'];
+  const pages=await Promise.all(categories.map(category=>fetchText(new URL(`${category}/`,SOURCES.seven).href)));
+  const candidates=[];
+  for(let pageNo=0;pageNo<pages.length;pageNo++){
+    const sections=pages[pageNo].split('<div class="item_ttl">').slice(1);
+    for(const section of sections){
+      const link=section.match(/<a href="([^"#]+)">([\s\S]*?)<\/a>/);
+      const region=clean(section.match(/<div class="item_region">[\s\S]*?<p>[\s\S]*?<span>販売地域：<\/span>([\s\S]*?)<\/p>/)?.[1]||'');
+      if(!link||!/(関東|東京都|神奈川県|埼玉県|千葉県|茨城県|栃木県|群馬県)/.test(region))continue;
+      const sourceUrl=new URL(link[1],SOURCES.seven).href;
+      candidates.push({sourceUrl,name:clean(link[2]),region,category:categories[pageNo]});
+    }
+  }
+  const unique=[...new Map(candidates.map(x=>[x.sourceUrl,x])).values()],rows=[];
+  for(let offset=0;offset<unique.length;offset+=10){
+    const batch=unique.slice(offset,offset+10);
+    const details=await Promise.all(batch.map(x=>fetchText(x.sourceUrl)));
+    for(let i=0;i<batch.length;i++){
+      const candidate=batch[i],html=details[i];
+      const nutrition=clean(html.match(/<th[^>]*>栄養成分<\/th>[\s\S]*?<td[^>]*>([\s\S]*?)<\/td>/)?.[1]||'');
+      const values=nutrition.match(/熱量：([\d,.]+)kcal、たんぱく質：([\d,.]+)g、脂質：([\d,.]+)g/);
+      if(!values)continue;
+      const kcal=num(values[1]),protein=num(values[2]),fat=num(values[3]);
+      if(kcal==null||protein==null||fat==null||kcal<120||kcal>850||protein<8)continue;
+      if(/ドリンク|コーヒー|ラテ|お茶|ジュース|酒|ビール/.test(candidate.name))continue;
+      const priceText=clean(html.match(/<div class="item_price">[\s\S]*?<p>([\s\S]*?)<\/p>/)?.[1]||'');
+      const taxIncluded=priceText.match(/税込\s*([\d,.]+)円/)?.[1];
+      const basePrice=priceText.match(/([\d,.]+)円/)?.[1];
+      const itemId=candidate.sourceUrl.match(/\/item\/([^/]+)\//)?.[1]||`${offset+i}`;
+      rows.push({id:`seven-${itemId}`,n:`セブン ${candidate.name}`,s:['seven'],p:protein,kcal,f:fat,yen:num(taxIncluded||basePrice||''),days:dayTypes(kcal),kind:'gai',official:true,category:`セブン ${candidate.category}`,regions:['関東'],sourceUrl:candidate.sourceUrl});
+    }
+  }
+  if(rows.length<30)throw new Error(`Seven-Eleven parse yielded only ${rows.length} items`);
+  return rows.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,80);
+}
+
 const previous=await fs.readFile(OUTPUT,'utf8').then(JSON.parse).catch(()=>({sources:{},items:[]}));
 const sources={...previous.sources};
 let items=previous.items.filter(x=>!x.id?.startsWith('mcd-'));
@@ -249,6 +287,16 @@ try{
 }catch(error){
   items=items.concat(previous.items.filter(x=>x.id?.startsWith('famima-')));
   sources.famima={...(sources.famima||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.famima,error:String(error.message||error)};
+  if(!items.length)throw error;
+}
+items=items.filter(x=>!x.id?.startsWith('seven-'));
+try{
+  const found=await crawlSeven();
+  items=items.concat(found);
+  sources.seven={status:'ok',updatedAt:new Date().toISOString(),url:SOURCES.seven,count:found.length,label:'セブン公式商品情報（関東）'};
+}catch(error){
+  items=items.concat(previous.items.filter(x=>x.id?.startsWith('seven-')));
+  sources.seven={...(sources.seven||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.seven,error:String(error.message||error)};
   if(!items.length)throw error;
 }
 const output={schemaVersion:1,generatedAt:new Date().toISOString(),sources,items};
