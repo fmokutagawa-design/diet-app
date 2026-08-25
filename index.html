@@ -962,7 +962,7 @@ function freshState(){
     tdee:{correction:0,lastCalcKey:null},
     homeTrainLog:{},
     muscleLog:{},ffmiTarget:null,
-    foodLog:{}, train:{time:null}, session:{date:null, time:null, pinned:[], excluded:[], done:{}, off:false, shrink:0}, weightLog:{}, bfLog:{}, badges:[], bestStreak:0,
+    foodLog:{}, skippedMeals:{}, train:{time:null}, session:{date:null, time:null, pinned:[], excluded:[], done:{}, off:false, shrink:0}, weightLog:{}, bfLog:{}, badges:[], bestStreak:0,
     calMonth:today.getMonth()+1, calYear:today.getFullYear(),
   };
 }
@@ -1405,9 +1405,10 @@ function renderHomeMeal(){
   $('#homeMealTag').textContent=({cook:'作る',buy:'買う',gai:'外食',any:'おまかせ'}[S.meal.mode]||'おまかせ')+'・'+({train:'トレ日',rest:'休養日',night:'夜勤日'}[dayType]||'今日');
   if(!planChosen.length){
     const ctx=planContext();
-    $('#homeMeal').innerHTML=`<div class="summary">${ctx.remainKcal>=120?`3食記録済み。残り${ctx.remainKcal}kcal——食べるなら軽い物を（食事タブに候補）。`:'今日の食事はバッチリ。あとは水分とって寝るだけ🔥'}</div>`;return;}
+    $('#homeMeal').innerHTML=`<div class="summary">${ctx.remainKcal>=120?`今日の食事枠は処理済み。残り${ctx.remainKcal}kcal——必要なら軽い物を（食事タブに候補）。`:'今日の食事はバッチリ。あとは水分とって寝るだけ🔥'}</div>`;return;}
   const c=planChosen[0];
-  $('#homeMeal').innerHTML=pickHTML(c.kind,c.obj,{slot:`次は ${c.slot}（目安 ${c.budget}kcal）`,reason:reasonFood(c),swap:0});
+  const skip=MAIN_SLOTS.includes(c.slot)?`<button class="btn ghost" data-skip-meal="${c.slot}" style="margin-top:8px">${c.slot}は食べない</button>`:'';
+  $('#homeMeal').innerHTML=pickHTML(c.kind,c.obj,{slot:`次は ${c.slot}（目安 ${c.budget}kcal）`,reason:reasonFood(c),swap:0})+skip;
 }
 function gymWindowText(){
   const dow=today.getDay(),sh=S.shifts[todayKey]||'';
@@ -3052,7 +3053,7 @@ const keyOf=d=>dkey(d.getFullYear(),d.getMonth()+1,d.getDate());
 const fmtDate=d=>`${d.getMonth()+1}/${d.getDate()}（${WD[d.getDay()]}）`;
 function defaultSlot(){const h=new Date().getHours();return h<10?'朝':h<15?'昼':h<21?'夜':'間食';}
 function curSlot(){const b=document.querySelector('#foodSlot button.active');return b?b.dataset.v:defaultSlot();}
-function addFood(name,kcal,p){const dk=keyOf(sheetDateObj);if(!S.foodLog[dk])S.foodLog[dk]=[];S.foodLog[dk].push({name,kcal:Math.round(kcal)||0,p:Math.round(p)||0,slot:curSlot()});save();histDateObj=new Date(sheetDateObj);afterDataChange();
+function addFood(name,kcal,p){const dk=keyOf(sheetDateObj),slot=curSlot();if(!S.foodLog[dk])S.foodLog[dk]=[];S.foodLog[dk].push({name,kcal:Math.round(kcal)||0,p:Math.round(p)||0,slot});if(S.skippedMeals&&S.skippedMeals[dk])delete S.skippedMeals[dk][slot];save();histDateObj=new Date(sheetDateObj);afterDataChange();
   if(dk===todayKey){const c=calc(),f=foodTotals(todayKey),remain=c.daily-f.kcal;
     toast(remain>=0?`${curSlot()}に記録 ✅ 今日あと${Math.round(remain)}kcal（週−${c.weekly.toFixed(1)}kgペース）`:`${curSlot()}に記録。${Math.round(-remain)}kcal超え ≒ 脂肪${fatG(-remain)}g分。トレか明日で取り返せます`);
   }else toast(`${curSlot()}に記録しました`);}
@@ -3253,13 +3254,25 @@ function normalizedMealSlot(it){
   return '間食';
 }
 function eatenBySlot(){const g={};(S.foodLog[todayKey]||[]).forEach(it=>{const s=normalizedMealSlot(it);if(!g[s])g[s]={kcal:0,p:0,names:[]};g[s].kcal+=it.kcal;g[s].p+=it.p;g[s].names.push(it.name);});return g;}
+function skippedMealSlots(k=todayKey){return (S.skippedMeals&&S.skippedMeals[k])||{};}
+function skipMeal(slot){
+  if(!MAIN_SLOTS.includes(slot))return;
+  if(!S.skippedMeals)S.skippedMeals={};
+  if(!S.skippedMeals[todayKey])S.skippedMeals[todayKey]={};
+  S.skippedMeals[todayKey][slot]=true;
+  save();afterDataChange();toast(`${slot}は食べない、と記録しました`);
+}
+function unskipMeal(slot){
+  if(S.skippedMeals&&S.skippedMeals[todayKey])delete S.skippedMeals[todayKey][slot];
+  save();afterDataChange();toast(`${slot}を食事候補に戻しました`);
+}
 function planContext(){
-  const c=calc(),f=foodTotals(todayKey),eaten=eatenBySlot();
-  const remainSlots=MAIN_SLOTS.filter(s=>!eaten[s]);
+  const c=calc(),f=foodTotals(todayKey),eaten=eatenBySlot(),skipped=skippedMealSlots();
+  const remainSlots=MAIN_SLOTS.filter(s=>!eaten[s]&&!skipped[s]);
   const remainKcal=Math.max(0,c.daily-f.kcal),remainP=Math.max(0,c.protein-f.p);
   const wSum=remainSlots.reduce((a,s)=>a+SLOT_W[s],0)||1;
   const budgets={};remainSlots.forEach(s=>budgets[s]=Math.round(remainKcal*SLOT_W[s]/wSum));
-  return {c,f,eaten,remainSlots,remainKcal,remainP,budgets};
+  return {c,f,eaten,skipped,remainSlots,remainKcal,remainP,budgets};
 }
 function pickFor(budget,pool,usedCats,usedKeys){
   // 予算の0.6〜1.15倍に収まる品の中から、たんぱく質効率(P/kcal)が高いものを優先。
@@ -3408,11 +3421,13 @@ function renderPlan(){
   let eatenHtml='';
   MAIN_SLOTS.concat(['間食']).forEach(s=>{const e=ctx.eaten[s];if(!e)return;
     eatenHtml+=`<div class="food-item" style="opacity:.75"><span><span class="slottag">${s}</span>✓ ${e.names.join('・')}　<span class="muted">${e.kcal}kcal / P${e.p}</span></span></div>`;});
+  MAIN_SLOTS.forEach(s=>{if(ctx.skipped[s])eatenHtml+=`<div class="food-item" style="opacity:.75"><span><span class="slottag">${s}</span>— 食べない</span><button class="x" data-unskip-meal="${s}" aria-label="${s}を食事候補に戻す">↶</button></div>`;});
   let head;
-  if(!Object.keys(ctx.eaten).length)head=`<b>なぜこの3食？</b> ${why}（全${RECIPES.length}レシピ＋コンビニ${STORE_ITEMS.length}品から）<br>目標 <b>${ctx.c.daily}kcal / P${ctx.c.protein}g</b> → この献立 <b>${pk}kcal / P${pp}g</b>。`;
+  if(!Object.keys(ctx.eaten).length&&!Object.keys(ctx.skipped).length)head=`<b>なぜこの3食？</b> ${why}（全${RECIPES.length}レシピ＋コンビニ${STORE_ITEMS.length}品から）<br>目標 <b>${ctx.c.daily}kcal / P${ctx.c.protein}g</b> → この献立 <b>${pk}kcal / P${pp}g</b>。`;
   else if(ctx.remainSlots.length)head=`ここまで <b>${ctx.f.kcal}kcal / P${ctx.f.p}g</b> 記録済み → 残り <b>${ctx.remainKcal}kcal / P${ctx.remainP}g</b> を ${ctx.remainSlots.join('・')} に配分（${ctx.remainSlots.map(s=>`${s} 約${ctx.budgets[s]}kcal`).join('／')}）。`;
-  else head=ctx.remainKcal>=120?`3食記録済み。残り <b>${ctx.remainKcal}kcal</b>——食べるなら下の軽い物で。`:`今日の枠はほぼ使い切り。あとは水・お茶・ゼロ系でフィニッシュ🔥`;
-  $('#planTotals').innerHTML=head+((pp&&(ctx.remainP-pp)>20)?`<br><span class="small">この提案で約P${pp}g。残りP${Math.max(0,ctx.remainP-pp)}gはプロテイン1杯(+20g)等で補えます。</span>`:'');
+  else head=ctx.remainKcal>=120?`今日の食事枠は処理済み。残り <b>${ctx.remainKcal}kcal</b>——必要なら下の軽い物で。`:`今日の枠はほぼ使い切り。あとは水・お茶・ゼロ系でフィニッシュ🔥`;
+  const skipActions=ctx.remainSlots.length?`<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:9px">${ctx.remainSlots.map(s=>`<button class="swapbtn" data-skip-meal="${s}">${s}は食べない</button>`).join('')}</div>`:'';
+  $('#planTotals').innerHTML=head+((pp&&(ctx.remainP-pp)>20)?`<br><span class="small">この提案で約P${pp}g。残りP${Math.max(0,ctx.remainP-pp)}gはプロテイン1杯(+20g)等で補えます。</span>`:'')+skipActions;
   const slotLabel={'朝':'朝','昼':'昼','夜':'夜','間食':'間食'};
   const slotCount={},slotSeen={};chosen.forEach(c=>slotCount[c.slot]=(slotCount[c.slot]||0)+1);
   $('#nextList').innerHTML=eatenHtml+(chosen.map((c,i)=>{
@@ -3608,6 +3623,8 @@ $('#aeonDeliSave').addEventListener('click',()=>{
 });
 $('#reshuffleBtn').addEventListener('click',()=>{nextSeed++;ensureChosen(true);renderPlan();});
 document.addEventListener('click',e=>{const sw=e.target.closest('[data-swap]');if(sw){swapSlot(+sw.dataset.swap);return;}const ps=e.target.closest('[data-pickslot]');if(ps)openPickSheet(+ps.dataset.pickslot);});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-skip-meal]');if(b)skipMeal(b.dataset.skipMeal);});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-unskip-meal]');if(b)unskipMeal(b.dataset.unskipMeal);});
 // collapsibles
 document.querySelectorAll('.collap').forEach(h=>h.addEventListener('click',()=>{const card=h.closest('.card');card.classList.toggle('open');if(card.classList.contains('open')&&card.querySelector('#projCanvas')){drawChart(projection());renderWeightCard();}}));
 // fridge / mood chip clicks (delegated)
