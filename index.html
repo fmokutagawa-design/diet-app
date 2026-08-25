@@ -341,6 +341,13 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
 
   <!-- HOME -->
   <section class="view show" id="v-home">
+    <!-- 最優先: 空腹時に迷わず救済食へ -->
+    <div class="card" id="homeRescueCard">
+      <h2>🛟 今すぐ救済食 <span class="tag" id="homeRescueTag">—</span></h2>
+      <div id="homeRescue"></div>
+      <button class="btn good" data-go="meal" style="margin-top:10px;width:100%">買ってすぐ食べる候補・在庫を見る →</button>
+    </div>
+
     <!-- 0. 達成・連続記録 -->
     <div class="card">
       <h2>今日のあなた</h2>
@@ -458,12 +465,6 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
     <div class="card" id="nightShiftCard" style="display:none">
       <h2 id="nightShiftTitle">🌙 夜勤の食事タイミング</h2>
       <div class="small" id="nightShiftLines" style="line-height:1.8"></div>
-    </div>
-
-    <div class="card">
-      <h2>満腹救済食 <span class="tag" id="homeRescueTag">—</span></h2>
-      <div id="homeRescue"></div>
-      <button class="btn good" data-go="meal" style="margin-top:10px;width:100%">在庫と救済食を開く →</button>
     </div>
 
     <!-- 2. 次の食事 -->
