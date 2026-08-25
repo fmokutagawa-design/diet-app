@@ -3731,6 +3731,10 @@ function tfNorm(s){
   let t=(s||'').toLowerCase().replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));
   const alias=[['から揚げ','唐揚げ'],['からあげ','唐揚げ'],['みそ','味噌'],['たまご','卵'],['玉子','卵'],['御飯','ごはん'],['ご飯','ごはん'],['ライス','ごはん']];
   alias.forEach(([a,b])=>{t=t.split(a).join(b);});
+  const japaneseCounts=[['ひとつ','1つ'],['ふたつ','2つ'],['みっつ','3つ'],['よっつ','4つ'],['いつつ','5つ'],['むっつ','6つ'],['ななつ','7つ'],['やっつ','8つ'],['ここのつ','9つ']];
+  japaneseCounts.forEach(([a,b])=>{t=t.split(a).join(b);});
+  const kanjiNum={一:'1',二:'2',三:'3',四:'4',五:'5',六:'6',七:'7',八:'8',九:'9'};
+  t=t.replace(/([一二三四五六七八九])(?=\s*(?:個|本|杯|枚|つ|袋|缶|切れ|パック|丁|食|皿|人前))/g,c=>kanjiNum[c]);
   // 「鶏肉 1 kg」が空白で別項目に割れないよう、重量の直前だけ空白を詰める。
   return t
     .replace(/(\d+(?:\.\d+)?)\s*(kg|ｋｇ|キログラム|キロ|g|ｇ|グラム)/g,'$1$2')
@@ -3759,7 +3763,7 @@ function tfScore(seg,f){
 }
 // 項目テキストから個数(2個/3本/×2など)を読み取る
 function tfQty(seg){
-  const m=seg.match(/(?:[×x])\s*(\d+)|(\d+)\s*(?:個|本|杯|枚|つ|袋|缶|切れ)/);
+  const m=seg.match(/(?:[×x])\s*(\d+)|(\d+)\s*(?:個|本|杯|枚|つ|袋|缶|切れ|パック|丁|食|皿|人前)/);
   if(m){const n=parseInt(m[1]||m[2]);if(n>=1&&n<=20)return n;}
   return 1;
 }
@@ -3774,8 +3778,28 @@ function tfPortion(seg){
 const TF_WEIGHT_FOODS=[
   {name:'鶏もも肉（皮なし・概算）',aliases:['鶏もも肉','鶏もも','もも肉'],kcal100:113,p100:19},
   {name:'鶏むね肉（皮なし・概算）',aliases:['鶏むね肉','鶏胸肉','鶏むね','鶏胸','胸肉','鶏肉','チキン'],kcal100:108,p100:22},
+  {name:'ささみ',aliases:['ささみ','ササミ'],kcal100:98,p100:24},
+  {name:'豚肉（赤身で概算）',aliases:['豚肉','豚もも'],kcal100:183,p100:23},
+  {name:'牛肉（赤身で概算）',aliases:['牛肉','牛もも'],kcal100:193,p100:21},
+  {name:'鮭',aliases:['鮭','サーモン'],kcal100:127,p100:23},
+  {name:'サバ',aliases:['サバ','鯖'],kcal100:211,p100:21},
+  {name:'まぐろ（赤身で概算）',aliases:['まぐろ','マグロ','鮪'],kcal100:102,p100:24},
+  {name:'豆腐',aliases:['豆腐','木綿豆腐'],kcal100:73,p100:7},
+  {name:'絹ごし豆腐',aliases:['絹ごし豆腐','絹豆腐'],kcal100:56,p100:5},
+  {name:'ごはん',aliases:['ごはん','白米'],kcal100:156,p100:2.5},
+  {name:'ゆでうどん',aliases:['ゆでうどん','うどん'],kcal100:95,p100:2.6},
+  {name:'ゆでそば',aliases:['ゆでそば','そば','蕎麦'],kcal100:130,p100:4.8},
+  {name:'ゆでパスタ',aliases:['ゆでパスタ','パスタ','スパゲティ'],kcal100:150,p100:5.8},
   {name:'ブロッコリー',aliases:['ブロッコリー'],kcal100:38,p100:4},
-  {name:'じゃがいも',aliases:['じゃがいも','ジャガイモ','馬鈴薯'],kcal100:76,p100:1.6}
+  {name:'じゃがいも',aliases:['じゃがいも','ジャガイモ','馬鈴薯'],kcal100:76,p100:1.6},
+  {name:'キャベツ',aliases:['キャベツ'],kcal100:23,p100:1.3},
+  {name:'もやし',aliases:['もやし'],kcal100:15,p100:1.7},
+  {name:'ほうれん草',aliases:['ほうれん草','ほうれんそう'],kcal100:18,p100:2.2}
+];
+const TF_COUNT_FOODS=[
+  {name:'納豆',aliases:['納豆'],kcal:90,p:7,unit:'1パック'},
+  {name:'卵',aliases:['卵'],kcal:76,p:6,unit:'1個'},
+  {name:'めかぶ',aliases:['めかぶ','メカブ'],kcal:12,p:1,unit:'1パック'}
 ];
 function tfWeightGrams(seg){
   const m=seg.match(/(\d+(?:\.\d+)?)\s*(kg|ｋｇ|キログラム|キロ|g|ｇ|グラム)(?![a-zぁ-んァ-ヶ一-龠])/);
@@ -3794,10 +3818,26 @@ function tfWeightFood(seg){
   }
   return null;
 }
+function tfCountFood(seg){
+  const qty=tfQty(seg);
+  const bare=seg
+    .replace(/(?:[×x])\s*\d+|\d+\s*(?:個|本|杯|枚|つ|袋|缶|切れ|パック|丁|食|皿|人前)/g,'')
+    .trim();
+  for(const food of TF_COUNT_FOODS){
+    if(food.aliases.some(a=>bare===tfNorm(a)))return {food,qty};
+  }
+  // 豆腐は「1丁」と「1個・1パック」で標準量を分ける。
+  if(['豆腐','木綿豆腐','絹ごし豆腐','絹豆腐'].includes(bare)){
+    const grams=/丁/.test(seg)?300:150;
+    const silk=/絹/.test(bare);
+    return {food:{name:silk?'絹ごし豆腐':'豆腐',kcal:Math.round((silk?56:73)*grams/100),p:Math.round((silk?5:7)*grams/100),unit:`${grams}g`},qty};
+  }
+  return null;
+}
 function textFoodEstimate(text){
-  const segs=tfNorm(text).split(/[、,，＋+\/／・\n]|(?:\s+)|と(?=[^\s、])/)
+  const segs=tfNorm(text).split(/[、,，＋+\/／・\n]|(?:\s+)|(?<!ひ)と(?=[^\s、])/)
     .map(s=>s.trim()).filter(s=>s.length>=1);
-  const detail=[];const unmatched=[];
+  const detail=[];const unmatched=[];const unsupportedWeight=[];
   let kcal=0,p=0;
   segs.forEach(rawSeg=>{
     const weighted=tfWeightFood(rawSeg);
@@ -3809,11 +3849,22 @@ function textFoodEstimate(text){
       detail.push({seg:rawSeg,name:weighted.food.name,kcal:k,p:pp,mult:1,amount:`${weighted.grams}g`});
       return;
     }
+    if(tfWeightGrams(rawSeg)!==null){
+      unsupportedWeight.push(rawSeg);
+      return;
+    }
+    const counted=tfCountFood(rawSeg);
+    if(counted){
+      const k=counted.food.kcal*counted.qty,pp=counted.food.p*counted.qty;
+      kcal+=k;p+=pp;
+      detail.push({seg:rawSeg,name:counted.food.name,kcal:k,p:pp,mult:counted.qty,amount:`${counted.food.unit} ×${counted.qty}`});
+      return;
+    }
     const qty=tfQty(rawSeg);
     const portion=tfPortion(rawSeg);
     // 個数・盛りの語を除いた本体で検索する（「大盛」が別の食品に誤マッチしないように）
     let seg=rawSeg
-      .replace(/(?:[×x])\s*\d+|\d+\s*(?:個|本|杯|枚|つ|袋|缶|切れ)/g,'')
+      .replace(/(?:[×x])\s*\d+|\d+\s*(?:個|本|杯|枚|つ|袋|缶|切れ|パック|丁|食|皿|人前)/g,'')
       .replace(/特盛|メガ|大盛り?|小盛り?|少なめ|ハーフサイズの?|ハーフ/g,'').trim();
     if(seg.length===0){unmatched.push(rawSeg);return;}
     // 貪欲マッチ：最良の1件を取り、マッチ部分を除いた残りで繰り返す（最大3件）
@@ -3840,9 +3891,12 @@ function textFoodEstimate(text){
       detail.push({seg:rawSeg,name:f.n,kcal:k,p:pp,mult});
     });
   });
-  if(detail.length===0)return null;
+  if(detail.length===0){
+    if(unsupportedWeight.length)return {name:'',kcal:0,p:0,detail:[],unmatched,unsupportedWeight};
+    return null;
+  }
   const name=detail.map(d=>d.name+(d.mult>1&&Number.isInteger(d.mult)?`×${d.mult}`:'')).join('＋');
-  return {name:name.slice(0,40),kcal,p,detail,unmatched};
+  return {name:name.slice(0,40),kcal,p,detail,unmatched,unsupportedWeight};
 }
 $('#aiParseBtn').addEventListener('click',()=>{
   const text=$('#aiFoodText').value.trim();
@@ -3860,9 +3914,10 @@ $('#aiParseBtn').addEventListener('click',()=>{
   const im=impact(r.kcal,dk);
   const lines=r.detail.map(d=>`・${d.name}${d.amount?`（${d.amount}）`:d.mult!==1?`（×${d.mult}）`:''} ${d.kcal}kcal / P${d.p}g`).join('<br>');
   const miss=r.unmatched.length?`<br><span class="small muted">該当なし: ${r.unmatched.join('、')}（手入力で追加できます）</span>`:'';
-  $('#aiPreview').innerHTML=`合計 約 <b>${r.kcal}kcal</b> / P${r.p}g<br><span class="small">${lines}</span>${miss}<br><span class="small" style="color:${im.over?'var(--orange)':'var(--good)'}">${im.text}</span>`;
+  const weightWarn=r.unsupportedWeight.length?`<br><span class="small" style="color:var(--orange)">重量を計算できません: ${r.unsupportedWeight.join('、')}。食品名を変えるか手入力してください。</span>`:'';
+  $('#aiPreview').innerHTML=`合計 約 <b>${r.kcal}kcal</b> / P${r.p}g<br><span class="small">${lines}</span>${miss}${weightWarn}<br><span class="small" style="color:${im.over?'var(--orange)':'var(--good)'}">${im.text}</span>`;
   $('#aiPreview').style.display='';
-  $('#aiSaveBtn').style.display='';
+  $('#aiSaveBtn').style.display=r.unsupportedWeight.length?'none':'';
 });
 $('#aiSaveBtn').addEventListener('click',()=>{
   if(!aiFoodResult)return;
