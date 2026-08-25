@@ -2,7 +2,7 @@ name: Update official menus
 
 on:
   schedule:
-    - cron: '23 19 * * 1,4'
+    - cron: '23 19 * * *'
   workflow_dispatch:
 
 permissions:
@@ -22,7 +22,7 @@ jobs:
       - name: Fetch official menu data
         run: node scripts/update-menus.mjs
       - name: Validate data
-        run: node -e "const d=require('./external-menus.json');if(!d.items?.length)throw Error('menu data is empty');console.log(d.items.length+' items')"
+        run: node -e "const d=require('./external-menus.json');if(d.items?.length<500)throw Error('nutrition menu data is incomplete');if(d.storeInventory?.length<300)throw Error('Shinyoshida inventory is incomplete');console.log(d.items.length+' nutrition items, '+d.storeInventory.length+' Shinyoshida items')"
       - name: Commit changed menu data
         run: |
           git config user.name "github-actions[bot]"

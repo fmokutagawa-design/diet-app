@@ -643,12 +643,13 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
       <div class="seg five" id="rescueStoreSeg" style="margin-top:7px"><button data-v="all">全部</button><button data-v="seven">セブン</button><button data-v="lawson">ローソン</button><button data-v="famima">ファミマ</button><button data-v="aeon" class="active">新吉田</button></div>
       <div class="rescue-buy-list" id="rescueBuyList"></div>
       <button class="rescue-buy-more" id="rescueBuyToggle" type="button">もっと見る</button>
-      <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:800">新吉田店のイオン惣菜を一度だけ登録</summary>
+      <details id="aeonDeliDetails" style="margin-top:12px"><summary style="cursor:pointer;font-weight:800">新吉田店のイオン惣菜を一度だけ登録</summary>
         <div class="small muted" style="margin:8px 0">イオン横浜新吉田店の栄養表示から、商品名・1包装あたりの数値を登録すると、次回から救済候補と文章検索に出ます。</div>
         <input class="txt" id="aeonDeliName" placeholder="商品名（例：鶏照焼弁当）">
         <div class="grid2" style="margin-top:7px"><input class="txt" id="aeonDeliKcal" type="number" inputmode="decimal" placeholder="kcal"><input class="txt" id="aeonDeliP" type="number" inputmode="decimal" placeholder="たんぱく質g"></div>
         <button class="btn good" id="aeonDeliSave" style="width:100%;margin-top:8px">救済候補に保存</button>
       </details>
+      <details style="margin-top:10px"><summary id="aeonUnknownSummary" style="cursor:pointer;font-weight:800">新吉田店の販売商品を読込中</summary><div class="small muted" style="margin:7px 0">栄養値が掲載されていない弁当です。買った商品の名前を押すと登録欄へ移ります。</div><div id="aeonUnknownList"></div></details>
     </div>
 
     <div class="card" id="officialMenuCard">
@@ -2801,6 +2802,7 @@ $('#addMachineBtn').addEventListener('click',()=>{
 const B={seven:'s-seven',lawson:'s-lawson',aeon:'s-aeon',mybasket:'s-aeon',create:'s-other',tanto:'s-gai',other:'s-other',famima:'s-famima',sukiya:'s-sukiya',yoshinoya:'s-yoshinoya',mcdonalds:'s-other',mos:'s-other',matsuya:'s-other',shinpachi:'s-other',gai:'s-gai'};
 const N={seven:'セブン',lawson:'ローソン',aeon:'イオン',mybasket:'まいばすけっと',create:'クリエイト',tanto:'食堂たんと',other:'その他',famima:'ファミマ',sukiya:'すき家',yoshinoya:'吉野家',mcdonalds:'マクドナルド',mos:'モス',matsuya:'松屋',shinpachi:'しんぱち食堂',gai:'外食'};
 let EXTERNAL_MENU_META=null;
+let AEON_SHINYOSHIDA_INVENTORY=[];
 // 商品マスタ（実在の高たんぱく商品中心）。days＝向いている日タイプ
 let STORE_ITEMS=[
   // --- ローソン ---
@@ -2935,6 +2937,11 @@ function syncCustomAeonMenus(){
   (S.customAeonMenus||[]).forEach((x,i)=>STORE_ITEMS.push({...x,id:`custom-aeon-${i}`,s:['aeon','mybasket'],days:['train','rest','night'],official:false,customAeon:true}));
 }
 syncCustomAeonMenus();
+function aeonMatchKey(s){return tfNorm(s||'').replace(/トップバリュ|イオン惣菜|イオン/g,'').replace(/[【】\[\]（）()]/g,'').replace(/1(?:個|パック|包装|袋).*$/,'').replace(/\s+/g,'').trim();}
+function syncShinyoshidaAvailability(){
+  const keys=AEON_SHINYOSHIDA_INVENTORY.map(x=>aeonMatchKey(x.n)).filter(x=>x.length>=4);
+  STORE_ITEMS.forEach(it=>{it.shinyoshidaAvailable=!!(it.customAeon||(it.s||[]).includes('aeon')&&keys.some(k=>{const n=aeonMatchKey(it.n);return n.length>=4&&(k.includes(n)||n.includes(k));}));});
+}
 function officialPrice(it){return Number.isFinite(it.yen)?`約${it.yen}円`:'価格は店舗で確認';}
 function renderOfficialMenuStatus(){
   const tag=$('#officialMenuTag'),note=$('#officialMenuNote');if(!tag||!note)return;
@@ -2948,8 +2955,10 @@ async function loadExternalMenus(){
   try{
     const r=await fetch(`external-menus.json?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw Error(`HTTP ${r.status}`);
     const d=await r.json(),items=(d.items||[]).filter(x=>x.n&&Number.isFinite(x.kcal)&&Number.isFinite(x.p));
+    AEON_SHINYOSHIDA_INVENTORY=(d.storeInventory||[]).filter(x=>x.n);
     STORE_ITEMS=STORE_ITEMS.filter(x=>!x.official).concat(items);
     syncCustomAeonMenus();
+    syncShinyoshidaAvailability();
     EXTERNAL_MENU_META={...d,items};
     planSig='';
     if($('#v-home').classList.contains('show'))renderHome();
@@ -3500,9 +3509,18 @@ function renderRescueBuy(){
   const list=$('#rescueBuyList'),tag=$('#rescueBuyTag'),toggle=$('#rescueBuyToggle');if(!list||!tag||!toggle)return;
   const all=rescueBuyCandidates(),shown=all.slice(0,rescueBuyExpanded?40:12);
   tag.textContent=`${rescueBuyMode==='one'?'一品完結 ':''}${all.length}品`;
-  list.innerHTML=shown.map(({it,idx,one})=>`<div class="rescue-buy-item"><div class="rescue-top"><div class="rescue-name">${it.n}${one?' <span class="tag">これ1つ</span>':''}${it.official?' <span class="tag">公式値</span>':it.customAeon?' <span class="tag">登録済み</span>':' <span class="tag">概算</span>'}</div><div class="rescue-meta">${it.kcal}kcal<br>P${it.p}g${Number.isFinite(it.f)?` / 脂質${it.f}g`:''}</div></div><div class="rescue-buy-stores">${it.s.map(s=>`<span class="store ${B[s]||B.other}">${N[s]||s}</span>`).join('')}</div><div class="small muted" style="margin-top:6px">${one?'一店舗・一商品で完結':'同じ店で買える単品候補'}　${Number.isFinite(it.yen)?`約${it.yen}円`:'価格・在庫は店頭確認'}</div>${it.sourceUrl?`<a href="${it.sourceUrl}" target="_blank" rel="noopener" class="small" style="display:inline-block;margin-top:5px;color:var(--primary)">公式商品情報 ↗</a>`:''}<button class="rescue-action" data-eat="s${idx}">✓ 食べた・記録する</button></div>`).join('')||'<div class="small muted">この条件の一品完結候補がありません。「軽食も含む」に切り替えられます。</div>';
+  list.innerHTML=shown.map(({it,idx,one})=>`<div class="rescue-buy-item"><div class="rescue-top"><div class="rescue-name">${it.n}${one?' <span class="tag">これ1つ</span>':''}${it.shinyoshidaAvailable?' <span class="tag">新吉田店で確認</span>':''}${it.official?' <span class="tag">公式値</span>':it.customAeon?' <span class="tag">登録済み</span>':' <span class="tag">概算</span>'}</div><div class="rescue-meta">${it.kcal}kcal<br>P${it.p}g${Number.isFinite(it.f)?` / 脂質${it.f}g`:''}</div></div><div class="rescue-buy-stores">${it.s.map(s=>`<span class="store ${B[s]||B.other}">${N[s]||s}</span>`).join('')}</div><div class="small muted" style="margin-top:6px">${one?'一店舗・一商品で完結':'同じ店で買える単品候補'}　${Number.isFinite(it.yen)?`約${it.yen}円`:'価格・在庫は店頭確認'}</div>${it.sourceUrl?`<a href="${it.sourceUrl}" target="_blank" rel="noopener" class="small" style="display:inline-block;margin-top:5px;color:var(--primary)">公式商品情報 ↗</a>`:''}<button class="rescue-action" data-eat="s${idx}">✓ 食べた・記録する</button></div>`).join('')||'<div class="small muted">この条件の一品完結候補がありません。「軽食も含む」に切り替えられます。</div>';
   toggle.style.display=all.length>12?'':'none';
   toggle.textContent=rescueBuyExpanded?'12品に戻す':`もっと見る（最大40品）`;
+}
+function renderAeonUnknown(){
+  const summary=$('#aeonUnknownSummary'),list=$('#aeonUnknownList');if(!summary||!list)return;
+  const knownKeys=STORE_ITEMS.filter(x=>x.shinyoshidaAvailable).map(x=>aeonMatchKey(x.n));
+  const meal=/弁当|丼|カレー|麺|そば|うどん|パスタ|サンド|バーガー|プレート|ごはん|飯|重/;
+  const unknown=AEON_SHINYOSHIDA_INVENTORY.filter(x=>meal.test(x.n)&&!knownKeys.some(k=>{const n=aeonMatchKey(x.n);return k.length>=4&&(k.includes(n)||n.includes(k));})).slice(0,30);
+  summary.textContent=`新吉田店：栄養未確認の一品候補 ${unknown.length}品`;
+  list.innerHTML=unknown.map((x,i)=>`<button class="btn" data-aeon-prefill="${i}" style="width:100%;text-align:left;margin-top:6px">${x.n}<br><span class="small muted">${Number.isFinite(x.yen)?`${x.yen}円・`:''}栄養表示を登録</span></button>`).join('')||'<div class="small muted">栄養未確認の一品候補はありません。</div>';
+  list._items=unknown;
 }
 function renderRescue(){
   const inv=S.rescueInventory||(S.rescueInventory={});
@@ -3515,6 +3533,7 @@ function renderRescue(){
   if(isNight)night.innerHTML=`<b>🌙 いつもの夜勤セット</b><br><span class="small">たんぱく質の摂れるサラダ＋豆腐バー2本＋サラダチキン2個</span><br>約<b>${NIGHT_FIXED_SET.kcal}kcal</b> / P${NIGHT_FIXED_SET.p}g<button class="rescue-action" id="nightFixedEat">✓ いつものを食べた</button>`;
   $('#rescueList').innerHTML=meals.map(m=>{const ok=rescueCanMake(m);const needs=Object.entries(m.needs).map(([id,n])=>rescueStockLabel(id,n)).join('・');return `<div class="rescue-meal${ok?' ready':''}"><div class="rescue-top"><div class="rescue-name">${m.name}</div><div class="rescue-meta">約${m.kcal}kcal<br>P${m.p}g</div></div><div class="rescue-needs">${needs}</div><button class="rescue-action" data-rescue-eat="${m.id}" ${ok?'':'disabled'}>${ok?'✓ 食べた・記録する':'在庫不足'}</button></div>`;}).join('');
   renderRescueBuy();
+  renderAeonUnknown();
 }
 function eatRescue(id){
   const meal=RESCUE_MEALS.find(x=>x.id===id);if(!meal||!rescueCanMake(meal))return;
@@ -3565,6 +3584,7 @@ $('#nightFixedSet').addEventListener('click',e=>{if(!e.target.closest('#nightFix
 document.querySelectorAll('#rescueModeSeg button').forEach(b=>b.addEventListener('click',()=>{rescueBuyMode=b.dataset.v;rescueBuyExpanded=false;document.querySelectorAll('#rescueModeSeg button').forEach(x=>x.classList.toggle('active',x===b));renderRescueBuy();}));
 document.querySelectorAll('#rescueStoreSeg button').forEach(b=>b.addEventListener('click',()=>{rescueBuyStore=b.dataset.v;rescueBuyExpanded=false;document.querySelectorAll('#rescueStoreSeg button').forEach(x=>x.classList.toggle('active',x===b));renderRescueBuy();}));
 $('#rescueBuyToggle').addEventListener('click',()=>{rescueBuyExpanded=!rescueBuyExpanded;renderRescueBuy();});
+$('#aeonUnknownList').addEventListener('click',e=>{const b=e.target.closest('[data-aeon-prefill]');if(!b)return;const x=$('#aeonUnknownList')._items?.[+b.dataset.aeonPrefill];if(!x)return;$('#aeonDeliDetails').open=true;$('#aeonDeliName').value=x.n;$('#aeonDeliKcal').focus();$('#aeonDeliDetails').scrollIntoView({behavior:'smooth',block:'center'});});
 $('#aeonDeliSave').addEventListener('click',()=>{
   const raw=$('#aeonDeliName').value.trim(),kcal=Math.round(Number($('#aeonDeliKcal').value)),p=Math.round(Number($('#aeonDeliP').value));
   if(!raw||!Number.isFinite(kcal)||kcal<=0||!Number.isFinite(p)||p<=0){alert('商品名・kcal・たんぱく質を入力してください');return;}
@@ -3572,7 +3592,7 @@ $('#aeonDeliSave').addEventListener('click',()=>{
   S.customAeonMenus=S.customAeonMenus||[];
   const old=S.customAeonMenus.find(x=>x.n===name);
   if(old){old.kcal=kcal;old.p=p;}else S.customAeonMenus.push({n:name,kcal,p,yen:null});
-  syncCustomAeonMenus();save();$('#aeonDeliName').value='';$('#aeonDeliKcal').value='';$('#aeonDeliP').value='';rescueBuyStore='aeon';rescueBuyMode=rescueIsOneItem({n:name,kcal,p})?'one':'all';document.querySelectorAll('#rescueStoreSeg button').forEach(x=>x.classList.toggle('active',x.dataset.v==='aeon'));document.querySelectorAll('#rescueModeSeg button').forEach(x=>x.classList.toggle('active',x.dataset.v===rescueBuyMode));renderRescueBuy();toast('イオン惣菜を保存しました');
+  syncCustomAeonMenus();syncShinyoshidaAvailability();save();$('#aeonDeliName').value='';$('#aeonDeliKcal').value='';$('#aeonDeliP').value='';rescueBuyStore='aeon';rescueBuyMode=rescueIsOneItem({n:name,kcal,p})?'one':'all';document.querySelectorAll('#rescueStoreSeg button').forEach(x=>x.classList.toggle('active',x.dataset.v==='aeon'));document.querySelectorAll('#rescueModeSeg button').forEach(x=>x.classList.toggle('active',x.dataset.v===rescueBuyMode));renderRescue();toast('イオン惣菜を保存しました');
 });
 $('#reshuffleBtn').addEventListener('click',()=>{nextSeed++;ensureChosen(true);renderPlan();});
 document.addEventListener('click',e=>{const sw=e.target.closest('[data-swap]');if(sw){swapSlot(+sw.dataset.swap);return;}const ps=e.target.closest('[data-pickslot]');if(ps)openPickSheet(+ps.dataset.pickslot);});

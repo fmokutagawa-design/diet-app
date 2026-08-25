@@ -11,6 +11,7 @@ const SOURCES={
   seven:'https://www.sej.co.jp/products/a/',
   lawson:'https://www.lawson.co.jp/recommend/original/',
   aeon:'https://www.topvalu.net/items/',
+  aeonShinyoshida:'https://shop.aeon.com/netsuper/01050000030830/15.html',
 };
 
 function clean(s){return s.replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
@@ -308,6 +309,25 @@ async function crawlAeon(){
   return rows.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,80);
 }
 
+async function crawlAeonShinyoshidaInventory(){
+  const pages=await Promise.all(Array.from({length:6},(_,i)=>fetchText(`${SOURCES.aeonShinyoshida}?p=${i+1}&sort=recommend`)));
+  const rows=[];
+  for(const html of pages){
+    const sections=html.split(/<li class="item product product-item[^>]*>/).slice(1);
+    for(const section of sections){
+      const link=section.match(/<a class="product-item-link"[\s\S]*?href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
+      const price=num(section.match(/<span class="floor-price">([\d,]+)<\/span>/)?.[1]||'');
+      if(!link)continue;
+      const name=clean(link[2]),sourceUrl=link[1],sku=sourceUrl.match(/\/([0-9]+)\.html/)?.[1]||'';
+      if(!name||!sku)continue;
+      rows.push({id:`shinyoshida-${sku}`,n:name,yen:price,sourceUrl});
+    }
+  }
+  const unique=[...new Map(rows.map(x=>[x.id,x])).values()];
+  if(unique.length<300)throw new Error(`AEON Shinyoshida inventory parse yielded only ${unique.length} items`);
+  return unique;
+}
+
 const previous=await fs.readFile(OUTPUT,'utf8').then(JSON.parse).catch(()=>({sources:{},items:[]}));
 const sources={...previous.sources};
 let items=previous.items.filter(x=>!x.id?.startsWith('mcd-'));
@@ -400,6 +420,13 @@ try{
   sources.aeon={...(sources.aeon||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.aeon,error:String(error.message||error)};
   if(!items.length)throw error;
 }
-const output={schemaVersion:1,generatedAt:new Date().toISOString(),sources,items};
+let storeInventory=previous.storeInventory||[];
+try{
+  storeInventory=await crawlAeonShinyoshidaInventory();
+  sources.aeonShinyoshida={status:'ok',updatedAt:new Date().toISOString(),url:SOURCES.aeonShinyoshida,count:storeInventory.length,label:'イオン横浜新吉田店 弁当・惣菜取扱情報'};
+}catch(error){
+  sources.aeonShinyoshida={...(sources.aeonShinyoshida||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.aeonShinyoshida,error:String(error.message||error)};
+}
+const output={schemaVersion:2,generatedAt:new Date().toISOString(),sources,items,storeInventory};
 await fs.writeFile(OUTPUT,JSON.stringify(output,null,2)+'\n');
-console.log(`external-menus.json: ${items.length} items`);
+console.log(`external-menus.json: ${items.length} nutrition items, ${storeInventory.length} Shinyoshida inventory items`);
