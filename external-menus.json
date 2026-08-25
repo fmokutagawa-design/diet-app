@@ -1,34 +1,41 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:28:19.119Z",
+  "generatedAt": "2026-08-25T05:32:47.308Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:28:17.800Z",
+      "updatedAt": "2026-08-25T05:32:45.676Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:28:17.903Z",
+      "updatedAt": "2026-08-25T05:32:45.760Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 60,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:28:18.879Z",
+      "updatedAt": "2026-08-25T05:32:46.714Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:28:19.119Z",
+      "updatedAt": "2026-08-25T05:32:46.937Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
+    },
+    "yoshinoya": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:32:47.308Z",
+      "url": "https://www.yoshinoya.com/pdf/allergy/",
+      "count": 70,
+      "label": "吉野家公式栄養成分表"
     }
   },
   "items": [
@@ -4803,6 +4810,1325 @@
       "official": true,
       "category": "すき家",
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "yoshinoya-6-1416",
+      "n": "吉野家 純豆腐スープ",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 25,
+      "kcal": 371,
+      "f": 19.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-5-1168",
+      "n": "吉野家 冷汁",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 8.7,
+      "kcal": 137,
+      "f": 7.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-5-1005",
+      "n": "吉野家 金目鯛の煮つけ（単品）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 14.3,
+      "kcal": 234,
+      "f": 18.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1443",
+      "n": "吉野家 豚レバニラ定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 34.9,
+      "kcal": 610,
+      "f": 11.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1582",
+      "n": "吉野家 塩さば（単品）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 10.6,
+      "kcal": 201,
+      "f": 16.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-409",
+      "n": "吉野家 Wハムエッグ納豆定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 33.4,
+      "kcal": 683,
+      "f": 19.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-678",
+      "n": "吉野家 特朝定食（鮭）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 31.7,
+      "kcal": 653,
+      "f": 18,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1683",
+      "n": "吉野家 牛皿（大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 16.6,
+      "kcal": 344,
+      "f": 28,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1629",
+      "n": "吉野家 牛皿（三人前）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 40.6,
+      "kcal": 843,
+      "f": 68.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-2155",
+      "n": "吉野家 オーストリッチ丼",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 27,
+      "kcal": 561,
+      "f": 7.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1656",
+      "n": "吉野家 牛皿（特盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 25.6,
+      "kcal": 532,
+      "f": 43.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1709",
+      "n": "吉野家 牛皿（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 13.5,
+      "kcal": 281,
+      "f": 22.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1495",
+      "n": "吉野家 牛鉄板カルビ皿",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.5,
+      "kcal": 456,
+      "f": 33.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1744",
+      "n": "吉野家 ロースかつ（単品）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 27.9,
+      "kcal": 623,
+      "f": 44.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-383",
+      "n": "吉野家 Wハムエッグ牛小鉢定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 32.1,
+      "kcal": 721,
+      "f": 25.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1441",
+      "n": "吉野家 ねぎ塩牛カルビ皿",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 18.8,
+      "kcal": 425,
+      "f": 34.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1527",
+      "n": "吉野家 塩さば特朝定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 31.9,
+      "kcal": 744,
+      "f": 27.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1388",
+      "n": "吉野家 鶏と野菜の塩だれグリル",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 27.1,
+      "kcal": 636,
+      "f": 17.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1413",
+      "n": "吉野家 牛鉄板焼肉皿",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.2,
+      "kcal": 489,
+      "f": 33.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1306",
+      "n": "吉野家 牛鮭定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 26.4,
+      "kcal": 662,
+      "f": 23.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-490",
+      "n": "吉野家 焼魚牛小鉢定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.4,
+      "kcal": 622,
+      "f": 19.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-733",
+      "n": "吉野家 納豆定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 21.3,
+      "kcal": 544,
+      "f": 11.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1549",
+      "n": "吉野家 豚皿（大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 11.1,
+      "kcal": 288,
+      "f": 21.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1279",
+      "n": "吉野家 牛金目鯛の煮つけ定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 30.3,
+      "kcal": 787,
+      "f": 35.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1575",
+      "n": "吉野家 豚皿（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 8.9,
+      "kcal": 232,
+      "f": 17.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1522",
+      "n": "吉野家 豚皿（特盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 17.8,
+      "kcal": 465,
+      "f": 35.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1059",
+      "n": "吉野家 牛皿定食（大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 29.5,
+      "kcal": 783,
+      "f": 34.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-705",
+      "n": "吉野家 焼魚定食（鮭）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 17.8,
+      "kcal": 478,
+      "f": 8.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-436",
+      "n": "吉野家 ハムエッグ牛小鉢定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 22.9,
+      "kcal": 619,
+      "f": 19.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1086",
+      "n": "吉野家 牛皿定食（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 26.4,
+      "kcal": 719,
+      "f": 29.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1637",
+      "n": "吉野家 ジンギスカン定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 28.9,
+      "kcal": 791,
+      "f": 30.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1112",
+      "n": "吉野家 沖縄そば",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 11.2,
+      "kcal": 315,
+      "f": 13.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1251",
+      "n": "吉野家 金目鯛の煮つけ定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 21.8,
+      "kcal": 614,
+      "f": 20.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-517",
+      "n": "吉野家 納豆牛小鉢定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 21.7,
+      "kcal": 612,
+      "f": 17.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1610",
+      "n": "吉野家 牛さば定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 26.6,
+      "kcal": 754,
+      "f": 33.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1499",
+      "n": "吉野家 塩さば牛小鉢定食（朝定食）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.6,
+      "kcal": 714,
+      "f": 29.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-952",
+      "n": "吉野家 牛皿麦とろ御膳（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.2,
+      "kcal": 703,
+      "f": 24.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1467",
+      "n": "吉野家 ねぎ塩豚皿",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 10.5,
+      "kcal": 310,
+      "f": 24.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1845",
+      "n": "吉野家 焦がしネギ焼き鳥丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.1,
+      "kcal": 720,
+      "f": 28.5,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1169",
+      "n": "吉野家 ねぎ塩牛カルビ定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 26,
+      "kcal": 797,
+      "f": 35.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2788",
+      "n": "吉野家 牛丼（小盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 15.4,
+      "kcal": 474,
+      "f": 19.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2467",
+      "n": "吉野家 牛カルビ丼（小盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 17,
+      "kcal": 530,
+      "f": 21.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2413",
+      "n": "吉野家 牛カルビ丼（アタマの大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 26.5,
+      "kcal": 831,
+      "f": 34.5,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2735",
+      "n": "吉野家 牛丼（アタマの大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 23,
+      "kcal": 725,
+      "f": 28.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1554",
+      "n": "吉野家 塩さば定食（朝定食）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 18,
+      "kcal": 570,
+      "f": 17.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2146",
+      "n": "吉野家 ねぎ塩牛カルビ丼（小盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 15.6,
+      "kcal": 503,
+      "f": 22.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2092",
+      "n": "吉野家 ねぎ塩牛カルビ丼（アタマの大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.8,
+      "kcal": 800,
+      "f": 35.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2761",
+      "n": "吉野家 牛丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 19.6,
+      "kcal": 633,
+      "f": 23.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2440",
+      "n": "吉野家 牛カルビ丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 21.3,
+      "kcal": 696,
+      "f": 26.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1273",
+      "n": "吉野家 ねぎ塩牛丼",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.5,
+      "kcal": 670,
+      "f": 24.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2708",
+      "n": "吉野家 牛丼（大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.8,
+      "kcal": 823,
+      "f": 29,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2119",
+      "n": "吉野家 ねぎ塩牛カルビ丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 19.8,
+      "kcal": 668,
+      "f": 26.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-2128",
+      "n": "吉野家 鉄板バタービーフカレー",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.6,
+      "kcal": 838,
+      "f": 31.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1984",
+      "n": "吉野家 牛焼肉丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.6,
+      "kcal": 707,
+      "f": 25.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-5-2092",
+      "n": "吉野家 肉だく牛黒カレー（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 21.7,
+      "kcal": 761,
+      "f": 29.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1929",
+      "n": "吉野家 牛スタミナ焼肉丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 21,
+      "kcal": 748,
+      "f": 29.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-5-2038",
+      "n": "吉野家 牛カルビ黒カレー（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.5,
+      "kcal": 750,
+      "f": 27.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-1139",
+      "n": "吉野家 メンチカツ",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 8,
+      "kcal": 306,
+      "f": 23.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1196",
+      "n": "吉野家 ねぎ塩豚定食",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 17.7,
+      "kcal": 682,
+      "f": 25.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2627",
+      "n": "吉野家 豚丼（小盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 10.9,
+      "kcal": 423,
+      "f": 15.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-5-1847",
+      "n": "吉野家 セット油そば（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 14.1,
+      "kcal": 551,
+      "f": 24.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-5-1760",
+      "n": "吉野家 ミニ牛丼",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 9,
+      "kcal": 352,
+      "f": 14,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2574",
+      "n": "吉野家 豚丼（アタマの大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 16.6,
+      "kcal": 654,
+      "f": 22.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2601",
+      "n": "吉野家 豚丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 14.4,
+      "kcal": 576,
+      "f": 18.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2547",
+      "n": "吉野家 豚丼（大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 18.6,
+      "kcal": 756,
+      "f": 22.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2306",
+      "n": "吉野家 ねぎ塩豚丼（小盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 11,
+      "kcal": 448,
+      "f": 17.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2253",
+      "n": "吉野家 ねぎ塩豚丼（アタマの大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 16.5,
+      "kcal": 684,
+      "f": 24.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-5-2146",
+      "n": "吉野家 牛黒カレー（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 15,
+      "kcal": 622,
+      "f": 17.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2279",
+      "n": "吉野家 ねぎ塩豚丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 14.2,
+      "kcal": 599,
+      "f": 20.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2226",
+      "n": "吉野家 ねぎ塩豚丼（大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 17.9,
+      "kcal": 769,
+      "f": 24.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     }
   ]
 }
