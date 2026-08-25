@@ -10,6 +10,7 @@ const SOURCES={
   famima:'https://www.family.co.jp/goods/safety.html',
   seven:'https://www.sej.co.jp/products/a/',
   lawson:'https://www.lawson.co.jp/recommend/original/',
+  aeon:'https://www.topvalu.net/items/',
 };
 
 function clean(s){return s.replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
@@ -266,6 +267,47 @@ async function crawlLawson(){
   return rows.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,80);
 }
 
+async function crawlAeon(){
+  const categoryIds=['100150100','100150300','100150400','100150700','100175600','100200100','100200300','100200400','100200500','100225300','100225400','100275100','100275200','100400600'];
+  const pages=await Promise.all(categoryIds.map(id=>fetchText(`https://www.topvalu.net/items/list/${id}`)));
+  const candidates=[];
+  for(let pageNo=0;pageNo<pages.length;pageNo++){
+    const json=pages[pageNo].match(/<script type="application\/json" data-products-role="resource">([\s\S]*?)<\/script>/)?.[1];
+    if(!json)continue;
+    for(const product of JSON.parse(json)){
+      if(!product?.jancode||product.is_discontinued)continue;
+      if(product.release_datetime&&new Date(product.release_datetime)>new Date())continue;
+      candidates.push({jancode:String(product.jancode),name:clean(product.product_name||''),standard:clean(product.standard||''),yen:num(String(product.view_taxin||'')),category:categoryIds[pageNo]});
+    }
+  }
+  const unique=[...new Map(candidates.map(x=>[x.jancode,x])).values()],rows=[];
+  for(let offset=0;offset<unique.length;offset+=10){
+    const batch=unique.slice(offset,offset+10);
+    const details=await Promise.all(batch.map(x=>fetchText(`https://www.topvalu.net/items/detail/${x.jancode}/`)));
+    for(let i=0;i<batch.length;i++){
+      const candidate=batch[i],html=details[i];
+      const nutrition=clean(html.match(/<dt>栄養成分<\/dt><dd>([\s\S]*?)<\/dd>/)?.[1]||'');
+      const values=nutrition.match(/^(.*?)エネルギー\s*([\d,.]+)kcal\s*たんぱく質\s*([\d,.]+)g\s*脂質\s*([\d,.]+)g/);
+      if(!values)continue;
+      const basis=clean(values[1]),rawKcal=num(values[2]),rawProtein=num(values[3]),rawFat=num(values[4]);
+      if(rawKcal==null||rawProtein==null||rawFat==null)continue;
+      let factor=1,portion=basis.replace(/当たり.*$/,'').trim();
+      if(/^100g当たり/.test(basis)){
+        const packageGrams=num(candidate.standard.match(/^([\d,.]+)g(?:$|[（(])/i)?.[1]||'');
+        if(packageGrams==null||packageGrams>500)continue;
+        factor=packageGrams/100;
+        portion=`1包装${candidate.standard}`;
+      }
+      const kcal=Math.round(rawKcal*factor),protein=Math.round(rawProtein*factor*10)/10,fat=Math.round(rawFat*factor*10)/10;
+      if(kcal<120||kcal>850||protein<8)continue;
+      if(/ジュース|飲料|ドリンク|コーヒー|お茶|酒|ビール/.test(candidate.name))continue;
+      rows.push({id:`aeon-${candidate.jancode}`,n:`イオン ${candidate.name}${portion?`（${portion}）`:''}`,s:['aeon'],p:protein,kcal,f:fat,yen:candidate.yen,days:dayTypes(kcal),kind:'gai',official:true,category:`トップバリュ ${candidate.category}`,sourceUrl:`https://www.topvalu.net/items/detail/${candidate.jancode}/`});
+    }
+  }
+  if(rows.length<30)throw new Error(`AEON/TOPVALU parse yielded only ${rows.length} items`);
+  return rows.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,80);
+}
+
 const previous=await fs.readFile(OUTPUT,'utf8').then(JSON.parse).catch(()=>({sources:{},items:[]}));
 const sources={...previous.sources};
 let items=previous.items.filter(x=>!x.id?.startsWith('mcd-'));
@@ -346,6 +388,16 @@ try{
 }catch(error){
   items=items.concat(previous.items.filter(x=>x.id?.startsWith('lawson-')));
   sources.lawson={...(sources.lawson||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.lawson,error:String(error.message||error)};
+  if(!items.length)throw error;
+}
+items=items.filter(x=>!x.id?.startsWith('aeon-'));
+try{
+  const found=await crawlAeon();
+  items=items.concat(found);
+  sources.aeon={status:'ok',updatedAt:new Date().toISOString(),url:SOURCES.aeon,count:found.length,label:'イオン トップバリュ公式商品情報'};
+}catch(error){
+  items=items.concat(previous.items.filter(x=>x.id?.startsWith('aeon-')));
+  sources.aeon={...(sources.aeon||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.aeon,error:String(error.message||error)};
   if(!items.length)throw error;
 }
 const output={schemaVersion:1,generatedAt:new Date().toISOString(),sources,items};

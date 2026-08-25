@@ -1,62 +1,69 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:42:20.056Z",
+  "generatedAt": "2026-08-25T05:47:21.470Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:42:13.904Z",
+      "updatedAt": "2026-08-25T05:46:09.847Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:42:13.981Z",
+      "updatedAt": "2026-08-25T05:46:10.682Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 60,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:42:14.949Z",
+      "updatedAt": "2026-08-25T05:46:11.678Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:42:15.171Z",
+      "updatedAt": "2026-08-25T05:46:11.919Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
     },
     "yoshinoya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:42:15.540Z",
+      "updatedAt": "2026-08-25T05:46:12.285Z",
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 70,
       "label": "吉野家公式栄養成分表"
     },
     "famima": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:42:15.597Z",
+      "updatedAt": "2026-08-25T05:46:14.868Z",
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 80,
       "label": "ファミマ公式栄養成分情報（関東）"
     },
     "seven": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:42:16.000Z",
+      "updatedAt": "2026-08-25T05:46:28.372Z",
       "url": "https://www.sej.co.jp/products/a/",
       "count": 42,
       "label": "セブン公式商品情報（関東）"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:42:20.056Z",
+      "updatedAt": "2026-08-25T05:46:31.213Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
+    },
+    "aeon": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:47:21.470Z",
+      "url": "https://www.topvalu.net/items/",
+      "count": 80,
+      "label": "イオン トップバリュ公式商品情報"
     }
   },
   "items": [
@@ -10741,6 +10748,1604 @@
         "関東"
       ],
       "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1528381_1996.html"
+    },
+    {
+      "id": "aeon-4549414726008",
+      "n": "イオン ひとくちサラダチキン（1袋(125g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 29.8,
+      "kcal": 140,
+      "f": 2.4,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200500",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414726008/"
+    },
+    {
+      "id": "aeon-4549741014304",
+      "n": "イオン 国産鶏肉使用サラダチキン(むね肉・プレーン)（1袋(120g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 26.3,
+      "kcal": 125,
+      "f": 1.9,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200500",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549741014304/"
+    },
+    {
+      "id": "aeon-4549414679267",
+      "n": "イオン 荒ほぐし骨・皮取り さば（1パック(55g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 25.6,
+      "kcal": 126,
+      "f": 2.4,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150400",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414679267/"
+    },
+    {
+      "id": "aeon-4549741034975",
+      "n": "イオン 国産鶏肉使用サラダチキン(むね肉・ハーブ)（1袋(120g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 25.6,
+      "kcal": 129,
+      "f": 2.4,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200500",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549741034975/"
+    },
+    {
+      "id": "aeon-4549414000160",
+      "n": "イオン もも生ハム切落とし（1包装110g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 25.7,
+      "kcal": 145,
+      "f": 3.9,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414000160/"
+    },
+    {
+      "id": "aeon-4549414723618",
+      "n": "イオン 手仕込みローストビーフシュレッド（1袋(97g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 22.1,
+      "kcal": 135,
+      "f": 3.7,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414723618/"
+    },
+    {
+      "id": "aeon-4901810984473",
+      "n": "イオン ローストチキン切落し（1パック(100g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 22.1,
+      "kcal": 138,
+      "f": 4.6,
+      "yen": 235.44,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4901810984473/"
+    },
+    {
+      "id": "aeon-4549414719710",
+      "n": "イオン 手仕込みローストビーフシルキーカット（1袋(ローストビーフ119g+ソース12g×3袋)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 31.5,
+      "kcal": 208,
+      "f": 5.2,
+      "yen": 1058.4,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414719710/"
+    },
+    {
+      "id": "aeon-4549414719703",
+      "n": "イオン 手仕込みローストビーフシルキーカット（1袋(ローストビーフ66g+ソース12g×2袋)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 17.6,
+      "kcal": 120,
+      "f": 2.9,
+      "yen": 645.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414719703/"
+    },
+    {
+      "id": "aeon-4549414656824",
+      "n": "イオン ひとくちもも焼豚（1包装114g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 22,
+      "kcal": 153,
+      "f": 3.2,
+      "yen": 300.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200400",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414656824/"
+    },
+    {
+      "id": "aeon-4549414555455",
+      "n": "イオン わびさいさい まぐろたたき（1包装110g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 22.2,
+      "kcal": 158,
+      "f": 8,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414555455/"
+    },
+    {
+      "id": "aeon-4901810786022",
+      "n": "イオン しっとりまろやか生ハムロース（1包装110g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 24.1,
+      "kcal": 174,
+      "f": 7.4,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4901810786022/"
+    },
+    {
+      "id": "aeon-4549414628937",
+      "n": "イオン 直火焼 焼豚（1包装250g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 44.8,
+      "kcal": 330,
+      "f": 9.3,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200400",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414628937/"
+    },
+    {
+      "id": "aeon-4549414723632",
+      "n": "イオン 直火焼 焼豚（1包装230g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 41.2,
+      "kcal": 304,
+      "f": 8.5,
+      "yen": 394.2,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200400",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414723632/"
+    },
+    {
+      "id": "aeon-4549414706437",
+      "n": "イオン 手仕込みローストビーフ&ローストポーク（1袋(ローストビーフ120g+ローストポーク110g+ソース15g×4袋)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 56.8,
+      "kcal": 465,
+      "f": 19.8,
+      "yen": 1706.4,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414706437/"
+    },
+    {
+      "id": "aeon-4549414539523",
+      "n": "イオン Easy to Use あさり飯の素（1袋(210g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 21.2,
+      "kcal": 183,
+      "f": 5.2,
+      "yen": 320.76,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150700",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414539523/"
+    },
+    {
+      "id": "aeon-4549414714647",
+      "n": "イオン (100周年)純輝鶏(国産)使用生つくね(プレーン)（1包装260g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 39,
+      "kcal": 348,
+      "f": 13,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414714647/"
+    },
+    {
+      "id": "aeon-4549414714548",
+      "n": "イオン 純輝鶏(国産)使用生つくね(プレーン)（1包装150g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 22.5,
+      "kcal": 201,
+      "f": 7.5,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414714548/"
+    },
+    {
+      "id": "aeon-4549414711165",
+      "n": "イオン 手仕込みローストビーフブロック（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 68.4,
+      "kcal": 621,
+      "f": 37.8,
+      "yen": 2138.4,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414711165/"
+    },
+    {
+      "id": "aeon-4549414681802",
+      "n": "イオン 手仕込みローストビーフ ブロック（1袋(100g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 22.8,
+      "kcal": 207,
+      "f": 12.6,
+      "yen": 861.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414681802/"
+    },
+    {
+      "id": "aeon-4549414545098",
+      "n": "イオン 切れているしめさば炙り焼き（1袋(80g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 16.3,
+      "kcal": 149,
+      "f": 7.9,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414545098/"
+    },
+    {
+      "id": "aeon-4549741817875",
+      "n": "イオン 特級ももハム切落し（1包装110g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 23.8,
+      "kcal": 219,
+      "f": 13.2,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549741817875/"
+    },
+    {
+      "id": "aeon-4549414714524",
+      "n": "イオン プレーンヨーグルト（1包装400g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 15.6,
+      "kcal": 144,
+      "f": 1.2,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414714524/"
+    },
+    {
+      "id": "aeon-4549414714630",
+      "n": "イオン (100周年)純輝鶏(国産)生つくね(大葉入り5種野菜)（1包装260g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 36.9,
+      "kcal": 343,
+      "f": 13.8,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414714630/"
+    },
+    {
+      "id": "aeon-4549414714531",
+      "n": "イオン 純輝鶏(国産)使用生つくね(5種の野菜(大葉入り))（1包装150g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 21.3,
+      "kcal": 198,
+      "f": 8,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414714531/"
+    },
+    {
+      "id": "aeon-4549414653663",
+      "n": "イオン おうちで楽しむCafeごはん 十勝豚丼(北海道)（1袋(110g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 21.8,
+      "kcal": 205,
+      "f": 7.2,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100225300",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414653663/"
+    },
+    {
+      "id": "aeon-4549414679298",
+      "n": "イオン 荒ほぐし骨・皮取り あじ（1パック(55g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.3,
+      "kcal": 121,
+      "f": 7.9,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150400",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414679298/"
+    },
+    {
+      "id": "aeon-4549414517132",
+      "n": "イオン おうちで楽しむCafeごはん ガパオ（1袋(130g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 23.5,
+      "kcal": 233,
+      "f": 13,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100225300",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414517132/"
+    },
+    {
+      "id": "aeon-4549414699258",
+      "n": "イオン きぬとうふ（1包装320g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 17.3,
+      "kcal": 173,
+      "f": 8.3,
+      "yen": 62.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414699258/"
+    },
+    {
+      "id": "aeon-4902121964413",
+      "n": "イオン 毎日の食卓にプレーンヨーグルト（1包装400g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 13.2,
+      "kcal": 132,
+      "f": 1.2,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4902121964413/"
+    },
+    {
+      "id": "aeon-4549414206531",
+      "n": "イオン 常温可能 絹とうふ(国産大豆)ケース販売用（1パック(300g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 19.2,
+      "kcal": 195,
+      "f": 10.5,
+      "yen": 1836,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414206531/"
+    },
+    {
+      "id": "aeon-4549414204988",
+      "n": "イオン 常温 絹とうふ(国産大豆)（1パック(300g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 19.2,
+      "kcal": 195,
+      "f": 10.5,
+      "yen": 159.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414204988/"
+    },
+    {
+      "id": "aeon-4549414538854",
+      "n": "イオン つるしベーコン切落し（1パック(100g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 18.8,
+      "kcal": 191,
+      "f": 11.7,
+      "yen": 354.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414538854/"
+    },
+    {
+      "id": "aeon-4549414215694",
+      "n": "イオン つるしベーコンブロック（1包装160g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 30.1,
+      "kcal": 306,
+      "f": 18.7,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414215694/"
+    },
+    {
+      "id": "aeon-4549414393927",
+      "n": "イオン しっとり食感パストラミポーク切落し（1パック(94g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 16.5,
+      "kcal": 168,
+      "f": 10,
+      "yen": 300.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414393927/"
+    },
+    {
+      "id": "aeon-4549414669619",
+      "n": "イオン 北海道産豚肉使用 もも生ハム切落とし（1包装100g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 19.8,
+      "kcal": 203,
+      "f": 13,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414669619/"
+    },
+    {
+      "id": "aeon-4549414436785",
+      "n": "イオン オーガニック もめんとうふ（1包装200g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 15.6,
+      "kcal": 160,
+      "f": 9.4,
+      "yen": 127.44,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414436785/"
+    },
+    {
+      "id": "aeon-4902121964420",
+      "n": "イオン 毎日の食卓にプレーンヨーグルト（1包装400g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.8,
+      "kcal": 132,
+      "f": 1.6,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4902121964420/"
+    },
+    {
+      "id": "aeon-4549414539547",
+      "n": "イオン Easy to Use たこ飯の素（1袋(175g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.6,
+      "kcal": 130,
+      "f": 3.8,
+      "yen": 320.76,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150700",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414539547/"
+    },
+    {
+      "id": "aeon-4549414681796",
+      "n": "イオン 手仕込みローストポークスライス（1袋(ローストポーク55g+ソース15g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.6,
+      "kcal": 130,
+      "f": 7.3,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100175600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414681796/"
+    },
+    {
+      "id": "aeon-4549414702835",
+      "n": "イオン ASC認証サーモントラウトスモーク（1袋(130g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 27.2,
+      "kcal": 286,
+      "f": 19.5,
+      "yen": 1058.4,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414702835/"
+    },
+    {
+      "id": "aeon-4549414687460",
+      "n": "イオン ASC認証サーモントラウトスモーク（1袋(60g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.5,
+      "kcal": 132,
+      "f": 9,
+      "yen": 537.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414687460/"
+    },
+    {
+      "id": "aeon-4549414373257",
+      "n": "イオン オーガニック コクのある焼豆腐（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 26.1,
+      "kcal": 276,
+      "f": 16.8,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414373257/"
+    },
+    {
+      "id": "aeon-4549414435634",
+      "n": "イオン オーガニック もめんとうふ（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 20.1,
+      "kcal": 213,
+      "f": 11.7,
+      "yen": 149.04,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414435634/"
+    },
+    {
+      "id": "aeon-4902121964406",
+      "n": "イオン 毎日の食卓にプレーンヨーグルト（1包装400g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 13.2,
+      "kcal": 140,
+      "f": 1.6,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4902121964406/"
+    },
+    {
+      "id": "aeon-4549414703306",
+      "n": "イオン 脂肪をひかえたプロテインヨーグルト やさしい甘さ（1包装375g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 31.1,
+      "kcal": 330,
+      "f": 1.5,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414703306/"
+    },
+    {
+      "id": "aeon-4549414629194",
+      "n": "イオン プレーンヨーグルト（1包装400g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.8,
+      "kcal": 136,
+      "f": 1.6,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414629194/"
+    },
+    {
+      "id": "aeon-4549414287875",
+      "n": "イオン 北海道ゆきほまれ木綿豆腐 350g（1包装350g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 31.9,
+      "kcal": 340,
+      "f": 20.3,
+      "yen": 116.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414287875/"
+    },
+    {
+      "id": "aeon-4549414699241",
+      "n": "イオン もめんとうふ（1包装320g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 17.9,
+      "kcal": 195,
+      "f": 9.9,
+      "yen": 62.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414699241/"
+    },
+    {
+      "id": "aeon-4549414725230",
+      "n": "イオン 若鶏ももの照り焼き（1袋(120g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 16.8,
+      "kcal": 184,
+      "f": 10.6,
+      "yen": 321.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100225300",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414725230/"
+    },
+    {
+      "id": "aeon-4549414373233",
+      "n": "イオン オーガニック コクのある焼豆腐（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 21.9,
+      "kcal": 240,
+      "f": 13.8,
+      "yen": 159.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414373233/"
+    },
+    {
+      "id": "aeon-4549414655117",
+      "n": "イオン ひとくちスモークタン（1パック(97g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 17.5,
+      "kcal": 192,
+      "f": 12.6,
+      "yen": 300.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414655117/"
+    },
+    {
+      "id": "aeon-4549414435641",
+      "n": "イオン オーガニック きぬとうふ（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 15.3,
+      "kcal": 168,
+      "f": 8.4,
+      "yen": 149.04,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414435641/"
+    },
+    {
+      "id": "aeon-4549414655124",
+      "n": "イオン スモークタン切落し（1パック(67g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.1,
+      "kcal": 133,
+      "f": 8.7,
+      "yen": 213.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100200100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414655124/"
+    },
+    {
+      "id": "aeon-4901810768448",
+      "n": "イオン 毎日の食卓にプレーンヨーグルト（1包装400g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 13.6,
+      "kcal": 152,
+      "f": 3.2,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4901810768448/"
+    },
+    {
+      "id": "aeon-4902121964390",
+      "n": "イオン 毎日の食卓にプレーンヨーグルト（1包装400g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 13.2,
+      "kcal": 148,
+      "f": 2.4,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4902121964390/"
+    },
+    {
+      "id": "aeon-4902121964383",
+      "n": "イオン 毎日の食卓にプレーンヨーグルト（1包装400g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 13.2,
+      "kcal": 148,
+      "f": 2.8,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100400600",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4902121964383/"
+    },
+    {
+      "id": "aeon-4549741568647",
+      "n": "イオン 北海道産ゆきほまれ木綿豆腐（1個(200g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 15.6,
+      "kcal": 175,
+      "f": 10.8,
+      "yen": 95.04,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549741568647/"
+    },
+    {
+      "id": "aeon-4549414373240",
+      "n": "イオン オーガニック コクのある焼豆腐（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 23.7,
+      "kcal": 267,
+      "f": 15.9,
+      "yen": 159.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414373240/"
+    },
+    {
+      "id": "aeon-4549414287882",
+      "n": "イオン 北海道ゆきほまれ絹豆腐 350g（1包装350g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 21.3,
+      "kcal": 242,
+      "f": 14,
+      "yen": 116.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414287882/"
+    },
+    {
+      "id": "aeon-4549414626681",
+      "n": "イオン 北海道産ゆきほまれ使用 寄せ豆腐（1個(300g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 18.3,
+      "kcal": 208,
+      "f": 12.6,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414626681/"
+    },
+    {
+      "id": "aeon-4549741419093",
+      "n": "イオン 北海道産ゆきほまれ使用木綿豆腐（1包装320g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 18.2,
+      "kcal": 208,
+      "f": 12.8,
+      "yen": 116.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549741419093/"
+    },
+    {
+      "id": "aeon-4549414609486",
+      "n": "イオン 北海道ゆきほまれ使用木綿豆腐（1包装350g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 23.5,
+      "kcal": 270,
+      "f": 17.2,
+      "yen": 116.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414609486/"
+    },
+    {
+      "id": "aeon-4549414626674",
+      "n": "イオン 北海道産ゆきほまれ使用 寄せ豆腐（1個(300g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 18,
+      "kcal": 207,
+      "f": 12.3,
+      "yen": 138.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414626674/"
+    },
+    {
+      "id": "aeon-4549414696509",
+      "n": "イオン オーガニック 木綿とうふ（1包装350g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 23.1,
+      "kcal": 266,
+      "f": 16.5,
+      "yen": 159.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414696509/"
+    },
+    {
+      "id": "aeon-4549741568685",
+      "n": "イオン 北海道産ゆきほまれ絹豆腐（1個(200g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 10.6,
+      "kcal": 125,
+      "f": 7.6,
+      "yen": 95.04,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549741568685/"
+    },
+    {
+      "id": "aeon-4549414673609",
+      "n": "イオン 鶏と大根と玉子の煮物（1袋(160g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.6,
+      "kcal": 151,
+      "f": 6.6,
+      "yen": 354.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100225300",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414673609/"
+    },
+    {
+      "id": "aeon-4549414698459",
+      "n": "イオン もめんとうふ（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 23.7,
+      "kcal": 285,
+      "f": 19.2,
+      "yen": 62.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414698459/"
+    },
+    {
+      "id": "aeon-4549741419086",
+      "n": "イオン 北海道産ゆきほまれ使用絹豆腐（1包装320g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 16.3,
+      "kcal": 198,
+      "f": 11.5,
+      "yen": 116.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549741419086/"
+    },
+    {
+      "id": "aeon-4549414679328",
+      "n": "イオン 北海道ゆきほまれダブルパック木綿（1個(200g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12,
+      "kcal": 148,
+      "f": 9.8,
+      "yen": 159.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414679328/"
+    },
+    {
+      "id": "aeon-4549414713831",
+      "n": "イオン プロのひと品 橋本幹造監修_お麩とれんこん入り鶏のみぞれ煮（1袋(160g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.3,
+      "kcal": 152,
+      "f": 6.4,
+      "yen": 429.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100225300",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414713831/"
+    },
+    {
+      "id": "aeon-4549414655056",
+      "n": "イオン いかと里芋の煮付け（1包装160g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 11.4,
+      "kcal": 141,
+      "f": 2.1,
+      "yen": 354.24,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100150700",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414655056/"
+    },
+    {
+      "id": "aeon-4549414218138",
+      "n": "イオン わびさいさい 木綿とうふ（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 16.2,
+      "kcal": 201,
+      "f": 12.6,
+      "yen": 41.04,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414218138/"
+    },
+    {
+      "id": "aeon-4549414609493",
+      "n": "イオン 北海道ゆきほまれ使用絹豆腐（1包装350g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 17.8,
+      "kcal": 221,
+      "f": 14,
+      "yen": 116.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414609493/"
+    },
+    {
+      "id": "aeon-4549414698466",
+      "n": "イオン きぬとうふ（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 16.2,
+      "kcal": 204,
+      "f": 13.2,
+      "yen": 62.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414698466/"
+    },
+    {
+      "id": "aeon-4549414696516",
+      "n": "イオン オーガニック 絹とうふ（1包装350g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 16.1,
+      "kcal": 203,
+      "f": 11.9,
+      "yen": 159.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414696516/"
+    },
+    {
+      "id": "aeon-4549414679335",
+      "n": "イオン 北海道ゆきほまれダブルパック絹（1個(200g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 10,
+      "kcal": 127,
+      "f": 8.2,
+      "yen": 159.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414679335/"
+    },
+    {
+      "id": "aeon-4549414218145",
+      "n": "イオン わびさいさい 絹とうふ（1包装300g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 15,
+      "kcal": 192,
+      "f": 12,
+      "yen": 41.04,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100275100",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414218145/"
+    },
+    {
+      "id": "aeon-4549414652246",
+      "n": "イオン 豚ばら生姜焼き（1袋(120g)）",
+      "s": [
+        "aeon"
+      ],
+      "p": 15.5,
+      "kcal": 199,
+      "f": 11.3,
+      "yen": 386.64,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100225300",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414652246/"
+    },
+    {
+      "id": "aeon-4549414698541",
+      "n": "イオン 7種具材のひじきと豆のサラダ（1包装155g）",
+      "s": [
+        "aeon"
+      ],
+      "p": 12.4,
+      "kcal": 163,
+      "f": 3.7,
+      "yen": 213.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "トップバリュ 100225300",
+      "sourceUrl": "https://www.topvalu.net/items/detail/4549414698541/"
     }
   ]
 }
