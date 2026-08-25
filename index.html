@@ -35,7 +35,7 @@ label.lbl{display:block;color:var(--muted);font-size:.82rem;margin-bottom:6px}
 .stepper button{height:44px;border:none;border-radius:11px;background:var(--surface2);color:var(--text);font-size:1.3rem;cursor:pointer}
 .stepper button:active{background:var(--surface3)}
 .stepper .value{height:44px;border:1px solid var(--line);border-radius:11px;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:700}
-.seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.seg.two{grid-template-columns:1fr 1fr}.seg.three{grid-template-columns:repeat(3,minmax(0,1fr))}.seg.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.seg.two{grid-template-columns:1fr 1fr}.seg.three{grid-template-columns:repeat(3,minmax(0,1fr))}.seg.four{grid-template-columns:repeat(4,minmax(0,1fr))}.seg.five{grid-template-columns:repeat(5,minmax(0,1fr))}
 .seg button{min-height:44px;border:none;border-radius:12px;background:var(--surface2);color:var(--text);cursor:pointer;font-size:.92rem}
 .seg button.active{background:var(--primary);color:var(--primaryInk);font-weight:700}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 14px;border:none;border-radius:12px;background:var(--surface2);color:var(--text);font-weight:700;font-size:.95rem;cursor:pointer;width:100%}
@@ -616,8 +616,8 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
     <div class="card order-card">
       <div class="order-title">🎯 次の一食、これ。</div>
       <div class="order-copy">献立は考えなくていいです。行く店を1つ押すと、今日の残り枠から減量向きの一食を勝手に決めます。</div>
-      <div class="seg three" id="orderStoreSeg" style="margin-top:12px">
-        <button data-v="seven">セブン</button><button data-v="lawson">ローソン</button><button data-v="aeon">イオン</button>
+      <div class="seg five" id="orderStoreSeg" style="margin-top:12px">
+        <button data-v="seven">セブン</button><button data-v="lawson">ローソン</button><button data-v="aeon">イオン</button><button data-v="mybasket">まいばす</button><button data-v="create">クリエイト</button>
       </div>
       <button class="order-go" id="orderGo" style="width:100%;margin-top:9px">⚡ 今日の刑を言い渡す</button>
       <div id="orderResult"></div>
@@ -663,7 +663,7 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
       </div>
       <div id="storeSelWrap" style="margin-top:8px;display:none">
         <label class="lbl" style="font-size:.78rem;color:var(--muted)">どの店でまとめ買い？（1店で3食揃えます）</label>
-        <div class="seg three" id="storeSelSeg"><button data-v="seven">セブン</button><button data-v="lawson">ローソン</button><button data-v="aeon">イオン</button></div>
+        <div class="seg five" id="storeSelSeg"><button data-v="seven">セブン</button><button data-v="lawson">ローソン</button><button data-v="aeon">イオン</button><button data-v="mybasket">まいばす</button><button data-v="create">クリエイト</button></div>
       </div>
       <div class="summary" style="margin-top:10px" id="planTotals"></div>
       <div id="nextList" style="margin-top:10px"></div>
@@ -2773,8 +2773,8 @@ $('#addMachineBtn').addEventListener('click',()=>{
 });
 
 /* MEALS */
-const B={seven:'s-seven',lawson:'s-lawson',aeon:'s-aeon',other:'s-other',famima:'s-famima',sukiya:'s-sukiya',yoshinoya:'s-yoshinoya',mcdonalds:'s-other',mos:'s-other',matsuya:'s-other',shinpachi:'s-other',gai:'s-gai'};
-const N={seven:'セブン',lawson:'ローソン',aeon:'イオン',other:'その他',famima:'ファミマ',sukiya:'すき家',yoshinoya:'吉野家',mcdonalds:'マクドナルド',mos:'モス',matsuya:'松屋',shinpachi:'しんぱち食堂',gai:'外食'};
+const B={seven:'s-seven',lawson:'s-lawson',aeon:'s-aeon',mybasket:'s-aeon',create:'s-other',tanto:'s-gai',other:'s-other',famima:'s-famima',sukiya:'s-sukiya',yoshinoya:'s-yoshinoya',mcdonalds:'s-other',mos:'s-other',matsuya:'s-other',shinpachi:'s-other',gai:'s-gai'};
+const N={seven:'セブン',lawson:'ローソン',aeon:'イオン',mybasket:'まいばすけっと',create:'クリエイト',tanto:'食堂たんと',other:'その他',famima:'ファミマ',sukiya:'すき家',yoshinoya:'吉野家',mcdonalds:'マクドナルド',mos:'モス',matsuya:'松屋',shinpachi:'しんぱち食堂',gai:'外食'};
 let EXTERNAL_MENU_META=null;
 // 商品マスタ（実在の高たんぱく商品中心）。days＝向いている日タイプ
 let STORE_ITEMS=[
@@ -2814,6 +2814,13 @@ let STORE_ITEMS=[
   {n:'ザバス ミルクプロテイン',s:['seven','lawson','aeon'],p:15,kcal:100,yen:170,days:['train','night']},
   {n:'プロフィット ささみバー',s:['seven','lawson'],p:11,kcal:60,yen:170,days:['train','rest','night']},
   {n:'プロテインドリンク 40系',s:['seven','lawson'],p:40,kcal:180,yen:320,days:['train','night']},
+  // --- クリエイトSD（店舗在庫・価格は店頭確認） ---
+  {n:'クリエイト補充：冷凍ブロッコリー500g',s:['create'],p:20,kcal:165,yen:null,days:['train','rest','night']},
+  {n:'クリエイト補充：鶏むね肉250g',s:['create'],p:55,kcal:270,yen:null,days:['train','rest','night']},
+  {n:'クリエイト補充：豆腐300g＋納豆2パック＋卵2個＋めかぶ',s:['create'],p:41,kcal:520,yen:null,days:['train','rest','night']},
+  {n:'クリエイト補充：さば水煮缶1缶',s:['create'],p:30,kcal:300,yen:null,days:['train','rest','night']},
+  {n:'クリエイト補充：ツナ水煮缶＋豆腐300g',s:['create'],p:34,kcal:290,yen:null,days:['train','rest','night']},
+  {n:'クリエイト補充：高たんぱくヨーグルト＋ゆで卵2個',s:['create'],p:23,kcal:240,yen:null,days:['train','rest','night']},
   // --- イオン / トップバリュ（買う） ---
   {n:'純輝鶏 サラダチキン（むね・プレーン）',s:['aeon'],p:25,kcal:94,yen:260,days:['train','rest','night']},
   {n:'サラダチキン ささみスティック',s:['aeon'],p:12,kcal:60,yen:160,days:['train','rest','night']},
@@ -2841,6 +2848,8 @@ let STORE_ITEMS=[
   {n:'やよい軒 サバの塩焼定食',s:['gai'],p:38,kcal:650,yen:850,days:['train','rest'],kind:'gai'},
   {n:'ガスト 若鶏のグリル',s:['gai'],p:38,kcal:420,yen:700,days:['train','rest'],kind:'gai'},
   {n:'鳥貴族 むね貴族焼（2本）',s:['gai'],p:26,kcal:240,yen:400,days:['rest','night'],kind:'gai'},
+  {n:'食堂たんと 週替わりランチプレート（ご飯少なめ・概算）',s:['tanto'],p:25,kcal:600,yen:1200,days:['train','rest'],kind:'gai',sourceUrl:'https://shokudotanto.shopinfo.jp/'},
+  {n:'食堂たんと 週替わりランチプレート（ご飯なし・概算）',s:['tanto'],p:22,kcal:430,yen:1200,days:['rest','night'],kind:'gai',sourceUrl:'https://shokudotanto.shopinfo.jp/'},
   {n:"TV さばの塩焼(1切)",s:["aeon"],p:15,kcal:190,yen:150,days:["train","rest","night"]},
   {n:"TV レンジで焼きさば",s:["aeon"],p:16,kcal:200,yen:200,days:["train","rest","night"]},
   {n:"TV レンジで焼きあじ",s:["aeon"],p:15,kcal:160,yen:200,days:["train","rest","night"]},
@@ -2895,6 +2904,7 @@ let STORE_ITEMS=[
   {n:"だし香る鶏つくね串",s:["famima"],p:11,kcal:130,f:6,yen:150,days:["train","rest","night"]},
   {n:"ねぎ塩豚カルビ丼",s:["famima"],p:22,kcal:620,f:22,yen:498,days:["train"]}
 ];
+STORE_ITEMS.forEach(it=>{if(it.s.includes('aeon')&&!it.s.includes('mybasket'))it.s.push('mybasket');});
 function officialPrice(it){return Number.isFinite(it.yen)?`約${it.yen}円`:'価格は店舗で確認';}
 function renderOfficialMenuStatus(){
   const tag=$('#officialMenuTag'),note=$('#officialMenuNote');if(!tag||!note)return;
@@ -3428,7 +3438,7 @@ function renderOrder(){
   if(!o){out.innerHTML=`<div class="small muted" style="margin-top:8px">次は「${x.slot}」。残り約${x.left}kcalから判決します。</div>`;return;}
   const it=STORE_ITEMS[o.itemIdx];if(!it){S.meal.order=null;save();renderOrder();return;}
   const after=x.left-it.kcal,mercyUsed=S.meal.orderMercyKey===todayKey;
-  out.innerHTML=`<div class="order-result"><div class="verdict">${o.slot}の判決・${N[o.store]}</div><div class="food">${it.n}</div><div class="numbers">約${it.yen}円　${it.kcal}kcal　たんぱく質${it.p}g</div><div class="reason">これを食べると今日の残りは約<b>${Math.max(0,after)}kcal</b>。高たんぱくを優先しつつ、残り枠を使い切りすぎない候補です。売り切れなら「近いカロリー・P${Math.max(15,it.p-5)}g以上」を店内で代役にしてください。</div><div class="order-actions"><button class="order-done" id="orderDone">✓ 従った・記録する</button><button class="order-mercy" id="orderMercy" ${mercyUsed?'disabled':''}>${mercyUsed?'恩赦済み':'一度だけ恩赦'}</button></div></div>`;
+  out.innerHTML=`<div class="order-result"><div class="verdict">${o.slot}の判決・${N[o.store]}</div><div class="food">${it.n}</div><div class="numbers">${Number.isFinite(it.yen)?`約${it.yen}円`:'価格は店頭確認'}　${it.kcal}kcal　たんぱく質${it.p}g</div><div class="reason">これを食べると今日の残りは約<b>${Math.max(0,after)}kcal</b>。高たんぱくを優先しつつ、残り枠を使い切りすぎない候補です。売り切れなら「近いカロリー・P${Math.max(15,it.p-5)}g以上」を店内で代役にしてください。</div><div class="order-actions"><button class="order-done" id="orderDone">✓ 従った・記録する</button><button class="order-mercy" id="orderMercy" ${mercyUsed?'disabled':''}>${mercyUsed?'恩赦済み':'一度だけ恩赦'}</button></div></div>`;
 }
 function rescueStockLabel(id,n){const s=RESCUE_STOCK.find(x=>x.id===id);return `${s?s.name:id}×${n}`;}
 function rescueCanMake(meal){return Object.entries(meal.needs).every(([id,n])=>(S.rescueInventory[id]||0)>=n);}
@@ -3467,7 +3477,7 @@ function renderMeal(){
   document.querySelectorAll('#storeKindSeg button').forEach(b=>b.classList.toggle('active',b.dataset.v===kind));
   const items=STORE_ITEMS.filter(it=>it.days.includes(S.meal.dayType)&&((it.kind==='gai')===(kind==='gai'))).slice().sort((a,b)=>cheap?(Number.isFinite(a.yen)?a.yen:Infinity)-(Number.isFinite(b.yen)?b.yen:Infinity):b.p-a.p);
   const sc=$('#storeCount');if(sc)sc.textContent=`${items.length}品`;
-  const kn=$('#storeKindNote');if(kn)kn.textContent=kind==='gai'?'・店で食べる/テイクアウト':'・セブン/ローソン/イオン 他';
+  const kn=$('#storeKindNote');if(kn)kn.textContent=kind==='gai'?'・店で食べる/テイクアウト':'・コンビニ/イオン/まいばす/クリエイト 他';
   $('#storeList').innerHTML=items.map(it=>{const idx=STORE_ITEMS.indexOf(it);const eatLabel=kind==='gai'?'✓ これを食べた（記録）':'✓ 買って食べた（記録）';return `<div class="meal"><h3>${it.n}${it.official?' <span class="tag">公式値</span>':''}</h3><div>${it.s.map(s=>`<span class="store ${B[s]||B.other}">${N[s]||s}</span>`).join('')}</div><div class="macro"><span>たんぱく <b>${it.p}g</b></span><span><b>${it.kcal}</b>kcal</span><span>${Number.isFinite(it.yen)?`約<b>${it.yen}</b>円`:'価格未取得'}</span></div>${it.sourceUrl?`<a href="${it.sourceUrl}" target="_blank" rel="noopener" class="small" style="display:inline-block;margin-top:6px;color:var(--primary)">公式商品情報 ↗</a>`:''}<button class="btn-eat" style="width:100%;min-height:38px;border:none;border-radius:9px;margin-top:8px;font-weight:700;cursor:pointer" data-eat="s${idx}">${eatLabel}</button></div>`;}).join('')||'<div class="small muted" style="padding:8px">この日タイプ向けの候補がありません。日タイプを切り替えてみてください。</div>';
   buildFridgeChips();renderFridge();buildMoodChips();renderMood();
   renderRecipes();

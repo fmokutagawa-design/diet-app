@@ -301,7 +301,7 @@ async function crawlAeon(){
       const kcal=Math.round(rawKcal*factor),protein=Math.round(rawProtein*factor*10)/10,fat=Math.round(rawFat*factor*10)/10;
       if(kcal<120||kcal>850||protein<8)continue;
       if(/ジュース|飲料|ドリンク|コーヒー|お茶|酒|ビール/.test(candidate.name))continue;
-      rows.push({id:`aeon-${candidate.jancode}`,n:`イオン ${candidate.name}${portion?`（${portion}）`:''}`,s:['aeon'],p:protein,kcal,f:fat,yen:candidate.yen,days:dayTypes(kcal),kind:'gai',official:true,category:`トップバリュ ${candidate.category}`,sourceUrl:`https://www.topvalu.net/items/detail/${candidate.jancode}/`});
+      rows.push({id:`aeon-${candidate.jancode}`,n:`トップバリュ ${candidate.name}${portion?`（${portion}）`:''}`,s:['aeon','mybasket'],p:protein,kcal,f:fat,yen:candidate.yen,days:dayTypes(kcal),kind:'gai',official:true,category:`トップバリュ ${candidate.category}`,sourceUrl:`https://www.topvalu.net/items/detail/${candidate.jancode}/`});
     }
   }
   if(rows.length<30)throw new Error(`AEON/TOPVALU parse yielded only ${rows.length} items`);
