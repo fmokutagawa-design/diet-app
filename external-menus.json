@@ -1,55 +1,62 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:38:18.729Z",
+  "generatedAt": "2026-08-25T05:42:20.056Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:38:00.009Z",
+      "updatedAt": "2026-08-25T05:42:13.904Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:38:00.104Z",
+      "updatedAt": "2026-08-25T05:42:13.981Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 60,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:38:01.951Z",
+      "updatedAt": "2026-08-25T05:42:14.949Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:38:02.255Z",
+      "updatedAt": "2026-08-25T05:42:15.171Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
     },
     "yoshinoya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:38:02.733Z",
+      "updatedAt": "2026-08-25T05:42:15.540Z",
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 70,
       "label": "吉野家公式栄養成分表"
     },
     "famima": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:38:04.783Z",
+      "updatedAt": "2026-08-25T05:42:15.597Z",
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 80,
       "label": "ファミマ公式栄養成分情報（関東）"
     },
     "seven": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:38:18.729Z",
+      "updatedAt": "2026-08-25T05:42:16.000Z",
       "url": "https://www.sej.co.jp/products/a/",
       "count": 42,
       "label": "セブン公式商品情報（関東）"
+    },
+    "lawson": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:42:20.056Z",
+      "url": "https://www.lawson.co.jp/recommend/original/",
+      "count": 80,
+      "label": "ローソン公式商品情報（関東）"
     }
   },
   "items": [
@@ -8908,6 +8915,1832 @@
         "関東"
       ],
       "sourceUrl": "https://www.sej.co.jp/products/a/item/091497/"
+    },
+    {
+      "id": "lawson-1491323_1996",
+      "n": "ローソン 若鶏の砂肝にんにく",
+      "s": [
+        "lawson"
+      ],
+      "p": 21.4,
+      "kcal": 160,
+      "f": 4.9,
+      "yen": 397,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン machikadochubo",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1491323_1996.html"
+    },
+    {
+      "id": "lawson-1505308_1996",
+      "n": "ローソン たんぱく質が摂れる 国産鶏むね肉のサラダ",
+      "s": [
+        "lawson"
+      ],
+      "p": 23.1,
+      "kcal": 206,
+      "f": 11,
+      "yen": 497,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン salad",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1505308_1996.html"
+    },
+    {
+      "id": "lawson-1518790_1996",
+      "n": "ローソン ジャークチキン",
+      "s": [
+        "lawson"
+      ],
+      "p": 13,
+      "kcal": 126,
+      "f": 6.9,
+      "yen": 322,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1518790_1996.html"
+    },
+    {
+      "id": "lawson-1528203_1996",
+      "n": "ローソン 炭火香る！ふりそで焼",
+      "s": [
+        "lawson"
+      ],
+      "p": 14.7,
+      "kcal": 146,
+      "f": 9,
+      "yen": 268,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1528203_1996.html"
+    },
+    {
+      "id": "lawson-1494805_1996",
+      "n": "ローソン 半熟くんたま",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.1,
+      "kcal": 163,
+      "f": 9.9,
+      "yen": 235,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1494805_1996.html"
+    },
+    {
+      "id": "lawson-1494677_1996",
+      "n": "ローソン よだれ鶏",
+      "s": [
+        "lawson"
+      ],
+      "p": 17.9,
+      "kcal": 182,
+      "f": 4.6,
+      "yen": 419,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1494677_1996.html"
+    },
+    {
+      "id": "lawson-1528202_1996",
+      "n": "ローソン 炭火香る！鶏ハラミ焼",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.2,
+      "kcal": 139,
+      "f": 8.6,
+      "yen": 268,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1528202_1996.html"
+    },
+    {
+      "id": "lawson-1390599_1996",
+      "n": "ローソン パリパリチキン",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.9,
+      "kcal": 180,
+      "f": 11.3,
+      "yen": 268,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390599_1996.html"
+    },
+    {
+      "id": "lawson-1519796_1996",
+      "n": "ローソン 冷やっこセット",
+      "s": [
+        "lawson"
+      ],
+      "p": 11.6,
+      "kcal": 129,
+      "f": 6.3,
+      "yen": 192,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1519796_1996.html"
+    },
+    {
+      "id": "lawson-1443791_1996",
+      "n": "ローソン 銀鮭の塩焼",
+      "s": [
+        "lawson"
+      ],
+      "p": 12,
+      "kcal": 135,
+      "f": 9.7,
+      "yen": 448,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1443791_1996.html"
+    },
+    {
+      "id": "lawson-1509896_1996",
+      "n": "ローソン 豚もつ煮込",
+      "s": [
+        "lawson"
+      ],
+      "p": 17.5,
+      "kcal": 198,
+      "f": 11.2,
+      "yen": 430,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1509896_1996.html"
+    },
+    {
+      "id": "lawson-1507872_1996",
+      "n": "ローソン 中落ち牛カルビ焼",
+      "s": [
+        "lawson"
+      ],
+      "p": 14,
+      "kcal": 163,
+      "f": 10.8,
+      "yen": 430,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1507872_1996.html"
+    },
+    {
+      "id": "lawson-1390474_1996",
+      "n": "ローソン 鶏肉のガーリックトマト煮",
+      "s": [
+        "lawson"
+      ],
+      "p": 20.2,
+      "kcal": 240,
+      "f": 11.8,
+      "yen": 430,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390474_1996.html"
+    },
+    {
+      "id": "lawson-1508176_1996",
+      "n": "ローソン まんまる鶏",
+      "s": [
+        "lawson"
+      ],
+      "p": 17.4,
+      "kcal": 207,
+      "f": 12.3,
+      "yen": 259,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1508176_1996.html"
+    },
+    {
+      "id": "lawson-1511378_1996",
+      "n": "ローソン ねぎだれで食べる 旨辛たまご",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.7,
+      "kcal": 164,
+      "f": 10.5,
+      "yen": 346,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1511378_1996.html"
+    },
+    {
+      "id": "lawson-1519797_1996",
+      "n": "ローソン タン塩焼 レモン",
+      "s": [
+        "lawson"
+      ],
+      "p": 14,
+      "kcal": 170,
+      "f": 11.1,
+      "yen": 387,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1519797_1996.html"
+    },
+    {
+      "id": "lawson-1474132_1996",
+      "n": "ローソン 直火焼ベーコン",
+      "s": [
+        "lawson"
+      ],
+      "p": 12.6,
+      "kcal": 154,
+      "f": 9.9,
+      "yen": 362,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1474132_1996.html"
+    },
+    {
+      "id": "lawson-1507873_1996",
+      "n": "ローソン GARAKU監修 札幌スープカレー",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.4,
+      "kcal": 202,
+      "f": 11.8,
+      "yen": 462,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1507873_1996.html"
+    },
+    {
+      "id": "lawson-1531374_1996",
+      "n": "ローソン つゆが主役！かけそば",
+      "s": [
+        "lawson"
+      ],
+      "p": 20.7,
+      "kcal": 272,
+      "f": 1.7,
+      "yen": 497,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1531374_1996.html"
+    },
+    {
+      "id": "lawson-1517632_1996",
+      "n": "ローソン なんこつ入りつくね棒",
+      "s": [
+        "lawson"
+      ],
+      "p": 11.3,
+      "kcal": 154,
+      "f": 8.7,
+      "yen": 198,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1517632_1996.html"
+    },
+    {
+      "id": "lawson-1454252_1996",
+      "n": "ローソン 1食分の野菜が摂れる チキンのチーズトマト煮",
+      "s": [
+        "lawson"
+      ],
+      "p": 16,
+      "kcal": 220,
+      "f": 11.1,
+      "yen": 459,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1454252_1996.html"
+    },
+    {
+      "id": "lawson-1530351_1996",
+      "n": "ローソン ガーリックトマトソース チキンステーキ弁当",
+      "s": [
+        "lawson"
+      ],
+      "p": 46.6,
+      "kcal": 663,
+      "f": 19.8,
+      "yen": 754,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン chilledbento",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1530351_1996.html"
+    },
+    {
+      "id": "lawson-1390526_1996",
+      "n": "ローソン 切れてるだし巻玉子",
+      "s": [
+        "lawson"
+      ],
+      "p": 9.7,
+      "kcal": 139,
+      "f": 9.1,
+      "yen": 181,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390526_1996.html"
+    },
+    {
+      "id": "lawson-1529413_1996",
+      "n": "ローソン たんぱく質が摂れる カニカマのサラダ",
+      "s": [
+        "lawson"
+      ],
+      "p": 12.9,
+      "kcal": 185,
+      "f": 9.6,
+      "yen": 497,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン salad",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1529413_1996.html"
+    },
+    {
+      "id": "lawson-1511375_1996",
+      "n": "ローソン うずらのたまご",
+      "s": [
+        "lawson"
+      ],
+      "p": 10,
+      "kcal": 145,
+      "f": 11.5,
+      "yen": 329,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1511375_1996.html"
+    },
+    {
+      "id": "lawson-1472358_1996",
+      "n": "ローソン なすび亭監修 豚の角煮",
+      "s": [
+        "lawson"
+      ],
+      "p": 18.6,
+      "kcal": 277,
+      "f": 17.1,
+      "yen": 497,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1472358_1996.html"
+    },
+    {
+      "id": "lawson-1528382_1996",
+      "n": "ローソン さばの塩焼",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.4,
+      "kcal": 245,
+      "f": 22,
+      "yen": 508,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1528382_1996.html"
+    },
+    {
+      "id": "lawson-1529842_1996",
+      "n": "ローソン ガーリック香る直火焼ハラミ",
+      "s": [
+        "lawson"
+      ],
+      "p": 12.3,
+      "kcal": 185,
+      "f": 12.5,
+      "yen": 354,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1529842_1996.html"
+    },
+    {
+      "id": "lawson-1473220_1996",
+      "n": "ローソン キムチチゲ",
+      "s": [
+        "lawson"
+      ],
+      "p": 10.4,
+      "kcal": 159,
+      "f": 9.5,
+      "yen": 473,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1473220_1996.html"
+    },
+    {
+      "id": "lawson-1520817_1996",
+      "n": "ローソン クラブハウスサンド",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.7,
+      "kcal": 256,
+      "f": 7.6,
+      "yen": 430,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1520817_1996.html"
+    },
+    {
+      "id": "lawson-1531149_1996",
+      "n": "ローソン チンジャオロースの湯葉巻き",
+      "s": [
+        "lawson"
+      ],
+      "p": 8.4,
+      "kcal": 130,
+      "f": 6.6,
+      "yen": 210,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1531149_1996.html"
+    },
+    {
+      "id": "lawson-1527648_1996",
+      "n": "ローソン 天下一品監修 こってりラーメン",
+      "s": [
+        "lawson"
+      ],
+      "p": 29,
+      "kcal": 453,
+      "f": 6.9,
+      "yen": 697,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1527648_1996.html"
+    },
+    {
+      "id": "lawson-1508284_1996",
+      "n": "ローソン 骨なしスペアリブ",
+      "s": [
+        "lawson"
+      ],
+      "p": 12.8,
+      "kcal": 200,
+      "f": 14.9,
+      "yen": 354,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1508284_1996.html"
+    },
+    {
+      "id": "lawson-1390563_1996",
+      "n": "ローソン からあげクン レギュラー",
+      "s": [
+        "lawson"
+      ],
+      "p": 14.4,
+      "kcal": 226,
+      "f": 15.4,
+      "yen": 288,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390563_1996.html"
+    },
+    {
+      "id": "lawson-1390564_1996",
+      "n": "ローソン からあげクン レッド",
+      "s": [
+        "lawson"
+      ],
+      "p": 14.3,
+      "kcal": 225,
+      "f": 15.1,
+      "yen": 288,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390564_1996.html"
+    },
+    {
+      "id": "lawson-1494923_1996",
+      "n": "ローソン 重慶飯店監修 四川風麻婆豆腐",
+      "s": [
+        "lawson"
+      ],
+      "p": 12.8,
+      "kcal": 210,
+      "f": 10.6,
+      "yen": 491,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1494923_1996.html"
+    },
+    {
+      "id": "lawson-1529681_1996",
+      "n": "ローソン 冷製生パスタ 鶏と和風梅だしジュレ",
+      "s": [
+        "lawson"
+      ],
+      "p": 23.1,
+      "kcal": 380,
+      "f": 10.4,
+      "yen": 599,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1529681_1996.html"
+    },
+    {
+      "id": "lawson-1530563_1996",
+      "n": "ローソン からあげクン チキンラーメン ローストしょうゆ味",
+      "s": [
+        "lawson"
+      ],
+      "p": 15,
+      "kcal": 247,
+      "f": 17.1,
+      "yen": 298,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1530563_1996.html"
+    },
+    {
+      "id": "lawson-1390525_1996",
+      "n": "ローソン 切れてる厚焼玉子",
+      "s": [
+        "lawson"
+      ],
+      "p": 10.2,
+      "kcal": 168,
+      "f": 8.7,
+      "yen": 181,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390525_1996.html"
+    },
+    {
+      "id": "lawson-1521414_1996",
+      "n": "ローソン 香りとのど越し ざるそば",
+      "s": [
+        "lawson"
+      ],
+      "p": 21.2,
+      "kcal": 352,
+      "f": 3.4,
+      "yen": 451,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1521414_1996.html"
+    },
+    {
+      "id": "lawson-1390565_1996",
+      "n": "ローソン からあげクン 北海道チーズ",
+      "s": [
+        "lawson"
+      ],
+      "p": 14.6,
+      "kcal": 249,
+      "f": 17.5,
+      "yen": 288,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390565_1996.html"
+    },
+    {
+      "id": "lawson-1521411_1996",
+      "n": "ローソン 香りとのど越し 冷しとろろそば",
+      "s": [
+        "lawson"
+      ],
+      "p": 18.9,
+      "kcal": 323,
+      "f": 2.8,
+      "yen": 559,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1521411_1996.html"
+    },
+    {
+      "id": "lawson-1461831_1996",
+      "n": "ローソン 豚の生姜焼",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.3,
+      "kcal": 279,
+      "f": 20.4,
+      "yen": 387,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1461831_1996.html"
+    },
+    {
+      "id": "lawson-1471278_1996",
+      "n": "ローソン チーズ大葉チキンカツ",
+      "s": [
+        "lawson"
+      ],
+      "p": 25.8,
+      "kcal": 449,
+      "f": 29.5,
+      "yen": 397,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン machikadochubo",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1471278_1996.html"
+    },
+    {
+      "id": "lawson-1521412_1996",
+      "n": "ローソン 特盛！冷し肉そば",
+      "s": [
+        "lawson"
+      ],
+      "p": 35.2,
+      "kcal": 614,
+      "f": 14,
+      "yen": 646,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1521412_1996.html"
+    },
+    {
+      "id": "lawson-1530562_1996",
+      "n": "ローソン からあげクン チキンラーメン 激辛ローストしょうゆ味",
+      "s": [
+        "lawson"
+      ],
+      "p": 14.5,
+      "kcal": 253,
+      "f": 17.9,
+      "yen": 298,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1530562_1996.html"
+    },
+    {
+      "id": "lawson-1530522_1996",
+      "n": "ローソン 冷たいまま食べる チキン南蛮",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.5,
+      "kcal": 290,
+      "f": 17.8,
+      "yen": 346,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1530522_1996.html"
+    },
+    {
+      "id": "lawson-1511383_1996",
+      "n": "ローソン 食物繊維が摂れる 8種具材のポトフ",
+      "s": [
+        "lawson"
+      ],
+      "p": 8.4,
+      "kcal": 150,
+      "f": 9.7,
+      "yen": 397,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン soup",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1511383_1996.html"
+    },
+    {
+      "id": "lawson-1521410_1996",
+      "n": "ローソン 香りとのど越し ミニネバネバそば",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.3,
+      "kcal": 238,
+      "f": 4.2,
+      "yen": 451,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1521410_1996.html"
+    },
+    {
+      "id": "lawson-1510962_1996",
+      "n": "ローソン ピザロール ハム＆チーズ",
+      "s": [
+        "lawson"
+      ],
+      "p": 10.7,
+      "kcal": 192,
+      "f": 5.9,
+      "yen": 275,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1510962_1996.html"
+    },
+    {
+      "id": "lawson-1510993_1996",
+      "n": "ローソン オーベルジーヌ監修 欧風チキンカレー",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.1,
+      "kcal": 236,
+      "f": 10.8,
+      "yen": 441,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1510993_1996.html"
+    },
+    {
+      "id": "lawson-1513320_1996",
+      "n": "ローソン 黄金チキン 骨つき",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.6,
+      "kcal": 248,
+      "f": 14.2,
+      "yen": 348,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1513320_1996.html"
+    },
+    {
+      "id": "lawson-1433114_1996",
+      "n": "ローソン 肉焼売",
+      "s": [
+        "lawson"
+      ],
+      "p": 17.7,
+      "kcal": 324,
+      "f": 18.3,
+      "yen": 430,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1433114_1996.html"
+    },
+    {
+      "id": "lawson-1511397_1996",
+      "n": "ローソン ピザロール マルゲリータ",
+      "s": [
+        "lawson"
+      ],
+      "p": 10.3,
+      "kcal": 191,
+      "f": 5.7,
+      "yen": 275,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1511397_1996.html"
+    },
+    {
+      "id": "lawson-1519498_1996",
+      "n": "ローソン からあげクン レモン味",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.3,
+      "kcal": 247,
+      "f": 17.6,
+      "yen": 288,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1519498_1996.html"
+    },
+    {
+      "id": "lawson-1390578_1996",
+      "n": "ローソン Ｌチキ レギュラー",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.7,
+      "kcal": 255,
+      "f": 16.6,
+      "yen": 248,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390578_1996.html"
+    },
+    {
+      "id": "lawson-1470291_1996",
+      "n": "ローソン 肉豆腐",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.6,
+      "kcal": 256,
+      "f": 15.8,
+      "yen": 437,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1470291_1996.html"
+    },
+    {
+      "id": "lawson-1459302_1996",
+      "n": "ローソン 肉厚！とろけるチーズハンバーグ",
+      "s": [
+        "lawson"
+      ],
+      "p": 17.2,
+      "kcal": 324,
+      "f": 20.4,
+      "yen": 491,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1459302_1996.html"
+    },
+    {
+      "id": "lawson-1506431_1996",
+      "n": "ローソン 1食分の野菜ちゃんぽん",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.4,
+      "kcal": 311,
+      "f": 8.2,
+      "yen": 599,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1506431_1996.html"
+    },
+    {
+      "id": "lawson-1511982_1996",
+      "n": "ローソン 4種のチーズ使用 海老グラタン",
+      "s": [
+        "lawson"
+      ],
+      "p": 16.5,
+      "kcal": 313,
+      "f": 10.8,
+      "yen": 505,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン gratin",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1511982_1996.html"
+    },
+    {
+      "id": "lawson-1520660_1996",
+      "n": "ローソン からあげクン ブラックペッパー味",
+      "s": [
+        "lawson"
+      ],
+      "p": 13.4,
+      "kcal": 255,
+      "f": 18.7,
+      "yen": 288,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1520660_1996.html"
+    },
+    {
+      "id": "lawson-1507663_1996",
+      "n": "ローソン 贅沢厚切りハムカツ",
+      "s": [
+        "lawson"
+      ],
+      "p": 9.1,
+      "kcal": 175,
+      "f": 9.8,
+      "yen": 188,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1507663_1996.html"
+    },
+    {
+      "id": "lawson-1530831_1996",
+      "n": "ローソン ピザロール 麻辣チキン＆チーズ",
+      "s": [
+        "lawson"
+      ],
+      "p": 10.6,
+      "kcal": 206,
+      "f": 7.2,
+      "yen": 302,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1530831_1996.html"
+    },
+    {
+      "id": "lawson-1508281_1996",
+      "n": "ローソン 照焼チキンたまごサンド",
+      "s": [
+        "lawson"
+      ],
+      "p": 12,
+      "kcal": 235,
+      "f": 9.4,
+      "yen": 365,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1508281_1996.html"
+    },
+    {
+      "id": "lawson-1529879_1996",
+      "n": "ローソン チキンカツサンド",
+      "s": [
+        "lawson"
+      ],
+      "p": 23,
+      "kcal": 455,
+      "f": 21.4,
+      "yen": 451,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン sandwich",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1529879_1996.html"
+    },
+    {
+      "id": "lawson-1528747_1996",
+      "n": "ローソン こだわりおだし 醤油きのこ",
+      "s": [
+        "lawson"
+      ],
+      "p": 25.4,
+      "kcal": 503,
+      "f": 16.4,
+      "yen": 559,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1528747_1996.html"
+    },
+    {
+      "id": "lawson-1530849_1996",
+      "n": "ローソン 冷製生パスタ 海老と和風だし醤油",
+      "s": [
+        "lawson"
+      ],
+      "p": 17.1,
+      "kcal": 339,
+      "f": 8.4,
+      "yen": 599,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1530849_1996.html"
+    },
+    {
+      "id": "lawson-1390579_1996",
+      "n": "ローソン Ｌチキ レッド",
+      "s": [
+        "lawson"
+      ],
+      "p": 12.4,
+      "kcal": 247,
+      "f": 16.4,
+      "yen": 259,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390579_1996.html"
+    },
+    {
+      "id": "lawson-1520754_1996",
+      "n": "ローソン 野菜かき揚げそば",
+      "s": [
+        "lawson"
+      ],
+      "p": 25.6,
+      "kcal": 512,
+      "f": 14.6,
+      "yen": 599,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1520754_1996.html"
+    },
+    {
+      "id": "lawson-1509268_1996",
+      "n": "ローソン ヨード卵・光&reg;の親子丼",
+      "s": [
+        "lawson"
+      ],
+      "p": 24.8,
+      "kcal": 497,
+      "f": 10,
+      "yen": 646,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン chilledbento",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1509268_1996.html"
+    },
+    {
+      "id": "lawson-1530479_1996",
+      "n": "ローソン こだわりおだしの生パスタ あさりと九条ねぎ",
+      "s": [
+        "lawson"
+      ],
+      "p": 22.4,
+      "kcal": 449,
+      "f": 5.8,
+      "yen": 646,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1530479_1996.html"
+    },
+    {
+      "id": "lawson-1430207_1996",
+      "n": "ローソン デミグラスハンバーグ",
+      "s": [
+        "lawson"
+      ],
+      "p": 8.6,
+      "kcal": 173,
+      "f": 10.2,
+      "yen": 211,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1430207_1996.html"
+    },
+    {
+      "id": "lawson-1458234_1996",
+      "n": "ローソン 重慶飯店監修 大海老のマヨソース",
+      "s": [
+        "lawson"
+      ],
+      "p": 10.5,
+      "kcal": 212,
+      "f": 12.5,
+      "yen": 491,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1458234_1996.html"
+    },
+    {
+      "id": "lawson-1529446_1996",
+      "n": "ローソン ミニ冷し中華",
+      "s": [
+        "lawson"
+      ],
+      "p": 12.3,
+      "kcal": 249,
+      "f": 2.3,
+      "yen": 430,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1529446_1996.html"
+    },
+    {
+      "id": "lawson-1529448_1996",
+      "n": "ローソン ソースたっぷり生パスタ ミートカルボナーラ",
+      "s": [
+        "lawson"
+      ],
+      "p": 26.5,
+      "kcal": 539,
+      "f": 12.5,
+      "yen": 599,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1529448_1996.html"
+    },
+    {
+      "id": "lawson-1471247_1996",
+      "n": "ローソン 備長炭焼き親子丼",
+      "s": [
+        "lawson"
+      ],
+      "p": 28.8,
+      "kcal": 587,
+      "f": 17.4,
+      "yen": 797,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン machikadochubo",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1471247_1996.html"
+    },
+    {
+      "id": "lawson-1475921_1996",
+      "n": "ローソン すき焼き",
+      "s": [
+        "lawson"
+      ],
+      "p": 10.6,
+      "kcal": 217,
+      "f": 12.8,
+      "yen": 473,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1475921_1996.html"
+    },
+    {
+      "id": "lawson-1506930_1996",
+      "n": "ローソン 大盛ミートソース",
+      "s": [
+        "lawson"
+      ],
+      "p": 35.4,
+      "kcal": 725,
+      "f": 16.6,
+      "yen": 697,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン pasta",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1506930_1996.html"
+    },
+    {
+      "id": "lawson-1529445_1996",
+      "n": "ローソン 冷し中華",
+      "s": [
+        "lawson"
+      ],
+      "p": 21,
+      "kcal": 432,
+      "f": 10.5,
+      "yen": 592,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン noodle",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1529445_1996.html"
+    },
+    {
+      "id": "lawson-1528381_1996",
+      "n": "ローソン さばの味噌煮",
+      "s": [
+        "lawson"
+      ],
+      "p": 14.9,
+      "kcal": 307,
+      "f": 22,
+      "yen": 508,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン select/osozai",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1528381_1996.html"
     }
   ]
 }

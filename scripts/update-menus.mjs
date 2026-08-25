@@ -9,6 +9,7 @@ const SOURCES={
   yoshinoya:'https://www.yoshinoya.com/pdf/allergy/',
   famima:'https://www.family.co.jp/goods/safety.html',
   seven:'https://www.sej.co.jp/products/a/',
+  lawson:'https://www.lawson.co.jp/recommend/original/',
 };
 
 function clean(s){return s.replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
@@ -227,6 +228,44 @@ async function crawlSeven(){
   return rows.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,80);
 }
 
+async function crawlLawson(){
+  const categories=['rice','sushi','bento','chilledbento','sandwich','bakery','pasta','noodle','salad','select/osozai','soup','gratin','konamono','fry','chukaman','machikadochubo'];
+  const pages=await Promise.all(categories.map(category=>fetchText(new URL(`${category}/`,SOURCES.lawson).href)));
+  const candidates=[];
+  for(let pageNo=0;pageNo<pages.length;pageNo++){
+    const sections=pages[pageNo].split(/<li(?:\s[^>]*)?>/).filter(x=>/\/recommend\/original\/detail\//.test(x));
+    for(const section of sections){
+      const link=section.match(/<a href="([^"]*\/recommend\/original\/detail\/[^"]+)">/);
+      const name=clean(section.match(/<p class="ttl">([\s\S]*?)<\/p>/)?.[1]||'');
+      if(!link||!name)continue;
+      const note=clean(section.match(/<div class="smalltxt"[\s\S]*?<\/div>/)?.[0]||'');
+      if(/関東[^。]*お取り扱いしておりません/.test(note))continue;
+      const only=note.match(/([^。]*地域[^。]*)のみのお取り扱い/);
+      if(only&&!/関東/.test(only[1]))continue;
+      const sourceUrl=new URL(link[1],SOURCES.lawson).href;
+      candidates.push({sourceUrl,name,category:categories[pageNo]});
+    }
+  }
+  const unique=[...new Map(candidates.map(x=>[x.sourceUrl,x])).values()],rows=[];
+  for(let offset=0;offset<unique.length;offset+=10){
+    const batch=unique.slice(offset,offset+10);
+    const details=await Promise.all(batch.map(x=>fetchText(x.sourceUrl)));
+    for(let i=0;i<batch.length;i++){
+      const candidate=batch[i],html=details[i];
+      const nutrition=html.match(/<div class="nutritionFacts_table">([\s\S]*?)<\/div>\s*<\/div>/)?.[1]||html;
+      const valueFor=label=>num(nutrition.match(new RegExp(`<dt>${label}<\\/dt>\\s*<dd>([\\d,.]+)(?:kcal|g)<\\/dd>`))?.[1]||'');
+      const kcal=valueFor('熱量'),protein=valueFor('たんぱく質'),fat=valueFor('脂質');
+      if(kcal==null||protein==null||fat==null||kcal<120||kcal>850||protein<8)continue;
+      if(/ドリンク|コーヒー|ラテ|お茶|ジュース|酒|ビール/.test(candidate.name))continue;
+      const yen=num(html.match(/<dl class="price">[\s\S]*?<dd><span>([\d,.]+)<\/span>/)?.[1]||'');
+      const itemId=candidate.sourceUrl.match(/\/detail\/([^/.]+)/)?.[1]||`${offset+i}`;
+      rows.push({id:`lawson-${itemId}`,n:`ローソン ${candidate.name}`,s:['lawson'],p:protein,kcal,f:fat,yen,days:dayTypes(kcal),kind:'gai',official:true,category:`ローソン ${candidate.category}`,regions:['関東'],sourceUrl:candidate.sourceUrl});
+    }
+  }
+  if(rows.length<30)throw new Error(`Lawson parse yielded only ${rows.length} items`);
+  return rows.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,80);
+}
+
 const previous=await fs.readFile(OUTPUT,'utf8').then(JSON.parse).catch(()=>({sources:{},items:[]}));
 const sources={...previous.sources};
 let items=previous.items.filter(x=>!x.id?.startsWith('mcd-'));
@@ -297,6 +336,16 @@ try{
 }catch(error){
   items=items.concat(previous.items.filter(x=>x.id?.startsWith('seven-')));
   sources.seven={...(sources.seven||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.seven,error:String(error.message||error)};
+  if(!items.length)throw error;
+}
+items=items.filter(x=>!x.id?.startsWith('lawson-'));
+try{
+  const found=await crawlLawson();
+  items=items.concat(found);
+  sources.lawson={status:'ok',updatedAt:new Date().toISOString(),url:SOURCES.lawson,count:found.length,label:'ローソン公式商品情報（関東）'};
+}catch(error){
+  items=items.concat(previous.items.filter(x=>x.id?.startsWith('lawson-')));
+  sources.lawson={...(sources.lawson||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.lawson,error:String(error.message||error)};
   if(!items.length)throw error;
 }
 const output={schemaVersion:1,generatedAt:new Date().toISOString(),sources,items};
