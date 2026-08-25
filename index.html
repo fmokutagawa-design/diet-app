@@ -343,6 +343,13 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
       <div class="small muted" id="lifeLine" style="margin-top:6px"></div>
     </div>
 
+    <div class="card">
+      <h2>まず3%減 <span class="tag" id="firstGoalTag">最初の区切り</span></h2>
+      <div class="bhero"><div class="bhero-num" id="firstGoalNum">—</div><div class="bhero-sub" id="firstGoalSub"></div></div>
+      <div class="bar"><i id="firstGoalBar" style="width:0%"></i></div>
+      <div class="summary" id="firstGoalNote" style="margin-top:10px">—</div>
+    </div>
+
     <!-- 1. 収支 + 体重/体脂肪クイック -->
     <div class="card">
       <h2>今日の収支 <span class="tag" id="homeTodayTag"></span><span class="tag" id="spurtBadge" style="display:none;background:var(--orange);color:#2a1400"></span></h2>
@@ -443,6 +450,12 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
     <div class="card" id="nightShiftCard" style="display:none">
       <h2 id="nightShiftTitle">🌙 夜勤の食事タイミング</h2>
       <div class="small" id="nightShiftLines" style="line-height:1.8"></div>
+    </div>
+
+    <div class="card">
+      <h2>満腹救済食 <span class="tag" id="homeRescueTag">—</span></h2>
+      <div id="homeRescue"></div>
+      <button class="btn good" data-go="meal" style="margin-top:10px;width:100%">在庫と救済食を開く →</button>
     </div>
 
     <!-- 2. 次の食事 -->
@@ -898,9 +911,9 @@ const defaultMachines=[
 function freshState(){
   const prev=new Date(today);prev.setDate(prev.getDate()-3);
   const pk=dkey(prev.getFullYear(),prev.getMonth()+1,prev.getDate());
-  const bikeKcal=Math.round(30*7*3.5*81/200);
+  const bikeKcal=Math.round(30*7*3.5*82/200);
   return {
-    profile:{age:43,weight:81,bodyfat:30,targetWeight:70,height:175,sex:'m',activity:1.5,days:2,hours:60,diet:'standard',trainYears:'3plus'},
+    profile:{age:43,weight:82,bodyfat:30,targetWeight:70,height:175,sex:'m',activity:1.5,days:2,hours:60,diet:'standard',trainYears:'3plus'},
     shifts:{}, machines:JSON.parse(JSON.stringify(defaultMachines)),
     logs:{
       legpress:[{date:pk,kg:135,reps:45,sets:1}],
@@ -914,6 +927,7 @@ function freshState(){
     },
     meal:{dayType:'',budget:'cheap',mode:'cook',fridge:[],mood:'',storeKind:'buy',store:'seven',orderStore:'seven',order:null,orderMercyKey:null},
     rescueInventory:{broccoli:0,potato:0,chicken:0,egg:0,tofu:0,natto:0,mekabu:0},
+    journey:{startWeight:null,firstTarget:null},
     spurt:{active:false,startKey:null,days:30,addKcal:300},
     refeed:{active:false,dateKey:null,addKcal:400,lastDoneKey:null},
     tdee:{correction:0,lastCalcKey:null},
@@ -927,7 +941,7 @@ let S=load();
 function load(){
   try{const raw=localStorage.getItem(KEY);if(!raw)return freshState();
     const p=JSON.parse(raw);const f=freshState();
-    return Object.assign(f,p,{profile:Object.assign(f.profile,p.profile||{}),meal:Object.assign(f.meal,p.meal||{}),rescueInventory:Object.assign(f.rescueInventory,p.rescueInventory||{})});
+    return Object.assign(f,p,{profile:Object.assign(f.profile,p.profile||{}),meal:Object.assign(f.meal,p.meal||{}),rescueInventory:Object.assign(f.rescueInventory,p.rescueInventory||{}),journey:Object.assign(f.journey,p.journey||{})});
   }catch(e){return freshState();}
 }
 let saveTimer=null;
@@ -1321,9 +1335,42 @@ function renderBodyQuick(){
   const mi=$('#muscleToday');if(mi&&document.activeElement!==mi)mi.value=(S.muscleLog&&S.muscleLog[todayKey]!=null)?S.muscleLog[todayKey]:'';
   $('#bodyNote').textContent='記録すると消費カロリー・予測・グラフが更新されます。毎朝の習慣に。';
 }
+function renderFirstGoal(){
+  const arr=sortedWeights(),current=arr.length?arr[arr.length-1].kg:S.profile.weight;
+  if(!S.journey)S.journey={startWeight:null,firstTarget:null};
+  if(!S.journey.startWeight){
+    S.journey.startWeight=current;
+    S.journey.firstTarget=p2(current*.97);
+    save();
+  }
+  const start=Number(S.journey.startWeight),goal=Number(S.journey.firstTarget)||p2(start*.97);
+  const need=Math.max(.1,start-goal),lost=Math.max(0,start-current),pct=Math.min(100,Math.round(lost/need*100));
+  $('#firstGoalNum').textContent=`${current.toFixed(1)} → ${goal.toFixed(1)}kg`;
+  $('#firstGoalSub').textContent=`開始 ${start.toFixed(1)}kg ／ ${pct}%達成`;
+  $('#firstGoalBar').style.width=`${pct}%`;
+  if(current<=goal){
+    $('#firstGoalTag').textContent='達成 🎉';
+    $('#firstGoalNote').innerHTML=`最初の3%減を達成。次は設定中の目標 <b>${S.profile.targetWeight}kg</b>へ。無理に速度を上げず、この食べ方を続けます。`;
+  }else{
+    $('#firstGoalTag').textContent='最初の区切り';
+    $('#firstGoalNote').innerHTML=`まずはあと <b>${(current-goal).toFixed(1)}kg</b>。最終目標${S.profile.targetWeight}kgは見失わず、今はこの区切りだけを追います。`;
+  }
+}
+function renderHomeRescue(){
+  const ready=RESCUE_MEALS.filter(rescueCanMake);
+  $('#homeRescueTag').textContent=ready.length?`今すぐ${ready.length}種類`:'在庫を補充';
+  if(ready.length){
+    const m=ready.slice().sort((a,b)=>a.kcal-b.kcal)[0];
+    $('#homeRescue').innerHTML=`<div class="pick"><div class="pick-top"><div><div class="pick-name">${m.name}</div><div class="pick-sub">約${m.kcal}kcal・たんぱく質${m.p}g</div></div></div><div class="why">🍽️ 寿司・カツ丼・カレーを開く前に、まずこれ。家の在庫だけで今すぐ食べられます。</div><button class="btn good" data-home-rescue="${m.id}" style="margin-top:8px;width:100%">✓ これを食べた・記録する</button></div>`;
+  }else{
+    const useful=RESCUE_STOCK.filter(s=>(S.rescueInventory[s.id]||0)>0).map(s=>`${s.name}${S.rescueInventory[s.id]}`).join('・');
+    $('#homeRescue').innerHTML=`<div class="summary"><b>今すぐ作れる救済食がありません。</b><br>${useful?`現在の在庫：${useful}`:'ブロッコリー・鶏むね、または豆腐・納豆・卵・めかぶを補充すると救済食が有効になります。'}</div>`;
+  }
+}
 function renderHomeMeal(){
   ensureChosen();
-  $('#homeMealTag').textContent=({cook:'作る',buy:'買う',gai:'外食',any:'おまかせ'}[S.meal.mode]||'おまかせ')+'・'+({train:'トレ日',rest:'休養日',night:'夜勤日'}[S.meal.dayType]);
+  const dayType=S.meal.dayType||todayType();
+  $('#homeMealTag').textContent=({cook:'作る',buy:'買う',gai:'外食',any:'おまかせ'}[S.meal.mode]||'おまかせ')+'・'+({train:'トレ日',rest:'休養日',night:'夜勤日'}[dayType]||'今日');
   if(!planChosen.length){
     const ctx=planContext();
     $('#homeMeal').innerHTML=`<div class="summary">${ctx.remainKcal>=120?`3食記録済み。残り${ctx.remainKcal}kcal——食べるなら軽い物を（食事タブに候補）。`:'今日の食事はバッチリ。あとは水分とって寝るだけ🔥'}</div>`;return;}
@@ -1373,6 +1420,7 @@ function afterDataChange(){
   if($('#intakeBars'))renderIntake();
   if($('#histList'))renderFoodHistory();
   if($('#balanceBars'))renderBalance();
+  if($('#homeRescue'))renderHomeRescue();
   if($('#homeMeal'))renderHomeMeal();
   if($('#homeTrain'))renderHomeTrain();
   if($('#sessionList'))renderWorkoutPlan();
@@ -2293,7 +2341,7 @@ function renderHome(){
   const c=calc();
   $('#kCal').innerHTML=`${c.daily} <small>kcal</small>`;
   $('#kPfc').innerHTML=`P${c.protein} / F${c.fat} / C${c.carb}<small> g</small>`;
-  renderBalance();renderBodyQuick();renderHomeMeal();renderHomeTrain();renderAchieve();renderReview();
+  renderBalance();renderBodyQuick();renderFirstGoal();renderHomeRescue();renderHomeMeal();renderHomeTrain();renderAchieve();renderReview();
   renderTdeeCard(c);renderPlateauCard();renderNightShiftCard();
   renderMealSuggestCard();renderWorkoutSuggestCard();renderFfmiCard();renderTrainScoreCard();
   // 深掘り（折りたたみ内）
@@ -3902,6 +3950,7 @@ $('#logBodyBtn').addEventListener('click',()=>{
   save();renderHome();toast('記録しました');
 });
 $('#homeAddFood').addEventListener('click',()=>openFoodSheet());
+$('#homeRescue').addEventListener('click',e=>{const b=e.target.closest('[data-home-rescue]');if(b)eatRescue(b.dataset.homeRescue);});
 $('#startRefeedBtn').addEventListener('click',()=>{
   if(!confirm('今日をリフィード日にして、目安摂取を+400kcalにしますか？'))return;
   startRefeed(400);renderHome();toast('🍚 リフィード日にしました');
