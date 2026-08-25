@@ -1,27 +1,34 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:23:57.155Z",
+  "generatedAt": "2026-08-25T05:28:19.119Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:23:56.091Z",
+      "updatedAt": "2026-08-25T05:28:17.800Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:23:56.176Z",
+      "updatedAt": "2026-08-25T05:28:17.903Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 60,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:23:57.155Z",
+      "updatedAt": "2026-08-25T05:28:18.879Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
+    },
+    "sukiya": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:28:19.119Z",
+      "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
+      "count": 70,
+      "label": "すき家公式栄養成分表"
     }
   },
   "items": [
@@ -3461,6 +3468,1341 @@
       "official": true,
       "category": "松屋",
       "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "sukiya-3-1",
+      "n": "すき家 チキン・お食事サラダ（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 24.5,
+      "kcal": 247,
+      "f": 7.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-8-7",
+      "n": "すき家 からあげ（６個）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 30.4,
+      "kcal": 368,
+      "f": 20.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-8-6",
+      "n": "すき家 からあげ（２個）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 10.1,
+      "kcal": 123,
+      "f": 6.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-51",
+      "n": "すき家 鉄火丼（特盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 50.8,
+      "kcal": 760,
+      "f": 5.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-5-1",
+      "n": "すき家 山かけ鉄火丼（特盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 52.2,
+      "kcal": 808,
+      "f": 5.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-5-2",
+      "n": "すき家 ばくだん鉄火丼（ごはん少なめ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 43.3,
+      "kcal": 687,
+      "f": 13.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-33",
+      "n": "すき家 ねぎ玉牛丼ライト（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 25.3,
+      "kcal": 402,
+      "f": 26.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-48",
+      "n": "すき家 かつぶしオクラ牛丼ライト（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 20.5,
+      "kcal": 334,
+      "f": 20,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-34",
+      "n": "すき家 ねぎ玉牛丼ライト（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.1,
+      "kcal": 476,
+      "f": 33,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-36",
+      "n": "すき家 とろ～り3種のチーズ牛丼ライト（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.2,
+      "kcal": 480,
+      "f": 33.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-8",
+      "n": "すき家 うな牛皿（特盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 40.8,
+      "kcal": 685,
+      "f": 50.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-30",
+      "n": "すき家 牛丼ライト（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 18.5,
+      "kcal": 311,
+      "f": 19.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-48",
+      "n": "すき家 鉄火丼（ごはん少なめ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 27.1,
+      "kcal": 458,
+      "f": 3.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-37",
+      "n": "すき家 とろ～り3種のチーズ牛丼ライト（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 33.5,
+      "kcal": 568,
+      "f": 40.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-5-3",
+      "n": "すき家 ばくだん鉄火丼（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 44.5,
+      "kcal": 756,
+      "f": 14,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-49",
+      "n": "すき家 かつぶしオクラ牛丼ライト（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 24.8,
+      "kcal": 422,
+      "f": 26.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-36",
+      "n": "すき家 鮭・納豆定食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 35.3,
+      "kcal": 602,
+      "f": 20.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-35",
+      "n": "すき家 ねぎ玉牛丼ライト（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 33.8,
+      "kcal": 577,
+      "f": 40,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-45",
+      "n": "すき家 おろしポン酢牛丼ライト（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 18.7,
+      "kcal": 323,
+      "f": 20,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-38",
+      "n": "すき家 とろ～り3種のチーズ牛丼ライト（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 37.8,
+      "kcal": 655,
+      "f": 46.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-50",
+      "n": "すき家 かつぶしオクラ牛丼ライト（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.1,
+      "kcal": 509,
+      "f": 33.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-31",
+      "n": "すき家 牛丼ライト（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 22.8,
+      "kcal": 399,
+      "f": 26.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-7",
+      "n": "すき家 うな牛皿（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 25.3,
+      "kcal": 443,
+      "f": 33,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-46",
+      "n": "すき家 おろしポン酢牛丼ライト（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 23,
+      "kcal": 411,
+      "f": 26.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-32",
+      "n": "すき家 牛丼ライト（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 27.1,
+      "kcal": 487,
+      "f": 33.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-47",
+      "n": "すき家 おろしポン酢牛丼ライト（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 27.3,
+      "kcal": 498,
+      "f": 33.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-39",
+      "n": "すき家 わさび山かけ牛丼ライト（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 19.5,
+      "kcal": 356,
+      "f": 20,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-49",
+      "n": "すき家 鉄火丼（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 28.3,
+      "kcal": 527,
+      "f": 3.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-40",
+      "n": "すき家 わさび山かけ牛丼ライト（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 23.8,
+      "kcal": 444,
+      "f": 26.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-39",
+      "n": "すき家 納豆焼鮭朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.2,
+      "kcal": 546,
+      "f": 16.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-41",
+      "n": "すき家 わさび山かけ牛丼ライト（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 28.1,
+      "kcal": 531,
+      "f": 33.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-12",
+      "n": "すき家 焼鮭たまかけ朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 28.6,
+      "kcal": 542,
+      "f": 17.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-1-0",
+      "n": "すき家 牛皿（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 10.4,
+      "kcal": 204,
+      "f": 15.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-42",
+      "n": "すき家 まぐろユッケ丼（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 35,
+      "kcal": 687,
+      "f": 16.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-37",
+      "n": "すき家 鮭・納豆定食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 37.6,
+      "kcal": 740,
+      "f": 21,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-1-1",
+      "n": "すき家 牛皿（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 15,
+      "kcal": 297,
+      "f": 22,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-42",
+      "n": "すき家 さば納豆定食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 36.2,
+      "kcal": 720,
+      "f": 32.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-1-3",
+      "n": "すき家 牛皿（２倍盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.1,
+      "kcal": 581,
+      "f": 43.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-42",
+      "n": "すき家 牛焼鮭朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.4,
+      "kcal": 589,
+      "f": 22.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-1-2",
+      "n": "すき家 牛皿（中盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 21.1,
+      "kcal": 423,
+      "f": 32.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-34",
+      "n": "すき家 オクラ旨だしとりそぼろ丼（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 30.6,
+      "kcal": 620,
+      "f": 14.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-44",
+      "n": "すき家 高菜明太マヨ牛丼ライト（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 28.2,
+      "kcal": 579,
+      "f": 41.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-30",
+      "n": "すき家 鮭定食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 21.1,
+      "kcal": 434,
+      "f": 10.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-43",
+      "n": "すき家 高菜明太マヨ牛丼ライト（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 23.9,
+      "kcal": 492,
+      "f": 34.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-2-42",
+      "n": "すき家 高菜明太マヨ牛丼ライト（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 19.6,
+      "kcal": 404,
+      "f": 28,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-36",
+      "n": "すき家 焼鮭朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 21.8,
+      "kcal": 458,
+      "f": 12.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-39",
+      "n": "すき家 まぐろたたき皿（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 27.6,
+      "kcal": 580,
+      "f": 9.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-50",
+      "n": "すき家 鉄火丼（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 30.4,
+      "kcal": 652,
+      "f": 4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-33",
+      "n": "すき家 納豆定食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 22.3,
+      "kcal": 482,
+      "f": 13,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-45",
+      "n": "すき家 山かけまぐろたたき丼（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29,
+      "kcal": 628,
+      "f": 9.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-35",
+      "n": "すき家 オクラ旨だしとりそぼろ丼（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 31.8,
+      "kcal": 689,
+      "f": 14.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-48",
+      "n": "すき家 納豆まぜのっけ朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 22.2,
+      "kcal": 481,
+      "f": 12.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-40",
+      "n": "すき家 納豆焼鮭朝食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 31.5,
+      "kcal": 684,
+      "f": 17.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-0",
+      "n": "すき家 塩さばまぜのっけ朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 28.7,
+      "kcal": 628,
+      "f": 27.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-43",
+      "n": "すき家 まぐろユッケ丼（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 37.1,
+      "kcal": 812,
+      "f": 16.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-18",
+      "n": "すき家 にんにくポークロックカレー（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 30.6,
+      "kcal": 673,
+      "f": 20.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-27",
+      "n": "すき家 旨だしとりそぼろ丼（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 30.6,
+      "kcal": 673,
+      "f": 14.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-13",
+      "n": "すき家 焼鮭たまかけ朝食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 30.9,
+      "kcal": 680,
+      "f": 18.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-5-0",
+      "n": "すき家 山かけ鉄火丼（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 31.8,
+      "kcal": 700,
+      "f": 4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-6",
+      "n": "すき家 ポークロックカレー（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 28.5,
+      "kcal": 631,
+      "f": 20,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-6",
+      "n": "すき家 納豆たまかけ朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 23,
+      "kcal": 510,
+      "f": 15,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-15",
+      "n": "すき家 塩さばたまかけ朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.5,
+      "kcal": 657,
+      "f": 30.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-22",
+      "n": "すき家 にんにくファイヤーポークロックカレー（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.9,
+      "kcal": 673,
+      "f": 21.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-30",
+      "n": "すき家 明太マヨ旨だしとりそぼろ丼（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.9,
+      "kcal": 673,
+      "f": 21.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-30",
+      "n": "すき家 納豆ベーコンエッグ朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 28.2,
+      "kcal": 643,
+      "f": 27.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-43",
+      "n": "すき家 牛焼鮭朝食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 31.7,
+      "kcal": 727,
+      "f": 22.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-3-0",
+      "n": "すき家 牛・お食事サラダ（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 15.5,
+      "kcal": 359,
+      "f": 22.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-21",
+      "n": "すき家 納豆ソーセージエッグ朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 28.4,
+      "kcal": 668,
+      "f": 29.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-40",
+      "n": "すき家 まぐろたたき丼（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.7,
+      "kcal": 705,
+      "f": 10,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-4-31",
+      "n": "すき家 明太マヨ旨だしとりそぼろ丼（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 31.1,
+      "kcal": 742,
+      "f": 21.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     }
   ]
 }

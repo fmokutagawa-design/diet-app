@@ -5,6 +5,7 @@ const SOURCES={
   mcdonalds:'https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/',
   mos:'https://www.mos.jp/menu/pdf/nutrition.pdf',
   matsuya:'https://bento.matsuyafoods.co.jp/matsuya/safety/allergen.html',
+  sukiya:'https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf',
 };
 
 function clean(s){return s.replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
@@ -88,6 +89,31 @@ async function crawlMatsuya(){
   return {items:unique.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,70),pdfUrl};
 }
 
+async function crawlSukiya(){
+  const response=await fetch(SOURCES.sukiya,{headers:{'user-agent':'diet-app-menu-updater/1.0 (+https://github.com/fmokutagawa-design/diet-app)'}});
+  if(!response.ok)throw new Error(`${SOURCES.sukiya}: HTTP ${response.status}`);
+  const pdfjs=await import('pdfjs-dist/legacy/build/pdf.mjs');
+  const pdf=await pdfjs.getDocument({data:new Uint8Array(await response.arrayBuffer())}).promise;
+  const rows=[];
+  for(let pageNo=1;pageNo<=pdf.numPages;pageNo++){
+    const page=await pdf.getPage(pageNo),content=await page.getTextContent();
+    const tokens=content.items.filter(x=>x.str.trim()).map(x=>({s:x.str.trim(),x:x.transform[4],y:x.transform[5]}));
+    const names=tokens.filter(x=>x.x>=85&&x.x<190&&x.y<680&&!/メニュー|カテゴリー|カロリー|栄養|更新日/.test(x.s)&&/[ぁ-んァ-ヶ一-龠]/.test(x.s));
+    const sizes=tokens.filter(x=>x.x>=190&&x.x<280&&x.y<680&&/[ぁ-んァ-ヶ一-龠]/.test(x.s));
+    for(let rowNo=0;rowNo<sizes.length;rowNo++){
+      const size=sizes[rowNo],at=(lo,hi)=>tokens.find(x=>Math.abs(x.y-size.y)<1.5&&x.x>=lo&&x.x<hi)?.s;
+      const kcal=Number((at(280,345)||'').replaceAll(',','')),protein=Number(at(345,390)),fat=Number(at(390,440));
+      const name=names.slice().sort((a,b)=>Math.abs(a.y-size.y)-Math.abs(b.y-size.y))[0]?.s;
+      if(!name||![kcal,protein,fat].every(Number.isFinite)||kcal<120||kcal>850||protein<8)continue;
+      if(/ごはん$|ドリンク|コーヒー|ラテ|レモネード|シェイク|ビール|ハイボール|ソース|ドレッシング/.test(name))continue;
+      rows.push({id:`sukiya-${pageNo}-${rowNo}`,n:`すき家 ${name}（${size.s}）`,s:['sukiya'],p:protein,kcal,f:fat,yen:null,days:dayTypes(kcal),kind:'gai',official:true,category:'すき家',sourceUrl:SOURCES.sukiya});
+    }
+  }
+  const unique=[...new Map(rows.map(x=>[x.n,x])).values()];
+  if(unique.length<30)throw new Error(`Sukiya parse yielded only ${unique.length} items`);
+  return unique.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,70);
+}
+
 const previous=await fs.readFile(OUTPUT,'utf8').then(JSON.parse).catch(()=>({sources:{},items:[]}));
 const sources={...previous.sources};
 let items=previous.items.filter(x=>!x.id?.startsWith('mcd-'));
@@ -118,6 +144,16 @@ try{
 }catch(error){
   items=items.concat(previous.items.filter(x=>x.id?.startsWith('matsuya-')));
   sources.matsuya={...(sources.matsuya||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.matsuya,error:String(error.message||error)};
+  if(!items.length)throw error;
+}
+items=items.filter(x=>!x.id?.startsWith('sukiya-'));
+try{
+  const found=await crawlSukiya();
+  items=items.concat(found);
+  sources.sukiya={status:'ok',updatedAt:new Date().toISOString(),url:SOURCES.sukiya,count:found.length,label:'すき家公式栄養成分表'};
+}catch(error){
+  items=items.concat(previous.items.filter(x=>x.id?.startsWith('sukiya-')));
+  sources.sukiya={...(sources.sukiya||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.sukiya,error:String(error.message||error)};
   if(!items.length)throw error;
 }
 const output={schemaVersion:1,generatedAt:new Date().toISOString(),sources,items};
