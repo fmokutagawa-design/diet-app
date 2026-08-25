@@ -1,41 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:32:47.308Z",
+  "generatedAt": "2026-08-25T05:35:07.549Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:32:45.676Z",
+      "updatedAt": "2026-08-25T05:35:03.801Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:32:45.760Z",
+      "updatedAt": "2026-08-25T05:35:03.897Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 60,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:32:46.714Z",
+      "updatedAt": "2026-08-25T05:35:04.862Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:32:46.937Z",
+      "updatedAt": "2026-08-25T05:35:05.258Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
     },
     "yoshinoya": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:32:47.308Z",
+      "updatedAt": "2026-08-25T05:35:05.657Z",
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 70,
       "label": "吉野家公式栄養成分表"
+    },
+    "famima": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:35:07.549Z",
+      "url": "https://www.family.co.jp/goods/safety.html",
+      "count": 80,
+      "label": "ファミマ公式栄養成分情報（関東）"
     }
   },
   "items": [
@@ -6129,6 +6136,1823 @@
       "official": true,
       "category": "吉野家",
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "famima-080-25",
+      "n": "ファミマ たんぱく質が摂れる！鶏むね肉とたまごのサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 19.5,
+      "kcal": 161,
+      "f": 7.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1210750.html"
+    },
+    {
+      "id": "famima-090-16",
+      "n": "ファミマ ねぎ塩チキン",
+      "s": [
+        "famima"
+      ],
+      "p": 14,
+      "kcal": 124,
+      "f": 6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods090",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sidedishes/1132724.html"
+    },
+    {
+      "id": "famima-040-17",
+      "n": "ファミマ 【関東】たんぱく質が摂れる！ランチBOX",
+      "s": [
+        "famima"
+      ],
+      "p": 29.5,
+      "kcal": 278,
+      "f": 9.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0910439.html"
+    },
+    {
+      "id": "famima-090-17",
+      "n": "ファミマ ごまだれサラダチキン",
+      "s": [
+        "famima"
+      ],
+      "p": 12.5,
+      "kcal": 121,
+      "f": 5.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods090",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sidedishes/1132717.html"
+    },
+    {
+      "id": "famima-100-13",
+      "n": "ファミマ 【北海道・関東】具だくさん豚汁",
+      "s": [
+        "famima"
+      ],
+      "p": 12,
+      "kcal": 120,
+      "f": 5.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1021356.html"
+    },
+    {
+      "id": "famima-080-23",
+      "n": "ファミマ たんぱく質が摂れる！豚しゃぶのサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 13.9,
+      "kcal": 142,
+      "f": 6.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1210767.html"
+    },
+    {
+      "id": "famima-100-7",
+      "n": "ファミマ 【関東の一部】肉たっぷり 7種具材の豚汁",
+      "s": [
+        "famima"
+      ],
+      "p": 10.3,
+      "kcal": 135,
+      "f": 8.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1023046.html"
+    },
+    {
+      "id": "famima-040-10",
+      "n": "ファミマ たんぱく質が摂れる！サラダチキンロール",
+      "s": [
+        "famima"
+      ],
+      "p": 23,
+      "kcal": 310,
+      "f": 12.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0920032.html"
+    },
+    {
+      "id": "famima-100-8",
+      "n": "ファミマ 塩ちゃんこ鍋風スープ（うどん入り）",
+      "s": [
+        "famima"
+      ],
+      "p": 15.5,
+      "kcal": 209,
+      "f": 6.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1022100.html"
+    },
+    {
+      "id": "famima-100-5",
+      "n": "ファミマ 【関東・東海・北陸】蒸し鶏と野菜の鶏白湯スープ",
+      "s": [
+        "famima"
+      ],
+      "p": 10,
+      "kcal": 135,
+      "f": 3.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1021981.html"
+    },
+    {
+      "id": "famima-100-1",
+      "n": "ファミマ 【関東の一部・関西】豚肉とあさりとキムチの旨辛スンドゥブスープ",
+      "s": [
+        "famima"
+      ],
+      "p": 11.1,
+      "kcal": 152,
+      "f": 9.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1023084.html"
+    },
+    {
+      "id": "famima-040-14",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】国産鶏むね肉とゆで玉子のトーストサンド生鮮バジルのソースとチェダーチーズ",
+      "s": [
+        "famima"
+      ],
+      "p": 20.1,
+      "kcal": 288,
+      "f": 13.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0912709.html"
+    },
+    {
+      "id": "famima-080-8",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】グリルチキンとゆで玉子のファーマーズサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 15.5,
+      "kcal": 232,
+      "f": 15.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1213027.html"
+    },
+    {
+      "id": "famima-090-5",
+      "n": "ファミマ だしがじゅわ！明太マヨ厚焼き玉子",
+      "s": [
+        "famima"
+      ],
+      "p": 13.2,
+      "kcal": 202,
+      "f": 14,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods090",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sidedishes/1160635.html"
+    },
+    {
+      "id": "famima-080-24",
+      "n": "ファミマ たんぱく質が摂れる！しそ入り鶏つくねのサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 16.1,
+      "kcal": 250,
+      "f": 13.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1210798.html"
+    },
+    {
+      "id": "famima-100-11",
+      "n": "ファミマ ふんわりつくねの和風スープ",
+      "s": [
+        "famima"
+      ],
+      "p": 10.8,
+      "kcal": 169,
+      "f": 5.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1022117.html"
+    },
+    {
+      "id": "famima-040-13",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】国産鶏むね肉とゆで玉子のサンド トマトとハラペーニョのソース",
+      "s": [
+        "famima"
+      ],
+      "p": 14.9,
+      "kcal": 234,
+      "f": 8.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0912747.html"
+    },
+    {
+      "id": "famima-080-3",
+      "n": "ファミマ たんぱく質が摂れる！ローストチキンのパスタサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 15.2,
+      "kcal": 240,
+      "f": 5.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1222227.html"
+    },
+    {
+      "id": "famima-080-5",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】鶏むね肉と大粒なめこのサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 9.1,
+      "kcal": 150,
+      "f": 9.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1213133.html"
+    },
+    {
+      "id": "famima-090-13",
+      "n": "ファミマ 鶏肉と野菜の黒酢あん",
+      "s": [
+        "famima"
+      ],
+      "p": 12.6,
+      "kcal": 222,
+      "f": 11.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods090",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sidedishes/1132816.html"
+    },
+    {
+      "id": "famima-040-6",
+      "n": "ファミマ 石窯パリジャン ローストポーク&ローストチキン",
+      "s": [
+        "famima"
+      ],
+      "p": 12.8,
+      "kcal": 227,
+      "f": 3.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0920209.html"
+    },
+    {
+      "id": "famima-100-0",
+      "n": "ファミマ 【関東の一部】参鶏湯風スープごはん",
+      "s": [
+        "famima"
+      ],
+      "p": 14.2,
+      "kcal": 252,
+      "f": 4.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1023091.html"
+    },
+    {
+      "id": "famima-040-7",
+      "n": "ファミマ グリルドポークマフィン",
+      "s": [
+        "famima"
+      ],
+      "p": 13.9,
+      "kcal": 248,
+      "f": 7.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0920193.html"
+    },
+    {
+      "id": "famima-060-20",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】冷しそばとろーり豆腐と海藻の練り胡麻ラー油あえ",
+      "s": [
+        "famima"
+      ],
+      "p": 16.4,
+      "kcal": 294,
+      "f": 6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0812726.html"
+    },
+    {
+      "id": "famima-090-8",
+      "n": "ファミマ 旨さ痺れる逸品 四川風麻婆豆腐",
+      "s": [
+        "famima"
+      ],
+      "p": 13.7,
+      "kcal": 247,
+      "f": 17.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods090",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sidedishes/1160574.html"
+    },
+    {
+      "id": "famima-080-1",
+      "n": "ファミマ ゆず塩ラーメンサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 12.8,
+      "kcal": 234,
+      "f": 5.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1222302.html"
+    },
+    {
+      "id": "famima-040-11",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】国産鶏むね肉と厚切りトマトゆで玉子のクラブハウスサンド",
+      "s": [
+        "famima"
+      ],
+      "p": 12.5,
+      "kcal": 231,
+      "f": 8.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0912716.html"
+    },
+    {
+      "id": "famima-060-13",
+      "n": "ファミマ 豚骨醤油 家系ラーメン",
+      "s": [
+        "famima"
+      ],
+      "p": 23.9,
+      "kcal": 444,
+      "f": 15.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0812191.html"
+    },
+    {
+      "id": "famima-060-21",
+      "n": "ファミマ 【北海道・東北・関東】LabQ監修 至高の一杯冷製煮干し醤油らぁ麺",
+      "s": [
+        "famima"
+      ],
+      "p": 19.1,
+      "kcal": 358,
+      "f": 7.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0811019.html"
+    },
+    {
+      "id": "famima-040-0",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】たんぱく質が摂れる ケイジャンチキンのラップ",
+      "s": [
+        "famima"
+      ],
+      "p": 16.5,
+      "kcal": 310,
+      "f": 15,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0922708.html"
+    },
+    {
+      "id": "famima-100-16",
+      "n": "ファミマ 鮭とほうれん草のクリームグラタン",
+      "s": [
+        "famima"
+      ],
+      "p": 15.8,
+      "kcal": 298,
+      "f": 10.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1032369.html"
+    },
+    {
+      "id": "famima-020-6",
+      "n": "ファミマ 【関東】炙り焼 鳥めし弁当（麦飯）",
+      "s": [
+        "famima"
+      ],
+      "p": 31.7,
+      "kcal": 616,
+      "f": 18.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods020",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/obento/0616010.html"
+    },
+    {
+      "id": "famima-060-43",
+      "n": "ファミマ 石臼挽きそば粉のざるそば",
+      "s": [
+        "famima"
+      ],
+      "p": 15.9,
+      "kcal": 314,
+      "f": 2.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810142.html"
+    },
+    {
+      "id": "famima-080-0",
+      "n": "ファミマ 【関東・東海・北陸】蒸し鶏とオクラのネバネバパスタサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 11.7,
+      "kcal": 235,
+      "f": 5.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1222272.html"
+    },
+    {
+      "id": "famima-060-14",
+      "n": "ファミマ だし香るわかめと揚げ玉のそば",
+      "s": [
+        "famima"
+      ],
+      "p": 14.6,
+      "kcal": 295,
+      "f": 4.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0812023.html"
+    },
+    {
+      "id": "famima-060-12",
+      "n": "ファミマ 鶏と魚介の旨み 中華そば（醤油味）",
+      "s": [
+        "famima"
+      ],
+      "p": 16.7,
+      "kcal": 343,
+      "f": 5.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0812160.html"
+    },
+    {
+      "id": "famima-060-27",
+      "n": "ファミマ ねぎたっぷり！冷し薬味そば",
+      "s": [
+        "famima"
+      ],
+      "p": 16.3,
+      "kcal": 336,
+      "f": 3.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810593.html"
+    },
+    {
+      "id": "famima-060-42",
+      "n": "ファミマ 石臼挽きそば粉の冷しとろろそば",
+      "s": [
+        "famima"
+      ],
+      "p": 15.9,
+      "kcal": 328,
+      "f": 1.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810234.html"
+    },
+    {
+      "id": "famima-080-4",
+      "n": "ファミマ 豚しゃぶのパスタサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 12.4,
+      "kcal": 257,
+      "f": 9.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1222180.html"
+    },
+    {
+      "id": "famima-060-41",
+      "n": "ファミマ おろしでさっぱり 冷し鶏天うどん",
+      "s": [
+        "famima"
+      ],
+      "p": 19.6,
+      "kcal": 408,
+      "f": 5.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810203.html"
+    },
+    {
+      "id": "famima-060-36",
+      "n": "ファミマ さっぽろ純連監修 冷し味噌ラーメン",
+      "s": [
+        "famima"
+      ],
+      "p": 18.5,
+      "kcal": 386,
+      "f": 8.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810319.html"
+    },
+    {
+      "id": "famima-070-15",
+      "n": "ファミマ 大盛 グリルチキンのペペロンチーノ",
+      "s": [
+        "famima"
+      ],
+      "p": 31.1,
+      "kcal": 650,
+      "f": 20.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0820134.html"
+    },
+    {
+      "id": "famima-060-0",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】バジル香るバミーヘンガパオ 鶏肉&豚肉炒めのタイ風まぜそば",
+      "s": [
+        "famima"
+      ],
+      "p": 22.4,
+      "kcal": 476,
+      "f": 9.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0842754.html"
+    },
+    {
+      "id": "famima-060-26",
+      "n": "ファミマ 石臼挽きそば粉の大盛冷しぶっかけそば",
+      "s": [
+        "famima"
+      ],
+      "p": 23.8,
+      "kcal": 506,
+      "f": 5.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810432.html"
+    },
+    {
+      "id": "famima-100-14",
+      "n": "ファミマ 鶏肉のバジルクリームグラタン",
+      "s": [
+        "famima"
+      ],
+      "p": 17.3,
+      "kcal": 370,
+      "f": 14.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1032406.html"
+    },
+    {
+      "id": "famima-060-37",
+      "n": "ファミマ お手軽！冷しぶっかけそば",
+      "s": [
+        "famima"
+      ],
+      "p": 11.2,
+      "kcal": 243,
+      "f": 4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810272.html"
+    },
+    {
+      "id": "famima-040-9",
+      "n": "ファミマ チーズバーガー",
+      "s": [
+        "famima"
+      ],
+      "p": 13,
+      "kcal": 283,
+      "f": 11,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0920063.html"
+    },
+    {
+      "id": "famima-100-9",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】国産鶏むね肉と小松菜の豆乳担担春雨スープ",
+      "s": [
+        "famima"
+      ],
+      "p": 18.4,
+      "kcal": 403,
+      "f": 27.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1023015.html"
+    },
+    {
+      "id": "famima-070-11",
+      "n": "ファミマ あさりのパスタ",
+      "s": [
+        "famima"
+      ],
+      "p": 18.8,
+      "kcal": 413,
+      "f": 9.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0820349.html"
+    },
+    {
+      "id": "famima-060-6",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】旨みあふれる香ばし炒め 肉盛り焼そば",
+      "s": [
+        "famima"
+      ],
+      "p": 22.9,
+      "kcal": 509,
+      "f": 19.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0823074.html"
+    },
+    {
+      "id": "famima-060-45",
+      "n": "ファミマ 【関東】ピリ辛仕立ての冷しラー油ねぎそば",
+      "s": [
+        "famima"
+      ],
+      "p": 18.8,
+      "kcal": 419,
+      "f": 11.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810036.html"
+    },
+    {
+      "id": "famima-060-10",
+      "n": "ファミマ 北海道仕込みの5種味噌 味噌ラーメン",
+      "s": [
+        "famima"
+      ],
+      "p": 23.5,
+      "kcal": 524,
+      "f": 17.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0812184.html"
+    },
+    {
+      "id": "famima-020-5",
+      "n": "ファミマ 炙り焼チキンとミートボール弁当（ペッパーごはん）",
+      "s": [
+        "famima"
+      ],
+      "p": 30.6,
+      "kcal": 685,
+      "f": 15.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods020",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/obento/0616089.html"
+    },
+    {
+      "id": "famima-070-3",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】冷製 大粒なめこと鶏むね肉のパスタ",
+      "s": [
+        "famima"
+      ],
+      "p": 18.1,
+      "kcal": 408,
+      "f": 17.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0822725.html"
+    },
+    {
+      "id": "famima-070-10",
+      "n": "ファミマ きのことベーコンの醤油パスタ",
+      "s": [
+        "famima"
+      ],
+      "p": 18.2,
+      "kcal": 415,
+      "f": 11.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0820356.html"
+    },
+    {
+      "id": "famima-060-15",
+      "n": "ファミマ 麺屋こころ監修 台湾風まぜそば",
+      "s": [
+        "famima"
+      ],
+      "p": 25.2,
+      "kcal": 577,
+      "f": 14.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0812009.html"
+    },
+    {
+      "id": "famima-070-4",
+      "n": "ファミマ 【関東の一部】青森県産にんにく使用 トマトの生パスタ",
+      "s": [
+        "famima"
+      ],
+      "p": 26.5,
+      "kcal": 612,
+      "f": 14.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0823067.html"
+    },
+    {
+      "id": "famima-060-19",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】8品目のナムルと野菜のビビン麺",
+      "s": [
+        "famima"
+      ],
+      "p": 20.7,
+      "kcal": 481,
+      "f": 18.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0812764.html"
+    },
+    {
+      "id": "famima-090-9",
+      "n": "ファミマ こだわり肉シュウマイ",
+      "s": [
+        "famima"
+      ],
+      "p": 15.4,
+      "kcal": 358,
+      "f": 23.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods090",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sidedishes/1160529.html"
+    },
+    {
+      "id": "famima-040-16",
+      "n": "ファミマ 【東北・関東】全粒粉サンド 2種のチーズ",
+      "s": [
+        "famima"
+      ],
+      "p": 11.8,
+      "kcal": 276,
+      "f": 13.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0910422.html"
+    },
+    {
+      "id": "famima-060-18",
+      "n": "ファミマ 【東京都の一部・神奈川県の一部】冷製 花椒の効いたよだれ鶏と黒酢のあえ麺",
+      "s": [
+        "famima"
+      ],
+      "p": 18.3,
+      "kcal": 430,
+      "f": 6.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0812788.html"
+    },
+    {
+      "id": "famima-060-40",
+      "n": "ファミマ 石臼挽きそば粉の冷しそば&いなり",
+      "s": [
+        "famima"
+      ],
+      "p": 18.2,
+      "kcal": 431,
+      "f": 7.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810241.html"
+    },
+    {
+      "id": "famima-100-3",
+      "n": "ファミマ もちもち餃子と春雨の中華スープ",
+      "s": [
+        "famima"
+      ],
+      "p": 8.6,
+      "kcal": 204,
+      "f": 5.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods100",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/deli/1022049.html"
+    },
+    {
+      "id": "famima-070-7",
+      "n": "ファミマ お手軽！明太子パスタ",
+      "s": [
+        "famima"
+      ],
+      "p": 13.7,
+      "kcal": 326,
+      "f": 7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0820400.html"
+    },
+    {
+      "id": "famima-070-1",
+      "n": "ファミマ 生パスタ カルボナーラ",
+      "s": [
+        "famima"
+      ],
+      "p": 21.6,
+      "kcal": 515,
+      "f": 18.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0823272.html"
+    },
+    {
+      "id": "famima-020-20",
+      "n": "ファミマ 旨塩ねぎダレの鶏から揚げ弁当",
+      "s": [
+        "famima"
+      ],
+      "p": 22.5,
+      "kcal": 541,
+      "f": 13.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods020",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/obento/0730334.html"
+    },
+    {
+      "id": "famima-060-35",
+      "n": "ファミマ 【関東・関西、中国・四国】鶏の旨みと白髪ねぎの香り 冷し鶏ねぎうどん",
+      "s": [
+        "famima"
+      ],
+      "p": 14,
+      "kcal": 340,
+      "f": 2.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810326.html"
+    },
+    {
+      "id": "famima-060-28",
+      "n": "ファミマ ごまのコクと花椒の香り！冷し担担麺",
+      "s": [
+        "famima"
+      ],
+      "p": 17.6,
+      "kcal": 428,
+      "f": 11.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810616.html"
+    },
+    {
+      "id": "famima-060-31",
+      "n": "ファミマ 定番！特製醤油スープ ミニ冷し中華",
+      "s": [
+        "famima"
+      ],
+      "p": 9.4,
+      "kcal": 229,
+      "f": 2.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810401.html"
+    },
+    {
+      "id": "famima-060-30",
+      "n": "ファミマ さっぱり特製醤油スープ 6種具材の冷し中華",
+      "s": [
+        "famima"
+      ],
+      "p": 17.4,
+      "kcal": 424,
+      "f": 5.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810487.html"
+    },
+    {
+      "id": "famima-040-1",
+      "n": "ファミマ 石窯パリジャンサンド（ハム&チーズ）",
+      "s": [
+        "famima"
+      ],
+      "p": 10.1,
+      "kcal": 248,
+      "f": 8.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods040",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sandwich/0920490.html"
+    },
+    {
+      "id": "famima-020-25",
+      "n": "ファミマ 【関東の一部】オイスターの旨味広がるガパオライス（麦入りごはん ）",
+      "s": [
+        "famima"
+      ],
+      "p": 19.3,
+      "kcal": 474,
+      "f": 12.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods020",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/obento/0730082.html"
+    },
+    {
+      "id": "famima-080-2",
+      "n": "ファミマ 【関東】焼きとうもろこしとツナのパスタサラダ",
+      "s": [
+        "famima"
+      ],
+      "p": 11,
+      "kcal": 275,
+      "f": 8.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods080",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/salad/1222258.html"
+    },
+    {
+      "id": "famima-070-6",
+      "n": "ファミマ お手軽！醤油とだしのペペロンチーノ",
+      "s": [
+        "famima"
+      ],
+      "p": 12,
+      "kcal": 302,
+      "f": 9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0820424.html"
+    },
+    {
+      "id": "famima-070-9",
+      "n": "ファミマ ファミマ・ザ・ミートソース",
+      "s": [
+        "famima"
+      ],
+      "p": 18.3,
+      "kcal": 464,
+      "f": 14.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0820363.html"
+    },
+    {
+      "id": "famima-020-15",
+      "n": "ファミマ 肉の旨味感じる 三元豚のロースとんかつ弁当",
+      "s": [
+        "famima"
+      ],
+      "p": 29,
+      "kcal": 737,
+      "f": 23.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods020",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/obento/0730495.html"
+    },
+    {
+      "id": "famima-090-6",
+      "n": "ファミマ タルタルチキン南蛮",
+      "s": [
+        "famima"
+      ],
+      "p": 18,
+      "kcal": 465,
+      "f": 27.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods090",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/sidedishes/1160581.html"
+    },
+    {
+      "id": "famima-070-2",
+      "n": "ファミマ 冷たい生パスタ 海老のトマトクリーム",
+      "s": [
+        "famima"
+      ],
+      "p": 13.5,
+      "kcal": 351,
+      "f": 6.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0823128.html"
+    },
+    {
+      "id": "famima-070-12",
+      "n": "ファミマ 大盛 ミートソース",
+      "s": [
+        "famima"
+      ],
+      "p": 25.1,
+      "kcal": 663,
+      "f": 21.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods070",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/pasta/0820332.html"
+    },
+    {
+      "id": "famima-060-24",
+      "n": "ファミマ 【関東の一部】八王子の魂（ソウル） 冷製八王子ラーメン",
+      "s": [
+        "famima"
+      ],
+      "p": 14.8,
+      "kcal": 391,
+      "f": 11.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ファミマ goods060",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.family.co.jp/goods/noodle/0810821.html"
     }
   ]
 }

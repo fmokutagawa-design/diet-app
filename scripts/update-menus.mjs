@@ -7,6 +7,7 @@ const SOURCES={
   matsuya:'https://bento.matsuyafoods.co.jp/matsuya/safety/allergen.html',
   sukiya:'https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf',
   yoshinoya:'https://www.yoshinoya.com/pdf/allergy/',
+  famima:'https://www.family.co.jp/goods/safety.html',
 };
 
 function clean(s){return s.replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();}
@@ -165,6 +166,29 @@ async function crawlYoshinoya(){
   return [...new Map(selected.map(x=>[x.n,x])).values()];
 }
 
+async function crawlFamima(){
+  const categoryIds=['010','020','030','040','060','070','080','090','100'];
+  const pages=await Promise.all(categoryIds.map(id=>fetchText(`https://www.family.co.jp/goods/safety/goods${id}.html`)));
+  const rows=[];
+  for(let pageNo=0;pageNo<pages.length;pageNo++){
+    const sections=pages[pageNo].split('<div class="item_basic_info">').slice(1);
+    for(let rowNo=0;rowNo<sections.length;rowNo++){
+      const section=sections[rowNo];
+      const link=section.match(/<p class="name">[\s\S]*?<a href="([^"]+)">([\s\S]*?)<\/a>/);
+      const values=[...section.matchAll(/<td class="con_nut">\s*([\d,.]+)\s*<\/td>/g)].map(x=>Number(x[1].replaceAll(',','')));
+      const inKanto=/ly-mod-tag-area-on"><em>関東<\/em>/.test(section);
+      if(!link||values.length<3||!inKanto)continue;
+      const [kcal,protein,fat]=values,name=clean(link[2]);
+      if(![kcal,protein,fat].every(Number.isFinite)||kcal<120||kcal>850||protein<8)continue;
+      if(/ドリンク|コーヒー|ラテ|お茶|ジュース|酒|ビール/.test(name))continue;
+      rows.push({id:`famima-${categoryIds[pageNo]}-${rowNo}`,n:`ファミマ ${name}`,s:['famima'],p:protein,kcal,f:fat,yen:null,days:dayTypes(kcal),kind:'gai',official:true,category:`ファミマ goods${categoryIds[pageNo]}`,regions:['関東'],sourceUrl:new URL(link[1],SOURCES.famima).href});
+    }
+  }
+  const unique=[...new Map(rows.map(x=>[x.n,x])).values()];
+  if(unique.length<30)throw new Error(`FamilyMart parse yielded only ${unique.length} items`);
+  return unique.sort((a,b)=>(b.p/b.kcal)-(a.p/a.kcal)).slice(0,80);
+}
+
 const previous=await fs.readFile(OUTPUT,'utf8').then(JSON.parse).catch(()=>({sources:{},items:[]}));
 const sources={...previous.sources};
 let items=previous.items.filter(x=>!x.id?.startsWith('mcd-'));
@@ -215,6 +239,16 @@ try{
 }catch(error){
   items=items.concat(previous.items.filter(x=>x.id?.startsWith('yoshinoya-')));
   sources.yoshinoya={...(sources.yoshinoya||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.yoshinoya,error:String(error.message||error)};
+  if(!items.length)throw error;
+}
+items=items.filter(x=>!x.id?.startsWith('famima-'));
+try{
+  const found=await crawlFamima();
+  items=items.concat(found);
+  sources.famima={status:'ok',updatedAt:new Date().toISOString(),url:SOURCES.famima,count:found.length,label:'ファミマ公式栄養成分情報（関東）'};
+}catch(error){
+  items=items.concat(previous.items.filter(x=>x.id?.startsWith('famima-')));
+  sources.famima={...(sources.famima||{}),status:'error',lastAttemptAt:new Date().toISOString(),url:SOURCES.famima,error:String(error.message||error)};
   if(!items.length)throw error;
 }
 const output={schemaVersion:1,generatedAt:new Date().toISOString(),sources,items};
