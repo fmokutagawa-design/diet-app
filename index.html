@@ -642,6 +642,7 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
       <div class="small muted" style="margin-top:7px">初期表示は、一店舗・一商品だけで食事になる弁当・丼・麺などを優先します。</div>
       <div class="seg" id="rescueModeSeg" style="margin-top:9px"><button data-v="one" class="active">一品完結</button><button data-v="all">軽食も含む</button></div>
       <div class="seg five" id="rescueStoreSeg" style="margin-top:7px"><button data-v="all">全部</button><button data-v="seven">セブン</button><button data-v="lawson">ローソン</button><button data-v="famima">ファミマ</button><button data-v="aeon" class="active">新吉田</button></div>
+      <div class="seg five" id="rescueChainSeg" style="margin-top:7px"><button data-v="gai">外食全部</button><button data-v="mcdonalds">マック</button><button data-v="mos">モス</button><button data-v="sukiya">すき家</button><button data-v="gyudon">牛丼系</button></div>
       <div class="rescue-buy-list" id="rescueBuyList"></div>
       <button class="rescue-buy-more" id="rescueBuyToggle" type="button">もっと見る</button>
       <details id="aeonDeliDetails" style="margin-top:12px"><summary style="cursor:pointer;font-weight:800">新吉田店のイオン惣菜を一度だけ登録</summary>
@@ -3513,17 +3514,23 @@ let rescueBuyExpanded=false;
 let rescueBuyMode='one',rescueBuyStore=S.meal.primaryStore||'aeon';
 const NIGHT_FIXED_SET={name:'夜勤固定セット（たんぱく質の摂れるサラダ＋豆腐バー2本＋サラダチキン2個）',kcal:640,p:90};
 function rescueIsOneItem(it){
-  if(it.kcal<350||it.kcal>700||it.p<25||(Number.isFinite(it.f)&&it.f>25))return false;
+  const fast=it.s.some(s=>s==='mcdonalds'||s==='mos');
+  const gyudon=it.s.some(s=>s==='sukiya'||s==='yoshinoya'||s==='matsuya');
+  const minP=fast?15:gyudon?20:25;
+  if(it.kcal<300||it.kcal>700||it.p<minP||(Number.isFinite(it.f)&&it.f>25))return false;
   return /弁当|丼|カレー|麺|そば|うどん|パスタ|サンド|バーガー|定食|プレート|ごはん|飯|重/.test(it.n);
 }
 function rescueBuyCandidates(){
-  const stores=['seven','lawson','famima','aeon','create'];
+  const stores=['seven','lawson','famima','aeon','create','mcdonalds','mos','sukiya','yoshinoya','matsuya'];
+  const external=new Set(['mcdonalds','mos','sukiya','yoshinoya','matsuya']);
   const buckets=Object.fromEntries(stores.map(s=>[s,[]]));
   STORE_ITEMS.forEach((it,idx)=>{
     const one=rescueIsOneItem(it);
     if(!(it.official||it.customAeon||it.s.includes('create')||one)||it.kcal<120||it.kcal>700||it.p<15||(Number.isFinite(it.f)&&it.f>25))return;
     const store=stores.find(s=>it.s.includes(s));if(!store)return;
-    if(rescueBuyStore!=='all'&&store!==rescueBuyStore)return;
+    if(rescueBuyStore==='gai'&&!external.has(store))return;
+    else if(rescueBuyStore==='gyudon'&&!['sukiya','yoshinoya','matsuya'].includes(store))return;
+    else if(!['all','gai','gyudon'].includes(rescueBuyStore)&&store!==rescueBuyStore)return;
     if(rescueBuyMode==='one'&&!one)return;
     buckets[store].push({it,idx,one,score:(one?10:0)+it.p/it.kcal});
   });
@@ -3609,7 +3616,7 @@ $('#rescueStock').addEventListener('click',e=>{const b=e.target.closest('[data-s
 $('#rescueList').addEventListener('click',e=>{const b=e.target.closest('[data-rescue-eat]');if(b)eatRescue(b.dataset.rescueEat);});
 $('#nightFixedSet').addEventListener('click',e=>{if(!e.target.closest('#nightFixedEat'))return;if(!S.foodLog[todayKey])S.foodLog[todayKey]=[];S.foodLog[todayKey].push({name:NIGHT_FIXED_SET.name,kcal:NIGHT_FIXED_SET.kcal,p:NIGHT_FIXED_SET.p,slot:defaultSlot()});save();afterDataChange();toast('夜勤固定セットを記録しました');});
 document.querySelectorAll('#rescueModeSeg button').forEach(b=>b.addEventListener('click',()=>{rescueBuyMode=b.dataset.v;rescueBuyExpanded=false;document.querySelectorAll('#rescueModeSeg button').forEach(x=>x.classList.toggle('active',x===b));renderRescueBuy();}));
-document.querySelectorAll('#rescueStoreSeg button').forEach(b=>b.addEventListener('click',()=>{rescueBuyStore=b.dataset.v;rescueBuyExpanded=false;document.querySelectorAll('#rescueStoreSeg button').forEach(x=>x.classList.toggle('active',x===b));renderRescueBuy();}));
+document.querySelectorAll('#rescueStoreSeg button,#rescueChainSeg button').forEach(b=>b.addEventListener('click',()=>{rescueBuyStore=b.dataset.v;rescueBuyExpanded=false;document.querySelectorAll('#rescueStoreSeg button,#rescueChainSeg button').forEach(x=>x.classList.toggle('active',x===b));renderRescueBuy();}));
 $('#rescueBuyToggle').addEventListener('click',()=>{rescueBuyExpanded=!rescueBuyExpanded;renderRescueBuy();});
 $('#aeonUnknownList').addEventListener('click',e=>{const b=e.target.closest('[data-aeon-prefill]');if(!b)return;const x=$('#aeonUnknownList')._items?.[+b.dataset.aeonPrefill];if(!x)return;$('#aeonDeliDetails').open=true;$('#aeonDeliName').value=x.n;$('#aeonDeliKcal').focus();$('#aeonDeliDetails').scrollIntoView({behavior:'smooth',block:'center'});});
 $('#aeonDeliSave').addEventListener('click',()=>{
@@ -3619,7 +3626,7 @@ $('#aeonDeliSave').addEventListener('click',()=>{
   S.customAeonMenus=S.customAeonMenus||[];
   const old=S.customAeonMenus.find(x=>x.n===name);
   if(old){old.kcal=kcal;old.p=p;}else S.customAeonMenus.push({n:name,kcal,p,yen:null});
-  syncCustomAeonMenus();syncShinyoshidaAvailability();save();$('#aeonDeliName').value='';$('#aeonDeliKcal').value='';$('#aeonDeliP').value='';rescueBuyStore='aeon';rescueBuyMode=rescueIsOneItem({n:name,kcal,p})?'one':'all';document.querySelectorAll('#rescueStoreSeg button').forEach(x=>x.classList.toggle('active',x.dataset.v==='aeon'));document.querySelectorAll('#rescueModeSeg button').forEach(x=>x.classList.toggle('active',x.dataset.v===rescueBuyMode));renderRescue();toast('イオン惣菜を保存しました');
+  syncCustomAeonMenus();syncShinyoshidaAvailability();save();$('#aeonDeliName').value='';$('#aeonDeliKcal').value='';$('#aeonDeliP').value='';rescueBuyStore='aeon';rescueBuyMode=rescueIsOneItem({n:name,kcal,p})?'one':'all';document.querySelectorAll('#rescueStoreSeg button,#rescueChainSeg button').forEach(x=>x.classList.toggle('active',x.dataset.v==='aeon'));document.querySelectorAll('#rescueModeSeg button').forEach(x=>x.classList.toggle('active',x.dataset.v===rescueBuyMode));renderRescue();toast('イオン惣菜を保存しました');
 });
 $('#reshuffleBtn').addEventListener('click',()=>{nextSeed++;ensureChosen(true);renderPlan();});
 document.addEventListener('click',e=>{const sw=e.target.closest('[data-swap]');if(sw){swapSlot(+sw.dataset.swap);return;}const ps=e.target.closest('[data-pickslot]');if(ps)openPickSheet(+ps.dataset.pickslot);});
