@@ -1,20 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:20:34.237Z",
+  "generatedAt": "2026-08-25T05:23:57.155Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:20:34.144Z",
+      "updatedAt": "2026-08-25T05:23:56.091Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 48,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-08-25T05:20:34.237Z",
+      "updatedAt": "2026-08-25T05:23:56.176Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 60,
       "label": "モス公式メニュー・栄養成分情報"
+    },
+    "matsuya": {
+      "status": "ok",
+      "updatedAt": "2026-08-25T05:23:57.155Z",
+      "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf",
+      "count": 70,
+      "label": "松屋公式栄養成分表"
     }
   },
   "items": [
@@ -2120,6 +2127,1340 @@
       "official": true,
       "category": "モス category 35",
       "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=020310&c_id=35"
+    },
+    {
+      "id": "matsuya-5-482",
+      "n": "松屋 炙り焼鮭",
+      "s": [
+        "matsuya"
+      ],
+      "p": 12.3,
+      "kcal": 122,
+      "f": 7.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-754",
+      "n": "松屋 うな皿",
+      "s": [
+        "matsuya"
+      ],
+      "p": 18.8,
+      "kcal": 252,
+      "f": 16.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-822",
+      "n": "松屋 ソーセージ＆半熟玉子",
+      "s": [
+        "matsuya"
+      ],
+      "p": 9.3,
+      "kcal": 139,
+      "f": 10.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-1026",
+      "n": "松屋 豚ロース焼肉(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 19.6,
+      "kcal": 300,
+      "f": 24.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-1060",
+      "n": "松屋 豚ロース焼肉ダブル(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 39.2,
+      "kcal": 600,
+      "f": 48.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-1060",
+      "n": "松屋 冷や汁(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 12.9,
+      "kcal": 199,
+      "f": 10.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-788",
+      "n": "松屋 ソーセージ＆目玉焼き",
+      "s": [
+        "matsuya"
+      ],
+      "p": 9.3,
+      "kcal": 156,
+      "f": 12,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-686",
+      "n": "松屋 朝エッグ皿",
+      "s": [
+        "matsuya"
+      ],
+      "p": 9.8,
+      "kcal": 165,
+      "f": 12.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-788",
+      "n": "松屋 うな牛皿",
+      "s": [
+        "matsuya"
+      ],
+      "p": 26.5,
+      "kcal": 486,
+      "f": 37.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-890",
+      "n": "松屋 たっぷりチーズ",
+      "s": [
+        "matsuya"
+      ],
+      "p": 8.2,
+      "kcal": 159,
+      "f": 13.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-1536",
+      "n": "松屋 ミニ牛皿玉子セット（生玉子or半熟玉子）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 11.1,
+      "kcal": 231,
+      "f": 19.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-1366",
+      "n": "松屋 豚汁玉子セット（生玉子or半熟玉子）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 15,
+      "kcal": 314,
+      "f": 19.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-8-380",
+      "n": "松屋 豚汁玉子セット（生玉子or半熟玉子）（沖縄）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 14.9,
+      "kcal": 314,
+      "f": 20,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-346",
+      "n": "松屋 チーズうまトマハンバーグ(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 28.5,
+      "kcal": 605,
+      "f": 44.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-1264",
+      "n": "松屋 豚キムチ(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 19.1,
+      "kcal": 411,
+      "f": 26.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-312",
+      "n": "松屋 うまトマハンバーグ(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20.4,
+      "kcal": 446,
+      "f": 31,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-1510",
+      "n": "松屋 ソーセージエッグ",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.4,
+      "kcal": 527,
+      "f": 23.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-1300",
+      "n": "松屋 焼鮭",
+      "s": [
+        "matsuya"
+      ],
+      "p": 25.7,
+      "kcal": 591,
+      "f": 14.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-856",
+      "n": "松屋 生姜焼き(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 22.4,
+      "kcal": 516,
+      "f": 39.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-1440",
+      "n": "松屋 スクランブルエッグ",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.5,
+      "kcal": 546,
+      "f": 25.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-244",
+      "n": "松屋 エッグブラウンハンバーグ生野菜セットシングル",
+      "s": [
+        "matsuya"
+      ],
+      "p": 21.8,
+      "kcal": 515,
+      "f": 35.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-1475",
+      "n": "松屋 ソーセージエッグ（ドリンク含まず）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 30.5,
+      "kcal": 724,
+      "f": 33.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-754",
+      "n": "松屋 エッグブラウンハンバーグ(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20.6,
+      "kcal": 491,
+      "f": 35.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-210",
+      "n": "松屋 チーズブラウンハンバーグ生野菜セットシングル",
+      "s": [
+        "matsuya"
+      ],
+      "p": 24.2,
+      "kcal": 586,
+      "f": 42.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-1405",
+      "n": "松屋 スクランブルエッグ（ドリンク含まず）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 30.6,
+      "kcal": 743,
+      "f": 35.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-720",
+      "n": "松屋 チーズブラウンハンバーグ(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23,
+      "kcal": 562,
+      "f": 41.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-822",
+      "n": "松屋 豚ロースネギ塩丼(小盛)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 21.2,
+      "kcal": 536,
+      "f": 22.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-550",
+      "n": "松屋 うな丼",
+      "s": [
+        "matsuya"
+      ],
+      "p": 26.6,
+      "kcal": 674,
+      "f": 18.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-958",
+      "n": "松屋 豚ロース焼肉定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 27.7,
+      "kcal": 704,
+      "f": 26.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-108",
+      "n": "松屋 牛焼肉生野菜セット",
+      "s": [
+        "matsuya"
+      ],
+      "p": 18.1,
+      "kcal": 462,
+      "f": 40.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-8-414",
+      "n": "松屋 豚汁生野菜セット（沖縄）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 10.3,
+      "kcal": 267,
+      "f": 15.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-584",
+      "n": "松屋 炙り焼鮭朝定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20,
+      "kcal": 520,
+      "f": 9.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-516",
+      "n": "松屋 豚汁",
+      "s": [
+        "matsuya"
+      ],
+      "p": 9.2,
+      "kcal": 243,
+      "f": 14.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-1094",
+      "n": "松屋 牛焼肉単品",
+      "s": [
+        "matsuya"
+      ],
+      "p": 15.2,
+      "kcal": 403,
+      "f": 39.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-1162",
+      "n": "松屋 牛焼肉Ｗ単品",
+      "s": [
+        "matsuya"
+      ],
+      "p": 30.3,
+      "kcal": 805,
+      "f": 78.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-278",
+      "n": "松屋 ブラウンハンバーグ生野菜セット",
+      "s": [
+        "matsuya"
+      ],
+      "p": 30.7,
+      "kcal": 819,
+      "f": 56.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-176",
+      "n": "松屋 ブラウンハンバーグ生野菜セットシングル",
+      "s": [
+        "matsuya"
+      ],
+      "p": 16,
+      "kcal": 427,
+      "f": 28.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-8-346",
+      "n": "松屋 豚汁(沖縄）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 9.1,
+      "kcal": 243,
+      "f": 15.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-1332",
+      "n": "松屋 炙り焼鮭定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 25.7,
+      "kcal": 698,
+      "f": 24,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-686",
+      "n": "松屋 ブラウンハンバーグ(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 14.8,
+      "kcal": 403,
+      "f": 28.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-516",
+      "n": "松屋 ソーセージエッグW定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.2,
+      "kcal": 652,
+      "f": 20.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-856",
+      "n": "松屋 豚ロースネギ塩丼(並盛)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.1,
+      "kcal": 661,
+      "f": 23.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-142",
+      "n": "松屋 カルビ焼肉生野菜セット",
+      "s": [
+        "matsuya"
+      ],
+      "p": 19.9,
+      "kcal": 573,
+      "f": 45.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-8-244",
+      "n": "松屋 【朝】焼鮭定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20.5,
+      "kcal": 596,
+      "f": 15.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-1128",
+      "n": "松屋 チキン南蛮(単品)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 22.4,
+      "kcal": 662,
+      "f": 52.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-108",
+      "n": "松屋 うまトマハンバーグ定食シングル",
+      "s": [
+        "matsuya"
+      ],
+      "p": 28.5,
+      "kcal": 850,
+      "f": 33.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-1196",
+      "n": "松屋 豚キムチ定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 27.2,
+      "kcal": 815,
+      "f": 28.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-1094",
+      "n": "松屋 いぶりがっこ牛めし（小盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 19.8,
+      "kcal": 598,
+      "f": 28,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-448",
+      "n": "松屋 牛皿（大盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 12.4,
+      "kcal": 377,
+      "f": 33.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-1230",
+      "n": "松屋 カルビ焼肉単品",
+      "s": [
+        "matsuya"
+      ],
+      "p": 16.9,
+      "kcal": 514,
+      "f": 43.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-1230",
+      "n": "松屋 豚キムチ",
+      "s": [
+        "matsuya"
+      ],
+      "p": 26,
+      "kcal": 791,
+      "f": 28,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-108",
+      "n": "松屋 うまトマチーズ牛めし(小盛)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 24.7,
+      "kcal": 753,
+      "f": 41.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-414",
+      "n": "松屋 牛皿（並）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 9.8,
+      "kcal": 299,
+      "f": 26.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-8-142",
+      "n": "松屋 【朝】ソーセージエッグW定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.8,
+      "kcal": 728,
+      "f": 26.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-1-313",
+      "n": "松屋 ネギたっぷり旨辛ネギたま牛めし（小盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20.1,
+      "kcal": 615,
+      "f": 28.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-1-823",
+      "n": "松屋 チーズ牛めし（小盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 21.3,
+      "kcal": 667,
+      "f": 36.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-584",
+      "n": "松屋 牛ビビン丼（小盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 21.4,
+      "kcal": 677,
+      "f": 31.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-482",
+      "n": "松屋 ソーセージエッグ定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 17.5,
+      "kcal": 564,
+      "f": 14.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-1128",
+      "n": "松屋 いぶりがっこ牛めし（並盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.8,
+      "kcal": 778,
+      "f": 34.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-1-347",
+      "n": "松屋 ネギたっぷり旨辛ネギたま牛めし（並盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 24.7,
+      "kcal": 818,
+      "f": 36.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-1-857",
+      "n": "松屋 チーズ牛めし（並盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 25.3,
+      "kcal": 846,
+      "f": 42.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-686",
+      "n": "松屋 松屋の牛焼肉丼(小盛)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 18.5,
+      "kcal": 632,
+      "f": 32.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-1060",
+      "n": "松屋 牛焼肉定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.3,
+      "kcal": 806,
+      "f": 41.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-380",
+      "n": "松屋 ブラウンハンバーグ定食シングル",
+      "s": [
+        "matsuya"
+      ],
+      "p": 22.9,
+      "kcal": 807,
+      "f": 30.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-312",
+      "n": "松屋 創業ビーフカレー(単品）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 10.9,
+      "kcal": 386,
+      "f": 26.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-8-108",
+      "n": "松屋 【朝】ソーセージエッグ定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 18,
+      "kcal": 639,
+      "f": 19.7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-618",
+      "n": "松屋 Ｗで選べるたまごかけごはん",
+      "s": [
+        "matsuya"
+      ],
+      "p": 12.7,
+      "kcal": 451,
+      "f": 6.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-8-278",
+      "n": "松屋 【朝】たまごかけ朝定食（生玉子or半熟玉子）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 12.7,
+      "kcal": 451,
+      "f": 6.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-822",
+      "n": "松屋 ねぶた漬牛めし(小盛)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 15.3,
+      "kcal": 553,
+      "f": 23.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-720",
+      "n": "松屋 松屋の牛焼肉丼(並盛)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20.6,
+      "kcal": 756,
+      "f": 32.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/260825_nutritional_matsuya.pdf"
     }
   ]
 }

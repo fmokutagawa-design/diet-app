@@ -1,0 +1,11 @@
+{
+  "name": "diet-app-menu-updater",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update-menus": "node scripts/update-menus.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "5.4.54"
+  }
+}
