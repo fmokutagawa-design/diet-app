@@ -3728,7 +3728,7 @@ function resetAiFoodPane(){
 }
 // 全角数字→半角、小文字化、表記揺れの正規化（segと食品名の両側に適用する）
 function tfNorm(s){
-  let t=(s||'').toLowerCase().replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));
+  let t=(s||'').toLowerCase().replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0)).replace(/[®™]/g,'');
   const alias=[['から揚げ','唐揚げ'],['からあげ','唐揚げ'],['みそ','味噌'],['たまご','卵'],['玉子','卵'],['御飯','ごはん'],['ご飯','ごはん'],['ライス','ごはん']];
   alias.forEach(([a,b])=>{t=t.split(a).join(b);});
   const japaneseCounts=[['ひとつ','1つ'],['ふたつ','2つ'],['みっつ','3つ'],['よっつ','4つ'],['いつつ','5つ'],['むっつ','6つ'],['ななつ','7つ'],['やっつ','8つ'],['ここのつ','9つ']];
@@ -3749,6 +3749,8 @@ function tfScore(seg,f){
     if(tok.length>=2&&seg.includes(tok)&&tok.length*w>sc){sc=tok.length*w;hit=tok;}
   };
   consider(bare,3); // 名前の完全包含が最優先
+  // 公式商品は末尾に容量表記が付くため、入力全体が商品名に含まれる場合も一商品として扱う。
+  if(f.official&&seg.length>=4&&bare.includes(seg)){sc=seg.length*4;hit=seg;}
   bare.split(/[\s・\/／]+/).forEach(tok=>consider(tok,2));
   (f.tags||[]).forEach(tag=>consider(tfNorm(tag),1));
   // 短い入力（「卵」など）は逆方向の包含も許す：食品名側が入力を含む
@@ -3759,7 +3761,18 @@ function tfScore(seg,f){
     });
   }
   if(sc>0&&f.chain&&seg.includes(tfNorm(f.chain)))sc+=2; // 店名が合えば加点
+  // 公式データの「店名 商品名」に商品名まで一致した場合は、古い汎用値より優先する。
+  if(sc>0&&f.official&&(bare===seg||bare.endsWith(` ${seg}`)))sc+=10;
   return {sc,hit};
+}
+// 内蔵食品に加え、起動時に読み込む公式600商品も文章検索の対象にする。
+function tfSearchFoods(){
+  const stores=(typeof STORE_ITEMS==='undefined'?[]:STORE_ITEMS).map(it=>({
+    n:it.n,kcal:it.kcal,p:it.p,official:!!it.official,
+    tags:[...(it.s||[]).map(s=>N[s]||s),it.category||''].filter(Boolean),
+    chain:(it.s||[]).length===1?(N[it.s[0]]||it.s[0]):''
+  }));
+  return stores.concat(UFOOD);
 }
 // 項目テキストから個数(2個/3本/×2など)を読み取る
 function tfQty(seg){
@@ -3835,7 +3848,7 @@ function tfCountFood(seg){
   return null;
 }
 function textFoodEstimate(text){
-  const segs=tfNorm(text).split(/[、,，＋+\/／・\n]|(?:\s+)|(?<!ひ)と(?=[^\s、])/)
+  const segs=tfNorm(text).split(/[、,，＋+\/／・\n]|(?<!ひ)と(?=[^\s、])/)
     .map(s=>s.trim()).filter(s=>s.length>=1);
   const detail=[];const unmatched=[];const unsupportedWeight=[];
   let kcal=0,p=0;
@@ -3871,7 +3884,7 @@ function textFoodEstimate(text){
     const segHits=[];const used=new Set();
     for(let round=0;round<3&&seg.length>=1;round++){
       let best=null,bestSc=0,bestHit='',bestLen=999;
-      UFOOD.forEach(f=>{
+      tfSearchFoods().forEach(f=>{
         if(used.has(f.n))return;
         const {sc,hit}=tfScore(seg,f);
         const len=tfBareName(f.n).length;
