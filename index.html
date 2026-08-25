@@ -1339,8 +1339,8 @@ function renderFirstGoal(){
   const arr=sortedWeights(),current=arr.length?arr[arr.length-1].kg:S.profile.weight;
   if(!S.journey)S.journey={startWeight:null,firstTarget:null};
   if(!S.journey.startWeight){
-    S.journey.startWeight=current;
-    S.journey.firstTarget=p2(current*.97);
+    S.journey.startWeight=Math.max(82,current);
+    S.journey.firstTarget=p2(S.journey.startWeight*.97);
     save();
   }
   const start=Number(S.journey.startWeight),goal=Number(S.journey.firstTarget)||p2(start*.97);
