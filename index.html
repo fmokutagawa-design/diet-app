@@ -3241,7 +3241,18 @@ function buildPools(){const dt=S.meal.dayType;
 }
 const MAIN_SLOTS=['朝','昼','夜'];
 const SLOT_W={'朝':1,'昼':1.05,'夜':1};
-function eatenBySlot(){const g={};(S.foodLog[todayKey]||[]).forEach(it=>{const s=(it.slot&&MAIN_SLOTS.includes(it.slot))?it.slot:'間食';if(!g[s])g[s]={kcal:0,p:0,names:[]};g[s].kcal+=it.kcal;g[s].p+=it.p;g[s].names.push(it.name);});return g;}
+function normalizedMealSlot(it){
+  const raw=String(it.slot||'').trim(),name=String(it.name||'');
+  if(raw==='朝'||raw==='朝食'||raw.startsWith('朝'))return '朝';
+  if(raw==='昼'||raw==='昼食'||raw.startsWith('昼'))return '昼';
+  if(raw==='夜'||raw==='夕食'||raw==='晩'||raw==='晩ごはん'||raw.startsWith('夕'))return '夜';
+  // 区分が欠けた旧データでも、名称に食事区分が明記されていれば拾う。
+  if(/朝食|朝ごはん|朝ご飯/.test(name))return '朝';
+  if(/昼食|昼ごはん|昼ご飯/.test(name))return '昼';
+  if(/夕食|晩ごはん|晩ご飯/.test(name))return '夜';
+  return '間食';
+}
+function eatenBySlot(){const g={};(S.foodLog[todayKey]||[]).forEach(it=>{const s=normalizedMealSlot(it);if(!g[s])g[s]={kcal:0,p:0,names:[]};g[s].kcal+=it.kcal;g[s].p+=it.p;g[s].names.push(it.name);});return g;}
 function planContext(){
   const c=calc(),f=foodTotals(todayKey),eaten=eatenBySlot();
   const remainSlots=MAIN_SLOTS.filter(s=>!eaten[s]);
