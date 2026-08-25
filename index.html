@@ -649,7 +649,7 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
         <div class="grid2" style="margin-top:7px"><input class="txt" id="aeonDeliKcal" type="number" inputmode="decimal" placeholder="kcal"><input class="txt" id="aeonDeliP" type="number" inputmode="decimal" placeholder="たんぱく質g"></div>
         <button class="btn good" id="aeonDeliSave" style="width:100%;margin-top:8px">救済候補に保存</button>
       </details>
-      <details style="margin-top:10px"><summary id="aeonUnknownSummary" style="cursor:pointer;font-weight:800">新吉田店の販売商品を読込中</summary><div class="small muted" style="margin:7px 0">栄養値が掲載されていない弁当です。買った商品の名前を押すと登録欄へ移ります。</div><div id="aeonUnknownList"></div></details>
+      <details style="margin-top:10px"><summary id="aeonUnknownSummary" style="cursor:pointer;font-weight:800">新吉田店の販売商品を読込中</summary><div class="small muted" style="margin:7px 0">栄養値が掲載されていない弁当です。FatSecretの利用者投稿を商品名で探せますが、数値は現物ラベルで確認してください。</div><div id="aeonUnknownList"></div></details>
     </div>
 
     <div class="card" id="officialMenuCard">
@@ -3509,7 +3509,7 @@ function renderRescueBuy(){
   const list=$('#rescueBuyList'),tag=$('#rescueBuyTag'),toggle=$('#rescueBuyToggle');if(!list||!tag||!toggle)return;
   const all=rescueBuyCandidates(),shown=all.slice(0,rescueBuyExpanded?40:12);
   tag.textContent=`${rescueBuyMode==='one'?'一品完結 ':''}${all.length}品`;
-  list.innerHTML=shown.map(({it,idx,one})=>`<div class="rescue-buy-item"><div class="rescue-top"><div class="rescue-name">${it.n}${one?' <span class="tag">これ1つ</span>':''}${it.shinyoshidaAvailable?' <span class="tag">新吉田店で確認</span>':''}${it.official?' <span class="tag">公式値</span>':it.customAeon?' <span class="tag">登録済み</span>':' <span class="tag">概算</span>'}</div><div class="rescue-meta">${it.kcal}kcal<br>P${it.p}g${Number.isFinite(it.f)?` / 脂質${it.f}g`:''}</div></div><div class="rescue-buy-stores">${it.s.map(s=>`<span class="store ${B[s]||B.other}">${N[s]||s}</span>`).join('')}</div><div class="small muted" style="margin-top:6px">${one?'一店舗・一商品で完結':'同じ店で買える単品候補'}　${Number.isFinite(it.yen)?`約${it.yen}円`:'価格・在庫は店頭確認'}</div>${it.sourceUrl?`<a href="${it.sourceUrl}" target="_blank" rel="noopener" class="small" style="display:inline-block;margin-top:5px;color:var(--primary)">公式商品情報 ↗</a>`:''}<button class="rescue-action" data-eat="s${idx}">✓ 食べた・記録する</button></div>`).join('')||'<div class="small muted">この条件の一品完結候補がありません。「軽食も含む」に切り替えられます。</div>';
+  list.innerHTML=shown.map(({it,idx,one})=>`<div class="rescue-buy-item"><div class="rescue-top"><div class="rescue-name">${it.n}${one?' <span class="tag">これ1つ</span>':''}${it.shinyoshidaAvailable?' <span class="tag">新吉田店で確認</span>':''}${it.official?' <span class="tag">公式値</span>':it.customAeon?' <span class="tag">ラベル登録済み</span>':' <span class="tag">概算</span>'}</div><div class="rescue-meta">${it.kcal}kcal<br>P${it.p}g${Number.isFinite(it.f)?` / 脂質${it.f}g`:''}</div></div><div class="rescue-buy-stores">${it.s.map(s=>`<span class="store ${B[s]||B.other}">${N[s]||s}</span>`).join('')}</div><div class="small muted" style="margin-top:6px">${one?'一店舗・一商品で完結':'同じ店で買える単品候補'}　${Number.isFinite(it.yen)?`約${it.yen}円`:'価格・在庫は店頭確認'}</div>${it.sourceUrl?`<a href="${it.sourceUrl}" target="_blank" rel="noopener" class="small" style="display:inline-block;margin-top:5px;color:var(--primary)">公式商品情報 ↗</a>`:''}<button class="rescue-action" data-eat="s${idx}">✓ 食べた・記録する</button></div>`).join('')||'<div class="small muted">この条件の一品完結候補がありません。「軽食も含む」に切り替えられます。</div>';
   toggle.style.display=all.length>12?'':'none';
   toggle.textContent=rescueBuyExpanded?'12品に戻す':`もっと見る（最大40品）`;
 }
@@ -3519,7 +3519,7 @@ function renderAeonUnknown(){
   const meal=/弁当|丼|カレー|麺|そば|うどん|パスタ|サンド|バーガー|プレート|ごはん|飯|重/;
   const unknown=AEON_SHINYOSHIDA_INVENTORY.filter(x=>meal.test(x.n)&&!knownKeys.some(k=>{const n=aeonMatchKey(x.n);return k.length>=4&&(k.includes(n)||n.includes(k));})).slice(0,30);
   summary.textContent=`新吉田店：栄養未確認の一品候補 ${unknown.length}品`;
-  list.innerHTML=unknown.map((x,i)=>`<button class="btn" data-aeon-prefill="${i}" style="width:100%;text-align:left;margin-top:6px">${x.n}<br><span class="small muted">${Number.isFinite(x.yen)?`${x.yen}円・`:''}栄養表示を登録</span></button>`).join('')||'<div class="small muted">栄養未確認の一品候補はありません。</div>';
+  list.innerHTML=unknown.map((x,i)=>`<div style="margin-top:6px"><button class="btn" data-aeon-prefill="${i}" style="width:100%;text-align:left">${x.n}<br><span class="small muted">${Number.isFinite(x.yen)?`${x.yen}円・`:''}栄養表示を登録</span></button><a href="https://www.fatsecret.jp/カロリー-栄養/search?q=${encodeURIComponent(`イオン ${x.n}`)}" target="_blank" rel="noopener" class="small" style="display:inline-block;margin:5px 4px 0;color:var(--primary)">FatSecretで同名商品を探す ↗</a></div>`).join('')||'<div class="small muted">栄養未確認の一品候補はありません。</div>';
   list._items=unknown;
 }
 function renderRescue(){
