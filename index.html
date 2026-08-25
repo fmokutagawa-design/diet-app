@@ -866,7 +866,7 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
 
     <div id="aiPane" style="display:none">
       <div class="small muted" style="margin-bottom:8px">食べたものを文章で書くと、アプリ内の食品データから概算します（通信なし・完全オフライン）。</div>
-      <textarea class="txt" id="aiFoodText" rows="3" style="width:100%;resize:vertical" placeholder="例: 唐揚げ弁当と午後の紅茶、ヨーグルト2個"></textarea>
+      <textarea class="txt" id="aiFoodText" rows="3" style="width:100%;resize:vertical" placeholder="例: 鶏肉1キロ、ブロッコリー500g、ヨーグルト2個"></textarea>
       <button class="btn primary" id="aiParseBtn" style="margin-top:10px;width:100%">概算する</button>
       <div class="summary" id="aiPreview" style="margin-top:12px;display:none"></div>
       <button class="btn good" id="aiSaveBtn" style="margin-top:10px;width:100%;display:none">これを記録する</button>
@@ -3731,7 +3731,10 @@ function tfNorm(s){
   let t=(s||'').toLowerCase().replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0));
   const alias=[['から揚げ','唐揚げ'],['からあげ','唐揚げ'],['みそ','味噌'],['たまご','卵'],['玉子','卵'],['御飯','ごはん'],['ご飯','ごはん'],['ライス','ごはん']];
   alias.forEach(([a,b])=>{t=t.split(a).join(b);});
-  return t;
+  // 「鶏肉 1 kg」が空白で別項目に割れないよう、重量の直前だけ空白を詰める。
+  return t
+    .replace(/(\d+(?:\.\d+)?)\s*(kg|ｋｇ|キログラム|キロ|g|ｇ|グラム)/g,'$1$2')
+    .replace(/\s+(?=\d+(?:\.\d+)?(?:kg|ｋｇ|キログラム|キロ|g|ｇ|グラム))/g,'');
 }
 function tfBareName(n){return tfNorm(n).replace(/[（(].*?[）)]/g,'').trim();}
 // 食品1件のスコアとマッチ文字列。0なら不一致。
@@ -3766,12 +3769,46 @@ function tfPortion(seg){
   if(/小盛|少なめ|ハーフ/.test(seg))return 0.7;
   return 1;
 }
+// 重量売りの定番食材。値は100gあたりの概算。
+// 部位指定のない「鶏肉」は、普段使う鶏むね肉（皮なし）として扱う。
+const TF_WEIGHT_FOODS=[
+  {name:'鶏もも肉（皮なし・概算）',aliases:['鶏もも肉','鶏もも','もも肉'],kcal100:113,p100:19},
+  {name:'鶏むね肉（皮なし・概算）',aliases:['鶏むね肉','鶏胸肉','鶏むね','鶏胸','胸肉','鶏肉','チキン'],kcal100:108,p100:22},
+  {name:'ブロッコリー',aliases:['ブロッコリー'],kcal100:38,p100:4},
+  {name:'じゃがいも',aliases:['じゃがいも','ジャガイモ','馬鈴薯'],kcal100:76,p100:1.6}
+];
+function tfWeightGrams(seg){
+  const m=seg.match(/(\d+(?:\.\d+)?)\s*(kg|ｋｇ|キログラム|キロ|g|ｇ|グラム)(?![a-zぁ-んァ-ヶ一-龠])/);
+  if(!m)return null;
+  const n=parseFloat(m[1]);
+  if(!Number.isFinite(n)||n<=0)return null;
+  return /^(?:kg|ｋｇ|キログラム|キロ)$/.test(m[2])?n*1000:n;
+}
+function tfWeightFood(seg){
+  const grams=tfWeightGrams(seg);
+  if(grams===null)return null;
+  for(const food of TF_WEIGHT_FOODS){
+    if(food.aliases.some(a=>seg.includes(tfNorm(a)))){
+      return {food,grams};
+    }
+  }
+  return null;
+}
 function textFoodEstimate(text){
   const segs=tfNorm(text).split(/[、,，＋+\/／・\n]|(?:\s+)|と(?=[^\s、])/)
     .map(s=>s.trim()).filter(s=>s.length>=1);
   const detail=[];const unmatched=[];
   let kcal=0,p=0;
   segs.forEach(rawSeg=>{
+    const weighted=tfWeightFood(rawSeg);
+    if(weighted){
+      const mult=weighted.grams/100;
+      const k=Math.round(weighted.food.kcal100*mult);
+      const pp=Math.round(weighted.food.p100*mult);
+      kcal+=k;p+=pp;
+      detail.push({seg:rawSeg,name:weighted.food.name,kcal:k,p:pp,mult:1,amount:`${weighted.grams}g`});
+      return;
+    }
     const qty=tfQty(rawSeg);
     const portion=tfPortion(rawSeg);
     // 個数・盛りの語を除いた本体で検索する（「大盛」が別の食品に誤マッチしないように）
@@ -3821,7 +3858,7 @@ $('#aiParseBtn').addEventListener('click',()=>{
   aiFoodResult=r;
   const dk=(typeof sheetDateObj!=='undefined')?keyOf(sheetDateObj):todayKey;
   const im=impact(r.kcal,dk);
-  const lines=r.detail.map(d=>`・${d.name}${d.mult!==1?`（×${d.mult}）`:''} ${d.kcal}kcal / P${d.p}g`).join('<br>');
+  const lines=r.detail.map(d=>`・${d.name}${d.amount?`（${d.amount}）`:d.mult!==1?`（×${d.mult}）`:''} ${d.kcal}kcal / P${d.p}g`).join('<br>');
   const miss=r.unmatched.length?`<br><span class="small muted">該当なし: ${r.unmatched.join('、')}（手入力で追加できます）</span>`:'';
   $('#aiPreview').innerHTML=`合計 約 <b>${r.kcal}kcal</b> / P${r.p}g<br><span class="small">${lines}</span>${miss}<br><span class="small" style="color:${im.over?'var(--orange)':'var(--good)'}">${im.text}</span>`;
   $('#aiPreview').style.display='';
