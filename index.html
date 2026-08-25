@@ -640,11 +640,11 @@ html[data-theme="light"] .streak .flame{filter:drop-shadow(0 0 8px rgba(255,110,
       <div class="rescue-buy-head"><h3>🛍️ 買ってすぐ救済</h3><span class="tag" id="rescueBuyTag">読込中</span></div>
       <div class="small muted" style="margin-top:7px">初期表示は、一店舗・一商品だけで食事になる弁当・丼・麺などを優先します。</div>
       <div class="seg" id="rescueModeSeg" style="margin-top:9px"><button data-v="one" class="active">一品完結</button><button data-v="all">軽食も含む</button></div>
-      <div class="seg five" id="rescueStoreSeg" style="margin-top:7px"><button data-v="all" class="active">全部</button><button data-v="seven">セブン</button><button data-v="lawson">ローソン</button><button data-v="famima">ファミマ</button><button data-v="aeon">イオン</button></div>
+      <div class="seg five" id="rescueStoreSeg" style="margin-top:7px"><button data-v="all">全部</button><button data-v="seven">セブン</button><button data-v="lawson">ローソン</button><button data-v="famima">ファミマ</button><button data-v="aeon" class="active">新吉田</button></div>
       <div class="rescue-buy-list" id="rescueBuyList"></div>
       <button class="rescue-buy-more" id="rescueBuyToggle" type="button">もっと見る</button>
-      <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:800">イオン惣菜を一度だけ登録</summary>
-        <div class="small muted" style="margin:8px 0">栄養表示の商品名・1包装あたりの数値を登録すると、次回から救済候補と文章検索に出ます。</div>
+      <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:800">新吉田店のイオン惣菜を一度だけ登録</summary>
+        <div class="small muted" style="margin:8px 0">イオン横浜新吉田店の栄養表示から、商品名・1包装あたりの数値を登録すると、次回から救済候補と文章検索に出ます。</div>
         <input class="txt" id="aeonDeliName" placeholder="商品名（例：鶏照焼弁当）">
         <div class="grid2" style="margin-top:7px"><input class="txt" id="aeonDeliKcal" type="number" inputmode="decimal" placeholder="kcal"><input class="txt" id="aeonDeliP" type="number" inputmode="decimal" placeholder="たんぱく質g"></div>
         <button class="btn good" id="aeonDeliSave" style="width:100%;margin-top:8px">救済候補に保存</button>
@@ -951,7 +951,7 @@ function freshState(){
       ab:[{date:pk,kg:46,reps:30,sets:1}],
       bike:[{date:pk,min:30,kcal:bikeKcal}],
     },
-    meal:{dayType:'',budget:'cheap',mode:'cook',fridge:[],mood:'',storeKind:'buy',store:'seven',orderStore:'seven',order:null,orderMercyKey:null},
+    meal:{dayType:'',budget:'cheap',mode:'cook',fridge:[],mood:'',storeKind:'buy',store:'aeon',orderStore:'aeon',primaryStore:'aeon',primaryStoreName:'イオン横浜新吉田店',order:null,orderMercyKey:null},
     rescueInventory:{broccoli:0,potato:0,chicken:0,egg:0,tofu:0,natto:0,mekabu:0},
     customAeonMenus:[],
     journey:{startWeight:null,firstTarget:null},
@@ -968,7 +968,10 @@ let S=load();
 function load(){
   try{const raw=localStorage.getItem(KEY);if(!raw)return freshState();
     const p=JSON.parse(raw);const f=freshState();
-    return Object.assign(f,p,{profile:Object.assign(f.profile,p.profile||{}),meal:Object.assign(f.meal,p.meal||{}),rescueInventory:Object.assign(f.rescueInventory,p.rescueInventory||{}),journey:Object.assign(f.journey,p.journey||{})});
+    const merged=Object.assign(f,p,{profile:Object.assign(f.profile,p.profile||{}),meal:Object.assign(f.meal,p.meal||{}),rescueInventory:Object.assign(f.rescueInventory,p.rescueInventory||{}),journey:Object.assign(f.journey,p.journey||{})});
+    // 基準店舗導入前のデータは、最寄りのイオン横浜新吉田店へ一度だけ移行。
+    if(!(p.meal&&p.meal.primaryStore)){merged.meal.primaryStore='aeon';merged.meal.primaryStoreName='イオン横浜新吉田店';merged.meal.store='aeon';merged.meal.orderStore='aeon';}
+    return merged;
   }catch(e){return freshState();}
 }
 let saveTimer=null;
@@ -3471,7 +3474,7 @@ function renderOrder(){
 function rescueStockLabel(id,n){const s=RESCUE_STOCK.find(x=>x.id===id);return `${s?s.name:id}×${n}`;}
 function rescueCanMake(meal){return Object.entries(meal.needs).every(([id,n])=>(S.rescueInventory[id]||0)>=n);}
 let rescueBuyExpanded=false;
-let rescueBuyMode='one',rescueBuyStore='all';
+let rescueBuyMode='one',rescueBuyStore=S.meal.primaryStore||'aeon';
 const NIGHT_FIXED_SET={name:'夜勤固定セット（たんぱく質の摂れるサラダ＋豆腐バー2本＋サラダチキン2個）',kcal:640,p:90};
 function rescueIsOneItem(it){
   if(it.kcal<350||it.kcal>700||it.p<25||(Number.isFinite(it.f)&&it.f>25))return false;
