@@ -1,38 +1,38 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T01:26:25.559Z",
+  "generatedAt": "2026-10-13T23:19:49.137Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:25:32.050Z",
+      "updatedAt": "2026-10-13T23:18:46.479Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 47,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:25:32.871Z",
+      "updatedAt": "2026-10-13T23:18:47.345Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 59,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:25:34.856Z",
+      "updatedAt": "2026-10-13T23:18:52.653Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261013_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:25:35.333Z",
+      "updatedAt": "2026-10-13T23:18:53.240Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
     },
     "yoshinoya": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:25:35.832Z",
+      "updatedAt": "2026-10-13T23:18:53.815Z",
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 68,
       "label": "吉野家公式栄養成分表"
@@ -43,19 +43,19 @@
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 80,
       "label": "ファミマ公式栄養成分情報（関東）",
-      "lastAttemptAt": "2026-10-13T01:25:38.944Z",
+      "lastAttemptAt": "2026-10-13T23:18:57.667Z",
       "error": "https://www.family.co.jp/goods/safety/goods090.html: HTTP 404"
     },
     "seven": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:25:53.953Z",
+      "updatedAt": "2026-10-13T23:19:11.914Z",
       "url": "https://www.sej.co.jp/products/a/",
       "count": 44,
       "label": "セブン公式商品情報（関東）"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:26:19.652Z",
+      "updatedAt": "2026-10-13T23:19:43.548Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
@@ -66,14 +66,14 @@
       "url": "https://www.topvalu.net/items/",
       "count": 80,
       "label": "イオン トップバリュ公式商品情報",
-      "lastAttemptAt": "2026-10-13T01:26:21.341Z",
+      "lastAttemptAt": "2026-10-13T23:19:45.351Z",
       "error": "AEON/TOPVALU parse yielded only 0 items"
     },
     "aeonShinyoshida": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:26:25.559Z",
+      "updatedAt": "2026-10-13T23:19:49.137Z",
       "url": "https://shop.aeon.com/netsuper/01050000030830/15.html",
-      "count": 552,
+      "count": 525,
       "label": "イオン横浜新吉田店 弁当・惣菜取扱情報"
     },
     "dennys": {
@@ -82,12 +82,12 @@
       "url": "https://www.dennys.jp/safety/nutritional/",
       "count": 90,
       "label": "デニーズ公式栄養成分一覧",
-      "lastAttemptAt": "2026-10-13T01:25:37.408Z",
+      "lastAttemptAt": "2026-10-13T23:18:55.642Z",
       "error": "デニーズ parse yielded only 0 items"
     },
     "cocoichi": {
       "status": "ok",
-      "updatedAt": "2026-10-13T01:25:38.274Z",
+      "updatedAt": "2026-10-13T23:18:56.828Z",
       "url": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf",
       "count": 49,
       "label": "CoCo壱番屋公式栄養成分情報"
@@ -2161,7 +2161,7 @@
       "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=020130&c_id=35"
     },
     {
-      "id": "matsuya-4-992",
+      "id": "matsuya-4-1026",
       "n": "松屋 炙り焼鮭",
       "s": [
         "matsuya"
@@ -2201,7 +2201,7 @@
       "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261013_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-1332",
+      "id": "matsuya-4-1366",
       "n": "松屋 ソーセージ＆半熟玉子",
       "s": [
         "matsuya"
@@ -2260,7 +2260,7 @@
       "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261013_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-1298",
+      "id": "matsuya-4-1332",
       "n": "松屋 ソーセージ＆目玉焼き",
       "s": [
         "matsuya"
@@ -2320,7 +2320,7 @@
       "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261013_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-1400",
+      "id": "matsuya-4-1434",
       "n": "松屋 たっぷりチーズ",
       "s": [
         "matsuya"
@@ -2427,6 +2427,25 @@
       "p": 23.4,
       "kcal": 527,
       "f": 23.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261013_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-4-958",
+      "n": "松屋 単品うまトマチーズ牛皿DELI",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.3,
+      "kcal": 530,
+      "f": 44.3,
       "yen": null,
       "days": [
         "train",
@@ -2591,7 +2610,7 @@
       "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261013_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-958",
+      "id": "matsuya-4-992",
       "n": "松屋 牛皿（大盛）",
       "s": [
         "matsuya"
@@ -2839,7 +2858,7 @@
       "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261013_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-1026",
+      "id": "matsuya-4-1060",
       "n": "松屋 豚汁",
       "s": [
         "matsuya"
@@ -3463,25 +3482,6 @@
       "p": 14.5,
       "kcal": 495,
       "f": 21.5,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261013_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-2-1298",
-      "n": "松屋 松屋の牛焼肉丼(小盛)",
-      "s": [
-        "matsuya"
-      ],
-      "p": 18.5,
-      "kcal": 632,
-      "f": 32.4,
       "yen": null,
       "days": [
         "train",
@@ -15438,16 +15438,16 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302719795000010.html"
     },
     {
-      "id": "shinyoshida-010500000308302723136000000",
-      "n": "握り寿司（幸）8貫【わさび抜き】1パック ※13時以降配送可",
+      "id": "shinyoshida-010500000308302723172000000",
+      "n": "握り寿司（幸）8貫【わさび抜き】1パック",
       "yen": 598,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302723136000000.html"
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302723172000000.html"
     },
     {
-      "id": "shinyoshida-010500000308302723145000000",
-      "n": "10種握りの味わい握り寿司10貫【わさび抜き】1パック 13時以降配送可、土日のみ配送可",
+      "id": "shinyoshida-010500000308302723181000000",
+      "n": "10種握りの味わい握り寿司10貫【わさび抜き】1パック",
       "yen": 798,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302723145000000.html"
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302723181000000.html"
     },
     {
       "id": "shinyoshida-010500000308302723233000000",
@@ -15517,21 +15517,15 @@
     },
     {
       "id": "shinyoshida-010500000308302723646000000",
-      "n": "具材を味わうまぐろたたき中巻6巻 1パック※【12時配送便以降】",
+      "n": "具材を味わうまぐろたたき中巻6巻 1パック",
       "yen": 348,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302723646000000.html"
     },
     {
       "id": "shinyoshida-010500000308302723647000000",
-      "n": "具材を味わうまぐろたたき中巻10巻 1パック※【12時配送便以降】",
+      "n": "具材を味わうまぐろたたき中巻10巻 1パック",
       "yen": 568,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302723647000000.html"
-    },
-    {
-      "id": "shinyoshida-010500000308302723683000000",
-      "n": "鮪たたきとたくあんの中巻 6巻 1パック ※水のみ、12時以降配送可",
-      "yen": 348,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302723683000000.html"
     },
     {
       "id": "shinyoshida-010500000308304549414741216",
@@ -15732,12 +15726,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902678302676.html"
     },
     {
-      "id": "shinyoshida-010500000308300000049413724",
-      "n": "味つけゆでたまご 1パック",
-      "yen": 168,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308300000049413724.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973967112504",
       "n": "たまごやさんの手造り茶わんむし 1パック",
       "yen": 258,
@@ -15762,22 +15750,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577133641.html"
     },
     {
-      "id": "shinyoshida-010500000308304904577133658",
-      "n": "10％増量 北海道産じゃがいも使用 肉じゃが煮 1パック",
-      "yen": 328,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577133658.html"
-    },
-    {
       "id": "shinyoshida-010500000308304904577145132",
       "n": "北海道産じゃがいも使用 肉じゃが煮 大 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577145132.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304904577145149",
-      "n": "10％増量 北海道産じゃがいも使用 肉じゃが煮 大 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577145149.html"
     },
     {
       "id": "shinyoshida-010500000308304904577145163",
@@ -15810,12 +15786,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420153397.html"
     },
     {
-      "id": "shinyoshida-010500000308304905420153861",
-      "n": "国産もつの煮込み 味噌味 1パック",
-      "yen": 328,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420153861.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277253843",
       "n": "具だくさん炒り豆腐 1パック",
       "yen": 298,
@@ -15838,6 +15808,12 @@
       "n": "茄子と豆腐の揚げ出し 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277334887.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304973277334894",
+      "n": "茄子と豆腐の揚げ出し 小 1パック",
+      "yen": 228,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277334894.html"
     },
     {
       "id": "shinyoshida-010500000308304973277365850",
@@ -15870,18 +15846,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277548611.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277548628",
-      "n": "煮物盛合せ 中 1パック",
-      "yen": 358,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277548628.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277548635",
-      "n": "煮物盛合せ 大 1パック",
-      "yen": 458,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277548635.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277551147",
       "n": "3種のおかず盛合せ 1パック",
       "yen": 498,
@@ -15904,6 +15868,12 @@
       "n": "自社製玉子焼き ハーフ 1パック",
       "yen": 450,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143101088.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304992143101095",
+      "n": "自社製玉子焼き 6切れ 1パック",
+      "yen": 298,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143101095.html"
     },
     {
       "id": "shinyoshida-010500000308304992143107028",
@@ -16050,12 +16020,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577101572.html"
     },
     {
-      "id": "shinyoshida-010500000308304949428582445",
-      "n": "シーフードカレー 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304949428582445.html"
-    },
-    {
       "id": "shinyoshida-010500000308304949428584074",
       "n": "特製ロースカツカレー 1パック",
       "yen": 498,
@@ -16084,12 +16048,6 @@
       "n": "100時間カレー使用 特製牛すじカレー 1パック",
       "yen": 458,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143111506.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304904577115777",
-      "n": "1／3日分野菜が摂れるあんかけ焼きそば 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577115777.html"
     },
     {
       "id": "shinyoshida-010500000308304992143102801",
@@ -16188,18 +16146,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902150754887.html"
     },
     {
-      "id": "shinyoshida-010500000308304902150754894",
-      "n": "明太もちチーズグラタン 1パック",
-      "yen": 378,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902150754894.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304902150754917",
-      "n": "紅ずわいがにのドリア 1パック",
-      "yen": 378,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902150754917.html"
-    },
-    {
       "id": "shinyoshida-010500000308304904577159382",
       "n": "肉と野菜の旨味のミートソース！ミラノ風ドリア 1パック",
       "yen": 498,
@@ -16224,28 +16170,22 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143111971.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414728736",
-      "n": "レンジでつるもち！ボロネーゼ 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414728736.html"
-    },
-    {
       "id": "shinyoshida-010500000308304905420152987",
       "n": "きのこの和風醤油スパゲッティ 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420152987.html"
     },
     {
+      "id": "shinyoshida-010500000308304905420153007",
+      "n": "あさりの旨み ボンゴレスパゲッティ 1パック",
+      "yen": 398,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420153007.html"
+    },
+    {
       "id": "shinyoshida-010500000308304905420353421",
       "n": "ミートソーススパゲッティ 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304905420353421.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414723946",
-      "n": "冷しぶっかけきつねうどん 1パック",
-      "yen": 278,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414723946.html"
     },
     {
       "id": "shinyoshida-010500000308304549414752649",
@@ -16284,12 +16224,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414723915.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414723953",
-      "n": "冷しぶっかけ山菜そば 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414723953.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414724004",
       "n": "北海道幌内産玄蕎麦 ざるそば 1パック",
       "yen": 378,
@@ -16306,12 +16240,6 @@
       "n": "国産山芋となめこのあったかそば 1パック",
       "yen": 498,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304971367077577.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414723892",
-      "n": "トップバリュ さっぱり冷し中華 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414723892.html"
     },
     {
       "id": "shinyoshida-010500000308304549414752809",
@@ -16584,12 +16512,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414703634.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414703726",
-      "n": "トップバリュ 1日分の野菜350gのサラダ（10品目ミックス）1袋",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414703726.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414703733",
       "n": "トップバリュ だいこんと水菜のサラダ 1袋",
       "yen": 108,
@@ -16740,12 +16662,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322951.html"
     },
     {
-      "id": "shinyoshida-010500000308304986858322975",
-      "n": "ミックスミートと緑黄色野菜のサラダ 1パック",
-      "yen": 348,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322975.html"
-    },
-    {
       "id": "shinyoshida-010500000308304986858323651",
       "n": "具だくさん棒棒鶏サラダ 1パック",
       "yen": 328,
@@ -16758,22 +16674,16 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858323668.html"
     },
     {
-      "id": "shinyoshida-010500000308304986858324221",
-      "n": "ミックスミートと緑黄色野菜のサラダ 大 10％増量 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858324221.html"
+      "id": "shinyoshida-010500000308304904577108199",
+      "n": "ぷりぷり海老が主役の海老マヨサラダ 1パック",
+      "yen": 598,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577108199.html"
     },
     {
       "id": "shinyoshida-010500000308304904577108205",
       "n": "ぷりぷり海老が主役の海老マヨサラダ小 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577108205.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304904577122553",
-      "n": "ぷりぷり海老が主役の海老マヨサラダ 1尾増量 1パック",
-      "yen": 598,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577122553.html"
     },
     {
       "id": "shinyoshida-010500000308304549414666144",
@@ -16836,12 +16746,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858321275.html"
     },
     {
-      "id": "shinyoshida-010500000308304986858322111",
-      "n": "海老ブロッコリーのサラダ 小 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322111.html"
-    },
-    {
       "id": "shinyoshida-010500000308304986858322593",
       "n": "13品目のバランスサラダ大 1パック",
       "yen": 498,
@@ -16854,16 +16758,16 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304986858322609.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414746143",
-      "n": "お芋が美味しいポテトサラダ 中 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414746143.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414746150",
       "n": "お芋が美味しいポテトサラダ 小 1パック",
       "yen": 158,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414746150.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304904577185206",
+      "n": "野菜たっぷりポテトサラダ 1パック",
+      "yen": 328,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304904577185206.html"
     },
     {
       "id": "shinyoshida-010500000308304904577185213",
@@ -16918,12 +16822,6 @@
       "n": "イカと明太子のパスタサラダ 1パック",
       "yen": 498,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304562173245696.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304562173245702",
-      "n": "イカと明太子のパスタサラダ（増量）1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304562173245702.html"
     },
     {
       "id": "shinyoshida-010500000308304549414750621",
@@ -17022,12 +16920,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573417921917.html"
     },
     {
-      "id": "shinyoshida-010500000308304901250999976",
-      "n": "十勝産金時豆 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304901250999976.html"
-    },
-    {
       "id": "shinyoshida-010500000308304901250999983",
       "n": "ふき煮 1パック",
       "yen": 228,
@@ -17038,18 +16930,6 @@
       "n": "豆腐ハンバーグと和のおかずセット 1パック",
       "yen": 298,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304902553743983.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277301490",
-      "n": "大根とちぎり揚げの旨煮 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277301490.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277301759",
-      "n": "大根とちぎり揚げの煮物 小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277301759.html"
     },
     {
       "id": "shinyoshida-010500000308304973277310317",
@@ -17106,18 +16986,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277348365.html"
     },
     {
-      "id": "shinyoshida-010500000308304973277351013",
-      "n": "さといもの煮物 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277351013.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304973277351020",
-      "n": "さといもの煮物 小 1パック",
-      "yen": 198,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304973277351020.html"
-    },
-    {
       "id": "shinyoshida-010500000308304973277367069",
       "n": "トップバリュ 4品目の金平ごぼう 大 1パック",
       "yen": 298,
@@ -17172,12 +17040,6 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143102115.html"
     },
     {
-      "id": "shinyoshida-010500000308304901250195378",
-      "n": "ナムル盛り合わせ 1パック",
-      "yen": 298,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304901250195378.html"
-    },
-    {
       "id": "shinyoshida-010500000308304573417923409",
       "n": "蒸し鶏とキャベツのうま塩和え 1パック",
       "yen": 228,
@@ -17206,12 +17068,6 @@
       "n": "ブロッコリーとシラスのナムル 1パック",
       "yen": 298,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304573417926400.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304901250950182",
-      "n": "ナムル盛り合わせ小 1パック",
-      "yen": 228,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304901250950182.html"
     },
     {
       "id": "shinyoshida-010500000308304904577138813",
@@ -17290,6 +17146,12 @@
       "n": "サーモンの生春巻き（スイートチリ）1パック",
       "yen": 458,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304961115139404.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304562173233525",
+      "n": "牛乳寒天（みかん＆パイン）1パック",
+      "yen": 258,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304562173233525.html"
     },
     {
       "id": "shinyoshida-010500000308302706470000000",
@@ -17718,10 +17580,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414748642.html"
     },
     {
-      "id": "shinyoshida-010500000308304992143108445",
-      "n": "炒飯＆チキン南蛮 1パック",
+      "id": "shinyoshida-010500000308304974111254422",
+      "n": "九州産黒豚の旨み 豚キムチ丼 1パック",
       "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143108445.html"
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304974111254422.html"
     },
     {
       "id": "shinyoshida-010500000308304932927120836",
@@ -17746,12 +17608,6 @@
       "n": "ガツん！とにんにく太麺ペペロンチーノ 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143110363.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304992143111742",
-      "n": "太麺タコススパゲティ（ピリ辛ミート）1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304992143111742.html"
     },
     {
       "id": "shinyoshida-010500000308302727003000000",
@@ -17880,22 +17736,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414723540.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414738698",
-      "n": "トップバリュ ベストプライス 香ばし焼おにぎり 1個",
-      "yen": 98,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414738698.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414738704",
       "n": "梅づくしのもち麦入りおにぎり 1個",
       "yen": 128,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414738704.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414738711",
-      "n": "鮭とわかめおにぎり 1個",
-      "yen": 128,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414738711.html"
     },
     {
       "id": "shinyoshida-010500000308304549414754278",
@@ -17982,28 +17826,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302726748000000.html"
     },
     {
-      "id": "shinyoshida-010500000308302726761000000",
-      "n": "十勝のつぶ姫 つぶあんおはぎ 3個 1パック",
-      "yen": 360,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302726761000000.html"
-    },
-    {
-      "id": "shinyoshida-010500000308302726785000000",
-      "n": "十勝のつぶ姫 つぶあんおはぎ 2個 1パック",
-      "yen": 240,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308302726785000000.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414754407",
       "n": "トップバリュ 北海道産小豆のお赤飯 1パック",
       "yen": 398,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414754407.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414754414",
-      "n": "トップバリュ 北海道産小豆のお赤飯 大 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414754414.html"
     },
     {
       "id": "shinyoshida-010500000308304549414754421",
@@ -18012,22 +17838,10 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414754421.html"
     },
     {
-      "id": "shinyoshida-010500000308304549414754247",
-      "n": "トップバリュ 三色おこわ 赤飯・鶏・山菜 1パック",
-      "yen": 398,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414754247.html"
-    },
-    {
       "id": "shinyoshida-010500000308304549414754254",
       "n": "トップバリュ 三色おこわ 赤飯・鶏・山菜 小 1パック",
       "yen": 258,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414754254.html"
-    },
-    {
-      "id": "shinyoshida-010500000308304549414754391",
-      "n": "トップバリュ 北海道産小豆の赤飯弁当 1パック",
-      "yen": 498,
-      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414754391.html"
     },
     {
       "id": "shinyoshida-010500000308304932927127651",
@@ -18102,6 +17916,12 @@
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414620092.html"
     },
     {
+      "id": "shinyoshida-010500000308304549414683127",
+      "n": "トップバリュ プロのひと品_日高良実監修 ビーフシチュー 230g",
+      "yen": 398,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414683127.html"
+    },
+    {
       "id": "shinyoshida-010500000308304549414693706",
       "n": "トップバリュ デミグラスソースハンバーグ 150g",
       "yen": 298,
@@ -18124,6 +17944,12 @@
       "n": "トップバリュ 肉汁あふれるハンバーグ 120g",
       "yen": 298,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414714968.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304549414714975",
+      "n": "トップバリュ 豚キムチ 130g",
+      "yen": 358,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414714975.html"
     },
     {
       "id": "shinyoshida-010500000308304549414735697",
@@ -18172,6 +17998,18 @@
       "n": "トップバリュ もぐもぐ味わうスープ 具だくさん豚汁 240g",
       "yen": 228,
       "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414699609.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304549414699616",
+      "n": "トップバリュ もぐもぐ味わうスープ いわしつみれ汁 220g",
+      "yen": 228,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414699616.html"
+    },
+    {
+      "id": "shinyoshida-010500000308304549414699678",
+      "n": "トップバリュ もぐもぐ味わうスープ クラムチャウダー 180g",
+      "yen": 298,
+      "sourceUrl": "https://shop.aeon.com/netsuper/01050000030830/010500000308304549414699678.html"
     },
     {
       "id": "shinyoshida-010500000308304549414516852",
