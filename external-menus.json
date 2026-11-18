@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-17T02:30:53.220Z",
+  "generatedAt": "2026-11-18T01:42:29.911Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-11-17T02:29:50.247Z",
+      "updatedAt": "2026-11-18T01:41:13.883Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 43,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-11-17T02:29:51.228Z",
+      "updatedAt": "2026-11-18T01:41:14.724Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 58,
       "label": "モス公式メニュー・栄養成分情報"
@@ -22,12 +22,12 @@
       "url": "https://bento.matsuyafoods.co.jp/matsuya/safety/allergen.html",
       "count": 70,
       "label": "松屋公式栄養成分表",
-      "lastAttemptAt": "2026-11-17T02:29:51.518Z",
+      "lastAttemptAt": "2026-11-18T01:41:15.454Z",
       "error": "https://bento.matsuyafoods.co.jp/matsuya/safety/allergen.html: HTTP 503"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-11-17T02:29:52.346Z",
+      "updatedAt": "2026-11-18T01:41:16.001Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
@@ -38,7 +38,7 @@
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 68,
       "label": "吉野家公式栄養成分表",
-      "lastAttemptAt": "2026-11-17T02:29:52.950Z",
+      "lastAttemptAt": "2026-11-18T01:41:16.415Z",
       "error": "Yoshinoya parse yielded only 0 items"
     },
     "famima": {
@@ -47,19 +47,19 @@
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 33,
       "label": "ファミマ公式栄養成分情報（関東）",
-      "lastAttemptAt": "2026-11-17T02:29:57.257Z",
+      "lastAttemptAt": "2026-11-18T01:41:21.073Z",
       "error": "FamilyMart parse yielded only 28 items"
     },
     "seven": {
       "status": "ok",
-      "updatedAt": "2026-11-17T02:30:17.110Z",
+      "updatedAt": "2026-11-18T01:42:01.850Z",
       "url": "https://www.sej.co.jp/products/a/",
       "count": 47,
       "label": "セブン公式商品情報（関東）"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-11-17T02:30:51.056Z",
+      "updatedAt": "2026-11-18T01:42:27.618Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
@@ -70,7 +70,7 @@
       "url": "https://www.topvalu.net/items/",
       "count": 80,
       "label": "イオン トップバリュ公式商品情報",
-      "lastAttemptAt": "2026-11-17T02:30:53.046Z",
+      "lastAttemptAt": "2026-11-18T01:42:29.759Z",
       "error": "AEON/TOPVALU parse yielded only 0 items"
     },
     "aeonShinyoshida": {
@@ -79,7 +79,7 @@
       "url": "https://shop.aeon.com/netsuper/01050000030830/15.html",
       "count": 556,
       "label": "イオン横浜新吉田店 弁当・惣菜取扱情報",
-      "lastAttemptAt": "2026-11-17T02:30:53.220Z",
+      "lastAttemptAt": "2026-11-18T01:42:29.911Z",
       "error": "https://shop.aeon.com/netsuper/01050000030830/15.html?p=1&sort=recommend: HTTP 403"
     },
     "dennys": {
@@ -88,12 +88,12 @@
       "url": "https://www.dennys.jp/safety/nutritional/",
       "count": 90,
       "label": "デニーズ公式栄養成分一覧",
-      "lastAttemptAt": "2026-11-17T02:29:54.771Z",
+      "lastAttemptAt": "2026-11-18T01:41:18.154Z",
       "error": "デニーズ parse yielded only 0 items"
     },
     "cocoichi": {
       "status": "ok",
-      "updatedAt": "2026-11-17T02:29:55.624Z",
+      "updatedAt": "2026-11-18T01:41:19.420Z",
       "url": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf",
       "count": 51,
       "label": "CoCo壱番屋公式栄養成分情報"
