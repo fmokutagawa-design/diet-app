@@ -1,31 +1,31 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-21T23:51:32.074Z",
+  "generatedAt": "2026-11-23T00:22:01.136Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-11-21T23:50:37.208Z",
+      "updatedAt": "2026-11-23T00:21:03.180Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 43,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-11-21T23:50:38.164Z",
+      "updatedAt": "2026-11-23T00:21:04.148Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 58,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-11-21T23:50:40.169Z",
+      "updatedAt": "2026-11-23T00:21:06.574Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-11-21T23:50:40.676Z",
+      "updatedAt": "2026-11-23T00:21:06.954Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
@@ -36,7 +36,7 @@
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 68,
       "label": "吉野家公式栄養成分表",
-      "lastAttemptAt": "2026-11-21T23:50:41.111Z",
+      "lastAttemptAt": "2026-11-23T00:21:07.416Z",
       "error": "Yoshinoya parse yielded only 0 items"
     },
     "famima": {
@@ -45,19 +45,19 @@
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 33,
       "label": "ファミマ公式栄養成分情報（関東）",
-      "lastAttemptAt": "2026-11-21T23:50:45.848Z",
+      "lastAttemptAt": "2026-11-23T00:21:12.556Z",
       "error": "FamilyMart parse yielded only 23 items"
     },
     "seven": {
       "status": "ok",
-      "updatedAt": "2026-11-21T23:50:58.753Z",
+      "updatedAt": "2026-11-23T00:21:28.781Z",
       "url": "https://www.sej.co.jp/products/a/",
-      "count": 47,
+      "count": 46,
       "label": "セブン公式商品情報（関東）"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-11-21T23:51:30.059Z",
+      "updatedAt": "2026-11-23T00:21:59.253Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
@@ -68,7 +68,7 @@
       "url": "https://www.topvalu.net/items/",
       "count": 80,
       "label": "イオン トップバリュ公式商品情報",
-      "lastAttemptAt": "2026-11-21T23:51:31.917Z",
+      "lastAttemptAt": "2026-11-23T00:22:00.988Z",
       "error": "AEON/TOPVALU parse yielded only 0 items"
     },
     "aeonShinyoshida": {
@@ -77,8 +77,8 @@
       "url": "https://shop.aeon.com/netsuper/01050000030830/15.html",
       "count": 556,
       "label": "イオン横浜新吉田店 弁当・惣菜取扱情報",
-      "lastAttemptAt": "2026-11-21T23:51:32.074Z",
-      "error": "https://shop.aeon.com/netsuper/01050000030830/15.html?p=1&sort=recommend: HTTP 403"
+      "lastAttemptAt": "2026-11-23T00:22:01.136Z",
+      "error": "https://shop.aeon.com/netsuper/01050000030830/15.html?p=2&sort=recommend: HTTP 403"
     },
     "dennys": {
       "status": "error",
@@ -86,12 +86,12 @@
       "url": "https://www.dennys.jp/safety/nutritional/",
       "count": 90,
       "label": "デニーズ公式栄養成分一覧",
-      "lastAttemptAt": "2026-11-21T23:50:42.910Z",
+      "lastAttemptAt": "2026-11-23T00:21:09.311Z",
       "error": "デニーズ parse yielded only 0 items"
     },
     "cocoichi": {
       "status": "ok",
-      "updatedAt": "2026-11-21T23:50:44.215Z",
+      "updatedAt": "2026-11-23T00:21:10.799Z",
       "url": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf",
       "count": 51,
       "label": "CoCo壱番屋公式栄養成分情報"
@@ -10189,29 +10189,6 @@
         "関東"
       ],
       "sourceUrl": "https://www.sej.co.jp/products/a/item/290514/"
-    },
-    {
-      "id": "seven-410387",
-      "n": "セブン ７プレミアム ジェノベーゼ",
-      "s": [
-        "seven"
-      ],
-      "p": 13.1,
-      "kcal": 406,
-      "f": 13.6,
-      "yen": 375.84,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン frozen_foods",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/410387/"
     },
     {
       "id": "seven-150351",
