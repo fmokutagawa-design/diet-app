@@ -1,31 +1,31 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T00:22:01.136Z",
+  "generatedAt": "2026-11-24T04:20:06.666Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-11-23T00:21:03.180Z",
+      "updatedAt": "2026-11-24T04:19:22.948Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 43,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-11-23T00:21:04.148Z",
+      "updatedAt": "2026-11-24T04:19:23.725Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 58,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-11-23T00:21:06.574Z",
+      "updatedAt": "2026-11-24T04:19:25.406Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-11-23T00:21:06.954Z",
+      "updatedAt": "2026-11-24T04:19:26.744Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
@@ -36,7 +36,7 @@
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 68,
       "label": "吉野家公式栄養成分表",
-      "lastAttemptAt": "2026-11-23T00:21:07.416Z",
+      "lastAttemptAt": "2026-11-24T04:19:27.187Z",
       "error": "Yoshinoya parse yielded only 0 items"
     },
     "famima": {
@@ -45,19 +45,21 @@
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 33,
       "label": "ファミマ公式栄養成分情報（関東）",
-      "lastAttemptAt": "2026-11-23T00:21:12.556Z",
-      "error": "FamilyMart parse yielded only 23 items"
+      "lastAttemptAt": "2026-11-24T04:19:31.512Z",
+      "error": "FamilyMart parse yielded only 22 items"
     },
     "seven": {
-      "status": "ok",
+      "status": "error",
       "updatedAt": "2026-11-23T00:21:28.781Z",
       "url": "https://www.sej.co.jp/products/a/",
       "count": 46,
-      "label": "セブン公式商品情報（関東）"
+      "label": "セブン公式商品情報（関東）",
+      "lastAttemptAt": "2026-11-24T04:19:33.183Z",
+      "error": "Seven-Eleven parse yielded only 0 items"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-11-23T00:21:59.253Z",
+      "updatedAt": "2026-11-24T04:20:04.734Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
@@ -68,7 +70,7 @@
       "url": "https://www.topvalu.net/items/",
       "count": 80,
       "label": "イオン トップバリュ公式商品情報",
-      "lastAttemptAt": "2026-11-23T00:22:00.988Z",
+      "lastAttemptAt": "2026-11-24T04:20:06.536Z",
       "error": "AEON/TOPVALU parse yielded only 0 items"
     },
     "aeonShinyoshida": {
@@ -77,8 +79,8 @@
       "url": "https://shop.aeon.com/netsuper/01050000030830/15.html",
       "count": 556,
       "label": "イオン横浜新吉田店 弁当・惣菜取扱情報",
-      "lastAttemptAt": "2026-11-23T00:22:01.136Z",
-      "error": "https://shop.aeon.com/netsuper/01050000030830/15.html?p=2&sort=recommend: HTTP 403"
+      "lastAttemptAt": "2026-11-24T04:20:06.666Z",
+      "error": "https://shop.aeon.com/netsuper/01050000030830/15.html?p=1&sort=recommend: HTTP 403"
     },
     "dennys": {
       "status": "error",
@@ -86,12 +88,12 @@
       "url": "https://www.dennys.jp/safety/nutritional/",
       "count": 90,
       "label": "デニーズ公式栄養成分一覧",
-      "lastAttemptAt": "2026-11-23T00:21:09.311Z",
+      "lastAttemptAt": "2026-11-24T04:19:29.078Z",
       "error": "デニーズ parse yielded only 0 items"
     },
     "cocoichi": {
       "status": "ok",
-      "updatedAt": "2026-11-23T00:21:10.799Z",
+      "updatedAt": "2026-11-24T04:19:30.067Z",
       "url": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf",
       "count": 51,
       "label": "CoCo壱番屋公式栄養成分情報"
@@ -12243,26 +12245,27 @@
       "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1458234_1996.html"
     },
     {
-      "id": "lawson-1471247_1996",
-      "n": "ローソン 備長炭焼き親子丼",
+      "id": "lawson-1475921_1996",
+      "n": "ローソン すき焼き",
       "s": [
         "lawson"
       ],
-      "p": 28.8,
-      "kcal": 587,
-      "f": 17.4,
-      "yen": 797,
+      "p": 10.6,
+      "kcal": 217,
+      "f": 12.8,
+      "yen": 473,
       "days": [
         "train",
-        "rest"
+        "rest",
+        "night"
       ],
       "kind": "gai",
       "official": true,
-      "category": "ローソン machikadochubo",
+      "category": "ローソン select/osozai",
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1471247_1996.html"
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1475921_1996.html"
     },
     {
       "id": "aeon-4549414726008",
