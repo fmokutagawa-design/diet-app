@@ -1,31 +1,31 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T04:20:06.666Z",
+  "generatedAt": "2026-11-25T03:04:51.306Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-11-24T04:19:22.948Z",
+      "updatedAt": "2026-11-25T03:04:03.832Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
-      "count": 43,
+      "count": 44,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-11-24T04:19:23.725Z",
+      "updatedAt": "2026-11-25T03:04:04.765Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 58,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-11-24T04:19:25.406Z",
+      "updatedAt": "2026-11-25T03:04:06.473Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-11-24T04:19:26.744Z",
+      "updatedAt": "2026-11-25T03:04:06.966Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
@@ -36,7 +36,7 @@
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 68,
       "label": "吉野家公式栄養成分表",
-      "lastAttemptAt": "2026-11-24T04:19:27.187Z",
+      "lastAttemptAt": "2026-11-25T03:04:07.504Z",
       "error": "Yoshinoya parse yielded only 0 items"
     },
     "famima": {
@@ -45,21 +45,19 @@
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 33,
       "label": "ファミマ公式栄養成分情報（関東）",
-      "lastAttemptAt": "2026-11-24T04:19:31.512Z",
+      "lastAttemptAt": "2026-11-25T03:04:11.407Z",
       "error": "FamilyMart parse yielded only 22 items"
     },
     "seven": {
-      "status": "error",
-      "updatedAt": "2026-11-23T00:21:28.781Z",
+      "status": "ok",
+      "updatedAt": "2026-11-25T03:04:25.813Z",
       "url": "https://www.sej.co.jp/products/a/",
-      "count": 46,
-      "label": "セブン公式商品情報（関東）",
-      "lastAttemptAt": "2026-11-24T04:19:33.183Z",
-      "error": "Seven-Eleven parse yielded only 0 items"
+      "count": 30,
+      "label": "セブン公式商品情報（関東）"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-11-24T04:20:04.734Z",
+      "updatedAt": "2026-11-25T03:04:49.552Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
@@ -70,7 +68,7 @@
       "url": "https://www.topvalu.net/items/",
       "count": 80,
       "label": "イオン トップバリュ公式商品情報",
-      "lastAttemptAt": "2026-11-24T04:20:06.536Z",
+      "lastAttemptAt": "2026-11-25T03:04:51.122Z",
       "error": "AEON/TOPVALU parse yielded only 0 items"
     },
     "aeonShinyoshida": {
@@ -79,7 +77,7 @@
       "url": "https://shop.aeon.com/netsuper/01050000030830/15.html",
       "count": 556,
       "label": "イオン横浜新吉田店 弁当・惣菜取扱情報",
-      "lastAttemptAt": "2026-11-24T04:20:06.666Z",
+      "lastAttemptAt": "2026-11-25T03:04:51.306Z",
       "error": "https://shop.aeon.com/netsuper/01050000030830/15.html?p=1&sort=recommend: HTTP 403"
     },
     "dennys": {
@@ -88,12 +86,12 @@
       "url": "https://www.dennys.jp/safety/nutritional/",
       "count": 90,
       "label": "デニーズ公式栄養成分一覧",
-      "lastAttemptAt": "2026-11-24T04:19:29.078Z",
+      "lastAttemptAt": "2026-11-25T03:04:09.062Z",
       "error": "デニーズ parse yielded only 0 items"
     },
     "cocoichi": {
       "status": "ok",
-      "updatedAt": "2026-11-24T04:19:30.067Z",
+      "updatedAt": "2026-11-25T03:04:10.094Z",
       "url": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf",
       "count": 51,
       "label": "CoCo壱番屋公式栄養成分情報"
@@ -545,24 +543,6 @@
       "sourceUrl": "https://www.mcdonalds.co.jp/products/4820/"
     },
     {
-      "id": "mcd-1930",
-      "n": "マクドナルド チーチーダブチソーセージマフィン",
-      "s": [
-        "mcdonalds"
-      ],
-      "p": 30.6,
-      "kcal": 745,
-      "f": 54.6,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "バーガー",
-      "sourceUrl": "https://www.mcdonalds.co.jp/products/1930/"
-    },
-    {
       "id": "mcd-8641",
       "n": "マクドナルド マックグリドル® ベーコンエッグ",
       "s": [
@@ -890,6 +870,25 @@
       "sourceUrl": "https://www.mcdonalds.co.jp/products/1070/"
     },
     {
+      "id": "mcd-6510",
+      "n": "マクドナルド コク旨ボロネーゼグラコロ",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 12,
+      "kcal": 462,
+      "f": 24.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/6510/"
+    },
+    {
       "id": "mcd-4010",
       "n": "マクドナルド ホットケーキ",
       "s": [
@@ -928,6 +927,25 @@
       "official": true,
       "category": "バーガー",
       "sourceUrl": "https://www.mcdonalds.co.jp/products/8640/"
+    },
+    {
+      "id": "mcd-6500",
+      "n": "マクドナルド グラコロ®",
+      "s": [
+        "mcdonalds"
+      ],
+      "p": 10.6,
+      "kcal": 423,
+      "f": 22.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "バーガー",
+      "sourceUrl": "https://www.mcdonalds.co.jp/products/6500/"
     },
     {
       "id": "mos-710169",
@@ -3401,7 +3419,7 @@
       "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
     },
     {
-      "id": "sukiya-2-43",
+      "id": "sukiya-3-13",
       "n": "すき家 チキン・お食事サラダ（並盛）",
       "s": [
         "sukiya"
@@ -3421,7 +3439,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-8-1",
+      "id": "sukiya-8-4",
       "n": "すき家 からあげ（６個）",
       "s": [
         "sukiya"
@@ -3441,7 +3459,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-8-0",
+      "id": "sukiya-8-3",
       "n": "すき家 からあげ（２個）",
       "s": [
         "sukiya"
@@ -3461,7 +3479,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-2",
+      "id": "sukiya-5-26",
       "n": "すき家 うな皿（並盛）",
       "s": [
         "sukiya"
@@ -3481,7 +3499,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-3",
+      "id": "sukiya-5-27",
       "n": "すき家 うな皿（特盛）",
       "s": [
         "sukiya"
@@ -3500,7 +3518,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-33",
+      "id": "sukiya-3-3",
       "n": "すき家 かつぶしオクラ牛丼ライト（ミニ）",
       "s": [
         "sukiya"
@@ -3520,7 +3538,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-39",
+      "id": "sukiya-3-9",
       "n": "すき家 牛丼ライト（テイクアウト）（ミニ）",
       "s": [
         "sukiya"
@@ -3540,7 +3558,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-16",
+      "id": "sukiya-5-40",
       "n": "すき家 うな牛皿（特盛）",
       "s": [
         "sukiya"
@@ -3559,27 +3577,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-24",
-      "n": "すき家 牛丼ライト（ミニ）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 18.5,
-      "kcal": 311,
-      "f": 19.9,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-2-34",
+      "id": "sukiya-3-4",
       "n": "すき家 かつぶしオクラ牛丼ライト（並盛）",
       "s": [
         "sukiya"
@@ -3598,7 +3596,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-36",
+      "id": "sukiya-3-6",
       "n": "すき家 キムチ牛丼ライト（ミニ）",
       "s": [
         "sukiya"
@@ -3618,7 +3616,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-44",
+      "id": "sukiya-6-9",
       "n": "すき家 鮭・納豆定食（ミニ）",
       "s": [
         "sukiya"
@@ -3637,7 +3635,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-40",
+      "id": "sukiya-3-10",
       "n": "すき家 牛丼ライト（テイクアウト）（並盛）",
       "s": [
         "sukiya"
@@ -3657,7 +3655,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-30",
+      "id": "sukiya-3-0",
       "n": "すき家 おろしポン酢牛丼ライト（ミニ）",
       "s": [
         "sukiya"
@@ -3677,7 +3675,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-35",
+      "id": "sukiya-3-5",
       "n": "すき家 かつぶしオクラ牛丼ライト（大盛）",
       "s": [
         "sukiya"
@@ -3696,27 +3694,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-25",
-      "n": "すき家 牛丼ライト（並盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 22.8,
-      "kcal": 399,
-      "f": 26.8,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-5-15",
+      "id": "sukiya-5-39",
       "n": "すき家 うな牛皿（並盛）",
       "s": [
         "sukiya"
@@ -3735,7 +3713,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-37",
+      "id": "sukiya-3-7",
       "n": "すき家 キムチ牛丼ライト（並盛）",
       "s": [
         "sukiya"
@@ -3754,7 +3732,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-41",
+      "id": "sukiya-3-11",
       "n": "すき家 牛丼ライト（テイクアウト）（大盛）",
       "s": [
         "sukiya"
@@ -3773,7 +3751,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-31",
+      "id": "sukiya-3-1",
       "n": "すき家 おろしポン酢牛丼ライト（並盛）",
       "s": [
         "sukiya"
@@ -3793,26 +3771,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-26",
-      "n": "すき家 牛丼ライト（大盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 27.1,
-      "kcal": 487,
-      "f": 33.6,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-2-38",
+      "id": "sukiya-3-8",
       "n": "すき家 キムチ牛丼ライト（大盛）",
       "s": [
         "sukiya"
@@ -3831,7 +3790,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-32",
+      "id": "sukiya-3-2",
       "n": "すき家 おろしポン酢牛丼ライト（大盛）",
       "s": [
         "sukiya"
@@ -3850,27 +3809,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-27",
-      "n": "すき家 わさび山かけ牛丼ライト（ミニ）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 19.9,
-      "kcal": 364,
-      "f": 20,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-6-24",
+      "id": "sukiya-6-45",
       "n": "すき家 焼鮭まぜのっけ朝食（ミニ）",
       "s": [
         "sukiya"
@@ -3889,7 +3828,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-9",
+      "id": "sukiya-7-30",
       "n": "すき家 納豆焼鮭朝食（ミニ）",
       "s": [
         "sukiya"
@@ -3908,26 +3847,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-28",
-      "n": "すき家 わさび山かけ牛丼ライト（並盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 24.2,
-      "kcal": 452,
-      "f": 26.9,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-6-39",
+      "id": "sukiya-7-3",
       "n": "すき家 焼鮭たまかけ朝食（ミニ）",
       "s": [
         "sukiya"
@@ -3946,26 +3866,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-29",
-      "n": "すき家 わさび山かけ牛丼ライト（大盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 28.5,
-      "kcal": 539,
-      "f": 33.7,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-4-10",
+      "id": "sukiya-4-30",
       "n": "すき家 まぐろユッケ丼（並盛）",
       "s": [
         "sukiya"
@@ -4004,7 +3905,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-45",
+      "id": "sukiya-6-10",
       "n": "すき家 鮭・納豆定食（並盛）",
       "s": [
         "sukiya"
@@ -4042,7 +3943,25 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-12",
+      "id": "sukiya-6-15",
+      "n": "すき家 さば納豆定食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 36.2,
+      "kcal": 721,
+      "f": 32.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-33",
       "n": "すき家 牛焼鮭朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4099,7 +4018,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-2",
+      "id": "sukiya-4-22",
       "n": "すき家 オクラ旨だしとりそぼろ丼（ミニ）",
       "s": [
         "sukiya"
@@ -4118,7 +4037,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-38",
+      "id": "sukiya-6-3",
       "n": "すき家 鮭定食（ミニ）",
       "s": [
         "sukiya"
@@ -4137,7 +4056,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-6",
+      "id": "sukiya-7-27",
       "n": "すき家 焼鮭朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4156,7 +4075,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-7",
+      "id": "sukiya-4-27",
       "n": "すき家 まぐろたたき皿（並盛）",
       "s": [
         "sukiya"
@@ -4175,7 +4094,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-24",
+      "id": "sukiya-7-45",
       "n": "すき家 塩さば牛皿定食（ミニ）",
       "s": [
         "sukiya"
@@ -4193,7 +4112,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-6-25",
+      "id": "sukiya-6-46",
       "n": "すき家 焼鮭まぜのっけ朝食（並盛）",
       "s": [
         "sukiya"
@@ -4212,7 +4131,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-41",
+      "id": "sukiya-6-6",
       "n": "すき家 納豆定食（ミニ）",
       "s": [
         "sukiya"
@@ -4231,7 +4150,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-6-18",
+      "id": "sukiya-6-39",
       "n": "すき家 納豆まぜのっけ朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4250,7 +4169,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-10",
+      "id": "sukiya-7-31",
       "n": "すき家 納豆焼鮭朝食（並盛）",
       "s": [
         "sukiya"
@@ -4269,7 +4188,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-3",
+      "id": "sukiya-4-23",
       "n": "すき家 オクラ旨だしとりそぼろ丼（並盛）",
       "s": [
         "sukiya"
@@ -4288,7 +4207,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-13",
+      "id": "sukiya-4-33",
       "n": "すき家 山かけまぐろたたき丼（並盛）",
       "s": [
         "sukiya"
@@ -4307,25 +4226,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-8-5",
-      "n": "すき家 牛すき鍋（たまご２個）（並盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 35.5,
-      "kcal": 772,
-      "f": 37,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-6-27",
+      "id": "sukiya-6-48",
       "n": "すき家 塩さばまぜのっけ朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4344,7 +4245,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-11",
+      "id": "sukiya-4-31",
       "n": "すき家 まぐろユッケ丼（大盛）",
       "s": [
         "sukiya"
@@ -4362,7 +4263,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-18",
+      "id": "sukiya-7-39",
       "n": "すき家 納豆塩さば朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4381,7 +4282,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-6-40",
+      "id": "sukiya-7-4",
       "n": "すき家 焼鮭たまかけ朝食（並盛）",
       "s": [
         "sukiya"
@@ -4400,14 +4301,14 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-6-33",
-      "n": "すき家 納豆たまかけ朝食（ミニ）",
+      "id": "sukiya-4-15",
+      "n": "すき家 旨だしとりそぼろ丼（並盛）",
       "s": [
         "sukiya"
       ],
-      "p": 22.8,
-      "kcal": 503,
-      "f": 13.6,
+      "p": 30.6,
+      "kcal": 673,
+      "f": 14.4,
       "yen": null,
       "days": [
         "train",
@@ -4419,7 +4320,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-6-42",
+      "id": "sukiya-7-6",
       "n": "すき家 塩さばたまかけ朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4438,7 +4339,26 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-0",
+      "id": "sukiya-4-18",
+      "n": "すき家 明太マヨ旨だしとりそぼろ丼（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.9,
+      "kcal": 673,
+      "f": 21.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-21",
       "n": "すき家 納豆ベーコンエッグ朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4457,7 +4377,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-13",
+      "id": "sukiya-7-34",
       "n": "すき家 牛焼鮭朝食（並盛）",
       "s": [
         "sukiya"
@@ -4475,7 +4395,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-2-42",
+      "id": "sukiya-3-12",
       "n": "すき家 牛・お食事サラダ（並盛）",
       "s": [
         "sukiya"
@@ -4495,7 +4415,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-6-48",
+      "id": "sukiya-7-12",
       "n": "すき家 納豆ソーセージエッグ朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4514,7 +4434,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-8",
+      "id": "sukiya-4-28",
       "n": "すき家 まぐろたたき丼（大盛）",
       "s": [
         "sukiya"
@@ -4532,7 +4452,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-21",
+      "id": "sukiya-7-42",
       "n": "すき家 牛塩さば朝食（ミニ）",
       "s": [
         "sukiya"
@@ -4551,7 +4471,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-7",
+      "id": "sukiya-5-31",
       "n": "すき家 おんたまうな丼（ごはん少なめ）",
       "s": [
         "sukiya"
@@ -4570,7 +4490,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-11",
+      "id": "sukiya-7-32",
       "n": "すき家 納豆焼鮭朝食（大盛）",
       "s": [
         "sukiya"
@@ -4588,7 +4508,44 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-6-26",
+      "id": "sukiya-4-19",
+      "n": "すき家 明太マヨ旨だしとりそぼろ丼（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 31.1,
+      "kcal": 742,
+      "f": 21.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-5-18",
+      "n": "すき家 おんたまねぎ塩豚タン丼（ごはん少なめ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 24.5,
+      "kcal": 585,
+      "f": 16.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-47",
       "n": "すき家 焼鮭まぜのっけ朝食（大盛）",
       "s": [
         "sukiya"
@@ -4606,7 +4563,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-4",
+      "id": "sukiya-4-24",
       "n": "すき家 オクラ旨だしとりそぼろ丼（大盛）",
       "s": [
         "sukiya"
@@ -4624,7 +4581,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-6-41",
+      "id": "sukiya-7-5",
       "n": "すき家 焼鮭たまかけ朝食（大盛）",
       "s": [
         "sukiya"
@@ -4642,7 +4599,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-14",
+      "id": "sukiya-4-34",
       "n": "すき家 山かけまぐろたたき丼（大盛）",
       "s": [
         "sukiya"
@@ -4660,7 +4617,25 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-5-39",
+      "id": "sukiya-4-16",
+      "n": "すき家 旨だしとりそぼろ丼（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 32.6,
+      "kcal": 794,
+      "f": 14.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-4",
       "n": "すき家 鮭定食（並盛）",
       "s": [
         "sukiya"
@@ -4679,26 +4654,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-8-3",
-      "n": "すき家 牛すき鍋（たまご１個）（並盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 28,
-      "kcal": 686,
-      "f": 30.8,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-7-19",
+      "id": "sukiya-7-40",
       "n": "すき家 納豆塩さば朝食（並盛）",
       "s": [
         "sukiya"
@@ -4716,7 +4672,7 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-7",
+      "id": "sukiya-7-28",
       "n": "すき家 焼鮭朝食（並盛）",
       "s": [
         "sukiya"
@@ -4728,6 +4684,62 @@
       "days": [
         "train",
         "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-1-25",
+      "n": "すき家 とろ～り3種のチーズ牛丼（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 26,
+      "kcal": 640,
+      "f": 29.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-42",
+      "n": "すき家 牛まぜのっけ朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 20.4,
+      "kcal": 503,
+      "f": 16.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-6-49",
+      "n": "すき家 塩さばまぜのっけ朝食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 31.1,
+      "kcal": 767,
+      "f": 28.4,
+      "yen": null,
+      "days": [
+        "train"
       ],
       "kind": "gai",
       "official": true,
@@ -9399,15 +9411,15 @@
       "sourceUrl": "https://www.family.co.jp/goods/obento/0730105.html"
     },
     {
-      "id": "seven-106010",
-      "n": "セブン あおさ豆腐",
+      "id": "seven-054157",
+      "n": "セブン たんぱく質が摂れるチキンロール",
       "s": [
         "seven"
       ],
-      "p": 15.1,
-      "kcal": 159,
-      "f": 7.1,
-      "yen": 267.84,
+      "p": 31,
+      "kcal": 259,
+      "f": 5.5,
+      "yen": 453.6,
       "days": [
         "train",
         "rest",
@@ -9415,22 +9427,22 @@
       ],
       "kind": "gai",
       "official": true,
-      "category": "セブン dailydish",
+      "category": "セブン sandwich",
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/106010/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/054157/"
     },
     {
-      "id": "seven-106098",
-      "n": "セブン 手包みロールキャベツ入りポトフ",
+      "id": "seven-106195",
+      "n": "セブン 柚子香るぽん酢の豚もやし",
       "s": [
         "seven"
       ],
-      "p": 11.2,
-      "kcal": 152,
-      "f": 6.3,
-      "yen": 494.64,
+      "p": 9.6,
+      "kcal": 126,
+      "f": 7.5,
+      "yen": 427.68,
       "days": [
         "train",
         "rest",
@@ -9442,7 +9454,7 @@
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/106098/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/106195/"
     },
     {
       "id": "seven-150071",
@@ -9468,15 +9480,15 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/150071/"
     },
     {
-      "id": "seven-092050",
-      "n": "セブン 鶏塩そうめん",
+      "id": "seven-054142",
+      "n": "セブン てりやきソースのチキンバーガー",
       "s": [
         "seven"
       ],
-      "p": 12.3,
-      "kcal": 190,
-      "f": 5.4,
-      "yen": 354.24,
+      "p": 26.2,
+      "kcal": 395,
+      "f": 18.4,
+      "yen": 421.2,
       "days": [
         "train",
         "rest",
@@ -9484,11 +9496,11 @@
       ],
       "kind": "gai",
       "official": true,
-      "category": "セブン men",
+      "category": "セブン sandwich",
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/092050/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/054142/"
     },
     {
       "id": "seven-150370",
@@ -9514,42 +9526,18 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/150370/"
     },
     {
-      "id": "seven-106086",
-      "n": "セブン 合鴨と彩り野菜のサラダ",
+      "id": "seven-092099",
+      "n": "セブン まろやかごま豆乳の豚しゃぶうどん",
       "s": [
         "seven"
       ],
-      "p": 18.3,
-      "kcal": 299,
-      "f": 19,
-      "yen": 645.84,
+      "p": 29.2,
+      "kcal": 534,
+      "f": 17.3,
+      "yen": 594,
       "days": [
         "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン salad",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/106086/"
-    },
-    {
-      "id": "seven-092019",
-      "n": "セブン 鶏塩そうめん",
-      "s": [
-        "seven"
-      ],
-      "p": 12.3,
-      "kcal": 204,
-      "f": 3.3,
-      "yen": 354.24,
-      "days": [
-        "train",
-        "rest",
-        "night"
+        "rest"
       ],
       "kind": "gai",
       "official": true,
@@ -9557,29 +9545,7 @@
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/092019/"
-    },
-    {
-      "id": "seven-092013",
-      "n": "セブン コクと旨味が広がる ボンゴレスープパスタ",
-      "s": [
-        "seven"
-      ],
-      "p": 22.4,
-      "kcal": 428,
-      "f": 8.3,
-      "yen": 529.2,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン pasta",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/092013/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/092099/"
     },
     {
       "id": "seven-092031",
@@ -9605,14 +9571,14 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/092031/"
     },
     {
-      "id": "seven-092033",
-      "n": "セブン 蟹の旨み広がるトマトクリームパスタ",
+      "id": "seven-042072",
+      "n": "セブン 上州の味 鳥めし弁当 国産鶏むね肉使用",
       "s": [
         "seven"
       ],
-      "p": 24.4,
-      "kcal": 496,
-      "f": 13.4,
+      "p": 24.8,
+      "kcal": 506,
+      "f": 3.5,
       "yen": 645.84,
       "days": [
         "train",
@@ -9620,11 +9586,11 @@
       ],
       "kind": "gai",
       "official": true,
-      "category": "セブン pasta",
+      "category": "セブン bento",
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/092033/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/042072/"
     },
     {
       "id": "seven-091962",
@@ -9650,27 +9616,26 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/091962/"
     },
     {
-      "id": "seven-103795",
-      "n": "セブン 豚肉ときくらげのふんわり中華玉子炒め",
+      "id": "seven-092097",
+      "n": "セブン 札幌すみれ監修 濃厚しおラーメン",
       "s": [
         "seven"
       ],
-      "p": 14.2,
-      "kcal": 300,
-      "f": 18.4,
-      "yen": 397.44,
+      "p": 27.3,
+      "kcal": 567,
+      "f": 11.2,
+      "yen": 626.4,
       "days": [
         "train",
-        "rest",
-        "night"
+        "rest"
       ],
       "kind": "gai",
       "official": true,
-      "category": "セブン dailydish",
+      "category": "セブン men",
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/103795/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/092097/"
     },
     {
       "id": "seven-092048",
@@ -9696,120 +9661,6 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/092048/"
     },
     {
-      "id": "seven-092047",
-      "n": "セブン 北海道産玄蕎麦使用石臼挽きそば粉の新そば",
-      "s": [
-        "seven"
-      ],
-      "p": 15.3,
-      "kcal": 327,
-      "f": 2,
-      "yen": 496.8,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン men",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/092047/"
-    },
-    {
-      "id": "seven-053904",
-      "n": "セブン ブリトーバターチキンカレー",
-      "s": [
-        "seven"
-      ],
-      "p": 13.5,
-      "kcal": 289,
-      "f": 11.8,
-      "yen": 311.04,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン sandwich",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/053904/"
-    },
-    {
-      "id": "seven-104504",
-      "n": "セブン 肉の旨味 焼き餃子 ６個入り",
-      "s": [
-        "seven"
-      ],
-      "p": 15.6,
-      "kcal": 347,
-      "f": 15.6,
-      "yen": 354.24,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン dailydish",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/104504/"
-    },
-    {
-      "id": "seven-103836",
-      "n": "セブン 肉の旨味 焼き餃子 ５個入り",
-      "s": [
-        "seven"
-      ],
-      "p": 15.6,
-      "kcal": 347,
-      "f": 15.6,
-      "yen": 354.24,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン dailydish",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/103836/"
-    },
-    {
-      "id": "seven-091893",
-      "n": "セブン チーズの虜 きのこクリーム焼きパスタ",
-      "s": [
-        "seven"
-      ],
-      "p": 26.8,
-      "kcal": 602,
-      "f": 25.6,
-      "yen": 645.84,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン gratin",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/091893/"
-    },
-    {
       "id": "seven-091989",
       "n": "セブン こんがりチーズのマカロニグラタン",
       "s": [
@@ -9833,109 +9684,40 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/091989/"
     },
     {
-      "id": "seven-054149",
-      "n": "セブン スモークサーモン＆クリームチーズサンド",
+      "id": "seven-092074",
+      "n": "セブン ほうれん草とベーコンのバター醤油パスタ",
       "s": [
         "seven"
       ],
-      "p": 11.9,
-      "kcal": 272,
-      "f": 14.8,
-      "yen": 496.8,
+      "p": 20.6,
+      "kcal": 475,
+      "f": 12.4,
+      "yen": 537.84,
       "days": [
         "train",
-        "rest",
-        "night"
+        "rest"
       ],
       "kind": "gai",
       "official": true,
-      "category": "セブン sandwich",
+      "category": "セブン pasta",
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/054149/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/092074/"
     },
     {
-      "id": "seven-054148",
-      "n": "セブン バゲット パストラミ＆カマンベール",
+      "id": "seven-092095",
+      "n": "セブン １／２日分の野菜が摂れる 濃厚焼ちゃんぽん",
       "s": [
         "seven"
       ],
-      "p": 13.6,
-      "kcal": 311,
-      "f": 16.1,
-      "yen": 429.84,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン sandwich",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/054148/"
-    },
-    {
-      "id": "seven-054147",
-      "n": "セブン バゲット パストラミ＆カマンベール",
-      "s": [
-        "seven"
-      ],
-      "p": 13.6,
-      "kcal": 311,
-      "f": 16.1,
-      "yen": 429.84,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン sandwich",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/054147/"
-    },
-    {
-      "id": "seven-042092",
-      "n": "セブン ガラスープの旨み 肉あんかけチャーハン",
-      "s": [
-        "seven"
-      ],
-      "p": 31.8,
-      "kcal": 733,
-      "f": 28.1,
+      "p": 18.2,
+      "kcal": 455,
+      "f": 14.9,
       "yen": 594,
       "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン bento",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/042092/"
-    },
-    {
-      "id": "seven-092046",
-      "n": "セブン 北海道産玄蕎麦使用濃厚だし割りとろろ新そば",
-      "s": [
-        "seven"
-      ],
-      "p": 13.9,
-      "kcal": 334,
-      "f": 3,
-      "yen": 604.8,
-      "days": [
         "train",
-        "rest",
-        "night"
+        "rest"
       ],
       "kind": "gai",
       "official": true,
@@ -9943,20 +9725,43 @@
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/092046/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/092095/"
     },
     {
-      "id": "seven-042138",
-      "n": "セブン チキン南蛮＆スタミナ豚焼肉弁当",
+      "id": "seven-091771",
+      "n": "セブン 黒舞茸天そば 栃木県産そば粉使用",
       "s": [
         "seven"
       ],
-      "p": 34.2,
-      "kcal": 848,
-      "f": 24.3,
-      "yen": 753.84,
+      "p": 16.6,
+      "kcal": 425,
+      "f": 13.2,
+      "yen": 645.84,
       "days": [
-        "train"
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン men",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091771/"
+    },
+    {
+      "id": "seven-042495",
+      "n": "セブン さつまいも御飯幕の内",
+      "s": [
+        "seven"
+      ],
+      "p": 19.7,
+      "kcal": 507,
+      "f": 10.5,
+      "yen": 645.84,
+      "days": [
+        "train",
+        "rest"
       ],
       "kind": "gai",
       "official": true,
@@ -9964,18 +9769,18 @@
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/042138/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/042495/"
     },
     {
-      "id": "seven-054160",
-      "n": "セブン チーズドッグ",
+      "id": "seven-054155",
+      "n": "セブン アメリカンクラブハウスサンド",
       "s": [
         "seven"
       ],
-      "p": 10.9,
-      "kcal": 290,
-      "f": 17.6,
-      "yen": 291.6,
+      "p": 13.7,
+      "kcal": 374,
+      "f": 22.1,
+      "yen": 529.2,
       "days": [
         "train",
         "rest",
@@ -9987,52 +9792,7 @@
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/054160/"
-    },
-    {
-      "id": "seven-091811",
-      "n": "セブン かぼちゃグラタン 北海道産チーズ使用",
-      "s": [
-        "seven"
-      ],
-      "p": 14.5,
-      "kcal": 395,
-      "f": 15.7,
-      "yen": 518.4,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン gratin",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/091811/"
-    },
-    {
-      "id": "seven-054146",
-      "n": "セブン やみつき旨辛チキンロール",
-      "s": [
-        "seven"
-      ],
-      "p": 16,
-      "kcal": 436,
-      "f": 20.3,
-      "yen": 378,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン sandwich",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/054146/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/054155/"
     },
     {
       "id": "seven-091809",
@@ -10080,71 +9840,26 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/150471/"
     },
     {
-      "id": "seven-054145",
-      "n": "セブン バゲット 燻製モッツアレラ＆ベーコン",
+      "id": "seven-091777",
+      "n": "セブン ケチャップソースの山盛ナポリタン",
       "s": [
         "seven"
       ],
-      "p": 13.8,
-      "kcal": 380,
-      "f": 24,
-      "yen": 432,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン sandwich",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/054145/"
-    },
-    {
-      "id": "seven-304252",
-      "n": "セブン ＢＩＧバーガー オニオンマヨネーズ",
-      "s": [
-        "seven"
-      ],
-      "p": 16.5,
-      "kcal": 471,
-      "f": 22.1,
-      "yen": 321.84,
+      "p": 24.6,
+      "kcal": 676,
+      "f": 16.1,
+      "yen": 537.84,
       "days": [
         "train",
         "rest"
       ],
       "kind": "gai",
       "official": true,
-      "category": "セブン bread",
+      "category": "セブン pasta",
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/304252/"
-    },
-    {
-      "id": "seven-092049",
-      "n": "セブン お好み焼き＆焼そば",
-      "s": [
-        "seven"
-      ],
-      "p": 19.9,
-      "kcal": 590,
-      "f": 24.2,
-      "yen": 594,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン men",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/092049/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/091777/"
     },
     {
       "id": "seven-290590",
@@ -10193,6 +9908,29 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/290514/"
     },
     {
+      "id": "seven-150473",
+      "n": "セブン ＢＩＧポークフランク",
+      "s": [
+        "seven"
+      ],
+      "p": 11.1,
+      "kcal": 358,
+      "f": 32.8,
+      "yen": 213.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン hotsnack",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/150473/"
+    },
+    {
       "id": "seven-150351",
       "n": "セブン ほかほかジューシー大入り豚まん",
       "s": [
@@ -10239,50 +9977,6 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/044564/"
     },
     {
-      "id": "seven-092014",
-      "n": "セブン だしの旨みと醤油香る 焼うどん",
-      "s": [
-        "seven"
-      ],
-      "p": 18.4,
-      "kcal": 634,
-      "f": 20,
-      "yen": 518.4,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン men",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/092014/"
-    },
-    {
-      "id": "seven-091995",
-      "n": "セブン たぬきうどん 上州地粉使用麺",
-      "s": [
-        "seven"
-      ],
-      "p": 14.2,
-      "kcal": 500,
-      "f": 14.2,
-      "yen": 421.2,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン men",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/091995/"
-    },
-    {
       "id": "seven-091957",
       "n": "セブン たっぷりソースのミートドリア",
       "s": [
@@ -10305,72 +9999,49 @@
       "sourceUrl": "https://www.sej.co.jp/products/a/item/091957/"
     },
     {
-      "id": "seven-054143",
-      "n": "セブン メンチカツサンド",
+      "id": "seven-303182",
+      "n": "セブン 粗挽きポークフランク 粒マスタードマヨ使用",
       "s": [
         "seven"
       ],
-      "p": 13.2,
-      "kcal": 513,
-      "f": 29.7,
-      "yen": 367.2,
+      "p": 10.9,
+      "kcal": 408,
+      "f": 23.7,
+      "yen": 213.84,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "セブン bread",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/303182/"
+    },
+    {
+      "id": "seven-044805",
+      "n": "セブン 香ばし野菜のコク旨あんかけ中華丼",
+      "s": [
+        "seven"
+      ],
+      "p": 13.3,
+      "kcal": 533,
+      "f": 13.8,
+      "yen": 645.84,
       "days": [
         "train",
         "rest"
       ],
       "kind": "gai",
       "official": true,
-      "category": "セブン sandwich",
+      "category": "セブン bento",
       "regions": [
         "関東"
       ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/054143/"
-    },
-    {
-      "id": "seven-304248",
-      "n": "セブン ７プレミアム 北海道産小豆のあんこ 手包みこしあんぱん",
-      "s": [
-        "seven"
-      ],
-      "p": 8.3,
-      "kcal": 335,
-      "f": 3.6,
-      "yen": 224.64,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン bread",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/304248/"
-    },
-    {
-      "id": "seven-304249",
-      "n": "セブン ７プレミアム 北海道産小豆のあんこ 手包みつぶあんぱん",
-      "s": [
-        "seven"
-      ],
-      "p": 8.1,
-      "kcal": 339,
-      "f": 3.4,
-      "yen": 224.64,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン bread",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/304249/"
+      "sourceUrl": "https://www.sej.co.jp/products/a/item/044805/"
     },
     {
       "id": "seven-091967",
@@ -10393,28 +10064,6 @@
         "関東"
       ],
       "sourceUrl": "https://www.sej.co.jp/products/a/item/091967/"
-    },
-    {
-      "id": "seven-304257",
-      "n": "セブン ソーセージたまご揚げパン",
-      "s": [
-        "seven"
-      ],
-      "p": 9.6,
-      "kcal": 468,
-      "f": 31.4,
-      "yen": 246.24,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "セブン bread",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.sej.co.jp/products/a/item/304257/"
     },
     {
       "id": "seven-090416",
