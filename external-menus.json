@@ -1,43 +1,41 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-25T03:04:51.306Z",
+  "generatedAt": "2026-11-26T02:18:15.769Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-11-25T03:04:03.832Z",
+      "updatedAt": "2026-11-26T02:17:14.864Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 44,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-11-25T03:04:04.765Z",
+      "updatedAt": "2026-11-26T02:17:16.106Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 58,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-11-25T03:04:06.473Z",
-      "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf",
+      "updatedAt": "2026-11-26T02:17:19.139Z",
+      "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-11-25T03:04:06.966Z",
+      "updatedAt": "2026-11-26T02:17:20.213Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
     },
     "yoshinoya": {
-      "status": "error",
-      "updatedAt": "2026-10-22T22:27:46.857Z",
+      "status": "ok",
+      "updatedAt": "2026-11-26T02:17:22.487Z",
       "url": "https://www.yoshinoya.com/pdf/allergy/",
-      "count": 68,
-      "label": "吉野家公式栄養成分表",
-      "lastAttemptAt": "2026-11-25T03:04:07.504Z",
-      "error": "Yoshinoya parse yielded only 0 items"
+      "count": 72,
+      "label": "吉野家公式栄養成分表"
     },
     "famima": {
       "status": "error",
@@ -45,19 +43,19 @@
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 33,
       "label": "ファミマ公式栄養成分情報（関東）",
-      "lastAttemptAt": "2026-11-25T03:04:11.407Z",
+      "lastAttemptAt": "2026-11-26T02:17:28.318Z",
       "error": "FamilyMart parse yielded only 22 items"
     },
     "seven": {
       "status": "ok",
-      "updatedAt": "2026-11-25T03:04:25.813Z",
+      "updatedAt": "2026-11-26T02:17:42.855Z",
       "url": "https://www.sej.co.jp/products/a/",
       "count": 30,
       "label": "セブン公式商品情報（関東）"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-11-25T03:04:49.552Z",
+      "updatedAt": "2026-11-26T02:18:13.361Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
@@ -68,7 +66,7 @@
       "url": "https://www.topvalu.net/items/",
       "count": 80,
       "label": "イオン トップバリュ公式商品情報",
-      "lastAttemptAt": "2026-11-25T03:04:51.122Z",
+      "lastAttemptAt": "2026-11-26T02:18:15.561Z",
       "error": "AEON/TOPVALU parse yielded only 0 items"
     },
     "aeonShinyoshida": {
@@ -77,7 +75,7 @@
       "url": "https://shop.aeon.com/netsuper/01050000030830/15.html",
       "count": 556,
       "label": "イオン横浜新吉田店 弁当・惣菜取扱情報",
-      "lastAttemptAt": "2026-11-25T03:04:51.306Z",
+      "lastAttemptAt": "2026-11-26T02:18:15.769Z",
       "error": "https://shop.aeon.com/netsuper/01050000030830/15.html?p=1&sort=recommend: HTTP 403"
     },
     "dennys": {
@@ -86,14 +84,14 @@
       "url": "https://www.dennys.jp/safety/nutritional/",
       "count": 90,
       "label": "デニーズ公式栄養成分一覧",
-      "lastAttemptAt": "2026-11-25T03:04:09.062Z",
+      "lastAttemptAt": "2026-11-26T02:17:24.669Z",
       "error": "デニーズ parse yielded only 0 items"
     },
     "cocoichi": {
       "status": "ok",
-      "updatedAt": "2026-11-25T03:04:10.094Z",
+      "updatedAt": "2026-11-26T02:17:25.954Z",
       "url": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf",
-      "count": 51,
+      "count": 61,
       "label": "CoCo壱番屋公式栄養成分情報"
     }
   },
@@ -2089,7 +2087,7 @@
       "sourceUrl": "https://www.mos.jp/menu/detail/nutrition/?menu_id=020130&c_id=35"
     },
     {
-      "id": "matsuya-4-1026",
+      "id": "matsuya-5-652",
       "n": "松屋 炙り焼鮭",
       "s": [
         "matsuya"
@@ -2106,30 +2104,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-6-720",
-      "n": "松屋 韓国風タコの旨辛炒め(単品)",
-      "s": [
-        "matsuya"
-      ],
-      "p": 19.7,
-      "kcal": 238,
-      "f": 5.6,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-4-1366",
+      "id": "matsuya-5-992",
       "n": "松屋 ソーセージ＆半熟玉子",
       "s": [
         "matsuya"
@@ -2146,10 +2124,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-3-890",
+      "id": "matsuya-3-1060",
       "n": "松屋 豚ロース焼肉ダブル(単品)",
       "s": [
         "matsuya"
@@ -2165,10 +2143,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-3-856",
+      "id": "matsuya-3-1026",
       "n": "松屋 豚ロース焼肉単品(DELI)",
       "s": [
         "matsuya"
@@ -2185,10 +2163,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-1332",
+      "id": "matsuya-5-958",
       "n": "松屋 ソーセージ＆目玉焼き",
       "s": [
         "matsuya"
@@ -2205,7 +2183,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-4-312",
@@ -2225,10 +2203,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-5-516",
+      "id": "matsuya-5-1604",
       "n": "松屋 ミニ牛皿玉子セット（生玉子or半熟玉子）",
       "s": [
         "matsuya"
@@ -2245,17 +2223,17 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-1434",
+      "id": "matsuya-5-1060",
       "n": "松屋 たっぷりチーズ",
       "s": [
         "matsuya"
       ],
-      "p": 8.2,
-      "kcal": 159,
-      "f": 13.4,
+      "p": 10.1,
+      "kcal": 193,
+      "f": 15.7,
       "yen": null,
       "days": [
         "train",
@@ -2265,17 +2243,17 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-6-1162",
-      "n": "松屋 キーマカレー(単品)",
+      "id": "matsuya-3-1162",
+      "n": "松屋 牛豆腐キムチチゲ(単品)",
       "s": [
         "matsuya"
       ],
-      "p": 20.9,
-      "kcal": 437,
-      "f": 28.5,
+      "p": 21.9,
+      "kcal": 450,
+      "f": 27.6,
       "yen": null,
       "days": [
         "train",
@@ -2284,10 +2262,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-5-346",
+      "id": "matsuya-5-1434",
       "n": "松屋 豚汁玉子セット（生玉子or半熟玉子）",
       "s": [
         "matsuya"
@@ -2304,10 +2282,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-1136",
+      "id": "matsuya-7-686",
       "n": "松屋 豚汁玉子セット（生玉子or半熟玉子）（沖縄）",
       "s": [
         "matsuya"
@@ -2324,10 +2302,29 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-822",
+      "id": "matsuya-7-380",
+      "n": "松屋 牛豆腐キムチチゲ(単品)(沖縄)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20.7,
+      "kcal": 443,
+      "f": 27.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-448",
       "n": "松屋 単品ねぎ玉牛皿DELI",
       "s": [
         "matsuya"
@@ -2344,17 +2341,17 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-924",
+      "id": "matsuya-5-550",
       "n": "松屋 単品チーズ牛皿DELI",
       "s": [
         "matsuya"
       ],
-      "p": 19.9,
-      "kcal": 444,
-      "f": 38.6,
+      "p": 21.9,
+      "kcal": 477,
+      "f": 41,
       "yen": null,
       "days": [
         "train",
@@ -2363,10 +2360,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-354",
+      "id": "matsuya-6-1510",
       "n": "松屋 ソーセージエッグ",
       "s": [
         "matsuya"
@@ -2382,17 +2379,35 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-958",
+      "id": "matsuya-2-822",
+      "n": "松屋 牛カットステーキ丼",
+      "s": [
+        "matsuya"
+      ],
+      "p": 31.7,
+      "kcal": 718,
+      "f": 25.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-5-584",
       "n": "松屋 単品うまトマチーズ牛皿DELI",
       "s": [
         "matsuya"
       ],
-      "p": 23.3,
-      "kcal": 530,
-      "f": 44.3,
+      "p": 23,
+      "kcal": 528,
+      "f": 43.8,
       "yen": null,
       "days": [
         "train",
@@ -2401,10 +2416,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-144",
+      "id": "matsuya-6-1300",
       "n": "松屋 焼鮭",
       "s": [
         "matsuya"
@@ -2420,7 +2435,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-3-482",
@@ -2439,48 +2454,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-3-992",
-      "n": "松屋 黒麻婆豆腐(単品)",
-      "s": [
-        "matsuya"
-      ],
-      "p": 21.9,
-      "kcal": 505,
-      "f": 33.1,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-6-652",
-      "n": "松屋 韓国風タコの旨辛炒め定食",
-      "s": [
-        "matsuya"
-      ],
-      "p": 27.8,
-      "kcal": 642,
-      "f": 7.8,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-7-284",
+      "id": "matsuya-6-1440",
       "n": "松屋 スクランブルエッグ",
       "s": [
         "matsuya"
@@ -2496,10 +2473,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-319",
+      "id": "matsuya-6-1475",
       "n": "松屋 ソーセージエッグ（ドリンク含まず）",
       "s": [
         "matsuya"
@@ -2514,10 +2491,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-856",
+      "id": "matsuya-5-482",
       "n": "松屋 単品おろし牛皿DELI",
       "s": [
         "matsuya"
@@ -2534,10 +2511,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-788",
+      "id": "matsuya-5-414",
       "n": "松屋 単品牛皿(DELI)",
       "s": [
         "matsuya"
@@ -2554,10 +2531,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-992",
+      "id": "matsuya-5-618",
       "n": "松屋 牛皿（大盛）",
       "s": [
         "matsuya"
@@ -2574,10 +2551,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-3-686",
+      "id": "matsuya-3-856",
       "n": "松屋 生姜焼き単品(DELI)",
       "s": [
         "matsuya"
@@ -2593,10 +2570,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-249",
+      "id": "matsuya-6-1405",
       "n": "松屋 スクランブルエッグ（ドリンク含まず）",
       "s": [
         "matsuya"
@@ -2611,29 +2588,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-762",
-      "n": "松屋 黒麻婆豆腐(単品)(沖縄)",
-      "s": [
-        "matsuya"
-      ],
-      "p": 20.2,
-      "kcal": 492,
-      "f": 32.5,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-4-890",
+      "id": "matsuya-5-516",
       "n": "松屋 単品キムチ牛皿DELI",
       "s": [
         "matsuya"
@@ -2650,26 +2608,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-7-1034",
-      "n": "松屋 鶏そぼろ玉子丼(並盛)",
-      "s": [
-        "matsuya"
-      ],
-      "p": 21.2,
-      "kcal": 540,
-      "f": 9.4,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-3-380",
@@ -2688,10 +2627,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-1170",
+      "id": "matsuya-7-720",
       "n": "松屋 豚汁生野菜セット（沖縄）",
       "s": [
         "matsuya"
@@ -2708,7 +2647,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-4-210",
@@ -2727,10 +2666,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-2-1094",
+      "id": "matsuya-2-924",
       "n": "松屋 豚ロースネギ塩丼(小盛)",
       "s": [
         "matsuya"
@@ -2746,10 +2685,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-3-788",
+      "id": "matsuya-3-958",
       "n": "松屋 豚ロース焼肉定食",
       "s": [
         "matsuya"
@@ -2764,10 +2703,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-4-1060",
+      "id": "matsuya-5-686",
       "n": "松屋 豚汁",
       "s": [
         "matsuya"
@@ -2784,7 +2723,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-3-142",
@@ -2804,7 +2743,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-3-210",
@@ -2822,10 +2761,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-1102",
+      "id": "matsuya-7-652",
       "n": "松屋 豚汁(沖縄）",
       "s": [
         "matsuya"
@@ -2842,30 +2781,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-6-1026",
-      "n": "松屋 松屋のシーザーサラダ",
-      "s": [
-        "matsuya"
-      ],
-      "p": 8.1,
-      "kcal": 222,
-      "f": 16.9,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-6-1332",
+      "id": "matsuya-6-1094",
       "n": "松屋 いぶりがっこ牛めし（小盛）",
       "s": [
         "matsuya"
@@ -2881,17 +2800,17 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-6-822",
-      "n": "松屋 バッファローチキン(単品)",
+      "id": "matsuya-3-754",
+      "n": "松屋 オニオングラタンチーズハンバーグ(単品)",
       "s": [
         "matsuya"
       ],
-      "p": 21.2,
-      "kcal": 591,
-      "f": 46.6,
+      "p": 23.4,
+      "kcal": 650,
+      "f": 45.4,
       "yen": null,
       "days": [
         "train",
@@ -2900,7 +2819,26 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-1-789",
+      "n": "松屋 チーズ牛めし（小盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 24.7,
+      "kcal": 688,
+      "f": 37.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-1-279",
@@ -2919,7 +2857,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-3-584",
@@ -2938,7 +2876,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-4-142",
@@ -2957,7 +2895,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-2-108",
@@ -2965,9 +2903,9 @@
       "s": [
         "matsuya"
       ],
-      "p": 26.1,
-      "kcal": 741,
-      "f": 40.5,
+      "p": 25.8,
+      "kcal": 739,
+      "f": 40,
       "yen": null,
       "days": [
         "train"
@@ -2975,29 +2913,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-1-789",
-      "n": "松屋 チーズ牛めし（小盛）",
-      "s": [
-        "matsuya"
-      ],
-      "p": 22.7,
-      "kcal": 654,
-      "f": 34.8,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-7-626",
+      "id": "matsuya-7-244",
       "n": "松屋 【朝】焼鮭定食",
       "s": [
         "matsuya"
@@ -3013,10 +2932,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-2-890",
+      "id": "matsuya-2-618",
       "n": "松屋 牛ビビン丼（小盛）",
       "s": [
         "matsuya"
@@ -3032,28 +2951,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-6-1298",
-      "n": "松屋 キーマカレーランチ",
-      "s": [
-        "matsuya"
-      ],
-      "p": 29.1,
-      "kcal": 850,
-      "f": 30.7,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-6-1468",
+      "id": "matsuya-6-1230",
       "n": "松屋 いぶりがっこ牛めし（あたま大盛）",
       "s": [
         "matsuya"
@@ -3068,10 +2969,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-2-1128",
+      "id": "matsuya-2-958",
       "n": "松屋 豚ロースネギ塩丼(並盛)",
       "s": [
         "matsuya"
@@ -3087,28 +2988,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-6-1128",
-      "n": "松屋 キーマカレー",
-      "s": [
-        "matsuya"
-      ],
-      "p": 27.9,
-      "kcal": 826,
-      "f": 30.4,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-6-1366",
       "n": "松屋 いぶりがっこ牛めし（並盛）",
       "s": [
         "matsuya"
@@ -3123,7 +3006,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-3-278",
@@ -3142,7 +3025,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-1-313",
@@ -3160,10 +3043,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-524",
+      "id": "matsuya-7-142",
       "n": "松屋 【朝】ソーセージエッグW定食",
       "s": [
         "matsuya"
@@ -3178,28 +3061,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-1-823",
-      "n": "松屋 チーズ牛めし（並盛）",
-      "s": [
-        "matsuya"
-      ],
-      "p": 27,
-      "kcal": 829,
-      "f": 40.6,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-2-924",
+      "id": "matsuya-2-652",
       "n": "松屋 牛ビビン丼（並盛）",
       "s": [
         "matsuya"
@@ -3214,25 +3079,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
-    },
-    {
-      "id": "matsuya-6-516",
-      "n": "松屋 タコの旨辛炒めキムカル丼（小盛）",
-      "s": [
-        "matsuya"
-      ],
-      "p": 23.6,
-      "kcal": 729,
-      "f": 32.2,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-4-108",
@@ -3251,10 +3098,28 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-3-1162",
+      "id": "matsuya-6-1026",
+      "n": "松屋 チャーシューエッグ丼",
+      "s": [
+        "matsuya"
+      ],
+      "p": 26,
+      "kcal": 845,
+      "f": 41.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-1332",
       "n": "松屋 たっぷり鬼おろしポン酢牛皿定食",
       "s": [
         "matsuya"
@@ -3269,7 +3134,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-1-449",
@@ -3288,10 +3153,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-3-1026",
+      "id": "matsuya-3-1196",
       "n": "松屋 たっぷり牛皿定食",
       "s": [
         "matsuya"
@@ -3306,7 +3171,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-1-619",
@@ -3325,7 +3190,45 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-6-992",
+      "n": "松屋 担々うどん(冷)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 17.4,
+      "kcal": 581,
+      "f": 25.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-6-958",
+      "n": "松屋 担々うどん(温)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 18.8,
+      "kcal": 629,
+      "f": 29.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-1-585",
@@ -3343,7 +3246,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-1-755",
@@ -3361,10 +3264,10 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
-      "id": "matsuya-7-932",
+      "id": "matsuya-7-550",
       "n": "松屋 たっぷり鬼おろしポン酢牛皿定食(沖縄)",
       "s": [
         "matsuya"
@@ -3379,7 +3282,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-1-245",
@@ -3397,7 +3300,7 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "matsuya-1-109",
@@ -3416,7 +3319,99 @@
       "kind": "gai",
       "official": true,
       "category": "松屋",
-      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261027_nutritional_matsuya.pdf"
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-2-720",
+      "n": "松屋 松屋の牛焼肉丼(小盛)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 18.5,
+      "kcal": 632,
+      "f": 32.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-7-414",
+      "n": "松屋 たっぷり牛皿定食(沖縄)",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.3,
+      "kcal": 797,
+      "f": 35.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-3-108",
+      "n": "松屋 牛焼肉定食",
+      "s": [
+        "matsuya"
+      ],
+      "p": 23.3,
+      "kcal": 806,
+      "f": 41.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-1-483",
+      "n": "松屋 鬼おろしポン酢牛めし（並盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20,
+      "kcal": 697,
+      "f": 27.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
+    },
+    {
+      "id": "matsuya-1-653",
+      "n": "松屋 キムチ牛めし（並盛）",
+      "s": [
+        "matsuya"
+      ],
+      "p": 20.6,
+      "kcal": 719,
+      "f": 28.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "松屋",
+      "sourceUrl": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf"
     },
     {
       "id": "sukiya-3-13",
@@ -4747,14 +4742,33 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "yoshinoya-5-945",
-      "n": "吉野家 さんま(単品)",
+      "id": "yoshinoya-9-1731",
+      "n": "吉野家 烤鳗鱼碟（二条）",
       "s": [
         "yoshinoya"
       ],
-      "p": 15.7,
-      "kcal": 127,
-      "f": 6.8,
+      "p": 51.3,
+      "kcal": 651,
+      "f": 46.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-9-1757",
+      "n": "吉野家 烤鳗鱼碟（一条）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 26,
+      "kcal": 337,
+      "f": 23.1,
       "yen": null,
       "days": [
         "train",
@@ -4767,7 +4781,26 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-2014",
+      "id": "yoshinoya-5-2342",
+      "n": "吉野家 牛スンドゥブチゲ(単品)（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 37.1,
+      "kcal": 537,
+      "f": 31.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-2647",
       "n": "吉野家 ジンギスカン単品",
       "s": [
         "yoshinoya"
@@ -4787,27 +4820,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-1959",
-      "n": "吉野家 塩さば（単品）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 10.6,
-      "kcal": 201,
-      "f": 16.6,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-409",
+      "id": "yoshinoya-4-1003",
       "n": "吉野家 Wハムエッグ納豆定食",
       "s": [
         "yoshinoya"
@@ -4826,7 +4839,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-678",
+      "id": "yoshinoya-4-1271",
       "n": "吉野家 特朝定食（鮭）",
       "s": [
         "yoshinoya"
@@ -4845,7 +4858,26 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1683",
+      "id": "yoshinoya-9-1264",
+      "n": "吉野家 特惠早餐（鲑鱼）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 31.7,
+      "kcal": 653,
+      "f": 18,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2004",
       "n": "吉野家 牛皿（大盛）",
       "s": [
         "yoshinoya"
@@ -4865,7 +4897,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1629",
+      "id": "yoshinoya-4-1950",
       "n": "吉野家 牛皿（三人前）",
       "s": [
         "yoshinoya"
@@ -4883,7 +4915,25 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1656",
+      "id": "yoshinoya-9-1948",
+      "n": "吉野家 牛肉碟家庭套餐（3人份）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 40.6,
+      "kcal": 843,
+      "f": 68.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1977",
       "n": "吉野家 牛皿（特盛）",
       "s": [
         "yoshinoya"
@@ -4902,7 +4952,26 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1709",
+      "id": "yoshinoya-9-1974",
+      "n": "吉野家 牛肉碟",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 25.6,
+      "kcal": 532,
+      "f": 43.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2031",
       "n": "吉野家 牛皿（並盛）",
       "s": [
         "yoshinoya"
@@ -4922,14 +4991,34 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-896",
-      "n": "吉野家 牛さんま定食",
+      "id": "yoshinoya-9-540",
+      "n": "吉野家 炸鸡块（１个）",
       "s": [
         "yoshinoya"
       ],
-      "p": 31.6,
-      "kcal": 680,
-      "f": 23.3,
+      "p": 8.8,
+      "kcal": 190,
+      "f": 14.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-5-2508",
+      "n": "吉野家 牛すき鍋（単品）（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 29.6,
+      "kcal": 654,
+      "f": 37.5,
       "yen": null,
       "days": [
         "train",
@@ -4941,26 +5030,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-924",
-      "n": "吉野家 さんま定食",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 23.1,
-      "kcal": 507,
-      "f": 8.5,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-1495",
+      "id": "yoshinoya-4-1816",
       "n": "吉野家 牛鉄板カルビ皿",
       "s": [
         "yoshinoya"
@@ -4979,7 +5049,44 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-383",
+      "id": "yoshinoya-9-1813",
+      "n": "吉野家 烤五花牛肉碟",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.5,
+      "kcal": 456,
+      "f": 33.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-9-2138",
+      "n": "吉野家 烤鳗鱼饭（一条）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 32.2,
+      "kcal": 718,
+      "f": 23.8,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-976",
       "n": "吉野家 Wハムエッグ牛小鉢定食",
       "s": [
         "yoshinoya"
@@ -4997,14 +5104,32 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1441",
-      "n": "吉野家 ねぎ塩牛カルビ皿",
+      "id": "yoshinoya-9-968",
+      "n": "吉野家 火腿双蛋套餐配小碟牛肉",
       "s": [
         "yoshinoya"
       ],
-      "p": 18.8,
-      "kcal": 425,
-      "f": 34.6,
+      "p": 32.1,
+      "kcal": 721,
+      "f": 25.9,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-9-1049",
+      "n": "吉野家 火腿鸡蛋套餐配纳豆",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.1,
+      "kcal": 581,
+      "f": 13,
       "yen": null,
       "days": [
         "train",
@@ -5016,25 +5141,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-1903",
-      "n": "吉野家 塩さば特朝定食",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 31.9,
-      "kcal": 744,
-      "f": 27.7,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-1413",
+      "id": "yoshinoya-4-1788",
       "n": "吉野家 牛鉄板焼肉皿",
       "s": [
         "yoshinoya"
@@ -5053,7 +5160,26 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1306",
+      "id": "yoshinoya-9-1785",
+      "n": "吉野家 牛肉烤肉菜",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.2,
+      "kcal": 489,
+      "f": 33.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1681",
       "n": "吉野家 牛鮭定食",
       "s": [
         "yoshinoya"
@@ -5072,7 +5198,26 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-490",
+      "id": "yoshinoya-9-1677",
+      "n": "吉野家 牛肉鲑鱼套餐",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 26.4,
+      "kcal": 662,
+      "f": 23.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1083",
       "n": "吉野家 焼魚牛小鉢定食",
       "s": [
         "yoshinoya"
@@ -5091,7 +5236,26 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-733",
+      "id": "yoshinoya-9-1076",
+      "n": "吉野家 烤鲑鱼套餐配小碟牛肉",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 24.4,
+      "kcal": 622,
+      "f": 19.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1327",
       "n": "吉野家 納豆定食",
       "s": [
         "yoshinoya"
@@ -5110,17 +5274,18 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1845",
-      "n": "吉野家 月見牛とじ丼（並盛）",
+      "id": "yoshinoya-9-1320",
+      "n": "吉野家 纳豆套餐",
       "s": [
         "yoshinoya"
       ],
-      "p": 32.9,
-      "kcal": 841,
-      "f": 35.5,
+      "p": 21.3,
+      "kcal": 544,
+      "f": 11.1,
       "yen": null,
       "days": [
-        "train"
+        "train",
+        "rest"
       ],
       "kind": "gai",
       "official": true,
@@ -5128,7 +5293,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1549",
+      "id": "yoshinoya-4-1870",
       "n": "吉野家 豚皿（大盛）",
       "s": [
         "yoshinoya"
@@ -5148,7 +5313,27 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1522",
+      "id": "yoshinoya-9-1867",
+      "n": "吉野家 猪肉碟",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 11.1,
+      "kcal": 288,
+      "f": 21.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1843",
       "n": "吉野家 豚皿（特盛）",
       "s": [
         "yoshinoya"
@@ -5167,7 +5352,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1575",
+      "id": "yoshinoya-4-1897",
       "n": "吉野家 豚皿（並盛）",
       "s": [
         "yoshinoya"
@@ -5187,7 +5372,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1142",
+      "id": "yoshinoya-4-1572",
       "n": "吉野家 牛皿定食（大盛）",
       "s": [
         "yoshinoya"
@@ -5205,7 +5390,44 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-705",
+      "id": "yoshinoya-9-1567",
+      "n": "吉野家 牛肉碟套餐",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 29.5,
+      "kcal": 783,
+      "f": 34.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2086",
+      "n": "吉野家 牛肉豆腐丼（並盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 25,
+      "kcal": 666,
+      "f": 20.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1299",
       "n": "吉野家 焼魚定食（鮭）",
       "s": [
         "yoshinoya"
@@ -5224,7 +5446,26 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-436",
+      "id": "yoshinoya-9-1292",
+      "n": "吉野家 烤鲑鱼套餐",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 17.8,
+      "kcal": 478,
+      "f": 8.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1030",
       "n": "吉野家 ハムエッグ牛小鉢定食",
       "s": [
         "yoshinoya"
@@ -5243,7 +5484,26 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1169",
+      "id": "yoshinoya-9-1022",
+      "n": "吉野家 火腿鸡蛋套餐配小碟牛肉",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 22.9,
+      "kcal": 619,
+      "f": 19.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-1599",
       "n": "吉野家 牛皿定食（並盛）",
       "s": [
         "yoshinoya"
@@ -5261,12 +5521,12 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-2069",
+      "id": "yoshinoya-6-2702",
       "n": "吉野家 ジンギスカン定食（並盛）",
       "s": [
         "yoshinoya"
       ],
-      "p": 28.9,
+      "p": 29,
       "kcal": 791,
       "f": 30.4,
       "yen": null,
@@ -5279,27 +5539,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-1632",
-      "n": "吉野家 沖縄そば",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 11.2,
-      "kcal": 315,
-      "f": 13.1,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-517",
+      "id": "yoshinoya-4-1110",
       "n": "吉野家 納豆牛小鉢定食",
       "s": [
         "yoshinoya"
@@ -5318,55 +5558,18 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-1986",
-      "n": "吉野家 牛さば定食",
+      "id": "yoshinoya-9-1102",
+      "n": "吉野家 纳豆套餐配小碟牛肉",
       "s": [
         "yoshinoya"
       ],
-      "p": 26.6,
-      "kcal": 754,
-      "f": 33.1,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-6-1876",
-      "n": "吉野家 塩さば牛小鉢定食（朝定食）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 24.6,
-      "kcal": 714,
-      "f": 29.3,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-1467",
-      "n": "吉野家 ねぎ塩豚皿",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 10.4,
-      "kcal": 302,
-      "f": 23.4,
+      "p": 21.7,
+      "kcal": 612,
+      "f": 17.4,
       "yen": null,
       "days": [
         "train",
-        "rest",
-        "night"
+        "rest"
       ],
       "kind": "gai",
       "official": true,
@@ -5374,7 +5577,43 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1901",
+      "id": "yoshinoya-4-2058",
+      "n": "吉野家 牛肉豆腐丼（大盛）",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 29.4,
+      "kcal": 839,
+      "f": 24.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-9-2056",
+      "n": "吉野家 牛肉豆腐蓋飯",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 29.4,
+      "kcal": 839,
+      "f": 24.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-2222",
       "n": "吉野家 焦がしネギ焼き鳥丼（並盛）",
       "s": [
         "yoshinoya"
@@ -5392,14 +5631,14 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1224",
-      "n": "吉野家 ねぎ塩牛カルビ定食",
+      "id": "yoshinoya-9-2221",
+      "n": "吉野家 焦香葱焼鶏肉丼",
       "s": [
         "yoshinoya"
       ],
-      "p": 26,
-      "kcal": 797,
-      "f": 35.9,
+      "p": 24.1,
+      "kcal": 720,
+      "f": 28.5,
       "yen": null,
       "days": [
         "train"
@@ -5466,14 +5705,14 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-2735",
-      "n": "吉野家 牛丼（アタマの大盛）",
+      "id": "yoshinoya-9-2413",
+      "n": "吉野家 烤五花牛肉饭",
       "s": [
         "yoshinoya"
       ],
-      "p": 23,
-      "kcal": 725,
-      "f": 28.8,
+      "p": 26.5,
+      "kcal": 831,
+      "f": 34.5,
       "yen": null,
       "days": [
         "train"
@@ -5484,52 +5723,14 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-1931",
-      "n": "吉野家 塩さば定食（朝定食）",
+      "id": "yoshinoya-4-2735",
+      "n": "吉野家 牛丼（アタマの大盛）",
       "s": [
         "yoshinoya"
       ],
-      "p": 18,
-      "kcal": 570,
-      "f": 17.8,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-2146",
-      "n": "吉野家 ねぎ塩牛カルビ丼（小盛）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 15.6,
-      "kcal": 503,
-      "f": 22.2,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-2092",
-      "n": "吉野家 ねぎ塩牛カルビ丼（アタマの大盛）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 24.8,
-      "kcal": 800,
-      "f": 35.3,
+      "p": 23,
+      "kcal": 725,
+      "f": 28.8,
       "yen": null,
       "days": [
         "train"
@@ -5578,25 +5779,6 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-1793",
-      "n": "吉野家 ねぎ塩牛丼",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 20.5,
-      "kcal": 670,
-      "f": 24.9,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
       "id": "yoshinoya-4-2708",
       "n": "吉野家 牛丼（大盛）",
       "s": [
@@ -5615,18 +5797,17 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-2119",
-      "n": "吉野家 ねぎ塩牛カルビ丼（並盛）",
+      "id": "yoshinoya-9-2708",
+      "n": "吉野家 牛肉饭",
       "s": [
         "yoshinoya"
       ],
-      "p": 19.8,
-      "kcal": 668,
-      "f": 26.9,
+      "p": 24.8,
+      "kcal": 823,
+      "f": 29,
       "yen": null,
       "days": [
-        "train",
-        "rest"
+        "train"
       ],
       "kind": "gai",
       "official": true,
@@ -5634,7 +5815,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1984",
+      "id": "yoshinoya-4-2306",
       "n": "吉野家 牛焼肉丼（並盛）",
       "s": [
         "yoshinoya"
@@ -5652,7 +5833,25 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-5-2226",
+      "id": "yoshinoya-9-2306",
+      "n": "吉野家 牛肉烤肉碗",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.6,
+      "kcal": 707,
+      "f": 25.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-4-387",
       "n": "吉野家 肉だく牛黒カレー（並盛）",
       "s": [
         "yoshinoya"
@@ -5670,7 +5869,25 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-1820",
+      "id": "yoshinoya-9-379",
+      "n": "吉野家 增肉牛肉黑咖喱饭",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 21.7,
+      "kcal": 761,
+      "f": 29.3,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-2592",
       "n": "吉野家 冷製牛鬼おろしぶっかけ定食",
       "s": [
         "yoshinoya"
@@ -5688,7 +5905,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-5-2172",
+      "id": "yoshinoya-4-334",
       "n": "吉野家 牛カルビ黒カレー（並盛）",
       "s": [
         "yoshinoya"
@@ -5706,7 +5923,25 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-6-1848",
+      "id": "yoshinoya-9-326",
+      "n": "吉野家 烤五花牛肉黑咖喱饭",
+      "s": [
+        "yoshinoya"
+      ],
+      "p": 20.5,
+      "kcal": 750,
+      "f": 27.1,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "吉野家",
+      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
+    },
+    {
+      "id": "yoshinoya-6-2620",
       "n": "吉野家 冷製牛鬼おろしぶっかけ丼",
       "s": [
         "yoshinoya"
@@ -5724,26 +5959,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-1251",
-      "n": "吉野家 ねぎ塩豚定食",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 17.6,
-      "kcal": 673,
-      "f": 24.7,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-6-1659",
+      "id": "yoshinoya-6-2401",
       "n": "吉野家 メンチカツ",
       "s": [
         "yoshinoya"
@@ -5782,7 +5998,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-5-1759",
+      "id": "yoshinoya-5-2256",
       "n": "吉野家 セット油そば（並盛）",
       "s": [
         "yoshinoya"
@@ -5801,7 +6017,7 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-5-1671",
+      "id": "yoshinoya-5-2169",
       "n": "吉野家 ミニ牛丼",
       "s": [
         "yoshinoya"
@@ -5859,25 +6075,6 @@
       "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
     },
     {
-      "id": "yoshinoya-4-2306",
-      "n": "吉野家 ねぎ塩豚丼（小盛）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 11.1,
-      "kcal": 445,
-      "f": 16.9,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
       "id": "yoshinoya-4-2547",
       "n": "吉野家 豚丼（大盛）",
       "s": [
@@ -5889,137 +6086,6 @@
       "yen": null,
       "days": [
         "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-2253",
-      "n": "吉野家 ねぎ塩豚丼（アタマの大盛）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 16.4,
-      "kcal": 676,
-      "f": 24.1,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-5-2279",
-      "n": "吉野家 牛黒カレー（並盛）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 15,
-      "kcal": 622,
-      "f": 17.9,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-2279",
-      "n": "吉野家 ねぎ塩豚丼（並盛）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 14.1,
-      "kcal": 592,
-      "f": 19.9,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-4-2226",
-      "n": "吉野家 ねぎ塩豚丼（大盛）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 17.9,
-      "kcal": 770,
-      "f": 24.3,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-5-2253",
-      "n": "吉野家 牛黒カレー（ご飯増量）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 17,
-      "kcal": 746,
-      "f": 18.1,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-5-2333",
-      "n": "吉野家 黒カレー（並盛）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 8.2,
-      "kcal": 480,
-      "f": 6.4,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "吉野家",
-      "sourceUrl": "https://www.yoshinoya.com/pdf/allergy/"
-    },
-    {
-      "id": "yoshinoya-5-2306",
-      "n": "吉野家 黒カレー（ご飯増量）",
-      "s": [
-        "yoshinoya"
-      ],
-      "p": 10.2,
-      "kcal": 605,
-      "f": 6.7,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
       ],
       "kind": "gai",
       "official": true,
@@ -7715,14 +7781,14 @@
       "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260903"
     },
     {
-      "id": "cocoichi-1-803",
+      "id": "cocoichi-1-996",
       "n": "CoCo壱 ポークカレー",
       "s": [
         "cocoichi"
       ],
       "p": 11,
       "kcal": 701,
-      "f": 126.9,
+      "f": 18.3,
       "yen": null,
       "days": [
         "train"
@@ -7733,14 +7799,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-936",
+      "id": "cocoichi-2-934",
       "n": "CoCo壱 カレーうどん",
       "s": [
         "cocoichi"
       ],
       "p": 18.3,
       "kcal": 702,
-      "f": 85.5,
+      "f": 30.8,
       "yen": null,
       "days": [
         "train"
@@ -7751,14 +7817,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1228",
+      "id": "cocoichi-2-1339",
       "n": "CoCo壱 きのこカレー",
       "s": [
         "cocoichi"
       ],
       "p": 12.5,
       "kcal": 711,
-      "f": 129.8,
+      "f": 18.4,
       "yen": null,
       "days": [
         "train"
@@ -7769,14 +7835,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-748",
+      "id": "cocoichi-1-942",
       "n": "CoCo壱 ココイチベジカレー",
       "s": [
         "cocoichi"
       ],
       "p": 10.1,
       "kcal": 688,
-      "f": 130.7,
+      "f": 15.6,
       "yen": null,
       "days": [
         "train",
@@ -7788,14 +7854,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1302",
+      "id": "cocoichi-2-1412",
       "n": "CoCo壱 ほうれん草カレー",
       "s": [
         "cocoichi"
       ],
       "p": 12.5,
       "kcal": 712,
-      "f": 128.6,
+      "f": 18.5,
       "yen": null,
       "days": [
         "train"
@@ -7806,14 +7872,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-907",
+      "id": "cocoichi-2-905",
       "n": "CoCo壱 カレーうどん（マイルド）",
       "s": [
         "cocoichi"
       ],
       "p": 18.1,
       "kcal": 688,
-      "f": 84,
+      "f": 29.8,
       "yen": null,
       "days": [
         "train",
@@ -7825,14 +7891,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-785",
+      "id": "cocoichi-1-978",
       "n": "CoCo壱 甘口ポークカレー",
       "s": [
         "cocoichi"
       ],
       "p": 10.8,
       "kcal": 681,
-      "f": 124.7,
+      "f": 17,
       "yen": null,
       "days": [
         "train",
@@ -7844,14 +7910,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-885",
+      "id": "cocoichi-2-883",
       "n": "CoCo壱 カレーらーめん",
       "s": [
         "cocoichi"
       ],
       "p": 20.4,
       "kcal": 656,
-      "f": 88,
+      "f": 23.3,
       "yen": null,
       "days": [
         "train",
@@ -7863,14 +7929,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1117",
+      "id": "cocoichi-2-1231",
       "n": "CoCo壱 エビにこみカレー",
       "s": [
         "cocoichi"
       ],
       "p": 21.4,
       "kcal": 745,
-      "f": 127.1,
+      "f": 18.7,
       "yen": null,
       "days": [
         "train"
@@ -7881,14 +7947,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-4-746",
+      "id": "cocoichi-4-866",
       "n": "CoCo壱 ココイチバラエティボックスC",
       "s": [
         "cocoichi"
       ],
       "p": 33.2,
       "kcal": 748,
-      "f": 40.4,
+      "f": 50.6,
       "yen": null,
       "days": [
         "train"
@@ -7899,14 +7965,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1306",
+      "id": "cocoichi-1-1415",
       "n": "CoCo壱 トムヤムクンスープカレー",
       "s": [
         "cocoichi"
       ],
       "p": 18.7,
       "kcal": 643,
-      "f": 95.9,
+      "f": 22.1,
       "yen": null,
       "days": [
         "train",
@@ -7918,14 +7984,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1099",
+      "id": "cocoichi-2-1212",
       "n": "CoCo壱 エビあさりカレー",
       "s": [
         "cocoichi"
       ],
       "p": 22.3,
       "kcal": 757,
-      "f": 128.6,
+      "f": 19.2,
       "yen": null,
       "days": [
         "train"
@@ -7936,14 +8002,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1545",
+      "id": "cocoichi-2-1650",
       "n": "CoCo壱 チキンにこみカレー",
       "s": [
         "cocoichi"
       ],
       "p": 24.4,
       "kcal": 769,
-      "f": 128.7,
+      "f": 19.7,
       "yen": null,
       "days": [
         "train"
@@ -7954,14 +8020,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1154",
+      "id": "cocoichi-2-1267",
       "n": "CoCo壱 たっぷりあさりカレー",
       "s": [
         "cocoichi"
       ],
       "p": 23.2,
       "kcal": 769,
-      "f": 130.1,
+      "f": 19.6,
       "yen": null,
       "days": [
         "train"
@@ -7972,14 +8038,32 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1283",
+      "id": "cocoichi-2-1053",
+      "n": "CoCo壱 たっぷりチーズのビーフ焼きカレー（ライス150g）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 29.4,
+      "kcal": 770,
+      "f": 41.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1394",
       "n": "CoCo壱 やさいカレー",
       "s": [
         "cocoichi"
       ],
       "p": 12.8,
       "kcal": 783,
-      "f": 142.4,
+      "f": 20.1,
       "yen": null,
       "days": [
         "train"
@@ -7990,14 +8074,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1246",
+      "id": "cocoichi-2-1357",
       "n": "CoCo壱 納豆カレー",
       "s": [
         "cocoichi"
       ],
       "p": 18,
       "kcal": 787,
-      "f": 132.3,
+      "f": 22.4,
       "yen": null,
       "days": [
         "train"
@@ -8008,14 +8092,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1062",
+      "id": "cocoichi-2-1176",
       "n": "CoCo壱 プチエビフライカレー",
       "s": [
         "cocoichi"
       ],
       "p": 15.5,
       "kcal": 789,
-      "f": 133.3,
+      "f": 23.1,
       "yen": null,
       "days": [
         "train"
@@ -8026,14 +8110,33 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-868",
+      "id": "cocoichi-2-993",
+      "n": "CoCo壱 えびとあさりのシーフード焼きカレー（ライス150g）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 26.9,
+      "kcal": 603,
+      "f": 24.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-866",
       "n": "CoCo壱 チャーシューカレーらーめん",
       "s": [
         "cocoichi"
       ],
       "p": 26.2,
       "kcal": 811,
-      "f": 89.7,
+      "f": 37.3,
       "yen": null,
       "days": [
         "train"
@@ -8044,14 +8147,32 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-766",
+      "id": "cocoichi-2-963",
+      "n": "CoCo壱 えびとあさりのシーフード焼きカレー（ライス250g）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 30.8,
+      "kcal": 819,
+      "f": 28.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-1-960",
       "n": "CoCo壱 ビーフカレー",
       "s": [
         "cocoichi"
       ],
       "p": 17.3,
       "kcal": 823,
-      "f": 125.8,
+      "f": 29.6,
       "yen": null,
       "days": [
         "train"
@@ -8062,14 +8183,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1080",
+      "id": "cocoichi-2-1194",
       "n": "CoCo壱 海の幸カレー",
       "s": [
         "cocoichi"
       ],
       "p": 28.8,
       "kcal": 826,
-      "f": 132.2,
+      "f": 22.7,
       "yen": null,
       "days": [
         "train"
@@ -8080,14 +8201,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1072",
+      "id": "cocoichi-3-1185",
       "n": "CoCo壱 手仕込とんかつ",
       "s": [
         "cocoichi"
       ],
       "p": 23.2,
       "kcal": 571,
-      "f": 19.5,
+      "f": 45.1,
       "yen": null,
       "days": [
         "train",
@@ -8099,14 +8220,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1136",
+      "id": "cocoichi-2-1249",
       "n": "CoCo壱 イカカレー",
       "s": [
         "cocoichi"
       ],
       "p": 24.1,
       "kcal": 839,
-      "f": 134.2,
+      "f": 25.2,
       "yen": null,
       "days": [
         "train"
@@ -8117,14 +8238,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-729",
+      "id": "cocoichi-1-924",
       "n": "CoCo壱 ハヤシライス",
       "s": [
         "cocoichi"
       ],
       "p": 16.4,
       "kcal": 845,
-      "f": 132.4,
+      "f": 30.1,
       "yen": null,
       "days": [
         "train"
@@ -8135,14 +8256,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1344",
+      "id": "cocoichi-2-1453",
       "n": "CoCo壱 牛すじ煮込みカレー",
       "s": [
         "cocoichi"
       ],
       "p": 25,
       "kcal": 846,
-      "f": 136.9,
+      "f": 25.3,
       "yen": null,
       "days": [
         "train"
@@ -8153,14 +8274,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1265",
+      "id": "cocoichi-2-1376",
       "n": "CoCo壱 スクランブルエッグカレー",
       "s": [
         "cocoichi"
       ],
       "p": 15.4,
       "kcal": 846,
-      "f": 132,
+      "f": 30.2,
       "yen": null,
       "days": [
         "train"
@@ -8171,14 +8292,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1383",
+      "id": "cocoichi-1-1491",
       "n": "CoCo壱 ローストチキンスープカレー",
       "s": [
         "cocoichi"
       ],
       "p": 28.5,
       "kcal": 850,
-      "f": 99.8,
+      "f": 37.6,
       "yen": null,
       "days": [
         "train"
@@ -8189,14 +8310,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1354",
+      "id": "cocoichi-1-1462",
       "n": "CoCo壱 ベーススープカレー",
       "s": [
         "cocoichi"
       ],
       "p": 8.5,
       "kcal": 539,
-      "f": 95.8,
+      "f": 15,
       "yen": null,
       "days": [
         "train",
@@ -8208,14 +8329,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1320",
+      "id": "cocoichi-2-1430",
       "n": "CoCo壱 なす(6個)カレー",
       "s": [
         "cocoichi"
       ],
       "p": 11.9,
       "kcal": 872,
-      "f": 131.6,
+      "f": 34.9,
       "yen": null,
       "days": [
         "train"
@@ -8226,14 +8347,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1191",
+      "id": "cocoichi-2-1303",
       "n": "CoCo壱 チーズカレー",
       "s": [
         "cocoichi"
       ],
       "p": 23.9,
       "kcal": 896,
-      "f": 128.3,
+      "f": 34.1,
       "yen": null,
       "days": [
         "train"
@@ -8244,14 +8365,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-4-913",
+      "id": "cocoichi-4-1029",
       "n": "CoCo壱 マル得",
       "s": [
         "cocoichi"
       ],
       "p": 48.6,
       "kcal": 897,
-      "f": 38.3,
+      "f": 59.6,
       "yen": null,
       "days": [
         "train"
@@ -8262,14 +8383,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1258",
+      "id": "cocoichi-1-1369",
       "n": "CoCo壱 バターチキンカレー",
       "s": [
         "cocoichi"
       ],
       "p": 27.4,
       "kcal": 919,
-      "f": 131.7,
+      "f": 33,
       "yen": null,
       "days": [
         "train"
@@ -8280,14 +8401,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1508",
+      "id": "cocoichi-2-1614",
       "n": "CoCo壱 ハンバーグ(2個)カレー",
       "s": [
         "cocoichi"
       ],
       "p": 24.2,
       "kcal": 925,
-      "f": 137,
+      "f": 32.9,
       "yen": null,
       "days": [
         "train"
@@ -8298,14 +8419,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1230",
+      "id": "cocoichi-1-1340",
       "n": "CoCo壱 秋の野菜カレー",
       "s": [
         "cocoichi"
       ],
       "p": 12.3,
       "kcal": 929,
-      "f": 156.6,
+      "f": 29.8,
       "yen": null,
       "days": [
         "train"
@@ -8316,14 +8437,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1173",
+      "id": "cocoichi-2-1285",
       "n": "CoCo壱 フィッシュフライ(2本)カレー",
       "s": [
         "cocoichi"
       ],
       "p": 22.1,
       "kcal": 942,
-      "f": 143.9,
+      "f": 32.3,
       "yen": null,
       "days": [
         "train"
@@ -8334,14 +8455,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1452",
+      "id": "cocoichi-2-1560",
       "n": "CoCo壱 ソーセージ(4本)カレー",
       "s": [
         "cocoichi"
       ],
       "p": 21.2,
       "kcal": 980,
-      "f": 132,
+      "f": 41.5,
       "yen": null,
       "days": [
         "train"
@@ -8352,13 +8473,147 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1096",
+      "id": "cocoichi-3-1209",
       "n": "CoCo壱 ロースカツ",
       "s": [
         "cocoichi"
       ],
       "p": 16.1,
       "kcal": 415,
+      "f": 30.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1245",
+      "n": "CoCo壱 チキンカツ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 21.3,
+      "kcal": 414,
+      "f": 25.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1523",
+      "n": "CoCo壱 パリパリチキンカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 29.2,
+      "kcal": 995,
+      "f": 36.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1632",
+      "n": "CoCo壱 フライドチキン(5個)カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 28.6,
+      "kcal": 1026,
+      "f": 41.4,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-4-848",
+      "n": "CoCo壱 CoCo de チキン",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 15.4,
+      "kcal": 357,
+      "f": 22.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1578",
+      "n": "CoCo壱 メンチカツカレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 20.5,
+      "kcal": 1047,
+      "f": 40.7,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1336",
+      "n": "CoCo壱 豚しゃぶ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 12.6,
+      "kcal": 351,
+      "f": 33.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1300",
+      "n": "CoCo壱 メンチカツ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 9.5,
+      "kcal": 346,
       "f": 22.4,
       "yen": null,
       "days": [
@@ -8372,128 +8627,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1133",
-      "n": "CoCo壱 チキンカツ",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 21.3,
-      "kcal": 414,
-      "f": 24.7,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-2-1415",
-      "n": "CoCo壱 パリパリチキンカレー",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 29.2,
-      "kcal": 995,
-      "f": 139.1,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-2-1526",
-      "n": "CoCo壱 フライドチキン(5個)カレー",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 28.6,
-      "kcal": 1026,
-      "f": 145.2,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-4-728",
-      "n": "CoCo壱 CoCo de チキン",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 15.4,
-      "kcal": 357,
-      "f": 22.1,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-2-1471",
-      "n": "CoCo壱 メンチカツカレー",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 20.5,
-      "kcal": 1047,
-      "f": 152.8,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-3-1188",
-      "n": "CoCo壱 メンチカツ",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 9.5,
-      "kcal": 346,
-      "f": 25.9,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-3-1299",
+      "id": "cocoichi-3-1408",
       "n": "CoCo壱 フライドチキン(5個)",
       "s": [
         "cocoichi"
       ],
       "p": 17.6,
       "kcal": 325,
-      "f": 18.3,
+      "f": 23.1,
       "yen": null,
       "days": [
         "train",
@@ -8506,14 +8647,14 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-4-802",
+      "id": "cocoichi-4-920",
       "n": "CoCo壱 ポークカレーパン",
       "s": [
         "cocoichi"
       ],
       "p": 8.8,
       "kcal": 319,
-      "f": 27.6,
+      "f": 19.5,
       "yen": null,
       "days": [
         "train",
@@ -8526,94 +8667,34 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1114",
+      "id": "cocoichi-1-1439",
+      "n": "CoCo壱 ローストチキン4個",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 19.9,
+      "kcal": 311,
+      "f": 22.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1227",
       "n": "CoCo壱 パリパリチキン",
       "s": [
         "cocoichi"
       ],
       "p": 18.2,
       "kcal": 294,
-      "f": 12.2,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-4-691",
-      "n": "CoCo壱 ナン",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 8.6,
-      "kcal": 252,
-      "f": 49.1,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-3-742",
-      "n": "CoCo壱 フィッシュフライ(2本)",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 11.1,
-      "kcal": 241,
-      "f": 17,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-3-1262",
-      "n": "CoCo壱 ハンバーグ(2個)",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 13.2,
-      "kcal": 224,
-      "f": 10.1,
-      "yen": null,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "CoCo壱",
-      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
-    },
-    {
-      "id": "cocoichi-3-1427",
-      "n": "CoCo壱 フライドチキン(3個)サラダ",
-      "s": [
-        "cocoichi"
-      ],
-      "p": 11.2,
-      "kcal": 220,
-      "f": 14.8,
+      "f": 18.1,
       "yen": null,
       "days": [
         "train",
@@ -8627,13 +8708,13 @@
     },
     {
       "id": "cocoichi-3-1281",
-      "n": "CoCo壱 フライドチキン(3個)",
+      "n": "CoCo壱 ソーセージ(4本)",
       "s": [
         "cocoichi"
       ],
-      "p": 10.6,
-      "kcal": 195,
-      "f": 11,
+      "p": 10.2,
+      "kcal": 279,
+      "f": 23.2,
       "yen": null,
       "days": [
         "train",
@@ -8646,14 +8727,194 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1043",
+      "id": "cocoichi-2-1085",
+      "n": "CoCo壱 低糖質カレー",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 8,
+      "kcal": 255,
+      "f": 15.4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-4-812",
+      "n": "CoCo壱 ナン",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 8.6,
+      "kcal": 252,
+      "f": 4,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-862",
+      "n": "CoCo壱 フィッシュフライ(2本)",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 11.1,
+      "kcal": 241,
+      "f": 14,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1372",
+      "n": "CoCo壱 ハンバーグ(2個)",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 13.2,
+      "kcal": 224,
+      "f": 14.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1534",
+      "n": "CoCo壱 フライドチキン(3個)サラダ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 11.2,
+      "kcal": 220,
+      "f": 14.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1390",
+      "n": "CoCo壱 フライドチキン(3個)",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 10.6,
+      "kcal": 195,
+      "f": 13.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-898",
+      "n": "CoCo壱 チーズ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 12.9,
+      "kcal": 195,
+      "f": 15.8,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-1157",
       "n": "CoCo壱 牛すじ煮込み",
       "s": [
         "cocoichi"
       ],
       "p": 14,
       "kcal": 145,
-      "f": 10,
+      "f": 7,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-771",
+      "n": "CoCo壱 イカ",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 13.1,
+      "kcal": 138,
+      "f": 6.9,
+      "yen": null,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-3-680",
+      "n": "CoCo壱 海の幸",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 17.8,
+      "kcal": 125,
+      "f": 4.4,
       "yen": null,
       "days": [
         "train",
