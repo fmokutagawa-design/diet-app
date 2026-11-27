@@ -1,38 +1,38 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-26T02:18:15.769Z",
+  "generatedAt": "2026-11-27T02:18:35.969Z",
   "sources": {
     "mcdonalds": {
       "status": "ok",
-      "updatedAt": "2026-11-26T02:17:14.864Z",
+      "updatedAt": "2026-11-27T02:17:32.098Z",
       "url": "https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/",
       "count": 44,
       "label": "マクドナルド公式栄養成分表"
     },
     "mos": {
       "status": "ok",
-      "updatedAt": "2026-11-26T02:17:16.106Z",
+      "updatedAt": "2026-11-27T02:17:33.014Z",
       "url": "https://www.mos.jp/menu/pdf/nutrition.pdf",
       "count": 58,
       "label": "モス公式メニュー・栄養成分情報"
     },
     "matsuya": {
       "status": "ok",
-      "updatedAt": "2026-11-26T02:17:19.139Z",
+      "updatedAt": "2026-11-27T02:17:35.361Z",
       "url": "https://bento.matsuyafoods.co.jp/matsuya/pdf/261124_nutritional_matsuya.pdf",
       "count": 70,
       "label": "松屋公式栄養成分表"
     },
     "sukiya": {
       "status": "ok",
-      "updatedAt": "2026-11-26T02:17:20.213Z",
+      "updatedAt": "2026-11-27T02:17:35.799Z",
       "url": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf",
       "count": 70,
       "label": "すき家公式栄養成分表"
     },
     "yoshinoya": {
       "status": "ok",
-      "updatedAt": "2026-11-26T02:17:22.487Z",
+      "updatedAt": "2026-11-27T02:17:36.510Z",
       "url": "https://www.yoshinoya.com/pdf/allergy/",
       "count": 72,
       "label": "吉野家公式栄養成分表"
@@ -43,19 +43,19 @@
       "url": "https://www.family.co.jp/goods/safety.html",
       "count": 33,
       "label": "ファミマ公式栄養成分情報（関東）",
-      "lastAttemptAt": "2026-11-26T02:17:28.318Z",
+      "lastAttemptAt": "2026-11-27T02:17:41.633Z",
       "error": "FamilyMart parse yielded only 22 items"
     },
     "seven": {
       "status": "ok",
-      "updatedAt": "2026-11-26T02:17:42.855Z",
+      "updatedAt": "2026-11-27T02:17:58.656Z",
       "url": "https://www.sej.co.jp/products/a/",
       "count": 30,
       "label": "セブン公式商品情報（関東）"
     },
     "lawson": {
       "status": "ok",
-      "updatedAt": "2026-11-26T02:18:13.361Z",
+      "updatedAt": "2026-11-27T02:18:33.991Z",
       "url": "https://www.lawson.co.jp/recommend/original/",
       "count": 80,
       "label": "ローソン公式商品情報（関東）"
@@ -66,7 +66,7 @@
       "url": "https://www.topvalu.net/items/",
       "count": 80,
       "label": "イオン トップバリュ公式商品情報",
-      "lastAttemptAt": "2026-11-26T02:18:15.561Z",
+      "lastAttemptAt": "2026-11-27T02:18:35.913Z",
       "error": "AEON/TOPVALU parse yielded only 0 items"
     },
     "aeonShinyoshida": {
@@ -75,7 +75,7 @@
       "url": "https://shop.aeon.com/netsuper/01050000030830/15.html",
       "count": 556,
       "label": "イオン横浜新吉田店 弁当・惣菜取扱情報",
-      "lastAttemptAt": "2026-11-26T02:18:15.769Z",
+      "lastAttemptAt": "2026-11-27T02:18:35.969Z",
       "error": "https://shop.aeon.com/netsuper/01050000030830/15.html?p=1&sort=recommend: HTTP 403"
     },
     "dennys": {
@@ -84,14 +84,14 @@
       "url": "https://www.dennys.jp/safety/nutritional/",
       "count": 90,
       "label": "デニーズ公式栄養成分一覧",
-      "lastAttemptAt": "2026-11-26T02:17:24.669Z",
+      "lastAttemptAt": "2026-11-27T02:17:38.860Z",
       "error": "デニーズ parse yielded only 0 items"
     },
     "cocoichi": {
       "status": "ok",
-      "updatedAt": "2026-11-26T02:17:25.954Z",
+      "updatedAt": "2026-11-27T02:17:40.071Z",
       "url": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf",
-      "count": 61,
+      "count": 63,
       "label": "CoCo壱番屋公式栄養成分情報"
     }
   },
@@ -3828,9 +3828,9 @@
       "s": [
         "sukiya"
       ],
-      "p": 29,
-      "kcal": 539,
-      "f": 15.3,
+      "p": 29.1,
+      "kcal": 547,
+      "f": 16.7,
       "yen": null,
       "days": [
         "train",
@@ -3847,9 +3847,9 @@
       "s": [
         "sukiya"
       ],
-      "p": 28.4,
-      "kcal": 534,
-      "f": 16.3,
+      "p": 28.6,
+      "kcal": 543,
+      "f": 17.7,
       "yen": null,
       "days": [
         "train",
@@ -3956,25 +3956,6 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-33",
-      "n": "すき家 牛焼鮭朝食（ミニ）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 29.2,
-      "kcal": 582,
-      "f": 20.7,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
       "id": "sukiya-1-3",
       "n": "すき家 牛皿（２倍盛）",
       "s": [
@@ -4002,6 +3983,25 @@
       "p": 21.1,
       "kcal": 423,
       "f": 32.3,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-33",
+      "n": "すき家 牛焼鮭朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.4,
+      "kcal": 590,
+      "f": 22.1,
       "yen": null,
       "days": [
         "train",
@@ -4051,14 +4051,14 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-27",
-      "n": "すき家 焼鮭朝食（ミニ）",
+      "id": "sukiya-4-27",
+      "n": "すき家 まぐろたたき皿（並盛）",
       "s": [
         "sukiya"
       ],
-      "p": 21.6,
-      "kcal": 450,
-      "f": 10.6,
+      "p": 27.6,
+      "kcal": 581,
+      "f": 9.6,
       "yen": null,
       "days": [
         "train",
@@ -4070,14 +4070,14 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-4-27",
-      "n": "すき家 まぐろたたき皿（並盛）",
+      "id": "sukiya-7-27",
+      "n": "すき家 焼鮭朝食（ミニ）",
       "s": [
         "sukiya"
       ],
-      "p": 27.6,
-      "kcal": 581,
-      "f": 9.6,
+      "p": 21.8,
+      "kcal": 459,
+      "f": 12,
       "yen": null,
       "days": [
         "train",
@@ -4164,25 +4164,6 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-31",
-      "n": "すき家 納豆焼鮭朝食（並盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 31.3,
-      "kcal": 677,
-      "f": 15.8,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
       "id": "sukiya-4-23",
       "n": "すき家 オクラ旨だしとりそぼろ丼（並盛）",
       "s": [
@@ -4210,6 +4191,25 @@
       "p": 29,
       "kcal": 629,
       "f": 9.6,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-31",
+      "n": "すき家 納豆焼鮭朝食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 31.4,
+      "kcal": 685,
+      "f": 17.2,
       "yen": null,
       "days": [
         "train",
@@ -4258,44 +4258,6 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-39",
-      "n": "すき家 納豆塩さば朝食（ミニ）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 29.9,
-      "kcal": 654,
-      "f": 27.7,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-7-4",
-      "n": "すき家 焼鮭たまかけ朝食（並盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 30.7,
-      "kcal": 672,
-      "f": 16.8,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
       "id": "sukiya-4-15",
       "n": "すき家 旨だしとりそぼろ丼（並盛）",
       "s": [
@@ -4315,14 +4277,52 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
+      "id": "sukiya-7-4",
+      "n": "すき家 焼鮭たまかけ朝食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 30.9,
+      "kcal": 681,
+      "f": 18.2,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-39",
+      "n": "すき家 納豆塩さば朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 30,
+      "kcal": 662,
+      "f": 29.1,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
       "id": "sukiya-7-6",
       "n": "すき家 塩さばたまかけ朝食（ミニ）",
       "s": [
         "sukiya"
       ],
-      "p": 29.3,
-      "kcal": 649,
-      "f": 28.7,
+      "p": 29.5,
+      "kcal": 658,
+      "f": 30.1,
       "yen": null,
       "days": [
         "train",
@@ -4358,9 +4358,9 @@
       "s": [
         "sukiya"
       ],
-      "p": 28,
-      "kcal": 635,
-      "f": 25.7,
+      "p": 28.2,
+      "kcal": 644,
+      "f": 27,
       "yen": null,
       "days": [
         "train",
@@ -4377,9 +4377,9 @@
       "s": [
         "sukiya"
       ],
-      "p": 31.5,
-      "kcal": 720,
-      "f": 21.2,
+      "p": 31.7,
+      "kcal": 728,
+      "f": 22.6,
       "yen": null,
       "days": [
         "train"
@@ -4415,9 +4415,9 @@
       "s": [
         "sukiya"
       ],
-      "p": 28.3,
-      "kcal": 661,
-      "f": 27.9,
+      "p": 28.4,
+      "kcal": 669,
+      "f": 29.3,
       "yen": null,
       "days": [
         "train",
@@ -4447,25 +4447,6 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-42",
-      "n": "すき家 牛塩さば朝食（ミニ）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 29.2,
-      "kcal": 696,
-      "f": 31.4,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
       "id": "sukiya-5-31",
       "n": "すき家 おんたまうな丼（ごはん少なめ）",
       "s": [
@@ -4478,24 +4459,6 @@
       "days": [
         "train",
         "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-7-32",
-      "n": "すき家 納豆焼鮭朝食（大盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 33.3,
-      "kcal": 794,
-      "f": 16.2,
-      "yen": null,
-      "days": [
-        "train"
       ],
       "kind": "gai",
       "official": true,
@@ -4576,14 +4539,32 @@
       "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
     },
     {
-      "id": "sukiya-7-5",
-      "n": "すき家 焼鮭たまかけ朝食（大盛）",
+      "id": "sukiya-7-32",
+      "n": "すき家 納豆焼鮭朝食（大盛）",
       "s": [
         "sukiya"
       ],
-      "p": 32.7,
-      "kcal": 789,
-      "f": 17.2,
+      "p": 33.4,
+      "kcal": 802,
+      "f": 17.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-42",
+      "n": "すき家 牛塩さば朝食（ミニ）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 29.3,
+      "kcal": 704,
+      "f": 32.8,
       "yen": null,
       "days": [
         "train"
@@ -4602,6 +4583,24 @@
       "p": 31.1,
       "kcal": 754,
       "f": 10,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-5",
+      "n": "すき家 焼鮭たまかけ朝食（大盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 32.9,
+      "kcal": 798,
+      "f": 18.6,
       "yen": null,
       "days": [
         "train"
@@ -4638,43 +4637,6 @@
       "p": 23.5,
       "kcal": 573,
       "f": 10.6,
-      "yen": null,
-      "days": [
-        "train",
-        "rest"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-7-40",
-      "n": "すき家 納豆塩さば朝食（並盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 32.2,
-      "kcal": 792,
-      "f": 28.2,
-      "yen": null,
-      "days": [
-        "train"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "すき家",
-      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
-    },
-    {
-      "id": "sukiya-7-28",
-      "n": "すき家 焼鮭朝食（並盛）",
-      "s": [
-        "sukiya"
-      ],
-      "p": 23.9,
-      "kcal": 588,
-      "f": 11.1,
       "yen": null,
       "days": [
         "train",
@@ -4735,6 +4697,43 @@
       "yen": null,
       "days": [
         "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-40",
+      "n": "すき家 納豆塩さば朝食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 32.3,
+      "kcal": 800,
+      "f": 29.6,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "すき家",
+      "sourceUrl": "https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf"
+    },
+    {
+      "id": "sukiya-7-28",
+      "n": "すき家 焼鮭朝食（並盛）",
+      "s": [
+        "sukiya"
+      ],
+      "p": 24.1,
+      "kcal": 597,
+      "f": 12.5,
+      "yen": null,
+      "days": [
+        "train",
+        "rest"
       ],
       "kind": "gai",
       "official": true,
@@ -7781,7 +7780,7 @@
       "sourceUrl": "https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?260903"
     },
     {
-      "id": "cocoichi-1-996",
+      "id": "cocoichi-1-805",
       "n": "CoCo壱 ポークカレー",
       "s": [
         "cocoichi"
@@ -7799,7 +7798,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-934",
+      "id": "cocoichi-2-851",
       "n": "CoCo壱 カレーうどん",
       "s": [
         "cocoichi"
@@ -7817,7 +7816,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1339",
+      "id": "cocoichi-2-1263",
       "n": "CoCo壱 きのこカレー",
       "s": [
         "cocoichi"
@@ -7835,7 +7834,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-942",
+      "id": "cocoichi-1-750",
       "n": "CoCo壱 ココイチベジカレー",
       "s": [
         "cocoichi"
@@ -7854,7 +7853,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1412",
+      "id": "cocoichi-2-1336",
       "n": "CoCo壱 ほうれん草カレー",
       "s": [
         "cocoichi"
@@ -7872,7 +7871,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-905",
+      "id": "cocoichi-2-822",
       "n": "CoCo壱 カレーうどん（マイルド）",
       "s": [
         "cocoichi"
@@ -7891,7 +7890,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-978",
+      "id": "cocoichi-1-786",
       "n": "CoCo壱 甘口ポークカレー",
       "s": [
         "cocoichi"
@@ -7910,7 +7909,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-883",
+      "id": "cocoichi-2-799",
       "n": "CoCo壱 カレーらーめん",
       "s": [
         "cocoichi"
@@ -7929,7 +7928,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1231",
+      "id": "cocoichi-2-1153",
       "n": "CoCo壱 エビにこみカレー",
       "s": [
         "cocoichi"
@@ -7947,7 +7946,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-4-866",
+      "id": "cocoichi-4-762",
       "n": "CoCo壱 ココイチバラエティボックスC",
       "s": [
         "cocoichi"
@@ -7965,7 +7964,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1415",
+      "id": "cocoichi-1-1232",
       "n": "CoCo壱 トムヤムクンスープカレー",
       "s": [
         "cocoichi"
@@ -7984,7 +7983,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1212",
+      "id": "cocoichi-2-1134",
       "n": "CoCo壱 エビあさりカレー",
       "s": [
         "cocoichi"
@@ -8002,7 +8001,25 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1650",
+      "id": "cocoichi-1-1415",
+      "n": "CoCo壱 かぼちゃと冬野菜カレー（2026年12月1日販売開始）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 12.4,
+      "kcal": 761,
+      "f": 18.5,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1578",
       "n": "CoCo壱 チキンにこみカレー",
       "s": [
         "cocoichi"
@@ -8020,7 +8037,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1267",
+      "id": "cocoichi-2-1189",
       "n": "CoCo壱 たっぷりあさりカレー",
       "s": [
         "cocoichi"
@@ -8038,7 +8055,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1053",
+      "id": "cocoichi-2-972",
       "n": "CoCo壱 たっぷりチーズのビーフ焼きカレー（ライス150g）",
       "s": [
         "cocoichi"
@@ -8056,7 +8073,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1394",
+      "id": "cocoichi-2-1318",
       "n": "CoCo壱 やさいカレー",
       "s": [
         "cocoichi"
@@ -8074,7 +8091,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1357",
+      "id": "cocoichi-2-1281",
       "n": "CoCo壱 納豆カレー",
       "s": [
         "cocoichi"
@@ -8092,7 +8109,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1176",
+      "id": "cocoichi-2-1098",
       "n": "CoCo壱 プチエビフライカレー",
       "s": [
         "cocoichi"
@@ -8110,7 +8127,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-993",
+      "id": "cocoichi-2-911",
       "n": "CoCo壱 えびとあさりのシーフード焼きカレー（ライス150g）",
       "s": [
         "cocoichi"
@@ -8129,7 +8146,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-866",
+      "id": "cocoichi-2-783",
       "n": "CoCo壱 チャーシューカレーらーめん",
       "s": [
         "cocoichi"
@@ -8147,7 +8164,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-963",
+      "id": "cocoichi-2-881",
       "n": "CoCo壱 えびとあさりのシーフード焼きカレー（ライス250g）",
       "s": [
         "cocoichi"
@@ -8165,7 +8182,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-960",
+      "id": "cocoichi-1-768",
       "n": "CoCo壱 ビーフカレー",
       "s": [
         "cocoichi"
@@ -8183,7 +8200,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1194",
+      "id": "cocoichi-2-1116",
       "n": "CoCo壱 海の幸カレー",
       "s": [
         "cocoichi"
@@ -8201,7 +8218,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1185",
+      "id": "cocoichi-3-1106",
       "n": "CoCo壱 手仕込とんかつ",
       "s": [
         "cocoichi"
@@ -8220,7 +8237,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1249",
+      "id": "cocoichi-2-1171",
       "n": "CoCo壱 イカカレー",
       "s": [
         "cocoichi"
@@ -8238,7 +8255,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-924",
+      "id": "cocoichi-1-731",
       "n": "CoCo壱 ハヤシライス",
       "s": [
         "cocoichi"
@@ -8256,7 +8273,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1453",
+      "id": "cocoichi-2-1379",
       "n": "CoCo壱 牛すじ煮込みカレー",
       "s": [
         "cocoichi"
@@ -8274,7 +8291,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1376",
+      "id": "cocoichi-2-1300",
       "n": "CoCo壱 スクランブルエッグカレー",
       "s": [
         "cocoichi"
@@ -8292,7 +8309,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1491",
+      "id": "cocoichi-1-1309",
       "n": "CoCo壱 ローストチキンスープカレー",
       "s": [
         "cocoichi"
@@ -8310,7 +8327,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1462",
+      "id": "cocoichi-1-1280",
       "n": "CoCo壱 ベーススープカレー",
       "s": [
         "cocoichi"
@@ -8329,7 +8346,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1430",
+      "id": "cocoichi-2-1355",
       "n": "CoCo壱 なす(6個)カレー",
       "s": [
         "cocoichi"
@@ -8347,7 +8364,25 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1303",
+      "id": "cocoichi-1-1338",
+      "n": "CoCo壱 かぼちゃと冬野菜スープカレー（2026年12月1日販売開始）",
+      "s": [
+        "cocoichi"
+      ],
+      "p": 15.3,
+      "kcal": 886,
+      "f": 23.2,
+      "yen": null,
+      "days": [
+        "train"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "CoCo壱",
+      "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
+    },
+    {
+      "id": "cocoichi-2-1226",
       "n": "CoCo壱 チーズカレー",
       "s": [
         "cocoichi"
@@ -8365,7 +8400,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-4-1029",
+      "id": "cocoichi-4-946",
       "n": "CoCo壱 マル得",
       "s": [
         "cocoichi"
@@ -8383,7 +8418,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1369",
+      "id": "cocoichi-1-1185",
       "n": "CoCo壱 バターチキンカレー",
       "s": [
         "cocoichi"
@@ -8401,7 +8436,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1614",
+      "id": "cocoichi-2-1542",
       "n": "CoCo壱 ハンバーグ(2個)カレー",
       "s": [
         "cocoichi"
@@ -8419,7 +8454,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1340",
+      "id": "cocoichi-1-1156",
       "n": "CoCo壱 秋の野菜カレー",
       "s": [
         "cocoichi"
@@ -8437,7 +8472,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1285",
+      "id": "cocoichi-2-1208",
       "n": "CoCo壱 フィッシュフライ(2本)カレー",
       "s": [
         "cocoichi"
@@ -8455,7 +8490,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1560",
+      "id": "cocoichi-2-1487",
       "n": "CoCo壱 ソーセージ(4本)カレー",
       "s": [
         "cocoichi"
@@ -8473,7 +8508,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1209",
+      "id": "cocoichi-3-1130",
       "n": "CoCo壱 ロースカツ",
       "s": [
         "cocoichi"
@@ -8493,7 +8528,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1245",
+      "id": "cocoichi-3-1166",
       "n": "CoCo壱 チキンカツ",
       "s": [
         "cocoichi"
@@ -8513,7 +8548,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1523",
+      "id": "cocoichi-2-1450",
       "n": "CoCo壱 パリパリチキンカレー",
       "s": [
         "cocoichi"
@@ -8531,7 +8566,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1632",
+      "id": "cocoichi-2-1560",
       "n": "CoCo壱 フライドチキン(5個)カレー",
       "s": [
         "cocoichi"
@@ -8549,7 +8584,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-4-848",
+      "id": "cocoichi-4-743",
       "n": "CoCo壱 CoCo de チキン",
       "s": [
         "cocoichi"
@@ -8569,7 +8604,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1578",
+      "id": "cocoichi-2-1505",
       "n": "CoCo壱 メンチカツカレー",
       "s": [
         "cocoichi"
@@ -8587,7 +8622,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1336",
+      "id": "cocoichi-3-1258",
       "n": "CoCo壱 豚しゃぶ",
       "s": [
         "cocoichi"
@@ -8607,7 +8642,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1300",
+      "id": "cocoichi-3-1222",
       "n": "CoCo壱 メンチカツ",
       "s": [
         "cocoichi"
@@ -8627,7 +8662,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1408",
+      "id": "cocoichi-3-1332",
       "n": "CoCo壱 フライドチキン(5個)",
       "s": [
         "cocoichi"
@@ -8647,7 +8682,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-4-920",
+      "id": "cocoichi-4-817",
       "n": "CoCo壱 ポークカレーパン",
       "s": [
         "cocoichi"
@@ -8667,7 +8702,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-1-1439",
+      "id": "cocoichi-1-1256",
       "n": "CoCo壱 ローストチキン4個",
       "s": [
         "cocoichi"
@@ -8687,7 +8722,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1227",
+      "id": "cocoichi-3-1148",
       "n": "CoCo壱 パリパリチキン",
       "s": [
         "cocoichi"
@@ -8707,7 +8742,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1281",
+      "id": "cocoichi-3-1203",
       "n": "CoCo壱 ソーセージ(4本)",
       "s": [
         "cocoichi"
@@ -8727,7 +8762,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-2-1085",
+      "id": "cocoichi-2-1004",
       "n": "CoCo壱 低糖質カレー",
       "s": [
         "cocoichi"
@@ -8747,7 +8782,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-4-812",
+      "id": "cocoichi-4-707",
       "n": "CoCo壱 ナン",
       "s": [
         "cocoichi"
@@ -8767,7 +8802,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-862",
+      "id": "cocoichi-3-777",
       "n": "CoCo壱 フィッシュフライ(2本)",
       "s": [
         "cocoichi"
@@ -8787,7 +8822,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1372",
+      "id": "cocoichi-3-1295",
       "n": "CoCo壱 ハンバーグ(2個)",
       "s": [
         "cocoichi"
@@ -8807,7 +8842,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1534",
+      "id": "cocoichi-3-1460",
       "n": "CoCo壱 フライドチキン(3個)サラダ",
       "s": [
         "cocoichi"
@@ -8827,7 +8862,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1390",
+      "id": "cocoichi-3-1313",
       "n": "CoCo壱 フライドチキン(3個)",
       "s": [
         "cocoichi"
@@ -8847,7 +8882,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-898",
+      "id": "cocoichi-3-814",
       "n": "CoCo壱 チーズ",
       "s": [
         "cocoichi"
@@ -8867,7 +8902,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-1157",
+      "id": "cocoichi-3-1077",
       "n": "CoCo壱 牛すじ煮込み",
       "s": [
         "cocoichi"
@@ -8887,7 +8922,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-771",
+      "id": "cocoichi-3-686",
       "n": "CoCo壱 イカ",
       "s": [
         "cocoichi"
@@ -8907,7 +8942,7 @@
       "sourceUrl": "https://www.ichibanya.co.jp/menu/pdf/nutrition.pdf"
     },
     {
-      "id": "cocoichi-3-680",
+      "id": "cocoichi-3-594",
       "n": "CoCo壱 海の幸",
       "s": [
         "cocoichi"
@@ -10855,6 +10890,29 @@
       "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1531917_1996.html"
     },
     {
+      "id": "lawson-1534964_1996",
+      "n": "ローソン 1食分の野菜が摂れる サラダスープ チキンコンソメ(パスタ入り)",
+      "s": [
+        "lawson"
+      ],
+      "p": 11.8,
+      "kcal": 142,
+      "f": 4.9,
+      "yen": 497,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン soup",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1534964_1996.html"
+    },
+    {
       "id": "lawson-1519797_1996",
       "n": "ローソン タン塩焼 レモン",
       "s": [
@@ -11199,6 +11257,29 @@
       "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1390563_1996.html"
     },
     {
+      "id": "lawson-1535002_1996",
+      "n": "ローソン からあげクン 黄金チキンレッド味",
+      "s": [
+        "lawson"
+      ],
+      "p": 14.5,
+      "kcal": 228,
+      "f": 14.9,
+      "yen": 298,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1535002_1996.html"
+    },
+    {
       "id": "lawson-1390564_1996",
       "n": "ローソン からあげクン レッド",
       "s": [
@@ -11266,6 +11347,29 @@
         "関東"
       ],
       "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1533639_1996.html"
+    },
+    {
+      "id": "lawson-1535003_1996",
+      "n": "ローソン からあげクン 黄金チキン味",
+      "s": [
+        "lawson"
+      ],
+      "p": 14.5,
+      "kcal": 230,
+      "f": 15.4,
+      "yen": 298,
+      "days": [
+        "train",
+        "rest",
+        "night"
+      ],
+      "kind": "gai",
+      "official": true,
+      "category": "ローソン fry",
+      "regions": [
+        "関東"
+      ],
+      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1535003_1996.html"
     },
     {
       "id": "lawson-1534413_1996",
@@ -12107,75 +12211,6 @@
         "関東"
       ],
       "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1533287_1996.html"
-    },
-    {
-      "id": "lawson-1430207_1996",
-      "n": "ローソン デミグラスハンバーグ",
-      "s": [
-        "lawson"
-      ],
-      "p": 8.6,
-      "kcal": 173,
-      "f": 10.2,
-      "yen": 211,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "ローソン select/osozai",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1430207_1996.html"
-    },
-    {
-      "id": "lawson-1458234_1996",
-      "n": "ローソン 重慶飯店監修 大海老のマヨソース",
-      "s": [
-        "lawson"
-      ],
-      "p": 10.5,
-      "kcal": 212,
-      "f": 12.5,
-      "yen": 491,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "ローソン select/osozai",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1458234_1996.html"
-    },
-    {
-      "id": "lawson-1475921_1996",
-      "n": "ローソン すき焼き",
-      "s": [
-        "lawson"
-      ],
-      "p": 10.6,
-      "kcal": 217,
-      "f": 12.8,
-      "yen": 473,
-      "days": [
-        "train",
-        "rest",
-        "night"
-      ],
-      "kind": "gai",
-      "official": true,
-      "category": "ローソン select/osozai",
-      "regions": [
-        "関東"
-      ],
-      "sourceUrl": "https://www.lawson.co.jp/recommend/original/detail/1475921_1996.html"
     },
     {
       "id": "aeon-4549414726008",
